@@ -1,16 +1,16 @@
 site_name: DCS Documentation Centralized
+repo_url: https://github.com/lord-vesel/dcs-doc
+repo_name: lord-vesel/dcs-doc
+edit_uri: edit/develop/ru/docs
+
 nav:
   - index.md
   - "ВМВ":
       - i16.md
       - fw190a8.md
   - tags.md
-        #      - "FW-190 A8 от ED":
-        #          - fw190a8/p1.md
-        #          - fw190a8/p2.md
-        #          - fw190a8/p3.md
 
-        #theme: readthedocs
+#theme: readthedocs
 theme:
   name: material
   font:
@@ -19,6 +19,8 @@ theme:
   palette:
     primary: 'blue grey'
     accent: blue
+  features:
+    - instant
 
 extra_css:
   - css/materal-add.css
@@ -32,4 +34,4 @@ plugins:
 markdown_extensions:
   - toc:
       baselevel: 1
-      #  - mdx_superscript
+  - mdx_superscript
