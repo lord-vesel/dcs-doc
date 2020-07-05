@@ -1,0 +1,6 @@
+mkdocs
+mkdocs-material
+markdownsuperscript
+mkdocs-awesome-pages-plugin
+git+https://github.com/jldiaz/mkdocs-plugin-tags
+git+https://github.com/stuebersystems/mkdocs-img2fig-plugin

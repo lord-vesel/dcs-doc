@@ -1,0 +1,13 @@
+.md-typeset h1 {
+    color: var(--md-default-fg-color);
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.md-typeset h2 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.md-typeset h3 {
+    font-size: 1.2rem;
+}

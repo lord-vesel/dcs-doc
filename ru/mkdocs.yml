@@ -1,0 +1,35 @@
+site_name: DCS Documentation Centralized
+nav:
+  - index.md
+  - "ВМВ":
+      - i16.md
+      - fw190a8.md
+  - tags.md
+        #      - "FW-190 A8 от ED":
+        #          - fw190a8/p1.md
+        #          - fw190a8/p2.md
+        #          - fw190a8/p3.md
+
+        #theme: readthedocs
+theme:
+  name: material
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+  palette:
+    primary: 'blue grey'
+    accent: blue
+
+extra_css:
+  - css/materal-add.css
+plugins:
+    - search:
+        lang: ['en', 'ru']
+        #- awesome-pages
+    - tags
+    - img2fig
+
+markdown_extensions:
+  - toc:
+      baselevel: 1
+      #  - mdx_superscript
