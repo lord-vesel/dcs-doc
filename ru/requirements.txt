@@ -1,5 +1,6 @@
 mkdocs
 mkdocs-material
 markdownsuperscript
+markdown-captions
 git+https://github.com/jldiaz/mkdocs-plugin-tags
 git+https://github.com/stuebersystems/mkdocs-img2fig-plugin

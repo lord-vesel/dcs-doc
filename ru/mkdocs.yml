@@ -27,11 +27,10 @@ extra_css:
 plugins:
     - search:
         lang: ['en', 'ru']
-        #- awesome-pages
     - tags
-    - img2fig
 
 markdown_extensions:
   - toc:
       baselevel: 1
   - mdx_superscript
+  - markdown_captions
