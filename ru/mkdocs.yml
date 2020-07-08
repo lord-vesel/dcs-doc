@@ -13,11 +13,12 @@ nav:
 #theme: readthedocs
 theme:
   name: material
+  language: ru
   font:
     text: 'Fira Sans'
     code: 'Fira Mono'
   palette:
-    primary: 'blue grey'
+    primary: indigo
     accent: blue
   features:
     - instant
@@ -34,3 +35,4 @@ markdown_extensions:
       baselevel: 1
   - mdx_superscript
   - markdown_captions
+  - admonition
