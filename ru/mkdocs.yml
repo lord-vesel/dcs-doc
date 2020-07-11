@@ -12,7 +12,7 @@ nav:
         - fw190a8/02.history.md
         - fw190a8/03.design.md
         - fw190a8/04.cockpit.md
-  - tags.md
+        - fw190a8/05.stdprocs.md
 
 #theme: readthedocs
 theme:
