@@ -7,7 +7,11 @@ nav:
   - index.md
   - "ВМВ":
       - i16.md
-      - fw190a8.md
+      - FW-190 A8 от ED:
+        - fw190a8/01.intro.md
+        - fw190a8/02.history.md
+        - fw190a8/03.design.md
+        - fw190a8/04.cockpit.md
   - tags.md
 
 #theme: readthedocs
