@@ -13,6 +13,8 @@ nav:
         - fw190a8/03.design.md
         - fw190a8/04.cockpit.md
         - fw190a8/05.stdprocs.md
+        - fw190a8/06.emerg.md
+        - fw190a8/07.combat.md
   - Современная авиация:
       - F/A-18C от ED:
           - fa18c/01.cockpit.md
