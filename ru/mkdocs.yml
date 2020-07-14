@@ -24,7 +24,7 @@ theme:
   name: material
   language: ru
   font:
-    text: 'Fira Sans'
+    text: 'Roboto Slab'
     code: 'Fira Mono'
   palette:
     primary: indigo

@@ -11,3 +11,9 @@
 .md-typeset h3 {
     font-size: 1.2rem;
 }
+.md-typeset table:not([class]) th {
+    padding: .1rem .3rem;
+}
+.md-typeset table:not([class]) td {
+    padding: .2rem .4rem;
+}
