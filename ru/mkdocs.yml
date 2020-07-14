@@ -5,7 +5,7 @@ edit_uri: edit/develop/ru/docs
 
 nav:
   - index.md
-  - "ВМВ":
+  - Вторая Мировая:
       - i16.md
       - FW-190 A8 от ED:
         - fw190a8/01.intro.md
@@ -13,6 +13,9 @@ nav:
         - fw190a8/03.design.md
         - fw190a8/04.cockpit.md
         - fw190a8/05.stdprocs.md
+  - Современная авиация:
+      - F/A-18C от ED:
+          - fa18c/01.cockpit.md
 
 #theme: readthedocs
 theme:
