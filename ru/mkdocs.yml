@@ -45,3 +45,5 @@ markdown_extensions:
   - mdx_superscript
   - markdown_captions
   - admonition
+  - kbdextension:
+      brackets_css: keyboard-css
