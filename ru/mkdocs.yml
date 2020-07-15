@@ -44,6 +44,8 @@ markdown_extensions:
       baselevel: 1
   - mdx_superscript
   - markdown_captions
+  - markdown_include.include
   - admonition
+  - abbr
   - kbdextension:
       brackets_css: keyboard-css
