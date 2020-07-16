@@ -5,7 +5,7 @@ edit_uri: edit/develop/ru/docs
 
 nav:
   - index.md
-  - "ВМВ":
+  - Вторая Мировая:
       - i16.md
       - FW-190 A8 от ED:
         - fw190a8/01.intro.md
@@ -21,7 +21,7 @@ theme:
   name: material
   language: ru
   font:
-    text: 'Fira Sans'
+    text: 'Roboto Slab'
     code: 'Fira Mono'
   palette:
     primary: indigo
@@ -41,4 +41,8 @@ markdown_extensions:
       baselevel: 1
   - mdx_superscript
   - markdown_captions
+  - markdown_include.include
   - admonition
+  - abbr
+  - kbdextension:
+      brackets_css: keyboard-css
