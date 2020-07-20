@@ -7,7 +7,10 @@ site_author: "rost.lunegoff@gmail.com"
 copyright: "<a href=https://t.me/rlunegov>Пишите в Telegram</a>"
 
 nav:
-  - index.md
+  - О проекте:
+      - index.md
+      - help.md
+      - people.md
   - Вторая Мировая:
       - i16.md
       - FW-190 A8 от ED:
