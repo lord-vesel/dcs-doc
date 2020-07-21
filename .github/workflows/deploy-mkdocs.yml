@@ -33,7 +33,14 @@ jobs:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: gh-dcs-deploy@lordvesel.win:/var/www/dcs-docs/dev/ru/
+        dest: gh-dcs-deploy@lordvesel.win:/var/www/dcs-docs/dev/releases/${{ github.run_number }}
 
-    - name: Display status from deploy
-      run: echo "${{ steps.deploy.outputs.status }}"
+    - name: Switch release
+      uses: appleboy/ssh-action@master
+      with:
+        host: lordvesel.win
+        username: gh-dcs-deploy
+        key: ${{ secrets.DEPLOY_KEY }}
+        script: |
+          ln -sfn /var/www/dcs-docs/dev/releases/${{ github.run_number }} /var/www/dcs-docs/dev/ru
+
