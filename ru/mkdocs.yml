@@ -23,8 +23,10 @@ nav:
         - fw190a8/07.combat.md
   - Современная авиация:
       - F/A-18C от ED:
+        - fa18c/10.a-a-mode.md
         - fa18c/11.counter-mesures.md
         - fa18c/12.ew.md
+        - fa18c/13.credits.md
 
 #theme: readthedocs
 theme:
