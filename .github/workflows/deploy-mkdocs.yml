@@ -2,9 +2,7 @@ name: Build DCS docs
 
 on:
   push:
-    branches: [ develop ]
-  pull_request:
-    branches: [ master ]
+    branches: [ master, develop ]
 
 jobs:
   build:
