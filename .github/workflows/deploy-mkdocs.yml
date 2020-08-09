@@ -12,8 +12,8 @@ jobs:
       DEPLLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
       PROJECT_DIR: /var/www/dcs-docs
-      RELEASE_DIR: ${{env.PROJECT_DIR}}/${{env.GITHUB_REF}}/releases/${{ github.run_number }}
-      CURRENT_DIR: ${{env.PROJECT_DIR}}/${{env.GITHUB_REF}}/ru
+      RELEASE_DIR: ${PROJECT_DIR}/${GITHUB_REF}/releases/${{ github.run_number }}
+      CURRENT_DIR: ${PROJECT_DIR}/${GITHUB_REF}/ru
     runs-on: ubuntu-latest
 
     steps:
