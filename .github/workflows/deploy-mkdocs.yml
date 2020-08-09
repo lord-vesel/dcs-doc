@@ -12,8 +12,8 @@ jobs:
       DEPLLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
       PROJECT_DIR: /var/www/dcs-docs
-      RELEASE_DIR: $PROJECT_DIR/$GITHUB_REF/releases/$GITHUB_RUN_NUMBER
-      CURRENT_DIR: $PROJECT_DIR/$GITHUB_REF/ru
+      RELEASE_DIR: ${{env.PROJECT_DIR}}/${{env.GITHUB_REF}}/releases/${{ github.run_number }}
+      CURRENT_DIR: ${{env.PROJECT_DIR}}/${{env.GITHUB_REF}}/ru
     runs-on: ubuntu-latest
 
     steps:
@@ -35,8 +35,8 @@ jobs:
     - name: Prepare environment
       uses: appleboy/ssh-action@master
       with:
-        host: $DEPLOY_HOST
-        username: $DEPLLOY_USER
+        host: ${{ env.DEPLOY_HOST }}
+        username: ${{ env.DEPLOY_USER }}
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
           [[ -d $RELEASE_DIR ]] || mkdir -p $RELEASE_DIR
@@ -47,13 +47,13 @@ jobs:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: $DEPLLOY_USER@$DEPLOY_HOST:$RELEASE_DIR
+        dest: ${{env.DEPLLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}
 
     - name: Switch release
       uses: appleboy/ssh-action@master
       with:
-        host: $DEPLOY_HOST
-        username: $DEPLLOY_USER
+        host: ${{ env.DEPLOY_HOST}}
+        username: ${{env.DEPLOY_USER}}
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
           ln -sfn $RELEASE_DIR $CURRENT_DIR
