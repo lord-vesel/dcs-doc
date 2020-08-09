@@ -8,7 +8,11 @@ on:
 
 jobs:
   build:
-
+    env:
+      DEPLOY_USER: gh-dcs-deploy
+      DEPLOY_HOST: lordvesel.win
+      RELEASE_DIR: /var/www/dcs-docs/${{ github.ref }}/releases/${{ github.run_number }}
+      CURRENT_DIR: /var/www/dcs-docs/${{ github.ref }}/ru
     runs-on: ubuntu-latest
 
     steps:
@@ -27,13 +31,28 @@ jobs:
         mkdocs build
         ls -al
 
+    - name: Prepare environment
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ env.DEPLOY_HOST }}
+        username: ${{ env.DEPLOY_USER }}
+        key: ${{ secrets.DEPLOY_KEY }}
+        script: |
+          [[ -d ${{env.RELEASE_DIR}} ]] || mkdir -p ${{env.RELEASE_DIR}}
+
     - name: Upload
       uses: Pendect/action-rsyncer@v1.1.0
       env:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: gh-dcs-deploy@lordvesel.win:/var/www/dcs-docs/dev/ru/
+        dest: ${{env.DEPLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}
 
-    - name: Display status from deploy
-      run: echo "${{ steps.deploy.outputs.status }}"
+    - name: Switch release
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ env.DEPLOY_HOST}}
+        username: ${{env.DEPLOY_USER}}
+        key: ${{ secrets.DEPLOY_KEY }}
+        script: |
+          ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
