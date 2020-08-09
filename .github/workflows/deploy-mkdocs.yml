@@ -2,13 +2,18 @@ name: Build DCS docs
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ develop, fa18 ]
   pull_request:
     branches: [ master ]
 
 jobs:
   build:
-
+    env:
+      DEPLLOY_USER: gh-dcs-deploy
+      DEPLOY_HOST: lordvesel.win
+      PROJECT_DIR: /var/www/dcs-docs
+      RELEASE_DIR: $PROJECT_DIR/$GITHUB_REF/releases/$GITHUB_RUN_NUMBER
+      CURRENT_DIR: $PROJECT_DIR/$GITHUB_REF/ru
     runs-on: ubuntu-latest
 
     steps:
@@ -27,20 +32,29 @@ jobs:
         mkdocs build
         ls -al
 
+    - name: Prepare environment
+      uses: appleboy/ssh-action@master
+      with:
+        host: $DEPLOY_HOST
+        username: $DEPLLOY_USER
+        key: ${{ secrets.DEPLOY_KEY }}
+        script: |
+          [[ -d $RELEASE_DIR ]] || mkdir -p $RELEASE_DIR
+
     - name: Upload
       uses: Pendect/action-rsyncer@v1.1.0
       env:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: gh-dcs-deploy@lordvesel.win:/var/www/dcs-docs/dev/releases/${{ github.run_number }}
+        dest: $DEPLLOY_USER@$DEPLOY_HOST:$RELEASE_DIR
 
     - name: Switch release
       uses: appleboy/ssh-action@master
       with:
-        host: lordvesel.win
-        username: gh-dcs-deploy
+        host: $DEPLOY_HOST
+        username: $DEPLLOY_USER
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
-          ln -sfn /var/www/dcs-docs/dev/releases/${{ github.run_number }} /var/www/dcs-docs/dev/ru
+          ln -sfn $RELEASE_DIR $CURRENT_DIR
 
