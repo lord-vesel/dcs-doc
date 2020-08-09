@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     env:
-      DEPLLOY_USER: gh-dcs-deploy
+      DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
       PROJECT_DIR: /var/www/dcs-docs
       RELEASE_DIR: ${PROJECT_DIR}/${GITHUB_REF}/releases/${{ github.run_number }}
@@ -47,7 +47,7 @@ jobs:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: ${{env.DEPLLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}
+        dest: ${{env.DEPLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}
 
     - name: Switch release
       uses: appleboy/ssh-action@master
