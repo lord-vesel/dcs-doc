@@ -11,6 +11,17 @@
 .md-typeset h3 {
     font-size: 1.2rem;
 }
+.md-typeset h4 {
+    margin: 1em 0;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+.md-typeset h5 {
+    margin: 1.25em 0;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--md-typeset-color);
+}
 .md-typeset table:not([class]) th {
     padding: .1rem .3rem;
 }
@@ -25,4 +36,12 @@ kbd.keyboard-css {
     border-radius: 3px;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.md-typeset figure {
+    text-align: left;
+}
+.md-typeset figcaption {
+    max-width: 100%;
+    margin: .5em auto;
+    font-style: italic;
 }
