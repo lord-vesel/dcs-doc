@@ -2,20 +2,32 @@ site_name: DCS Documentation Centralized
 repo_url: https://github.com/lord-vesel/dcs-doc
 repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
+google_analytics: ['UA-19502035-4', 'dcs-docs.lordvesel.win/ru/']
+site_author: "rost.lunegoff@gmail.com"
+copyright: "<a href=https://t.me/rlunegov>Пишите в Telegram</a>"
 
 nav:
-  - index.md
-  - "ВМВ":
+  - О проекте:
+      - index.md
+      - help.md
+      - people.md
+  - Вторая Мировая:
       - i16.md
-      - fw190a8.md
-  - tags.md
+      - FW-190 A8 от ED:
+        - fw190a8/01.intro.md
+        - fw190a8/02.history.md
+        - fw190a8/03.design.md
+        - fw190a8/04.cockpit.md
+        - fw190a8/05.stdprocs.md
+        - fw190a8/06.emerg.md
+        - fw190a8/07.combat.md
 
 #theme: readthedocs
 theme:
   name: material
   language: ru
   font:
-    text: 'Fira Sans'
+    text: 'Roboto Slab'
     code: 'Fira Mono'
   palette:
     primary: indigo
@@ -35,4 +47,8 @@ markdown_extensions:
       baselevel: 1
   - mdx_superscript
   - markdown_captions
+  - markdown_include.include
   - admonition
+  - abbr
+  - kbdextension:
+      brackets_css: keyboard-css
