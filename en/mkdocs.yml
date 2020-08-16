@@ -7,7 +7,7 @@ site_author: "rost.lunegoff@gmail.com"
 copyright: "<a href=https://t.me/rlunegov>Telegram</a>"
 
 nav:
-  - О проекте:
+  - About:
       - index.md
       - help.md
       - people.md
@@ -15,7 +15,7 @@ nav:
 #theme: readthedocs
 theme:
   name: material
-  language: ru
+  language: en
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
