@@ -10,22 +10,32 @@ jobs:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
       RELEASE_DIR: /var/www/dcs-docs/${{ github.ref }}/releases/${{ github.run_number }}
-      CURRENT_DIR: /var/www/dcs-docs/${{ github.ref }}/ru
+      CURRENT_DIR: /var/www/dcs-docs/${{ github.ref }}/current
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r ru/requirements.txt
-    - name: Build ru site
+
+    - name: Build RU site
       run: |
-        cd ru
+        cd $GITHUB_WORKSPACE/ru
+        mkdocs build
+        ls -al
+
+    - name: Build EN site
+      run: |
+        cd $GITHUB_WORKSPACE/en
         mkdocs build
         ls -al
 
@@ -36,15 +46,24 @@ jobs:
         username: ${{ env.DEPLOY_USER }}
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
-          [[ -d ${{env.RELEASE_DIR}} ]] || mkdir -p ${{env.RELEASE_DIR}}
+          [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
+          [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
 
-    - name: Upload
+    - name: Upload RU
       uses: Pendect/action-rsyncer@v1.1.0
       env:
         DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
       with:
         src: ru/site/
-        dest: ${{env.DEPLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}
+        dest: ${{env.DEPLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}/ru/
+
+    - name: Upload EN
+      uses: Pendect/action-rsyncer@v1.1.0
+      env:
+        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+      with:
+        src: en/site/
+        dest: ${{env.DEPLOY_USER}}@${{env.DEPLOY_HOST}}:${{env.RELEASE_DIR}}/en/
 
     - name: Switch release
       uses: appleboy/ssh-action@master
