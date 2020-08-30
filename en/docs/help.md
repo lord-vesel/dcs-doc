@@ -37,21 +37,20 @@ Screenshot image must not include shadow if it exists in original PDF.
 
 ### Markdown editors
 
-Под виндовз:
+For windows:
 
-[Markdown Monster](https://markdownmonster.west-wind.com/): крайне хорош, способен вставлять картинки из буфера и сохранять их в подкаталоге.
-Платный, хотя, как будто бы работает и незарегистрированным.
+[Markdown Monster](https://markdownmonster.west-wind.com/): Ability to paste images from clipboard and save to subdirectory.
 
 ![](img/help/mm.jpg)
 
-[Typora](https://typora.io/#windows): бесплатен, умеет работать с картинками из буфера (для этого нужно указать относительность путей в настройках).
-Редактирование визуальное, что не всегда удобно. Рекомендуется с осторожностью.
+[Typora](https://typora.io/#windows): Ability to paste images from clipboard, saving to subdirectory must be enabled in settings.
+Offers visual editing, which is not always convinient.
 
 ![](img/help/typora.jpg)
 
-### Ожидаемый результат
+### What we get
 
-Переработанная документация к модулю должна быть представлена в виде каталога с файлами .md, один на каждую главу, а так же подкаталогом с иллюстрациями.
+Converted documentation must be presented as directory containg .md files, one per chapter, and subdirectory contaning images.
 
 ## Коротко о синтаксисе маркдауна
 
