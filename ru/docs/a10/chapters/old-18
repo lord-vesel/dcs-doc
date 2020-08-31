@@ -1,0 +1,254 @@
+РАЗРАБОТЧИКИ
+
+
+Менеджмент
+Nick Grey Директор проекта, от The Fighter Collection
+Игорь Тишин Руководитель проекта,
+директор Eagle Dynamics, Россия
+Андрей "Chizh" Чиж Продюсер, QA менеджер, документация
+Александр Бабичев Менеджер проектов
+Matt "Wags" Wagner Продюсер, документация
+Jim "JimMack" MacKonochie Продюсер
+Eugene "EvilBivol-1" Bivol Со-продюсер, комьюнити менеджер
+
+
+
+
+Программисты
+Дмитрий Байков Архитектура, мультиплеер, звуковой движок
+
+Илья Белов GUI, инпут
+
+Николай Брезин Поддержка формата EDM, эффекты
+
+Максим Зеленский ЛА, ИИ ЛА, динамика полета,
+модель повреждений
+
+Андрей Коваленко ИИ ЛА. оружие
+
+Илья "Dmut" Левошевич ИИ наземных объектов, корабли
+
+Александр Ойкин Авионика, системы ЛА
+
+Евгений Подъячев Графика, плагины, система сборки
+Алексей Смирнов Графика, эффекты
+
+Тимур Иванов Графика, эффекты, облака
+
+Константин Степанович ИИ ЛА, оружие, радио
+
+Олег "Olgerd" Тищенко Авионика
+
+Владимир Феофанов Динамика ИИ ЛА, СФМ
+
+Сергей "Клен" Чернов Сенсоры, оружие
+
+Алексей "Fisben" Шукайло Авионика
+
+Григорий Якушев Графика
+
+Кирилл Косарев ИИ наземных объектов, инсталлятор, генератор
+миссий
+
+Александр "SFINX" Курбатов ИИ наземных объектов, корабли
+
+Виталий Перепелкин Авионика
+
+Михаил Андреев Авионика
+
+Евгений Грибович Авионика
+
+Дмитрий Робустов Земля
+
+Денис Татаринцев Земля
+
+Алексей Петручик Земля
+
+Дмитрий Каплин Земля
+
+Олег "Legus" Прядко Оружие
+
+Сергей "Lemon Lime" Чернов Динамическая атмосфера
+
+
+
+
+Дизайнеры и звук
+Юрий "SuperVasya" Братухин ЛА, наземные объекты, оружие
+Александр "Skylark" Дранников GUI, ЛА
+
+Влад "Stavr" Куприн Кабина A-10C
+
+Станислав "Acgaen" Колесников Кабины, ЛА, оружие
+
+Тимур Цыганков ЛА, наземные объекты
+
+Евгений "GK" Хижняк ЛА, техника
+
+Павел "DJambo" Сидоров ЛА
+
+Константин Кузнецов Звуки, музыка
+
+Кирилл Грушевич Сооружения, земля
+
+Сергей Ашуйко Сооружения, земля
+
+Константин Миранович Сооружения, земля
+
+Максим Лопаткин Сооружения, земля
+
+Ольга Старовойтова Сооружения, земля
+
+Павел Янковский Сооружения
+
+Андрей "LISA" Решетко Персонажи
+
+
+
+
+Quality Assurance
+Юрий "Ulrich" Ткачев Тестирование
+Валерий "USSR_Rik" Хоменок Тестирование
+Иван "Frogfoot" Макаров Тестирование
+Андрей "Андрей_Андреевич" Локализация
+Крюченко
+Научная поддержка
+Дмитрий "Yo-Yo" Москаленко Разработка математических моделей:
+динамика, системы, баллистика
+Александр "PilotMi8" Подвойский Документация по редактору миссий
+
+
+
+
+IT and Customer Support
+Александр "Tez" Соболь Поддержка пользователей
+
+Константин "Const" Боровик Системный администратор, WEB, форум
+
+
+
+
+Кампании
+Matt "Wags" Wagner, "Georgian Hammer"
+Олег "Dzen" Федоренко, "А-10С Штурмовик"
+
+
+
+
+Миссии
+Matt "Wags" Wagner:
+Battle Commander, CSAR, Defend Camp Yankee, Free Flight - Black Sea - Air Start, Free Flight - Black
+Sea - Ramp Start, Free Flight - Black Sea - Runway Start, Sitting Ducks, Khashuri Gap, Overwatch,
+River Raider, Shooting Gallery, Surrounded!, Tank Platoon Commander, In the Weeds - Coop 4,
+миссии быстрого старта.
+Микита "L0ckAndL0ad" Мачатов:
+Hideout, Midnight Train to Georgia, Sunset Sierra.
+Stephen "Nate--IRL--" Barrett:
+Serpents Head, Serpents Tail.
+Frank "Feuerfalke" Bender:
+Weapons Training.
+Тренировочный курс
+Eugene "EvilBivol-1" Bivol
+
+
+
+
+Консультанты
+Пилоты A-10
+David "Leather" Draper
+Kevin "Stubby" Campbell
+Tom Harritt
+Andy Bush
+
+
+Авианаводчики
+Brian "Paco" Filler
+Eric Johnson
+
+
+Greg "Corky" Brown
+Tom Nelson
+
+
+
+
+Внешние разработчики
+Cato "Glowing Amraam" Bye - видео
+Greg Pugliese - корректура мануала пилота
+Zachary Sesar - карта Невады
+Jacob English - карта Невады
+Валерий "Valery" Мягкий, текстуры A-10C (Россия, Израиль, Канада)
+Антон "Flаnker" Голубенко, текстуры A-10C (Россия, Украина, Норвегия), С-130
+Erich "ViperVJG73" Schwarz, текстуры A-10C (Германия)
+Озвучка
+TallCat Studios, Phoenix, AZ (AI Flights, AWACS, Tanker, and ATC)
+Shane Stevens (Player) http://www.imdb.com/name/nm0828772/
+William E. "Hammer" Crudup III (Training Instructor)
+Matt Wagner (JTAC)
+
+
+
+
+Тестеры
+Gavin "159th_Viper" Torr
+Николай "Agm" Борисов
+Tikhomir "AirTito" Ivanov
+Darrell "AlphaOneSix" Swoap
+Enrique "Reisen" González Sánchez
+Guillaume "Berkout" Ring
+Dmitry "Condor11" Stepanchuk
+Pascal "Cougar" Bidegare
+Carlos "Design" Pastor Mendez
+Guillaume "Dimebug" Leleve
+Роман "Dr.lex" Подвойский
+Валерий "=FV=BlackDragon" Манасян
+James "Eddie" Knight
+Kiko "Mistral" Becerra
+Daniel "EtherealN" Agorander
+Владимир "Foxbat" Ангуладзе
+Frank "Feuerfalke" Bender
+Семен "=FV=MAD" Зимин
+George "GGTharos" Lianeris
+Matthias "Groove" Techmanski
+Igor "=MAF=Mongoose" Chkorov
+Дмитрий "Laivynas" Кошелев
+Zachary "Luckybob9" Sesar
+Ed "Manawar" Green
+Геннадий "Marks" Тагильцев
+Marc "MBot" Marbot
+Michael "MoGas" Stobbe
+Stephen "Nate--IRL--" Barrett
+Craig "Nemises" Reynolds
+Jon Espen "Panzertard" Carlsen
+Andrius "Peyoteros" Vaitkevicius
+Paul "PoleCat" Johnston
+Roberto "Radar Rider" Benedí García
+Максим "RIMM" Бойцов
+Rick "rjetster" Ladomade
+Bart "Ross" Rosselle
+Mark "Shepski" Shepheard
+Steve Davies
+Roberto "Vibora" Seoane Penas
+Erich "ViperVJG73" Schwarz
+Peter "Weta43" McAllister
+Jacob "Zimster" English
+
+
+
+
+Русская команда переводчиков
+Максим "=YES=Maxik" Целиков
+Александр "BillyCrusher" Билиевский
+Павел "Pabel89" Джеванширов
+Микита "L0ckAndL0ad" Мачатов
+Дмитрий "JGr124_MUTbKA" Карасев
+Владимир "Lester" Иванов
+Гумар "GUMAR" Мустафин
+Евгений "kren_77" Жиленков
+Глеб "g0l0vastik" Ивановский
+Александр "Hitryi" Хитров
+Виктор "Viktor_s" Лыков
+Станислав "SK" Ковалевский
+Алексей "tester" Гречка
+Валерий "diagnost" Набатов
+Алексей "lexusmuse" Ермаков
