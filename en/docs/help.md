@@ -2,58 +2,55 @@
 
 ## How it works
 
-Каждая страница, отображаемая в главном меню, изначально представляет из себя файл .md в формате [Markdown](https://www.markdownguide.org/getting-started/).
-Движком [mkdocs](https://www.mkdocs.org/) из маркдауна и картинок формируется статический веб-сайт.
-Со структурой файлов и конфигурацией движка можно ознакомиться на [гитхабе](https://github.com/lord-vesel/dcs-doc/).
+Every page presented in main menu basically is a [Markdown](https://www.markdownguide.org/getting-started/) .md file. 
+The site is built with [Mkdocs](https://www.mkdocs.org/) from markdown files and images.
+One can examine raw files contents and structure on [github repository page](https://github.com/lord-vesel/dcs-doc/).
 
-## Организация рабочего процесса
+## Workflow
 
-### Экспорт данных из пдф
+### Exporting PDF data
 
-Для этого, например, можно использовать утилиты `pdftotext` и `pdfimages` из пакета [poppler-utils](http://poppler.freedesktop.org).
-Либо, обратиться к автору проекта за исходниками для работы.
+To export data [poppler-utils](http://poppler.freedesktop.org) `pdftotext` and `pdfimages` may be used. 
+Alternatively exported text may be obtained from [project lead](people.md).
 
-Рекомендуемые опции pdftotext: `-nopgbrk -y 60 -W 1280 -H 500 -layout`
+pdftotext recommended options: `-nopgbrk -y 60 -W 1280 -H 600 -layout`
 
-Получившийся текст нужно разделить на отдельные файлы, содержащие главы, и работать с каждой отдельно, формируя .md-файлы.
+Exported text must be splitted to chapters, one per .md file.
 
-Каждый файл должен содержать только [один заголовок первого уровня](/help/#_12), из него формируется название в главном меню.
+One file may contain only one [first level header](/help/#_12).
 
-### Работа с иллюстрациями
+### Working with images
 
-Все картинки должны быть расположены в подкаталоге относительно файлов .md, ссылки на них должны быть относительные, например, `![](img/89-2.jpg)`.
+Images are stored in a subfolder relativly to markdown files. Links to images must be relative `![](img/89-2.jpg)`.
 
-Не все экспортированные картинки подходят для использования, например, те, что имеют оранжевые аннотации в пдф, экспортируются без них:
+Orange notes over images are not exported, such images should to be screnshot.
 
 ![](img/help/image-20200720232437233.png)
 
-Такие приходится скриншотить каждую в отдельности.
+#### Image requirements
 
-#### Требования
+Naming: page number - dash - position on page (71-1.jpg).
 
-Именование картинок: номер страницы, дефис, номер на странице (71-1.jpg).
+Up to 1000px width, 80% compression.
 
-Размер не более 1000рх по ширине, достаточно 200% масштаба пдф для оскриншочивания. Сжатие - 80%
+Screenshot image must not include shadow if it exists in original PDF.
 
-Тень под картинкой, если имеется, в скриншот попадать не должна.
+### Markdown editors
 
-### Редакторы маркдауна
+For windows:
 
-Под виндовз:
-
-[Markdown Monster](https://markdownmonster.west-wind.com/): крайне хорош, способен вставлять картинки из буфера и сохранять их в подкаталоге.
-Платный, хотя, как будто бы работает и незарегистрированным.
+[Markdown Monster](https://markdownmonster.west-wind.com/): Ability to paste images from clipboard and save to subdirectory.
 
 ![](img/help/mm.jpg)
 
-[Typora](https://typora.io/#windows): бесплатен, умеет работать с картинками из буфера (для этого нужно указать относительность путей в настройках).
-Редактирование визуальное, что не всегда удобно. Рекомендуется с осторожностью.
+[Typora](https://typora.io/#windows): Ability to paste images from clipboard, saving to subdirectory must be enabled in settings.
+Offers visual editing, which is not always convinient.
 
 ![](img/help/typora.jpg)
 
-### Ожидаемый результат
+### What we get
 
-Переработанная документация к модулю должна быть представлена в виде каталога с файлами .md, один на каждую главу, а так же подкаталогом с иллюстрациями.
+Converted documentation must be presented as directory containg .md files, one per chapter, and subdirectory contaning images.
 
 ## Коротко о синтаксисе маркдауна
 
