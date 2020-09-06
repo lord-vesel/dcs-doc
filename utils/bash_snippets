@@ -4,3 +4,4 @@ sed -E 's/\ \[([A-Za-z0-9]+)\]/\ \[\[\1\]\]/g; s/\ \[([A-Za-z0-9\ ]+)\ ?+\+\ ?+(
 
 sed -E 's/\|\ ?+([A-Za-z0-9\ ]+)\ ?+\|/\[\[\1\]\]/g; s/\|\ ?+([A-Za-z0-9\ ]+)\ ?+\+\ ?+([A-Za-z0-9\ ]+)\ ?+\|/\[\[\1\]\]\ \+\ \[\[\2\]\]/g; s/\|\ ?+([A-Za-z0-9\ ]+)\ ?+\+\ ?+([A-Za-z0-9\ ]+)\ ?+\+\ ?+([A-Za-z0-9\ ]+)\ ?+\|/\[\[\1\]\]\ \+\ \[\[\2\]\]\ \+\ \[\[\3\]\]/g' -i $1
 
+first=""; for i in *; do if [[ -z $first ]]; then first=$i; else convert $first \( $i -colorspace gray -alpha off \) -compose copy-opacity -composite ${first/.*/}-transp.png; first="";fi; done

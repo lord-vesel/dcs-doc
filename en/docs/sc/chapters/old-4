@@ -1,658 +1,3 @@
-QUICKSTART GUIDE
-How do I install this module?
-Upon first starting DCS World after purchasing DCS: Supercarrier, you will first want to install the module. To do
-so, select the Module Manager along the top of the Main Menu page:
-
-
-
-
-Once selected, the Module Manager will automatically prompt you to install DCS: Supercarrier.
-
-
-How do I know the module is installed?
-You should now have DCS: Supercarrier installed and have its icon along the bottom of your Main Menu page.
-You may need to use the left and right arrows at the ends of the icon bar to find it. From the icon, you can select
-it as your Main Menu wallpaper.
-How do I select a Supercarrier mission?
-All missions on the Supercarrier are found in the aircraft Missions. There is not a Supercarrier Missions list. For
-instance: to select F/A-18C Hornet missions that operate from the Supercarrier, select Missions from the Main
-Menu page, and then select the F/A-18C.
-Included are Hornet Supercarrier missions on both the Black Sea and Persian Gulf maps for:
-          •    Cold Start
-          •    Launch Start from Catapult
-          •    Case I Recovery (daylight landing)
-          •    Case II Recovery (reduced visibility)
-          •    Case III Recovery (night landing)
-To get you started, select the “Mission Qualification – Supercarrier Launch” mission. This will place you hooked
-up to catapult 1 and ready to go.
-Creating Your Own Mission
-Once you have mastered the included familiarization Missions, you may wish to create your own using the
-Mission Editor. Let’s go over some of the basics of how to add a Supercarrier.
-Select the Mission Editor option from the Main Menu.
-
-
-
-
-Next, select Create New Mission.
-The next step is to select the map you wish to use as your canvas and the countries that will take part. In this
-example, I have chosen the Persian Gulf map with the default Modern arrangement of countries to the Blue and
-Red sides. Once ready, press the green OK button in the bottom right corner.
-
-
-
-
-Welcome to the Mission Editor (ME)! This is a powerful system, but it can also be complex. Let’s go over the
-very basics of adding a Supercarrier to a mission. From the Tool Bar along the left side of the ME, select the
-ship icon. With that selected, the Naval Group options are displayed along the right side of the ME. To select a
-Supercarrier:
-     1.   Select Country to USA
-     2.   Select Type to CVN-71 Theodore Roosevelt (you can select any of the listed CVNs)
-
-Once set, left mouse-click on any sea area of the ME to create its starting location.
-The Supercarrier location appears as a stylized icon with its air defense weapon search (yellow) and
-engagement (red) circles around it.
-With the ADD button selected, left click again on the map to set the Supercarriers first navigation point.
-Subsequent left mouse button clicks add more navigation points to create a route the Supercarrier will follow.
-By selecting the EDIT button to the right of the ADD button, you can left mouse button click on a navigation
-point to edit it, including holding down the left mouse button over the point and dragging it to a new location.
-With the navigation point selected, you can adjust the speed of the supercarrier. With no wind, it is best to have
-speed between 20 and 30 knots.
-
-
-
-
-With the Supercarrier placed, you can then add an F/A-18C Hornet to the mission and place its first waypoint
-next to the carrier. You can then set its first waypoint from the Type waypoint list to have it start on a catapult
-(Takeoff from runway), start ready to go at a parking spot, or start from a cold and dark aircraft in the parking
-area.
-This was a brief overview to get you started. More detailed information can be found in the DCS: World manual,
-with step by step guides to setting up the following:
-     •         Set TACAN channel
-     •         Set ICLS channel
-     •         Set Rules of Engagement
-     •         Setting weather conditions that include wind direction and speed
-     •         Setting radio frequency
-
-
-
-
-Catapult Start
-As mentioned, the Mission Designer can elect to start your aircraft on a catapult or at one of the parking
-locations. If you start on a catapult, you simply need to provide the Salute command to the deck crew and away
-you go. This can be done either with the key command Left Shift + Left Control + S or pressing \ to bring up the
-radio menu dialog:
-Select F11. Parent Menu
-
-
-
-
-Select F8. Ground Crew…
-
-
-
-
-Select F6. Salute!
-Taxi to Catapult
-If you find yourself at one of the parking locations in either a cold and dark aircraft or one ready to go, you will
-need to taxi to a takeoff catapult. There are four catapults located on the Supercarrier: two on the bow and two
-along the waist.
-
-
-
-
-Behind each catapult is a Jet Blast Deflector (JBD). When you taxi to a catapult, taxi to approach the catapult
-from directly behind it and slowly move forward until the taxi director (yellow shirt) on the catapult directs you.
-
-
-
-
-Based on other aircraft being launched, this may not be immediate. Sit tight and the taxi director will bring you
-onto the catapult once they are ready.
-The catapult hook-up procedure is detailed in the Launch Operations section below.
-Returning to the Boat
-Recovery (landing) operations are more complicated than launching. These are explained in detail within the
-Recovery Operations section below.
-
-
-
-
-Fly Safe and Have Fun
-We hope this gets you up and flying with DCS: Supercarrier. Please remember that the following sections are
-available to provide detailed instruction on both launches, and more importantly, recovery operations. It also
-discusses other elements of the module that include the Landing Signal Officer (LSO) station, the landing
-grading scores, and more.
-THE NIMITZ CLASS AIRCRAFT CARRIER
-Overview
-The Nimitz class aircraft carrier (CVN) is a set of ten nuclear powered aircraft carriers currently in service with
-the US Navy. The general arrangement of these ships is similar to the previous Kitty Hawk class with a large
-4.5-acre flight deck with an island structure on the starboard side reaching nearly 20 stories tall. The angled
-deck used for landing is canted approximately 14 degrees to port and is almost 800 feet long. Four high speed
-aircraft elevators, each more than 4,000 square feet, bring planes to the flight deck from the hangar below.
-
-
-
-
-     •    Displacement: 72,916 tons light, 96,000 - 102,000 full load.
-     •    Length: 1040 feet along the flight deck (317 meters).
-     •    Beam: 252 feet (76.8 meters).
-     •    Speed: 30+ knots (34.5+ miles per hour).
-     •    Power Plant: Two nuclear reactors, four geared steam turbines, four propellers (thirteen to fifteen
-          years between refueling or 800,000 to 1,000,000 miles).
-     •    Complement: 3,200 regular ship’s compliment + 2,480 Air Wing personnel.
-     •    Defense: Four NATO Sea Sparrow, three to four 20mm Vulcan Phalanx CIWS.
-     •    Air Wing (including legacy): 70-80 aircraft including F-14s, F/A-18s, EA-6Bs, E-2Cs, S-3A/Bs, C-2s,
-          SH-60Fs, HH-60Hs.
-
-
-The DCS: Supercarrier module represents the Theodore Roosevelt subclass of the Nimitz carrier, often referred
-to as the improved Nimitz class. The hulls available here include:
-CVN-71 Theodore Roosevelt. (TR, Big Stick) Date commissioned: 25 Oct 1986
-CVN-72 Abraham Lincoln. (Abe) Date commissioned: 11 Nov 1989
-CVN-73 George Washington. (The Spirit of Freedom, GW, G-Dub) Date commissioned: 04 Jul 1992
-Flight Deck Layout and Equipment
-The enormous flight deck of a Nimitz class carrier is the core of its offensive capability. During flight operations,
-it is regarded as one of the most dangerous places in the world to work.
-
-
-
-
-Catapults
-Four catapults are available to ‘slingshot’ aircraft off the deck and into the air. Catapults one and two are located
-on the bow while catapult three and four are located on the waist. Together, on average these can launch one
-aircraft every 20 seconds. The launch is initiated by personnel situated in the Integrated Catapult Control
-Station (ICCS), also called the “bubble”. This is a small dome located between catapult 1 and 2 on the bow and
-left of catapult 4 on the waist.
-These are steam powered catapults with two cylinders running the length of each track. A piston on each
-cylinder connects to a shuttle that extends out of each track. The launching aircraft taxis so the launch bar at its
-nose wheel connects to the shuttle. At launch, high pressure steam is ported into the cylinders. This forces the
-shuttle down the track at high speed, launching the aircraft. A water brake slows the shuttle at the end of the run
-so it can be retracted for the next launch.
-Jet Blast Deflectors
-These heavy-duty panels are located behind each catapult to deflect high speed exhaust produced by
-launching aircraft’s engines. Hydraulic cylinders raise each panel into place upward at a 45 degree angle. A
-seawater cooling system is installed in each to prevent damage from hot engine exhaust. These are retracted
-when not in use and sit flush with the deck.
-Arresting Gear
-Four steel arresting cables, also known as cross-deck pendants, span the landing area. The aircraft’s tailhook
-connects to one of these cables on touchdown, hauling the aircraft to a stop in about 300 feet.
-The cables are made of braided steel strands with a polyester core for flexibility. Each end is connected to an
-arresting engine below deck via a purchase cable. The arresting engines are hydro-pneumatic systems that use
-a ram and fluid within a cylinder to absorb and disperse the energy of the arrestment.
-
-
-
-
-Cables are numbered one through four from back to front. Although there are four cables, the visual approach
-aids are calibrated so the aircraft will catch the three wire on a well-executed approach. Landing short at the
-one wire risks a ramp strike at the end of the ship. Landing long at the four wire risks missing the cables
-altogether, known as a ‘bolter’.
-Hangar Bay
-The hangar bay is located two decks below the flight deck and spans approximately two-thirds of the total
-length of the carrier. The bay is divided into three areas separated by massive sliding doors that are intended to
-limit the damage in the event of a fire or explosion.
-The hangar bay is used for aircraft maintenance, as well as spare parts and equipment storage.
-
-
-
-
-Elevators
-Four large elevators provide for movement of aircraft to and from the hangar bay and flight deck. Each can hold
-two aircraft or about 150,000 lbs of equipment.
-In addition to the four main elevators, there are several small weapons elevators located around the flight deck.
-Flight Deck Personnel
-The DCS: Supercarrier module includes deck crew who will direct you into position on the catapults and perform
-steps necessary to launch your aircraft. Additional crew members may also be placed on deck by mission
-designers.
-All personnel on the flight deck wear colored jerseys that indicate their role.
-
-
-
-                            Yellow Shirts
-                            These include the Plane Directors who will guide you around the deck and into
-                            position for launch. All taxi guidance comes from these personnel.
-                            Other yellow shirts include Flight Deck Officers, Arresting Gear Officers, Catapult
-                            Officers (Shooters), Catapult Spotters and Aircraft Handling Officers.
-
-
-
-
-                            Green Shirts
-                            You will encounter these personnel during launch as Catapult and Arresting Gear
-                            crews position the holdback bar and ensure proper attachment to the catapult
-                            shuttle. Maintenance personnel of various specialties may also be on hand to
-                            troubleshoot last minute problems with the aircraft.
-                            Other green shirts include Helicopter Landing Signal Enlisted (LSE), Cargo-handling
-                            personnel, Ground support equipment troubleshooters, Hook runners and
-                            Photographers mates
-
-
-
-                            Brown Shirts
-                            These include Plane Captains and Line Petty Officers. Aircraft general maintenance
-                            and servicing is performed by these personnel. They are responsible for the safe
-                            operation of the aircraft in flight and are often referred to as ‘owning’ the aircraft.
-
-
-
-
-                            Blue Shirts
-                            These personnel position aircraft on the deck when they are not being taxied by the
-                            pilot. They include Aircraft handlers (pushers, chockers, chainers, etc.), Tractor
-                            Drivers, Messengers and Phone Talkers and Elevator Operators.
-Purple Shirts
-These are the Fueling personnel who are responsible for safely refueling aircraft and
-equipment on deck. This is an important job due to the extreme risk fire poses to a
-crowded flight deck.
-
-
-
-
-Red Shirts
-These are the Aviation Ordnancemen who build, test, transport, and load weapons
-on the aircraft. They also test and maintain the aircraft gun systems, as well as
-avionics and release equipment used to employ weapons in the air.
-Crash and salvage crews and Explosive Ordnance Disposal (EOD) personnel are
-also red shirts.
-
-
-
-
-White Shirts
-You will encounter these personnel during launch as Final Checkers give your
-aircraft a last-minute look for problems.
-The Landing Signal Officers (LSO) are also white shirts. For more on this, see the
-section on the LSO Station below.
-Other white shirts include Safety personnel, Medical personnel, Quality Assurance
-personnel and Air Transfer Officers (ATO).
-Instrument Approach Equipment
-The aircraft carrier is a floating airport, complete with all the equipment necessary to conduct instrument
-approaches. See the section on mission editor features for information on how to set these up in a mission.
-
-
-
-Tactical Air Navigation System (TACAN)
-The TACAN system provides relative bearing and/or slant range distance to a selected TACAN station (land,
-ship or aircraft). TACAN range depends on aircraft altitude Line Of Sight (LOS) to the station, but can have a
-maximum range of 200 miles for an airborne station and 390 miles for a surface station. Each TACAN station
-has a three-letter identifier which is used to identify the beacon.
-The ship’s TACAN is used primarily for determining its position while on approach or establishing a holding
-pattern. The TACAN is referred to as “father” while the carrier is referred to as “mother”.
-
-
-
-Instrument Carrier Landing System (ICLS)
-US Navy and Marine Corps carrier-based aircraft are equipped with the AN/SPN-41A Instrument Carrier
-Landing System (ICLS). This operates much like a traditional ILS system, but it is only operational for US
-aircraft carriers.
-Using the ICLS is a matter of setting up the correct aircraft carrier ICLS channel and following the localizer and
-glideslope beams to within visual distance of the IFLOLS visual reference at the ship.
-The azimuth transmitter is installed at the stern of the ship, slightly below the centerline of the landing area. The
-elevation transmitter is located above the flight deck, aft of the island.
-The ICLS is referred to as “bullseye” to differentiate it from the ACLS.
-
-
-
-Automated Carrier Landing System (ACLS)
-The AN/SPN-46 ACLS is similar to the ICLS in that it displays "needles" that provide approach guidance
-information to the aircrew. But unlike the ICLS, the system is gyro-stabilized to provide accurate glideslope and
-azimuth data regardless of deck movement in heavy seas. Up to two aircraft may be controlled by the system
-simultaneously.
-The ACLS has three modes for approach:
-Mode I. This mode provides for an automatic, hands off approach. Command and error signals are transmitted
-to the aircraft from the ACLS. The aircraft then translates them into the appropriate control actions to stay on
-the proper approach path all the way to landing. (Mode 1a is a submode where the pilot takes over the
-approach after visual acquisition of the IFLOLS.)
-Mode II. This mode is similar to a conventional ILS approach. Glideslope and azimuth errors are transmitted to
-the aircraft and shown on a display. The pilot manually ‘flies the needles’ to stay on the proper approach path.
-Mode III. This is known as a Carrier Controlled Approach (CCA). No data is transmitted directly to the aircraft.
-The approach controller provides verbal azimuth and glideslope information to the pilot, who flies the approach
-manually based on this guidance.
-See the applicable aircraft manual for information on system operation and available modes.
-Improved Fresnel Lens Optical Landing System (IFLOLS)
-This device is mounted on the left side of the carrier to provide the pilot with visual glidepath information during
-the final phase of the approach. The system displays a bright orange ‘ball’ that is dynamically stabilized to
-compensate for ship’s pitch, roll and heave motion. The system is normally set for a 3.5° glideslope targeting
-the 3-wire.
-
-
-
-
-The ball appears aligned between two horizontal datum lights when the pilot is approaching on the optimum
-glide path. If the ball is above the datum lights the aircraft is above the glidepath. If the ball is below the datum
-lights, the aircraft is below glidepath.
-
-
-
-
-Lens Assembly. The lens assembly is a vertical box that contains 12 fiber optic light cells. The aircraft’s
-position on the glidepath determines which cell is visible to the pilot. The upper cells are amber in color while
-the bottom two are red. If a red lens is visible, the aircraft is dangerously low.
-Datum Lights. Green datum lights are mounted horizontally to the lens assembly with ten lights on each side.
-The position of the ball in reference to the datum lights provides the pilot with glideslope information. If the ball
-is illuminated above or below the datums, the aircraft is high or low respectively.
-Cut Lights. Mounted horizontally and centered above the lens box are four green cut lights. The cut lights are
-used by the LSO to communicate with the aircraft during Zip Lip (no radio) operations. As the aircraft
-approaches the groove, the LSO will momentarily illuminate the cut lights to indicate a “Roger ball” call.
-Subsequent illumination of the cut lights indicates a call to add power.
-Waveoff Lights. Waveoff lights are mounted vertically on each side of the lens box. These red lights are
-controlled by the LSO. When they are illuminated, the aircraft must immediately execute a waveoff. The LSO
-will initiate a waveoff any time the deck is foul (people or equipment in the landing area) or an aircraft is not
-within safe approach parameters.
-
-
-
-FLOLS Overlay
-An additional overlay with all the elements listed above is available to assist pilots flying in VR or with lower
-screen resolutions, who may not be able to see the IFLOLS on the carrier clearly. It is activated when your
-aircraft is on final approach and configured for landing.
-The overlay may be repositioned by clicking and dragging the ‘FLOLS’ text at the top.
-
-
-
-
-  Click to Drag
-
-
-
-
-      FLOLS
-      Overlay
-
-
-
-
-See the LSO Station section for additional information on related displays and controls.
-Long Range Laser Lineup System
-The Long Range Laser Lineup System uses eye-safe, color-coded lasers to provide visual lineup information to
-approaching aircraft. These low intensity lasers are projected aft of the ship and are visible out to 10 miles at
-night.
-The color of the laser light and rate at which they flash indicate the pilot’s position in relation to the angled
-deck’s centerline.
-     •    Steady Amber – within 0.5 degree of centerline
-     •    Steady Green – 0.5 – 0.7 right of centerline
-     •    Slow Flashing Green – 0.75 – 4.0 degrees right of centerline
-     •    Fast Flashing Green - 4.0 – 6.0 degrees right of centerline
-     •    Steady Red – 0.5 – 0.7 left of centerline
-     •    Slow Flashing Red – 0.75 – 4.0 degrees left of centerline
-     •    Fast Flashing Red - 4.0 – 6.0 degrees left of centerline
-Defensive Systems
-The Nimitz Class carriers rely on their own aircraft or other assets in the Carrier Battle Group for defense
-against air or missile attack but still have their own defensive systems in case threats happen to break through.
-These systems operate automatically unless defensive actions are intentionally disabled using the mission
-editor.
-
-
-Mk 15 Phalanx   RIM-7 Sea Sparrow
-                                                                                                   RIM-116 RAM
-
-
-
-
-                                                                                   Mk 15 Phalanx    RIM-7 Sea Sparrow
-RIM-116 RAM
-
-
-
-
-RIM-7 Sea Sparrow Missiles. These are short to medium range semi-active radar
-guided missiles housed in an 8-cell MK 29 box launcher. Their primary targets are
-aircraft or anti-ship cruise missiles.
-
-
-
-
-RIM-116 Rolling Airframe Missiles (RAM). These are small heat-seeking missiles
-used for point defense against anti-ship missiles. They are launched from MK 49 box
-launchers, each holding 21 missiles.
-
-
-
-
-Mk 15 Phalanx Close-In Weapon System (CIWS). This system consists of radar-
-guided 20 mm Vulcan cannon mounted on a swiveling base. It serves as a last line of
-defense against anti-ship missiles.
-Viewing the Carrier
-The standard ‘Ship View’ is available using the [F9] key. Use your mouse to move the view around and zoom in
-and out.
-
-
-
-
-Select [LALT+F9] for a view from the LSO Station. This station has additional functionality, and is covered in
-detail in the LSO Station section.
-Select [RCTRL+F9] for a view from each catapult. Each subsequent press of the keyboard command takes you
-to the next catapult in sequence.
-
-
-
-
-Select [RSHIFT+F9] for a view of the Hangar Bay. Use the mouse to look around and the mouse wheel to move
-fore and aft.
-Additional Supercarrier Module Assets
-The new and upgraded features in the DCS: Supercarrier module focus on the Nimitz Class carriers but other
-naval assets have received upgrades or additions with this module. These include the all new Arleigh Burke
-Class guided missile destroyer (right) and a new model for the Admiral Kuznetsov aircraft carrier (left) that was
-already included with DCS: World.
-
-
-
-
-          Left to right: Admiral Kuznetsov CV, Nimitz Class CVN, Arleigh Burke Class DDG
-Admiral Kuznetsov Aircraft Carrier
-The Admiral Kuznetsov is the Russian Navy’s largest warship and its sole aircraft carrier capable of carrying
-horizontal take-off and landing aircraft. Although an aircraft carrier at first glance, it is technically designated an
-‘aircraft-carrying cruiser’, due to its formidable long-range anti-ship cruise missile capability. This designation
-allows it to pass in and out of the Black Sea while conforming to the 1936 Montreux Convention, an
-international agreement that does not allow aircraft carriers heavier than 15,000 tons to pass through the
-Turkish Straits.
-
-
-
-
-The Admiral Kuznetsov differs greatly from US aircraft carrier designs in that it does not feature catapults for
-launching aircraft. Instead, it features a ‘ski-jump’, or upward curved ramp, that converts some of the aircraft’s
-forward momentum into a positive rate of climb. This, along with wind over the deck from the carrier’s speed,
-greatly reduces the required takeoff roll for aircraft.
-Three starting positions are available for fighter aircraft. Positions 1 and 2 are located near the bow of the ship
-and provide a 90-meter takeoff run. Position 3 is located farther aft and provides a takeoff run of 180 meters,
-twice that of the other two. This third location should be selected for aircraft with heavier fuel or weapons
-loadouts that require a longer takeoff run.
-
-
-
-
-                                                   Parking
-                                                    (typical)
-
-                         Elevator                               Elevator
-Each starting position features a jet blast deflector that serves the same function as on the Nimitz class carrier.
-There are also two holdback devices, or ‘stoppers’, that extend upwards, forward of the main wheels. These
-hold the aircraft in place until after the aircraft’s engines are run up before launch.
-
-
-
-
-   Jet Blast
-   Deflector
-
-
-
-
-   Stoppers
-
-
-
-
-The Luna-3 Optical Landing System works in a manner similar to the Nimitz class’s IFLOLS system. A green
-light indicator will be visible when on glideslope for landing. A yellow light will be visible when above glideslope
-and red light will be visible when below glideslope.
-Aircraft also land on an angled deck in a comparable way to those on the Nimitz class carrier. Four arresting
-wires of the Svetlana-2 system are strung across the deck at a spacing of 12 meters. The aircraft’s tailhook
-catches a wire and brings it to a stop.
-
-
-
-
- Luna-3 OLS
-
-
-
-                                                                                                        Arresting Wires
-Offensive Weapons
-The Admiral Kuznetsov is equipped with SS-N-19 'Shipwreck' (P-700 Granit) anti-ship missiles, fired from 12
-vertical launch tubes on the forward flight deck. A small solid rocket fires them clear of the launcher. Flight is
-sustained by a turbojet propulsion system, accelerating the missile to a top speed of mach 2.5 at high altitude or
-mach 1.2 at its normal low altitude. The maximum range is approximately 300 nm (550 km).
-The missiles rely on their own inertial navigation system to approach the target then switch to active radar
-homing for the terminal guidance phase. A 1,650 lb (750 kg) conventional warhead is fitted for use against
-ships.
-
-
-
-
-Engagements with these missiles are limited to a 90-degree arc in front of the firing vessel. The carrier must be
-maneuvered into the proper position before firing.
-
-
-
-
-                        Admiral Kuznetsov
-
-
-                                                    90º
-
-                                  Firing Arc
-
-                                                                             Target
-
-
-
-
-The ‘Attack Group’ task is recommended to allow realistic target sorting for waves of multiple missiles. See the
-DCS: World manual for details on setting this up.
-Defensive Weapons
-The Admiral Kuznetsov is equipped with multiple defensive weapon systems for defense against aircraft,
-missile or submarine threats. Operation of these systems is automatic unless defensive actions are intentionally
-disabled using the mission editor.
-
-AK-630    UDAV-1   Kortik   SA-N-9          AK-630
-                                                                              SA-N-9    Kortik
-
-
-
-
-                                                                          SA-N-9        Kortik
- AK-630   UDAV-1   Kortik   SA-N-9            AK-630
-
-
-
-SA-N-9 Gauntlet (3K95 Kinzhal). This is a navalized variant of the SA-15 Gauntlet air defense system.
-Missiles are launched from vertical launch tubes with the exit ports flush-mounted with the ship’s structure. It is
-capable of engaging threats out to a range of 6.5 nm (12 km).
-Kortik Air Defense System. This is a combined gun and missile system, similar to the land-based SA-19
-Grison (Tunguska). It provides close-in engagement of aircraft and missile threats out to a range of 2.2 nm (4
-km). The 30mm gun system is also capable of engaging ship or shore targets.
-AK-630 CIWS. This fully automatic Close In Weapon System (CIWS) consists of turret mounted 30mm guns
-directed by a radar. It is primarily used to defend against small, high-speed missile threats.
-UDAV-1. This system operates in conjunction with the ship’s sonar to engage submarine or torpedo threats.
-Different rocket types can be fired from turrets mounted on the stern of the ship.
-LAUNCH OPERATIONS
-Flight Deck Procedures
-After startup, you will need to taxi to a catapult for launch. Catapults 1 and 2 are on the bow and catapults 3 and
-4 are on the waist. Unless you are directed to a specific catapult during the briefing, you may choose any of the
-four.
-Taxi to the desired catapult using small power inputs while using nosewheel steering in high gain.
-
-
-
-
-Once behind the Jet Blast Defector (JBD) of the catapult you will launch from, follow the signals given by the
-Taxi Director.
-Catapult Procedures
-To ensure proper spotting on the catapult, you must follow the signals from the Taxi Director precisely. The
-normal sequence for catapult operations is as follows:
-1. Unfold wings. When directed, spread the wings using the applicable aircraft controls.
-
-
-
-
-                                                Unfold Wings
-
-
-2. Align with catapult track. When directed, slowly move forward of the JBD. The Taxi Director will provide
-signals for left or right turns to align your nosewheel along the catapult track.
-
-
-
-
-                Turn Left                       Taxi Forward                        Turn Right
-3. Stop and extend launch bar. When directed, stop and hold the brakes. Extend the launch bar using
-applicable aircraft controls.
-
-
-
-
-                            Stop                                Extend Launch Bar
-4. Connect to catapult shuttle. Following the Director’s signals, taxi forward slowly to position the launch bar
-over the shuttle. Significant power, as much as 80-85% RPM, may be required. When the launch bar drops over
-the shuttle, the aircraft will be stopped as the holdback engages the catapult buffer. Reduce power to idle.
-
-
-
-
-                        Taxi Forward                                      Stop
-5. Seat launch bar in shuttle. When directed, raise the launch bar to seat it in the catapult shuttle. Note that
-the bar will not fully retract until it is clear of the shuttle after launch.
-
-
-
-
-                                               Raise Launch Bar
-
-
-6. Run up engines and perform final checks. The Director will pass control to the Catapult Officer, who will
-signal for engine run-up. Check the engine instruments and monitor the caution and warning lights. Wipeout the
-controls and verify the full throw of the stick and rudder in all directions.
-
-
-
-
-                                                Run Up Engines
-7. Select ‘SALUTE’ from radio menu. When ready for launch, give the ‘SALUTE’ command from the radio
-menu or keyboard command [LCtrl+LShift+S]. The Catapult Officer will make final checks, looking fore and aft,
-and then touch the deck.
-
-
-
-
-                                                     Launch
-
-
-8. Launch. The catapult will fire, and the aircraft will accelerate, reaching end speed in about two seconds. As
-the aircraft clears the end of the deck, rotate to a nose up attitude and establish a positive rate of climb. Gear
-and flaps will be raised in accordance with the specific aircraft’s procedures.
-Case I Departure
-Case I departures are flown during the day when weather conditions allow departure under visual flight rules
-(VFR). The weather minimums are a cloud deck above 3,000 feet and visibility greater than 5 miles.
-Once the aircraft clears the catapult and a positive rate of climb is established, execute a clearing turn to stay
-clear of the ship’s path. Climb to 500 feet and fly parallel to the ship’s heading, or base recovery course (BRC).
-Continue straight ahead at 500 feet and 300 KIAS paralleling BRC until 7 miles from the carrier. At that point,
-climb along the planned route.
-Case II Departure
-Case II departures are flown during the day when visual conditions are present at the carrier, but a controlled
-climb through the clouds is required. The weather minimums are a cloud deck above 1,000 feet and visibility
-greater than 5 miles.
-After the clearing turn, proceed straight ahead at 500 feet and 300 KIAS paralleling the BRC as on Case I. At 7
-miles from the carrier, turn to intercept the arc running 10 miles from the carrier, staying below the cloud deck.
-Stay on this 10-mile arc until you reach the briefed departure radial. Climb on that course maintaining 300 KIAS
-until clear of the clouds.
-Case III Departure
-Case III departures are flown at night and when weather conditions are below the minimums of 1,000 feet cloud
-deck and 5 miles visibility. A controlled climb is maintained throughout the departure.
-The aircraft will launch with a minimum launch interval of 30 seconds between aircraft. Following the launch,
-climb straight ahead at 300 KIAS, crossing 5 nautical miles from the carrier at 1500 feet AGL or above.
-At 7 nm from the carrier, turn to intercept the 10 nm arc. Continue climbing along the arc until you reached the
-briefed departure radial. Continue to climb on that course until clear of the weather.
 RECOVERY OPERATIONS
 Overview
 The recovery process starts on entry to the Carrier Control Area, or CCA. This is a fifty-mile radius circle around
@@ -813,12 +158,12 @@ localizer centerline and 3.6-degree glidepath.
 
 
 
-     •     No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
-           than 2.5 degrees above optimal glidepath
-     •     Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
-     •     Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
-     •     Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
-     •     Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
+ • No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
+than 2.5 degrees above optimal glidepath
+ • Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
+ • Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
+ • Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
+ • Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
 
 
 “You’re high” – Aircraft is far above the glidepath.
@@ -866,51 +211,51 @@ Transcription: “No grade. Drifted way right in close. Landed a little left in 
 
 
 Grades:
-     •    WO - Waveoff
-     •    OWO - Own Waveoff
-     •    _OK_ - Perfect pass
-     •    OK - Reasonable deviations with good corrections
-     •    (OK) - Fair. Reasonable deviations
-     •    --- - No-grade. Below average but safe pass
-     •    C - Cut. Unsafe, gross deviations inside waveoff window
-     •    B - Bolter
+ • WO - Waveoff
+ • OWO - Own Waveoff
+ • _OK_ - Perfect pass
+ • OK - Reasonable deviations with good corrections
+ • (OK) - Fair. Reasonable deviations
+ • --- - No-grade. Below average but safe pass
+ • C - Cut. Unsafe, gross deviations inside waveoff window
+ • B - Bolter
 
 
 Main errors:
-     •    AFU - All “fouled” up
-     •    DL - Drifted left
-     •    DR - Drifted right
-     •    EG - Eased gun (pulled throttles back to help set the hook for arrestment)
-     •    F - Fast
-     •    FD - Fouled deck
-     •    H - High
-     •    LL - Landed left
-     •    LO - Low
-     •    LR - Landed right
-     •    LUL - Lined up left
-     •    LUR - Lined up right
-     •    N - Nose
-     •    NERD - Not enough rate of descent
-     •    NSU - Not set up
-     •    P - Power
-     •    SLO – Slow
-     •    TMRD – Too much rate of descent
-     •    W - Wings
-     •    LLWD - Landed left wing down
-     •    LRWD - Landed right wing down
-     •    LNF - Landed nose
-     •    3PTS - Landed 3 points
+ • AFU - All “fouled” up
+ • DL - Drifted left
+ • DR - Drifted right
+ • EG - Eased gun (pulled throttles back to help set the hook for arrestment)
+ • F - Fast
+ • FD - Fouled deck
+ • H - High
+ • LL - Landed left
+ • LO - Low
+ • LR - Landed right
+ • LUL - Lined up left
+ • LUR - Lined up right
+ • N - Nose
+ • NERD - Not enough rate of descent
+ • NSU - Not set up
+ • P - Power
+ • SLO – Slow
+ • TMRD – Too much rate of descent
+ • W - Wings
+ • LLWD - Landed left wing down
+ • LRWD - Landed right wing down
+ • LNF - Landed nose
+ • 3PTS - Landed 3 points
 
 
 Distance marks placed after error:
-     •    BC - Ball call (before first 1/3 of glideslope)
-     •    X - At the start (first 1/3 of glideslope)
-     •    IM - In the middle (middle 1/3 of the glideslope)
-     •    IC - In close (last 1/3 of glideslope)
-     •    AR - At the ramp
-     •    TL - To land (between AR and first wire)
-     •    IW - In the wires
-     •    AW – After wires
+ • BC - Ball call (before first 1/3 of glideslope)
+ • X - At the start (first 1/3 of glideslope)
+ • IM - In the middle (middle 1/3 of the glideslope)
+ • IC - In close (last 1/3 of glideslope)
+ • AR - At the ramp
+ • TL - To land (between AR and first wire)
+ • IW - In the wires
+ • AW – After wires
 
 
 Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., "(F)" means “a little fast”)
@@ -1000,9 +345,9 @@ for example, if the aircraft is assigned a marshal stack altitude of 8,000 feet,
 nautical miles.
 
 
-   Altitude (ft)      6,000   7,000    8,000    9,000   10,000   11,000   12,000   13,000   14,000    15,000   16,000
+Altitude (ft) 6,000 7,000 8,000 9,000 10,000 11,000 12,000 13,000 14,000 15,000 16,000
 
-  Distance (nm)        21      22       23       24       25       26       27       28       29       30       31
+Distance (nm) 21 22 23 24 25 26 27 28 29 30 31
 
 
 
@@ -1177,12 +522,12 @@ localizer centerline and 3.5-degree glidepath.
 
 
 
-     •     No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
-           than 2.5 degrees above optimal glidepath
-     •     Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
-     •     Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
-     •     Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
-     •     Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
+ • No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
+than 2.5 degrees above optimal glidepath
+ • Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
+ • Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
+ • Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
+ • Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
 
 
 “You’re high” – Aircraft is far above the glidepath.
@@ -1228,51 +573,51 @@ A typical landing grade may look like this:
 
 Transcription: “No grade. Drifted way right in close. Landed a little left in the wires. Caught number 4 wire.”
 Grades:
-     •    WO - Waveoff
-     •    OWO - Own Waveoff
-     •    _OK_ - Perfect pass
-     •    OK - Reasonable deviations with good corrections
-     •    (OK) - Fair. Reasonable deviations
-     •    --- - No-grade. Below average but safe pass
-     •    C - Cut. Unsafe, gross deviations inside waveoff window
-     •    B - Bolter
+ • WO - Waveoff
+ • OWO - Own Waveoff
+ • _OK_ - Perfect pass
+ • OK - Reasonable deviations with good corrections
+ • (OK) - Fair. Reasonable deviations
+ • --- - No-grade. Below average but safe pass
+ • C - Cut. Unsafe, gross deviations inside waveoff window
+ • B - Bolter
 
 
 Main errors:
-     •    AFU - All “fouled” up
-     •    DL - Drifted left
-     •    DR - Drifted right
-     •    EG - Eased gun (pulled throttles back to help set the hook for arrestment)
-     •    F - Fast
-     •    FD - Fouled deck
-     •    H - High
-     •    LL - Landed left
-     •    LO - Low
-     •    LR - Landed right
-     •    LUL - Lined up left
-     •    LUR - Lined up right
-     •    N - Nose
-     •    NERD - Not enough rate of descent
-     •    NSU - Not set up
-     •    P - Power
-     •    SLO – Slow
-     •    TMRD – Too much rate of descent
-     •    W - Wings
-     •    LLWD - Landed left wing down
-     •    LRWD - Landed right wing down
-     •    LNF - Landed nose
-     •    3PTS - Landed 3 points
+ • AFU - All “fouled” up
+ • DL - Drifted left
+ • DR - Drifted right
+ • EG - Eased gun (pulled throttles back to help set the hook for arrestment)
+ • F - Fast
+ • FD - Fouled deck
+ • H - High
+ • LL - Landed left
+ • LO - Low
+ • LR - Landed right
+ • LUL - Lined up left
+ • LUR - Lined up right
+ • N - Nose
+ • NERD - Not enough rate of descent
+ • NSU - Not set up
+ • P - Power
+ • SLO – Slow
+ • TMRD – Too much rate of descent
+ • W - Wings
+ • LLWD - Landed left wing down
+ • LRWD - Landed right wing down
+ • LNF - Landed nose
+ • 3PTS - Landed 3 points
 
 
 Distance marks placed after error:
-     •    BC - Ball call (before first 1/3 of glideslope)
-     •    X - At the start (first 1/3 of glideslope)
-     •    IM - In the middle (middle 1/3 of the glideslope)
-     •    IC - In close (last 1/3 of glideslope)
-     •    AR - At the ramp
-     •    TL - To land (between AR and first wire)
-     •    IW - In the wires
-     •    AW – After wires
+ • BC - Ball call (before first 1/3 of glideslope)
+ • X - At the start (first 1/3 of glideslope)
+ • IM - In the middle (middle 1/3 of the glideslope)
+ • IC - In close (last 1/3 of glideslope)
+ • AR - At the ramp
+ • TL - To land (between AR and first wire)
+ • IW - In the wires
+ • AW – After wires
 
 
 Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., "(F)" means “a little fast”)
@@ -1301,13 +646,13 @@ as the LSO Main Screen Window.
 
 
 
-  LSO Main Screen
-  Window
+LSO Main Screen
+Window
 
 
 
 
-                                                                                                LSO Workstation
+LSO Workstation
 
 
 
@@ -1338,13 +683,13 @@ The PLAT camera view is also shown in the center of the display. Details on this
 section.
 
 
-                                                                                                    Deck Status
+Deck Status
 
 
-                                                                                                    Landing Queue
-      Ship Symbol
-                                                                                                     Ship Heading
-    ACLS Closure
+Landing Queue
+Ship Symbol
+Ship Heading
+ACLS Closure
 
 
 
@@ -1353,13 +698,13 @@ Ship List and Trim
 
 
 
-                                                                                                     Hook to Ramp
-   Aircraft Type
+Hook to Ramp
+Aircraft Type
 
 
 
 
-                                                                                                    Hook Touchdown
+Hook Touchdown
 
 
 
@@ -1397,29 +742,29 @@ angled up at 3-degrees along the aircraft landing glideslope to the arrestor wir
 over the image to aid in LSO duties.
 
 
-                                                                                                 Deck Status
-             Date
-                                                                                                 Carrier Number
-        Local Time
+Deck Status
+Date
+Carrier Number
+Local Time
 
 
 
 
-                                                                                                 Wind Over Deck
+Wind Over Deck
 
 
-       Crosshairs
+Crosshairs
 
 
 
 
- Waveoff Indicator
+Waveoff Indicator
  (not shown)
-                                                                                                 Distance
+Distance
 
 
-                                                                                                  Descent Rate
-        Airspeed
+Descent Rate
+Airspeed
 
 
 
@@ -1460,7 +805,7 @@ DCS: World. They are still available for users who do not own the Supercarrier m
 
 
 
-                                 Wind Direction
+Wind Direction
 
 
 
@@ -1565,96 +910,96 @@ copy, then CTRL+V to paste.
 It is important not to place static objects in locations they may interfere with flight operations so test your
 mission thoroughly to find any problems. To assist with this, visual aids showing suitable locations on the deck
 are included below.
-                     Static
- Launch              Object       Recovery
-Operations                        Operations
-                      Safe
-   4                 Zones           4
- Aircraft                          Aircraft
+Static
+Launch Object Recovery
+Operations Operations
+Safe
+4 Zones 4
+Aircraft Aircraft
 
 
 
 
-             1
+1
 
-             2
-
-
-             3
+2
 
 
-                 4
+3
 
 
-
-
-                              4
-                             Static
- Launch                      Object               Recovery
-Operations                                        Operations
-                              Safe
-   8                         Zones                   8
- Aircraft                                          Aircraft
+4
 
 
 
 
-                 1
-
-                 2
-
-
-                 3       5
-
-                         6
-                     4
-                                      8
-
-
-                                      7
-
-                                          6
-
-                                              5
-             7
-                                              4
-             8
-                               Static
- Launch                        Object                    Recovery
-Operations                                               Operations
-                                Safe
-  16                           Zones                       16
- Aircraft                                                 Aircraft
+4
+Static
+Launch Object Recovery
+Operations Operations
+Safe
+8 Zones 8
+Aircraft Aircraft
 
 
 
 
-                                                    10
+1
 
-                                                    11
-
-                         11                    All
-                                            Remaining
-                 1       12
-
-                 2       13                     9
+2
 
 
-                 3        5                    All
-                                            Remaining
-                          6
-                     4
-                                        8
+3 5
+
+6
+4
+8
 
 
-                                        7
+7
 
-                                            6
+6
 
-                          9                         5
-             7
-                          10                        4
-             8
+5
+7
+4
+8
+Static
+Launch Object Recovery
+Operations Operations
+Safe
+16 Zones 16
+Aircraft Aircraft
+
+
+
+
+10
+
+11
+
+11 All
+Remaining
+1 12
+
+2 13 9
+
+
+3 5 All
+Remaining
+6
+4
+8
+
+
+7
+
+6
+
+9 5
+7
+10 4
+8
 GLOSSARY
 Air Boss: Officer in charge of all flight deck and tower operations within 5 nautical miles of the ship. Located in
 Pri-Fly.
@@ -1758,4 +1103,3 @@ Tiedown: Chocks and chains used to secure aircraft on the flight deck.
 Zip Lip: Condition in which radio communications are minimized.
 Good hunting!
 The Eagle Dynamics SA team
-EAGLE DYNAMICS SA © 2020
