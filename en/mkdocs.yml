@@ -11,6 +11,16 @@ nav:
       - index.md
       - help.md
       - people.md
+  - Carrirers:
+    - Supercarrier by ED:
+      - sc/01.quickstart.md
+      - sc/02.nimitz.md
+      - sc/03.launch.md
+      - sc/04.recovery.md
+      - sc/05.lso.md
+      - sc/06.editor.md
+      - sc/07.glossary.md
+
 
 #theme: readthedocs
 theme:
