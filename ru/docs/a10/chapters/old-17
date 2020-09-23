@@ -1,0 +1,572 @@
+ПРИЛОЖЕНИЯ
+ПРИЛОЖЕНИЯ
+
+Телеграфная азбука
+Телеграфные знаки Буквы
+
+
+
+
+ ·— Аа Aa
+
+ —··· Бб Bb
+
+ ·—— Вв Ww
+
+ ——· Гг Gg
+
+ —·· Дд Dd
+
+ · Eе Ee
+
+ ···— Жж Vv
+
+ ——·· Зз Zz
+
+ ·· Ии Kk
+
+ —·— Кк Ll
+
+ ·—·· Лл Mm
+ —— Мм Nn
+
+ —· Нн Oo
+
+ ——— Оо Pp
+
+ ·——· Пп Rr
+
+ ·—· Рр Ss
+ ··· Сс Tt
+
+ — Тт Uu
+
+ · ·— Уу Ff
+ ··—· Фф Hh
+
+ ···· Хх Cc
+
+ —·—· Цц Oo
+ ———· Чч Ch ch
+
+ ———— Шш Qq
+
+ ——·— Щщ Yy
+
+ —·—— Ыы Yy
+
+ ··—— Юю Uu
+
+ ·—·— Яя Aa
+
+ ·——— Йй Jj
+
+ —··— ь Xx
+ ··—·· Ээ Ee
+
+
+
+
+Телеграфные знаки Цифры прописью
+
+ ·———— 1
+
+ ··——— 2
+
+ ···—— 3
+
+ ····— 4
+ ····· 5
+
+ —···· 6
+
+ ——··· 7
+
+ ———·· 8
+
+ ————· 9
+
+ ————— 0
+
+Телеграфные знаки Цифры сокращѐнно
+
+ ·— 1
+
+ ··— 2
+
+ ···— 3
+
+ ····— 4
+ ····· 5
+
+ —···· 6
+
+ —··· 7
+
+ —·· 8
+
+ —· 9
+
+ — 0
+
+
+
+
+Телеграфные знаки Знаки препинания
+ ·—·—·— Запятая
+ —·—·— Точка с запятой
+
+ ———··· Двоеточие
+
+ ·· ·· ·· точка
+
+ ··——·· Знак вопроса
+
+ ·—··—· Кавычки
+
+ ——··—— Восклицательный знак
+ —·——·— Левая скобка
+
+ —·——·— Правая скобка
+Левый преобразователь тока
+1
+
+A-10C ЕЛЕКТРИЧЕСКИЕ СИСТЕМЫ Л
+е
+an/alr-69
+левый основной топливный насос
+
+И РАСПРЕДЕЛЕНИЕ ПИТАНИЯ в
+а
+левый крыльевой топливный
+насос
+я охлаждение компьютера
+предотвращение
+ш обледенения/запотевания
+и ветрового стекла
+AC GEN Л ГЕН н an/alr-46
+а посадочный/рулежный прожектор
+PWR L строевые огни
+П освещение консоли
+Соединяется при seat adj actr
+Le е
+работающем test recp ac
+р
+ft левом генераторе
+е освещение вспомогательных
+Выкл/Перез м приборов
+е регистратор скорости , ускорения
+агрузка
+Соединяется при н и высоты полета
+неработающих н состояние пилона 1 ecm
+о состояние пилона 3
+левом и правом
+г agm-65
+генераторах
+о состояние пилона 4
+состояние пилона 5
+Вентилятор т suu-23 gun pod
+охлаждения Соединяется при о подогрев трубки питота
+неработающем к dts
+левом генераторе а sadl
+левый МФИ
+APU APU GEN
+GEN Соединяется при
+PWR работающем
+APU Соединяется при Соединяется, когда левая
+генераторе ВСУ и
+неработающем шина переменного тока
+Gen неподключенном под напряжением
+внешнем левом или правом
+OFF/RESET генераторе и 2
+источнике энергии
+неподключенном
+внешнем
+источнике энергии Соединяется, когда левая
+Источник энергии, шина переменного тока
+подключенный первым, не под напряжением
+блокирует другой источник
+Соединяется при
+П
+неработающем
+р IFFCC/LASTE
+генераторе ВСУ
+а подогрев трубки Питота
+Соединяется при
+в правый основной топливный насос
+неработающем
+а правый крыльевой топливный насос
+правом генераторе
+я система улучшения устойчивости (SAS)
+указатель расхода топлива
+ш TACAN
+и HARS (ADI HSI)
+Соединяется при
+н ANGLE ATTACK HTR/STALL
+неработающих
+а PREV SYS (SPS) HTR
+AC GEN П ГЕН левом и правом
+генераторах STALL PREV SYSTEM (SPS)
+PWR R П посадочный прожектор
+е TEST RECP AC
+Правый р состояние пилона 11 ECM
+Соединяется при
+Генера е Система определения "свой-чужой" (IFF)
+работающем
+тор м SAS
+правом генераторе
+е ANG ATCK XFMR
+OFF/RESET н вычислитель системы воздушных сигналов
+н (CADC)
+о правый МФИ
+г
+о
+
+т
+о
+к 3
+а правый преобразователь тока 4
+
+
+Правый преобразователь внешнего источника тока/ генератора ВСУ
+5
+1
+L CONV
+ПРЕДОХРАНИТЕЛИ, УСТАНОВЛЕННЫЕ
+НА ОСНОВНОЙ ПАНЕЛИ
+ПРЕДОХРАНИТЕЛЕЙ В КАБИНЕ
+Преобразователь тока
+ (от основной шины постоянного тока) LEFT 1
+A CONV
+C INST INV
+Соединяется, когда левая и
+INVERTER правая шина переменного левый/ правый воспламенители 1
+тока обесточены E левый/ правый воспламенители 2
+ОЖИДАНИЕ
+S
+INST
+INVER S
+ВЫКЛ
+Отключает основные шины T E
+ТЕСТ переменного тока от левой и N
+правой шин
+2
+
+AUX ESS BUS
+3
+Соединяется, когда левая остаток топлива
+или правая шина A L ENGINE CONT
+2 переменного тока под R ENGINE CONT
+напряжением и включатель U температура воздуха на входе в
+преобразователя в X левую/правую турбины
+положении STBY обороты вентилятора
+левого/правого двигателя
+Примечание: A BLEED AIR LEAK
+если включатель преобразователя в C остаток кислорода
+положении OFF, ток на основные освещение приборов контроля
+двигателей
+шины переменного тока не E освещение пилотажных приборов
+поступает ни от одного источника
+S
+S
+E
+A N
+система обнаружения
+C лазерного пятна
+состояние пилона 7
+A состояние пилона 8 26В
+R состояние пилона 9 AGM-65 шина трансформатора приборов
+ИЛС
+M ARM CONT давление масла левого двигателя
+CTVS давление масла правого
+ELEC FUZING двигателя
+давление в левой гидросистеме
+B давление в правой гидросистеме
+3
+U ANGLE ATTACK XMTR IND
+S трансформатор 26В
+
+
+
+
+Соединяется, если не
+4 поступает ток от генератора
+ВСУ или от внешнего
+источника
+RIGHT 4
+CONV
+5 Соединяется, если поступает
+ток от генератора ВСУ или
+от внешнего источника
+
+
+R CONV
+ИНДИКАТОР ГЛАВНОГО ПРЕДУПРЕЖДАЮЩЕГО
+AUX VGH RECORDER СИГНАЛА
+L VGH RECORDER ИНДИКАТОР ПРЕОБРАЗОВАТЕЛЯ
+ЗАПУСК ЛЕВОГО ДВИГАТЕЛЯ
+E PYLON STA 1 ECM О ЗАПУСК ПРАВОГО ДВИГАТЕЛЯ А
+F CMS (EWMS) С L ENG EMER FUEL SHUTOFF К ОГНЕТУШИТЕЛИ
+PYLON STA 3 AGM-65 R ENG EMER FUEL SHUTOFF
+T PYLON STA 4
+Н L BLEED AIR CONT К ЛЕВОГО/ПРАВОГО
+R BLEED AIR CONT ДВИГАТЕЛЕЙ
+PYLON STA 5 and 6 О У ОГНЕТУШИТЕЛИ ВСУ
+APU CONT
+D FLOOD LTS HI В СБРОС ПОДВЕСОК
+DC FUEL PUMP М
+C RAIN REMOVAL L GEN CONT АКТИВАТОР ФОНАРЯ КАБИНЫ
+TEST RECP DC
+Н R GEN CONT ЛЕСТНИЦА
+1 А АВАРИЙНОЕ УПРАВЛЕНИЕ ЗАКРЫЛКАМИ Ш ECS CONT
+B AIR REFUEL RAM/MAN AIR
+ANTI-COLLISION LTS Я
+АВАРИЙНОЕ ТРИММИРОВАНИЕ И EMER CREW STA
+U AN/ALR-69
+L AILERON TAB
+R AILERON TAB Н FLOOD LTS
+S EGI L AILERON DISC CAVTR
+А
+CDU R AILERON DISC
+Ш L ELEVATOR DISC
+R ELEVATOR DISC
+И SPS and RUDDED AUTH LIMIT
+L BUS TIE Н ШАССИ
+UHF РАДИОСТАНЦИЯ
+INVERTER PWR А ИНТЕРКОМ
+STBY ATT IND
+IFF (MODE 2)
+EXT STORES JETT #1
+П EXT STORES JETT #2
+CIRCUIT BREAKERS LOCATED ON
+L CONVERTER
+2 ЦИФРОВЫЕ ЧАСЫ ESSENTIAL CIRCUIT BREAKER
+О
+PANEL IN COCKPIT
+3 С
+Т
+R CONVERTER
+
+ОБНАРУЖЕНИЕ ПОЖАРА
+Т В ЛЕВОМ/ПРАВОМ ДВИГАТЕЛЕ
+О ОБНАРУЖЕНИЕ ПОЖАРА В ВСУ
+BATTERY д ТОПЛИВНОЕ КОЛЬЦЕВАНИЕ
+PWR К APU START
+О ДВИГАТЕЛЕЙ
+BAT А
+Соединяется, когда левая EXT VENT VALVES
+OFF шина переменного тока под П ПРЕДВАРИТЕЛЬНАЯ ПРОВЕРКА
+BATTERY напряжением ТОПЛИВНОЙ СИСТЕМЫ
+EXT BUS TRANS О УПРАВЛЕНИЕ ЛЕВОЙ/ПРАВОЙ
+ГИДРОСИСТЕМОЙ
+BATTERY Соединяется, когда левая
+С T.O. TRIM
+SWITCH шина переменного тока
+FLT CONTROL JAM IND
+R BUS TIE обесточена Н УПРАВЛЕНИЕ ВОЗДУШНЫМ
+AUX ESSE BUS TIE ТОРМОЗОМ
+IFFCC/LASTE NORM TRIM
+АВАРИЙНОЕ УПРАВЛЕНИЕ
+ILS ARM CONT 1 Ш ВОЗДУШНЫМ ТОРМОЗОМ
+SECURE COMM ARM CONT 2 APU GEN CONT
+R STALL PREV SYS (SPS) И
+ARM CONT 3 APU EXT POWER CONT
+I STAB AUG SYS (SAS) GAU-8 PWR Н ECS CONT NORM/DUMP
+NAV MODE SEL BLEED AIR LEAK
+G GAU-8 PURGE А ПЕРЕДНЕЕ ПОВОРОТНОЕ КОЛЕСО
+EJECTOR AIR/CANOPY D HUD
+H SEAL/APU HYD CCTVS
+ШАССИ
+C АНТИБЛОКИРОВОЧНАЯ СИСТЕМА
+T UHF ADF LASER SPOT SEEKER LANDING GEAR WARNING/ CKT
+VHF COMM/LARS PYLON STA 7 П UTILITY LT
+VHF FM A CREW STA FLOOD LTS
+D PYLON STA 8 О FUEL QUANTITY
+TACAN R PYLON STA 9 AGM-65
+C С CNTG ACCLRM
+ANGLE ATTACK IND and M IFFCC/LASTE CAUNT/ADV LT CONT
+INDEXER/STICK SHAKER RADAR ALT Т CHAFF/FLARE DISP (L1)
+B POSITION LTS L WING SQUIB PWR
+B CHAFF/FLARE DISP (R1)
+U TEST RECP DC
+4 PYLON STA 11 ECM U R WING SQUIB PWR
+S Т УПРАВЛЕНИЕ ДО/ЛТЦ
+CMS (EWMS) S SEQUENCER OPER PWR
+FLAP CONT О EGI STBY
+CADS К
+UFC А
+EAC
+NMSP
+СПИСОК ТЕРМИНОВ СОКРАЩЕНИЙ
+
+A-A Воздух-воздух, ВВ (Air-to-Air)
+A-G Воздух-земля, ВЗ (Air-to-Ground)
+AAP Вспомогательная панель авионики (Auxiliary Avionics Panel)
+AAS Подменю режима воздух-воздух (Air-to-Air Submenu)
+ACP Пульт управления вооружением (Armament Control Panel)
+ADF Автоматический радиокомпас, АРК (Automatic Direction Finding)
+ADI Командно-пилотажный прибор, КПП (Attitude Director Indicator)
+AGL Истинная высота, высота над рельефом местности (Above Ground Level)
+AGM Ракеты класса воздух-земля (Air-to-Ground Missile)
+AHCP Панель системы управления вооружением (Armament HUD Control Panel)
+AIM Ракета класса воздух-воздух (Air Intercept Missile)
+AM Амплитудная модуляция (Amplitude Modulation)
+AMIL Линия понижения траектории снарядов (Air Mass Impact Line)
+AOA Угол атаки, УА (Angle of Attack)
+APU Вспомогательная силовая установка, ВСУ (Auxiliary Power Unit)
+AR Дозаправка топливом в воздухе (Aerial Refueling)
+ARS Индикатор пространственного положения (Attitude Reference Symbol)
+ASL Линия наведения по азимуту (Azimuth Steering Line)
+ATC Управление воздушным движением, УВД (Air Traffic Control)
+BATA Снаряды на высоте цели (Bullets at Target Altitude)
+BHOT Черный – теплый (Black Hot)
+BIT Встроенный контроль (Built In Test)
+CADC Вычислитель системы воздушных сигналов (Central Air Data Computer)
+CATM Учебная ракета без двигателя (Captive Air Training Missile)
+CBU Авиационная бомбовая кассета (Cluster Bomb Unit)
+CCD Дневная камера видимого диапазона, ПЗС-матрица (Charge-Coupled Device)
+CCIP Continuously Computed Impact Point
+CCRP Расчетная точка сброса (Continuously Computed Release Point)
+CDI Указатель отклонения от курса (Course Deviation Indicator)
+CDU Блок управления и индикации (Control Display Unit)
+CICU Центральный блок управления МФИ (Central Interface Control Unit)
+CM Смешанная зарядка боекомплекта пушки (Combat Mix)
+CMS Система противодействия (Countermeasure Set)
+CMSC Щиток управления системой противодействия (Countermeasure Set Control)
+CMSP Панель управления системой противодействия (Countermeasure Set Panel)
+CR Координатный замер высоты (Coordinate Ranging)
+CR Команда на сброс боеприпаса (Consent to Release)
+DLZ Динамическая зона разрешенных пусков (Dynamic Launch Zone)
+DMS Кнопка управления данными (Data Management Switch)
+DP Страница МФИ (Display Page)
+DRA Пусковая установка с двумя направляющими (Dual Rail Adapter)
+DRC Указатель заданного момента сброса (Desired Release Cue)
+DSMS Цифровая система управления подвесками
+ (Digital Stores Management System)
+DTOT Требуемое время прибытия к цели (Desired Time On Target)
+DTS Система передачи данных (Data Transfer System)
+DTSAS Программное обеспечение цифровой модели рельефа местности
+ (Digital Terrain System Application Software)
+DTTG Требуемое время следования (Desired Time To Go)
+EAC Улучшеная система ориентации (Enhanced Attitude Control)
+ECM Радиоэлектронное противодействие (Electronic Countermeasures)
+EFC Аварийное управление ЛА (Emergency Flight Control)
+EGI Спутниковая бесплатформенная инерциальная навигационная система
+ (Embedded GPS INS)
+EGT Температура выхлопных газов (Exhaust Gas Temperature)
+EHE Расчетная погрешность в горизонтальной плоскости
+ (Expected Horizontal Error)
+EMI Приборы контроля двигателей (Engine Monitoring Instruments)
+EO Оптико-электронный (Electro Optical)
+ET Затраченное время (Elapsed Time)
+EVE Расчетная погрешность в вертикальной плоскости (Expected Vertical Error)
+FA Подтверждение неисправности (Fault Acknowledge)
+FEDS Система отображения траектории полета снарядов
+ (Firing Evaluation Display System)
+FFAR Неуправляемая Авиационная Ракета (НАР) (Folding Fin Aerial Rockets)
+FLIR Инфракрасная система обзора в переднюю полусферу
+ (Forward Looking Infrared)
+FM Частотная модуляция (Frequency Modulation)
+FOM Оценка достоверности определения координат (Figure of Merit)
+FOV Поле зрения (Field of View)
+GBL Линия оси пушки (Gun Bore Line)
+GBU Управляемая авиационная бомба (Guided Bomb Unit)
+GCAS Система предупреждения опасного сближения с поверхностью земли
+ (Ground Collision Avoidance System)
+GMT Среднее время по Гринвичу (Greenwich Mean Time)
+GPS Среднеорбитальная спутниковая радионавигационная система НАВСТАР,
+разработанная в США, (GPSGlobal Positioning System)
+GS Путевая скорость (Ground Speed)
+IAM Боеприпас с инерциальным наведением (Inertially Aided Munition)
+IAS Приборная скорость (Indicated Airspeed)
+IFF Система определения "свой-чужой" (Identify Friend or Foe)
+IFFCC Комплексная система управления полетом и вооружением
+ (Integrated Flight and Fire Control Computer)
+ILS Система инструментальной посадки, ILS (Instrumented Landing System)
+INS Инерциальная навигационная система, ИНС (Inertial Navigation System)
+ITT Температура газов между турбинами (Interstage Turbine Temperature)
+HARS Резервная курсовертикаль (Heading Attitude Reference System)
+HEI Фугасно-зажигательный снаряд (High Explosive, Incendiary)
+HOF Высота раскрытия (Height of Function)
+HOTAS Система управления ЛА без снятия рук с РУД и РУС
+ (Hands On Throttle and Stick)
+HPU Неопределенность оценки собственных координат в горизонтальной
+плоскости (Horizontal Position Uncertainty)
+HSI Плановый навигационный прибор, ПНП (Horizontal Situation Indicator)
+HUD Индикатор на лобовом стекле, ИЛС (Heads Up Display)
+JDAM Управляемая авиационная бомба оснащенная инерциальной системой
+наведения с коррекцией от спутниковой навигационной системы
+ (Joint Directed Attack Munition)
+JTAC Передовой авиационный наводчик, ПАН (Joint Terminal Attack Controller)
+JTRS Объединенная тактическая система радиосвязи (Joint Tactical Radio System)
+KIAS Криборная воздушная скорость в узлах (Knots Indicated Airspeed)
+LAAP Низковысотный автопилот (Low Altitude Autopilot)
+LAR Направленный замер высоты (Look Aside Ranging)
+LASTE Система обеспечения безопасности маловысотного полѐта и прицеливания
+ (Low Altitude Safety and Targeting Enhancement)
+LGB Управляемая авиабомба, УАБ. УАБ с лазерной системой наведения
+ (Laser Guided Bomb)
+LOS Линия визирования (Line Of Sight)
+LRU Быстросменный блок (Line Replaceable Unit)
+MAP Высота принятия решения (Missed Approach Point)
+MFCD Цветной многофункциональный индикатор (Multifunction Color Display)
+MGRS Военная система прямоугольных координат (Military Grid Reference System)
+MMCB Кнопка управления режимами ИЛС (Master Mode Control Button)
+MRC Указатель минимальной дальности (Minimum Range Cue)
+MRFCS Система перевода на ручное управление
+ (Manual Reversion Flight Control System)
+MRGS Прицел для стрельбы на пересекающихся курсах
+ (Multiple Reference Gunsight)
+MRS Скобка минимальной дальности (Minimum Range Staple)
+MSL Средний уровень поверхности моря (Mean Sea Level)
+MWS Система предупреждения о пуске (Missile Warning System)
+NMSP Пульт выбора навигационных режимов (Navigation Mode Select Panel)
+NWS Механизм разворота колеса (Nosewheel Steering)
+NVIS Очки ночного видения (Night Vision Imaging System)
+OFPID Идентификация используемого профиля полѐта
+ (Operational Flight Profile Identification)
+ORP Оптимальная точка сброса (Optimal Release Point)
+OSB Кнопка выбора пункта меню (Option Select Button)
+OWC Указатель предупреждения о препятствии (Obstacle Warning Cue)
+PAC Система точного управления ориентацией (Precision Attitude Control)
+PBIL Линия разрывов авиабомб (Projected Bomb Impact Line)
+PVA Скоростной метод определения положения
+ (Position Velocity Acceleration mode)
+PR Метод пассивного определения дальности (Passive Ranging)
+PRF Частота повторения импульсов (Pulse Repetition Frequency)
+RGS Требуемая путевая скорость (Required Ground Speed)
+RIAS Требуемая приборная скорость (Required Indicated Airspeed)
+RTAS Требуемая истинная скорость (Required True Airspeed)
+RWR Приемник системы предупреждения об облучении (Radar Warning Receiver)
+SADL Система обмена тактической информацией (Situational Awareness Datalink)
+SAI Резервный авиагоризонт (Standby Attitude Indicator)
+SAS Система улучшения устойчивости (Stability Augmentation System)
+SER Однозамковый балочный держатель (Single Ejector Rack)
+SOI Активный сенсор (Sensor of Interest)
+SPI Центр внимания сенсора (Sensor Point of Interest)
+SPJ Станция активных помех (САП) (Self Protection Jammer)
+SRU Модуль, заменяемый в ремонтной мастерской (Shop Replaceable Unit)
+TAD Tactical Awareness Display
+TAS Истинная скорость (True Airspeed)
+TDC Целеуказатель (Target Designation Cursor)
+TER Трехзамковый балочный держатель (Triple Ejector Rack)
+TGP Прицельный контейнер (Targeting Pod)
+TISL Система обнаружения лазерного пятна (Target Identification Set Laser)
+TMS Кнопка управления целеуказанием (Target Management Switch)
+TOF Время падения (АБ) / время подлета (ракеты) (Time of Fall / Time of Flight)
+TOT Время прибытия к цели (Time On Target)
+TP Практический снаряд (Target Practice)
+TTG Время следования к цели (Time To Go)
+TTRN Время до сброса (Time to Release Numeric)
+TVM Телевизионный индикатор (Television Monitor)
+TVV Вектор суммарной скорости (Total Velocity Vector)
+UFC Пульт ввода данных и управления (Up Front Controller)
+UHF Ультравысокая частота (УВЧ) (Ultra High Frequency)
+VHF Очень высокая частота (ОВЧ) или УКВ (Very High Frequency)
+VPU Неопределенность оценки координат в вертикальной плоскости
+ (Vertical Position Uncertainty)
+VVI Указатель вертикальной скорости (Vertical Velocity Indicator)
+WCMD Кассетный боеприпас оснащенный блоком инерциального наведения
+ (Wind Corrected Munition Dispensor)
+WCN Система предупреждения и оповещения лѐтчика на МФИ
+ (Warning, Caution, and Notes)
