@@ -52,19 +52,19 @@ Offers visual editing, which is not always convinient.
 
 Converted documentation must be presented as directory containg .md files, one per chapter, and subdirectory contaning images.
 
-## Коротко о синтаксисе маркдауна
+## Briefly about the Markdown syntax
 
-Маркдаун - лаконичный и минималистичный способ разметки документа. Это несёт в себе как лёгкость использования, так и ограничения, делающие невозможным сложное оформление, типа объединения ячеек в таблице.
+Markdown is a concise and minimalistic way to mark up a document. This brings both ease of use and limitations that make it impossible to create a complex layout, such as combining cells in a table.
 
-### Базовый синтаксис
+### Basic syntax
 
-[Описание синтаксиса на сайте маркдауна](https://www.markdownguide.org/basic-syntax/)
+[Syntax description on the Markdown site](https://www.markdownguide.org/basic-syntax/)
 
 #### Параграфы
 
-Параграфы разделяются пустыми строками. Просто перенос строки в маркдауне не отобразится новой строкой в HTML.
+Paragraphs are separated by empty lines. A line break in raw Markdown will not be displayed as a new line in HTML.
 
-Пример:
+Example:
 
 ```
 Уборка шасси производится 
