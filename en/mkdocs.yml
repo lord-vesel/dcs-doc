@@ -4,7 +4,7 @@ repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
 google_analytics: ['UA-19502035-4', 'auto']
 site_author: "rost.lunegoff@gmail.com"
-copyright: "<a href=https://t.me/rlunegov>Telegram</a>"
+copyright: "<a href=https://t.me/rlunegov>Telegram author</a>"
 
 nav:
   - About:

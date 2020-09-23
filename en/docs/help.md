@@ -23,7 +23,7 @@ One file may contain only one [first level header](/help/#_12).
 
 Images are stored in a subfolder relativly to markdown files. Links to images must be relative `![](img/89-2.jpg)`.
 
-Orange notes over images are not exported, such images should to be screnshot.
+The orange callouts over images are not exported, these pictures need to be screenshot.
 
 ![](img/help/image-20200720232437233.png)
 
