@@ -43,6 +43,7 @@ nav:
         - mi8/03.dynamic.md
         - mi8/04.powerplant.md
         - mi8/05.cockpit.md
+        - mi8/06.radios.md
 
 #theme: readthedocs
 theme:
