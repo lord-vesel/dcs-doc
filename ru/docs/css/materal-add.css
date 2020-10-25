@@ -45,3 +45,28 @@ kbd.keyboard-css {
     margin: .5em auto;
     font-style: italic;
 }
+.lower-dopusk {
+    vertical-align: -40%;
+    font-size: smaller;
+    margin-left: -31px;
+}
+.upper-dopusk {
+    vertical-align: 40%;
+    font-size: smaller;
+}
+.formula span{
+    display: inline-block;
+}
+.formula span sup, .formula span sub {
+    display: block;
+    font-size: 65%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.formula span sup {
+    top: -0.6em;
+}
+.formula span sub {
+    top: 0.4em;
+}
