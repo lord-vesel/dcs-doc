@@ -24,6 +24,7 @@
 }
 .md-typeset table:not([class]) th {
     padding: .1rem .3rem;
+    min-width: auto;
 }
 .md-typeset table:not([class]) td {
     padding: .2rem .4rem;
