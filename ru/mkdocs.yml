@@ -45,6 +45,7 @@ nav:
         - mi8/05.cockpit.md
         - mi8/06.radios.md
         - mi8/07.systems.md
+        - mi8/08.restrictions.md
 
 #theme: readthedocs
 theme:
