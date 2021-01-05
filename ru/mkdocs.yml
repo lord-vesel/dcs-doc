@@ -11,31 +11,31 @@ nav:
       - index.md
       - help.md
       - people.md
-        #  - Вторая Мировая:
-        #      - i16.md
-        #      - FW-190 A8 от ED:
-        #        - fw190a8/01.intro.md
-        #        - fw190a8/02.history.md
-        #        - fw190a8/03.design.md
-        #        - fw190a8/04.cockpit.md
-        #        - fw190a8/05.stdprocs.md
-        #        - fw190a8/06.emerg.md
-        #        - fw190a8/07.combat.md
-        #  - Современная авиация:
-        #      - F/A-18C от ED:
-        #        - fa18c/01.setup.md
-        #        - fa18c/02.cockpit.md
-        #        - fa18c/03.mfdu.md
-        #        - fa18c/04.hud.md
-        #        - fa18c/05.procedures.md
-        #        - fa18c/06.radios.md
-        #        - fa18c/07.modes.md
-        #        - fa18c/08.nav-mode.md
-        #        - fa18c/09.a-g-mode.md
-        #        - fa18c/10.a-a-mode.md
-        #        - fa18c/11.counter-mesures.md
-        #        - fa18c/12.ew.md
-        #        - fa18c/13.credits.md
+  - Вторая Мировая:
+      - i16.md
+      - FW-190 A8 от ED:
+        - fw190a8/01.intro.md
+        - fw190a8/02.history.md
+        - fw190a8/03.design.md
+        - fw190a8/04.cockpit.md
+        - fw190a8/05.stdprocs.md
+        - fw190a8/06.emerg.md
+        - fw190a8/07.combat.md
+  - Современная авиация:
+      - F/A-18C от ED:
+        - fa18c/01.setup.md
+        - fa18c/02.cockpit.md
+        - fa18c/03.mfdu.md
+        - fa18c/04.hud.md
+        - fa18c/05.procedures.md
+        - fa18c/06.radios.md
+        - fa18c/07.modes.md
+        - fa18c/08.nav-mode.md
+        - fa18c/09.a-g-mode.md
+        - fa18c/10.a-a-mode.md
+        - fa18c/11.counter-mesures.md
+        - fa18c/12.ew.md
+        - fa18c/13.credits.md
   - Вертолёты:
       - Ми-8 от Belsimtek:
         - mi8/01.history.md
