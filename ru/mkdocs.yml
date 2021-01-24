@@ -47,6 +47,8 @@ nav:
         - mi8/07.systems.md
         - mi8/08.restrictions.md
         - mi8/09.flights.md
+        - mi8/10.emergency.md
+        - mi8/11.weapons.md
 
 #theme: readthedocs
 theme:
