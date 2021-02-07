@@ -40,6 +40,7 @@ kbd.keyboard-css {
 }
 .md-typeset figure {
     text-align: left;
+    margin: 0;
 }
 .md-typeset figcaption {
     max-width: 100%;
