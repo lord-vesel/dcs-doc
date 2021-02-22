@@ -49,6 +49,7 @@ nav:
         - mi8/09.flights.md
         - mi8/10.emergency.md
         - mi8/11.weapons.md
+        - mi8/12.engagement.md
 
 #theme: readthedocs
 theme:
