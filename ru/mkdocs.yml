@@ -50,6 +50,10 @@ nav:
         - mi8/10.emergency.md
         - mi8/11.weapons.md
         - mi8/12.engagement.md
+        - mi8/13.specialtasks.md
+        - mi8/15.abbr.md
+        - mi8/17.credits.md
+        - mi8/18.sources.md
 
 #theme: readthedocs
 theme:
