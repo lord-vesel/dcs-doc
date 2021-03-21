@@ -36,6 +36,24 @@ nav:
         - fa18c/11.counter-mesures.md
         - fa18c/12.ew.md
         - fa18c/13.credits.md
+  - Вертолёты:
+      - Ми-8 от Belsimtek:
+        - mi8/01.history.md
+        - mi8/02.geninfo.md
+        - mi8/03.dynamic.md
+        - mi8/04.powerplant.md
+        - mi8/05.cockpit.md
+        - mi8/06.radios.md
+        - mi8/07.systems.md
+        - mi8/08.restrictions.md
+        - mi8/09.flights.md
+        - mi8/10.emergency.md
+        - mi8/11.weapons.md
+        - mi8/12.engagement.md
+        - mi8/13.specialtasks.md
+        - mi8/15.abbr.md
+        - mi8/17.credits.md
+        - mi8/18.sources.md
 
 #theme: readthedocs
 theme:
