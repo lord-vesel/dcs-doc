@@ -10,6 +10,7 @@ jobs:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
       RELEASE_DIR: /var/www/dcs-docs/${{ github.ref }}/releases/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/${{ github.ref }}/releases/
       CURRENT_DIR: /var/www/dcs-docs/${{ github.ref }}/current
     runs-on: ubuntu-latest
 
@@ -73,3 +74,6 @@ jobs:
         key: ${{ secrets.DEPLOY_KEY }}
         script: |
           ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
+          for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
+          do rm -rf ${{env.RELEASES_DIR}}/$R
+          done

@@ -4,13 +4,23 @@ repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
 google_analytics: ['UA-19502035-4', 'auto']
 site_author: "rost.lunegoff@gmail.com"
-copyright: "<a href=https://t.me/rlunegov>Telegram</a>"
+copyright: "<a href=https://t.me/rlunegov>Telegram author</a>"
 
 nav:
   - About:
       - index.md
       - help.md
       - people.md
+  - Carrirers:
+    - Supercarrier by ED:
+      - sc/01.quickstart.md
+      - sc/02.nimitz.md
+      - sc/03.launch.md
+      - sc/04.recovery.md
+      - sc/05.lso.md
+      - sc/06.editor.md
+      - sc/07.glossary.md
+
 
 #theme: readthedocs
 theme:

@@ -23,7 +23,7 @@ One file may contain only one [first level header](/help/#_12).
 
 Images are stored in a subfolder relativly to markdown files. Links to images must be relative `![](img/89-2.jpg)`.
 
-Orange notes over images are not exported, such images should to be screnshot.
+The orange callouts over images are not exported, these pictures need to be screenshot.
 
 ![](img/help/image-20200720232437233.png)
 
@@ -52,148 +52,161 @@ Offers visual editing, which is not always convinient.
 
 Converted documentation must be presented as directory containg .md files, one per chapter, and subdirectory contaning images.
 
-## Коротко о синтаксисе маркдауна
+## Briefly about the Markdown syntax
 
-Маркдаун - лаконичный и минималистичный способ разметки документа. Это несёт в себе как лёгкость использования, так и ограничения, делающие невозможным сложное оформление, типа объединения ячеек в таблице.
+Markdown is a concise and minimalistic way to mark up a document. This brings both ease of use and limitations that make it impossible to create a complex layout, such as combining cells in a table.
 
-### Базовый синтаксис
+### Basic syntax
 
-[Описание синтаксиса на сайте маркдауна](https://www.markdownguide.org/basic-syntax/)
+[Syntax description on the Markdown site](https://www.markdownguide.org/basic-syntax/)
 
-#### Параграфы
+#### Paragraphs
 
-Параграфы разделяются пустыми строками. Просто перенос строки в маркдауне не отобразится новой строкой в HTML.
+Paragraphs are separated by empty lines. A single line break in Markdown will not be displayed as a new line in HTML.
 
-Пример:
+This is a very timesaving feature, as there is no need to take care of hanging strings.
 
-```
-Уборка шасси производится 
-на скоростях по прибору до 250 км/ч.
-После отрыва слегка
-нажмите тормоза, 
-чтобы остановить 
-вращение колес, 
-после чего можете убрать шасси.
-```
-
-Результат:
-
-> Уборка шасси производится 
-> на скоростях по прибору до 250 км/ч.
-> После отрыва слегка
-> нажмите тормоза, 
-> чтобы остановить 
-> вращение колес, 
-> после чего можете убрать шасси.
-
-Пример параграфа:
+Example:
 
 ```
-Уборка шасси производится 
-на скоростях по прибору до 250 км/ч.
-
-После отрыва слегка
-нажмите тормоза, 
-чтобы остановить 
-вращение колес, 
-после чего можете убрать шасси.
+The cockpit in the Fw 190 A-8 was a revolutionary 
+design that attempted to put all levers and
+instruments easily within reach. It was one 
+of the first examples of ergonomic cockpit design and can
+be seen as the early precursor of today’s 
+hands on throttle and stick (HOTAS) cockpits.
+In stark contrast to its competitor, the Bf 
+109, the Fw 190 offered its pilot comfortable access to most
+important controls located easily within reach.
 ```
 
-Результат:
+Result:
 
-> Уборка шасси производится 
-> на скоростях по прибору до 250 км/ч.
-> 
-> После отрыва слегка
-> нажмите тормоза, 
-> чтобы остановить 
-> вращение колес, 
-> после чего можете убрать шасси.
-
-
-
-Это очень облегчающая жизнь особенность, в контексте обработки ПДФ, так как не нужно заботиться о висящих строках.
-
-Если всё же необходимо перенести строку, не создавая новый абзац, нужно использовать тег `<br>`, что часто востребовано при оформлении заголовков таблиц:
+>The cockpit in the Fw 190 A-8 was a revolutionary 
+>design that attempted to put all levers and
+>instruments easily within reach. It was one 
+>of the first examples of ergonomic cockpit design and can
+>be seen as the early precursor of today’s 
+>hands on throttle and stick (HOTAS) cockpits.
+>In stark contrast to its competitor, the Bf 
+>109, the Fw 190 offered its pilot comfortable access to most
+>important controls located easily within reach.
 
 ```
-Ручка, <br>угол поворота | Наддув, <br>ata| Обороты, <br>об/мин
+The cockpit in the Fw 190 A-8 was a revolutionary 
+design that attempted to put all levers and
+instruments easily within reach. It was one 
+of the first examples of ergonomic cockpit design and can
+be seen as the early precursor of today’s 
+hands on throttle and stick (HOTAS) cockpits.
+
+In stark contrast to its competitor, the Bf 
+109, the Fw 190 offered its pilot comfortable access to most
+important controls located easily within reach.
+```
+
+Result:
+
+>The cockpit in the Fw 190 A-8 was a revolutionary 
+>design that attempted to put all levers and
+>instruments easily within reach. It was one 
+>of the first examples of ergonomic cockpit design and can
+>be seen as the early precursor of today’s 
+>hands on throttle and stick (HOTAS) cockpits.
+>
+>In stark contrast to its competitor, the Bf 
+>109, the Fw 190 offered its pilot comfortable access to most
+>important controls located easily within reach.
+
+If you still need to move a line without creating a new paragraph, you should use the tag `<br>`, which is often useful for table headers:
+
+```
+Throttle, <br>Percent | Pressure boost, <br>ata| Revolutions, <br>RPM
 -------|------|--------
-22°    |  0.8   | 1500
-26°    |  0.85  | 1600
+22    |  0.8   | 1500
+26    |  0.85  | 1600
 ```
 
-Результат:
+Result:
 
-Ручка, <br>угол поворота | Наддув, <br>ata| Обороты, <br>об/мин
+Throttle, <br>Percent | Pressure boost, <br>ata| Revolutions, <br>RPM
 -------|------|--------
-22°    |  0.8   | 1500
-26°    |  0.85  | 1600
+22    |  0.8   | 1500
+26    |  0.85  | 1600
 
-#### Заголовки
+#### Headers
 
-Заголовками мы задаём иерархию документа, по которой создаётся содержание в правой части страницы.
+We use headers to define the document hierarchy that is used to create content on the right side of the page.
 
-Синтаксис:
+Syntax:
 
-	# Заголовок 1
-	## Заголовок 2
+    # Title 1
+    ## Title 2
 
 !!! warning
-    В одном документе может быть только один заголовок первого уровня.
-    Им определяется наименование страницы в главном меню.
+    There can only be one first-level header per document.
+    It defines the name of the page in the main menu.
 
-    Вся навигация по документу строится, начиная со второго уровня.
+    All navigation through the document is built, starting from the second level.
 
-#### Списки
+#### Lists
 
-Маркированные списки формируются дефисом и пробелом перед каждым элементом.
+Bulleted lists are formed with a hyphen and a space before each element.
 
-Второй уровень вложенности задаётся четырьмя пробелами перед дефисом.
+The second level of nesting is set with four spaces before the hyphen.
 
-    - Проверить работу подкачивающих насосов топливных баков;
-    включать на панели переключателей топливной системы по одному
-    АЗС каждого насоса и контролировать давление топлива
-    (0,3-0,4 atü) по прибору. Выключить насосы.
-    - Включить бензонасосы:
-        - E14   Бензонасос переднего бака
-        - E13   Бензонасос заднего бака
-        - E16   Бензонасос подвесного бака, если он используется
-        - E96   Насос системы дополнительного бака, если необходимо
+    - Ensure the proper operation of the fuel tank pumps; 
+    on the fuel system circuit breaker
+    panel, switch on one circuit breaker for every pump 
+    and monitor the fuel pressure (0.3-0.4
+    atü) on the gauge. Switch off the pumps.
+    - Switch on the following pumps.
+        - C1 (External connection) – [[RWin + 1]]
+        - E14 Front tank pump [[RWin + 2]]
+        - E13 Aft tank pump [[RWin + 3]]
+        - E16 Drop tank pump, if applicable [[RWin + 4]]
+        - E96 Auxiliary tank pump, if required [[RWin + 5]]
 
-Результат:
+Result:
 
-> - Проверить работу подкачивающих насосов топливных баков;
-> включать на панели переключателей топливной системы по одному
-> АЗС каждого насоса и контролировать давление топлива
-> (0,3-0,4 atü) по прибору. Выключить насосы.
-> - Включить бензонасосы:
->     - E14   Бензонасос переднего бака
->     - E13   Бензонасос заднего бака
->     - E16   Бензонасос подвесного бака, если он используется
->     - E96   Насос системы дополнительного бака, если необходимо
+> - Ensure the proper operation of the fuel tank pumps; on the fuel system circuit breaker
+> panel, switch on one circuit breaker for every pump and monitor the fuel pressure (0.3-0.4
+> atü) on the gauge. Switch off the pumps.
+> - Switch on the following pumps.
+>     - C1 (External connection) – [[RWin + 1]]
+>     - E14 Front tank pump [[RWin + 2]]
+>     - E13 Aft tank pump [[RWin + 3]]
+>     - E16 Drop tank pump, if applicable [[RWin + 4]]
+>     - E96 Auxiliary tank pump, if required [[RWin + 5]]
 
-Нумерованные списки формируются цифрой (не важно какой), точкой и пробелом перед каждым элементом:
+Numbered lists are formed by a number (no matter what), a dot, and a space before each element:
 
-    1. в условиях высокой влажности и при температурах ниже 0°с включите обогрев трубки
-        пито и лобового стекла.
-    1. включите оба бензонасоса и переключите топливомер на задний бак.
-    1. в случае, если полет проводится с подвесным топливным баком, включите бензонасосы
-        только заднего и подвесного баков.
-    2. установите щитки во взлетное положение на пульте на левой панели.
+    1. Primer fuel pump handle
+    1. Headset cord attachment point
+    1. FuG 16ZY receiver fine tuning
+    1. FuG 16ZY homing range switch
+    1. Undercarriage and landing flap actuation buttons
+    1. Undercarriage position indicators
+    1. Kommandogerät Auto / Manual mode switch
+    1. Push-to-talk button
+    2. Throttle lever with thumb-actuated propeller pitch control
+    2. FuG 16ZY FT (communications) and ABST (homing) switch
 
-Результат:
+Result:
 
-> 1.  в условиях высокой влажности и при температурах ниже 0°с включите обогрев трубки
->     пито и лобового стекла.
-> 1. включите оба бензонасоса и переключите топливомер на задний бак.
-> 1. в случае, если полет проводится с подвесным топливным баком, включите бензонасосы
->     только заднего и подвесного баков.
-> 2. установите щитки во взлетное положение на пульте на левой панели.
+> 1. Primer fuel pump handle
+> 1. Headset cord attachment point
+> 1. FuG 16ZY receiver fine tuning
+> 1. FuG 16ZY homing range switch
+> 1. Undercarriage and landing flap actuation buttons
+> 1. Undercarriage position indicators
+> 1. Kommandogerät Auto / Manual mode switch
+> 1. Push-to-talk button
+> 2. Throttle lever with thumb-actuated propeller pitch control
+> 2. FuG 16ZY FT (communications) and ABST (homing) switch
 
-Если в элемент списка нужно добавить абзац, картинку, таблицу и т.п.,
-не прерывая нумерацию,
-то этот блок должен иметь отступ в четыре пробела от начала строки, а так же отделён пустыми строками до и после:
+If you want to add a paragraph, picture, table, etc. to a list item without interrupting the numbering, this block must have an indent of four spaces from the beginning of the line, as well as separated by empty lines before and after:
+
 
     1. Установить шаг винта на 12:00, отключить автоматическое управление шагом винта.
     2. Выполнять прогон без задержек. Контролируйте параметры работы по таблице:
@@ -226,7 +239,7 @@ Converted documentation must be presented as directory containg .md files, one p
     оборотах по причине недостаточной смазки клапанов и, если
     требуется более длительное время ожидания, установите обороты 1200 об/мин.
 
-Результат:
+Result:
 
 > 1. Установить шаг винта на 12:00, отключить автоматическое управление шагом винта.
 > 2. Выполнять прогон без задержек. Контролируйте параметры работы по таблице:
@@ -256,18 +269,16 @@ Converted documentation must be presented as directory containg .md files, one p
 > 
 > 4. Избегайте длительной работы двигателя на малых/холостых оборотах по причине недостаточной смазки клапанов и, если требуется более длительное время ожидания, установите обороты 1200 об/мин.
 
-#### Таблицы
+#### Tables
 
-Как видно из примеров выше, таблицы рисуются, разделяя ячейки вертикальными чертами.
-Первая строка - заголовок, вторая, состоящая из дефисов - отделяющая загловок от содержательной части.
+As you can see from the examples above, tables are drawn by dividing cells with vertical lines.
+The first line is the title, and the second, consisting of hyphens, separates the title from the content part.
 
-Число ячеек в каждой строке должно совпадать.
+The number of cells in each row must match.
 
-Объединить ячейки нельзя. Если встречается подобная конструкция:
+You can't merge cells. If a similar  structure occurs, you can put duplicate values in parentheses:
 
 ![](img/help/image-20200717230634623.png)
-
-то можно вынести дублирующие значения в скобки:
 
     Вес, кг | Длина разбега, м<br>Бетон (Трава) | Скороподъемность<br>после взлета, м/с<br>(щитки 10°) | Длина пробега, м<br>Бетон (Трава) | Время пробега, с <br>Бетон (Трава)
     ---|-------|--------|--------|-------
@@ -276,7 +287,7 @@ Converted documentation must be presented as directory containg .md files, one p
     5000 |  960 (1110) | 7  | 680 (730) |  22  (24)
     5500 | 1200 (1280) | 5  | 880 (960) | 26,5 (29,5)
 
-Результат:
+Result:
 
 Вес, кг | Длина разбега, м<br>Бетон (Трава) | Скороподъемность<br>после взлета, м/с<br>(щитки 10°) | Длина пробега, м<br>Бетон (Трава) | Время пробега, с <br>Бетон (Трава)
 ---|-------|--------|--------|-------
@@ -285,72 +296,70 @@ Converted documentation must be presented as directory containg .md files, one p
 5000 |  960 (1110) | 7  | 680 (730) |  22  (24)
 5500 | 1200 (1280) | 5  | 880 (960) | 26,5 (29,5)
 
-#### Иллюстрации
+#### Pictures
 
-Формируются следующим образом:
+They are formed as follows
 
-    ![Нажатая кнопка ”AUS”](img/-89-2.jpg)
+    !["AUS" button depressed](img/-89-2.jpg)
 
-Содержимое квадратных скобок становится подписью.
+The contents of the square brackets become the caption
 
-Результат:
+Result:
 
-![   Нажатая кнопка ”AUS”](img/help/-89-2.jpg)
+!["AUS" button depressed](img/help/-89-2.jpg)
 
-#### Ссылки
+#### Links
 
-Синтаксис отличается от картинок только отсутствием восклицательного знака в начале.
+The syntax differs from images only in the absence of an exclamation mark at the beginning
 
-    [Сайт mkdocs](https://www.mkdocs.org/)
+    [Mkdocs site](https://www.mkdocs.org/)
 
-Результат:
+Result:
 
-[Сайт mkdocs](https://www.mkdocs.org/)
+> [Mkdocs site](https://www.mkdocs.org/)
 
+### Additional element
 
-### Дополнительные элементы
-
-В проекте с помощью плагинов и расширений для python-markdown используется
-дополнительный синтаксис. Эти элементы не будут корректно отображаться в markdown-редакторах.
+In the project with plugins and python-markdown extensions
+additional syntax may be used. These elements will not be displayed correctly in the markdown editor.
 
 #### Admonition
 
-Блоки подсказок, предупреждений, информации и т.п.
+Blocks of hints, warnings, information, etc.
 
-Синтаксис:
+Syntax:
 
     !!! warning
-        Электрический стартер использовать с подключенным внешним электропитанием!
+        Use the electric starter with an external power supply connected!
     
-        Бортовой аккумулятор применять только в чрезвычайных ситуациях!
+        Use the onboard battery only in emergency situations!
     
     !!! info
-        В экстренном случае или при невозможности использования внешнего
-        электропитания возможен запуск двигателя от бортового аккумулятора.
+        In case of an emergency or if it is impossible to use an external device
+        power supply the engine can be started from the on-Board battery.
 
-Результат:
+Result:
 
 !!! warning
-    Электрический стартер использовать с подключенным внешним электропитанием!
+    Use the electric starter with an external power supply connected!
 
-    Бортовой аккумулятор применять только в чрезвычайных ситуациях!
+    Use the onboard battery only in emergency situations!
 
 !!! info
-    В экстренном случае или при невозможности использования внешнего
-    электропитания возможен запуск двигателя от бортового аккумулятора.
+    In case of an emergency or if it is impossible to use an external device
+    power supply the engine can be started from the on-Board battery.
 
-[Подробнее о возможных типах блоков.](https://squidfunk.github.io/mkdocs-material/extensions/admonition/#types)
+[Learn more about possible block types](https://squidfunk.github.io/mkdocs-material/extensions/admonition/#types)
 
-#### Подстветка клавиатурных сочетаний
+#### Highlighting keyboard shortcuts
 
-Синтаксис:
+Syntax:
 
-    Переключатель зажигания (магнето) перевести в положение M1+М2.
-    Вперед [[End]], назад [[RShift]] + [[End]].
+    Switch the ignition switch (magneto) to position M1+M2.
+    Forward [[End]], backward [[Shift]] + [[End]].
 
-Результат:
+Result:
 
-> Переключатель зажигания (магнето) перевести в положение M1+М2.
-> Вперед [[End]], назад [[RShift]] + [[End]].
-
+> Switch the ignition switch (magneto) to position M1+M2.
+> Forward [[End]], backward [[Shift]] + [[End]].
 
