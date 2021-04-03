@@ -2,6 +2,6 @@
 
 Автор проекта:
 
-[third_man](https://forums.eagle.ru/member.php?u=125274)
+[third_man](https://forums.eagle.ru/profile/57900-third_man/)
 
 Для связи: [телега](https://t.me/rlunegov)
