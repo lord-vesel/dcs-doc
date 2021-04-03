@@ -21,6 +21,8 @@ nav:
         - fw190a8/05.stdprocs.md
         - fw190a8/06.emergency.md
         - fw190a8/07.combat.md
+        - fw190a8/08.radio.md
+        - fw190a8/09.credits.md
   - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
