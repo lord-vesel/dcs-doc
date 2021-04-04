@@ -38,6 +38,13 @@ nav:
         - fa18c/11.counter-mesures.md
         - fa18c/12.ew.md
         - fa18c/13.credits.md
+      - Су-25Т от ED:
+        - su25t/01.intro.md
+        - su25t/02.simple.md
+        - su25t/03.cockpit.md
+        - su25t/04.radio.md
+        - su25t/05.model.md
+        - su25t/06.combat.md
   - Вертолёты:
       - Ми-8 от Belsimtek:
         - mi8/01.history.md
