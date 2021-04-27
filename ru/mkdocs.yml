@@ -91,6 +91,7 @@ markdown_extensions:
   - markdown_captions
   - markdown_include.include
   - admonition
+  - pymdownx.details
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
