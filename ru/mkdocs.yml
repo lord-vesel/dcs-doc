@@ -40,7 +40,7 @@ nav:
         - fa18c/08.nav-mode.md
         - fa18c/09.a-g-mode.md
         - fa18c/10.a-a-mode.md
-        - fa18c/11.counter-mesures.md
+        - fa18c/11.counter-measures.md
         - fa18c/12.ew.md
         - fa18c/13.credits.md
       - Су-25Т от ED:
@@ -96,6 +96,8 @@ theme:
         name: Switch to light mode
   features:
     - navigation.instant
+    - navigation.tabs
+      # - navigation.indexes
 
 extra_css:
   - css/materal-add.css
