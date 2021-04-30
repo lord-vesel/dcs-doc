@@ -4,8 +4,13 @@ repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
 google_analytics: ['UA-19502035-4', 'dcs-docs.lordvesel.win/ru/']
 site_author: "rost.lunegoff@gmail.com"
-copyright: "<a href=https://t.me/rlunegov>Пишите в Telegram</a>"
-
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/rlunegov
+      name: Пишите в Telegram
+    - icon: fontawesome/solid/envelope
+      link: mailto:rost.lunegoff@gmail.com
 nav:
   - О проекте:
       - index.md
@@ -35,7 +40,7 @@ nav:
         - fa18c/08.nav-mode.md
         - fa18c/09.a-g-mode.md
         - fa18c/10.a-a-mode.md
-        - fa18c/11.counter-mesures.md
+        - fa18c/11.counter-measures.md
         - fa18c/12.ew.md
         - fa18c/13.credits.md
       - Су-25Т от ED:
@@ -71,11 +76,28 @@ theme:
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
+    #  palette:
+    #    primary: black
+    #    accent: blue
   palette:
-    primary: indigo
-    accent: blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   features:
-    - instant
+    - navigation.instant
+    - navigation.tabs
+      # - navigation.indexes
 
 extra_css:
   - css/materal-add.css
@@ -91,6 +113,7 @@ markdown_extensions:
   - markdown_captions
   - markdown_include.include
   - admonition
+  - pymdownx.details
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
