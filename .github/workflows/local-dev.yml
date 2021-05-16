@@ -22,12 +22,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Prepare a python virtualenv
-      # You may pin to the exact commit or the version.
-      # uses: syphar/restore-virtualenv@d0a933d92488e0505e012c3367e3f987a6276f5a
-      uses: syphar/restore-virtualenv@v1.1
-      with:
-        # custom element that will be used when constructing the cache key
-        custom_cache_key_element: dev
+      run: |
+        python -m venv ~/.virtualenvs/dev
+        source ~/.virtualenvs/dev/bin/activate
+        pip install -r ru/requirements.txt
 
     - name: Build RU site
       run: |
