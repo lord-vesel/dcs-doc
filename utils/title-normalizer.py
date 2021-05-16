@@ -62,7 +62,9 @@ def converter(args):
             norm_content = text.read()
 
             for t, n in titles_dict.items():
-                norm_content = re.sub(t,n,norm_content,re.M)
+                escaped_t = re.escape(t)
+                escaped_n = re.escape(n)
+                norm_content = re.sub(escaped_t,n,norm_content,re.M)
 
             if args.debug:
                 print(norm_content)
@@ -75,7 +77,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(argument_default=argparse.SUPPRESS)
     parser.add_argument('file', nargs=1, help='File normalize to.')
-    parser.add_argument('--apply', help='Replace titles with normalized ones, writing changes to file.', dest='apply', action='store_true')
+    parser.add_argument('-a', '--apply', help='Replace titles with normalized ones, writing changes to file.', dest='apply', action='store_true')
     parser.add_argument('--debug', help='Print debug info.', dest='debug', action='store_true')
     parser.set_defaults(apply=False)
     parser.set_defaults(debug=False)
