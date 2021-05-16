@@ -1,0 +1,54 @@
+name: Build DEV
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    env:
+      DEPLOY_USER: gh-dcs-deploy
+      DEPLOY_HOST: lordvesel.win
+      RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/dev/releases/
+      CURRENT_DIR: /var/www/dcs-docs/dev/current
+    runs-on: dcs
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Prepare a python virtualenv
+      # You may pin to the exact commit or the version.
+      # uses: syphar/restore-virtualenv@d0a933d92488e0505e012c3367e3f987a6276f5a
+      uses: syphar/restore-virtualenv@v1.1
+      with:
+        # custom element that will be used when constructing the cache key
+        custom_cache_key_element: dev
+
+    - name: Build RU site
+      run: |
+        cd $GITHUB_WORKSPACE/ru
+        mkdocs build
+        ls -al
+
+    - name: Build EN site
+      run: |
+        cd $GITHUB_WORKSPACE/en
+        mkdocs build
+        ls -al
+
+    - name: Deploy
+      run: |
+        [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
+        [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
+        rsync -a ru/site/ ${{env.RELEASE_DIR}}/ru/
+        rsync -a en/site/ ${{env.RELEASE_DIR}}/en/
+
+    - name: Switch release
+      run: |
+        ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
+        for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
+        do rm -rf ${{env.RELEASES_DIR}}/$R
+        done
