@@ -23,9 +23,9 @@ jobs:
 
     - name: Prepare a python virtualenv
       run: |
-        python -m venv ~/.virtualenvs/dev
+        python3.8 -m venv ~/.virtualenvs/dev
         source ~/.virtualenvs/dev/bin/activate
-        pip install -r ru/requirements.txt
+        pip3.8 install -r ru/requirements.txt
 
     - name: Build RU site
       run: |
