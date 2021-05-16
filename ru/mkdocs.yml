@@ -16,7 +16,9 @@ nav:
       - index.md
       - help.md
       - people.md
-  - Вторая Мировая:
+  - Документация:
+# - Вторая Мировая:
+      - aircraft.md
       - i16.md
       - FW-190 A8 от ED:
         - fw190a8/01.intro.md
@@ -28,7 +30,7 @@ nav:
         - fw190a8/07.combat.md
         - fw190a8/08.radio.md
         - fw190a8/09.credits.md
-  - Современная авиация:
+# - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
         - fa18c/02.cockpit.md
@@ -50,7 +52,7 @@ nav:
         - su25t/04.radio.md
         - su25t/05.model.md
         - su25t/06.combat.md
-  - Вертолёты:
+# - Вертолёты:
       - Ми-8 от Belsimtek:
         - mi8/01.history.md
         - mi8/02.geninfo.md
@@ -110,6 +112,7 @@ plugins:
 markdown_extensions:
   - toc:
       baselevel: 1
+      permalink: true
   - mdx_superscript
   - markdown_captions
   - markdown_include.include
@@ -118,3 +121,4 @@ markdown_extensions:
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
+  - meta
