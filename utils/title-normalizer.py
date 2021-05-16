@@ -2,15 +2,7 @@
 # -*- coding: utf8 -*-
 import argparse
 import re
-import glob
-import json
-import os.path
 import logging
-import sys
-
-def debug(args):
-    print(args)
-
 
 def converter(args):
     with open(args.file[0], 'r') as content:
