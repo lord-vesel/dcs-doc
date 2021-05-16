@@ -1,8 +1,8 @@
-name: Build DCS docs
+name: Build DEV
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
 
 jobs:
@@ -10,9 +10,9 @@ jobs:
     env:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
-      RELEASE_DIR: /var/www/dcs-docs/prod/releases/${{ github.run_number }}
-      RELEASES_DIR: /var/www/dcs-docs/prod/releases/
-      CURRENT_DIR: /var/www/dcs-docs/prod/current
+      RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/dev/releases/
+      CURRENT_DIR: /var/www/dcs-docs/dev/current
     runs-on: ubuntu-latest
 
     steps:

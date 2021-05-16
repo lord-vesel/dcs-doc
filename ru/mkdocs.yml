@@ -97,6 +97,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
+    - toc.integrate
       # - navigation.indexes
 
 extra_css:
