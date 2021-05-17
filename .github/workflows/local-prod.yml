@@ -42,3 +42,19 @@ jobs:
         for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
         do rm -rf ${{env.RELEASES_DIR}}/$R
         done
+
+    - name: Status Success Notification
+      if: ${{ success() }}
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        args: ⚡ GITHUB: Successfuly deployed PROD. Check out https://dcs-docs.lordvesel.win/ru/
+        
+    - name: Status Fail Notification
+      if: ${{ failure() }}
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        args: 💩 GITHUB: Deploy PROD failed.
