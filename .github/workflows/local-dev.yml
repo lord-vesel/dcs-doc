@@ -23,7 +23,7 @@ jobs:
 
     - name: Build mkdocs
       run: |
-        docker run -i --rm -v $PWD:/build -w /build python:3.8-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+        docker run -i --rm -v $PWD:/build -w /build python:3.8-alpine FAILsh -c 'apk add git gcc linux-headers musl-dev && \
         cd ru && pip install -r requirements.txt && \
         mkdocs build && \
         cd ../en && mkdocs build && \
@@ -48,11 +48,11 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: Successfuly deployed from branch ${{ github.ref }}. Check out https://dcs-docs-dev.lordvesel.win/ru/
+        args: ⚡ Successfuly deployed from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}. Check out https://dcs-docs-dev.lordvesel.win/ru/
     - name: Status Fail Notification
       if: ${{ failure() }}
       uses: appleboy/telegram-action@master
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: Deploy failed from branch ${{ github.ref }}.
+        args: 💩 Deploy failed from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}.
