@@ -49,7 +49,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: ⚡ GITHUB: Successfuly deployed DEV from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}. Check out https://dcs-docs-dev.lordvesel.win/ru/
+        args: "⚡ GITHUB: Successfuly deployed DEV from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}. Check out https://dcs-docs-dev.lordvesel.win/ru/"
         
     - name: Status Fail Notification
       if: ${{ failure() }}
@@ -57,4 +57,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: 💩 GITHUB: Deploy DEV failed from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}.
+        args: "💩 GITHUB: Deploy DEV failed from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}."

@@ -49,7 +49,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: ⚡ GITHUB: Successfuly deployed PROD. Check out https://dcs-docs.lordvesel.win/ru/
+        args: "⚡ GITHUB: Successfuly deployed PROD. Check out https://dcs-docs.lordvesel.win/ru/"
         
     - name: Status Fail Notification
       if: ${{ failure() }}
@@ -57,4 +57,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: 💩 GITHUB: Deploy PROD failed.
+        args: "💩 GITHUB: Deploy PROD failed."
