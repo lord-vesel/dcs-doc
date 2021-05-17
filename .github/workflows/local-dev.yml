@@ -1,0 +1,44 @@
+name: Build DEV
+
+on:
+  push:
+    branches-ignore:
+      - master
+
+jobs:
+  build:
+    env:
+      DEPLOY_USER: gh-dcs-deploy
+      DEPLOY_HOST: lordvesel.win
+      RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/dev/releases/
+      CURRENT_DIR: /var/www/dcs-docs/dev/current
+    runs-on:
+      - self-hosted
+      - dcs
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Prepare a python virtualenv
+      run: |
+        docker run --name mkdocs-deploy -i --rm -v $PWD:/build -w /build python:3.8-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+        cd ru && pip install -r requirements.txt && \
+        mkdocs build && \
+        cd ../en && mkdocs build && \
+        chown -R 1004:1004 ../'
+
+    - name: Deploy
+      run: |
+        [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
+        [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
+        rsync -a ru/site/ ${{env.RELEASE_DIR}}/ru/
+        rsync -a en/site/ ${{env.RELEASE_DIR}}/en/
+
+    - name: Switch release
+      run: |
+        ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
+        for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
+        do rm -rf ${{env.RELEASES_DIR}}/$R
+        done
