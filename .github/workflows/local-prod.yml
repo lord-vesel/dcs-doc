@@ -1,8 +1,8 @@
-name: Build DEV
+name: Build Docs
 
 on:
   push:
-    branches-ignore:
+    branches:
       - master
 
 jobs:
@@ -10,9 +10,9 @@ jobs:
     env:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
-      RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
-      RELEASES_DIR: /var/www/dcs-docs/dev/releases/
-      CURRENT_DIR: /var/www/dcs-docs/dev/current
+      RELEASE_DIR: /var/www/dcs-docs/prod/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/prod/releases/
+      CURRENT_DIR: /var/www/dcs-docs/prod/current
     runs-on:
       - self-hosted
       - dcs
@@ -49,7 +49,7 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: "⚡ GITHUB: Successfuly deployed DEV from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}. Check out https://dcs-docs-dev.lordvesel.win/ru/"
+        args: "⚡ GITHUB: Successfuly deployed PROD. Check out https://dcs-docs.lordvesel.win/ru/"
         
     - name: Status Fail Notification
       if: ${{ failure() }}
@@ -57,4 +57,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: "💩 GITHUB: Deploy DEV failed from https://github.com/lord-vesel/dcs-doc/commit/${{ github.sha }}."
+        args: "💩 GITHUB: Deploy PROD failed."
