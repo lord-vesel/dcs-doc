@@ -23,21 +23,12 @@ jobs:
 
     - name: Prepare a python virtualenv
       run: |
-        python3.8 -m venv ~/.virtualenvs/dev
-        source ~/.virtualenvs/dev/bin/activate
-        pip3.8 install -r ru/requirements.txt
-
-    - name: Build RU site
-      run: |
-        cd $GITHUB_WORKSPACE/ru
-        mkdocs build
-        ls -al
-
-    - name: Build EN site
-      run: |
-        cd $GITHUB_WORKSPACE/en
-        mkdocs build
-        ls -al
+        docker run --name mkdocs-deploy -it --rm -v $PWD:/build -w /build python:3.8-alpine \
+        sh -c 'apk add git gcc linux-headers musl-dev && \
+        cd ru && pip install -r requirements.txt && \
+        mkdocs build && \
+        cd ../en && mkdocs build && \
+        chown -R 1004:1004 ../'
 
     - name: Deploy
       run: |
