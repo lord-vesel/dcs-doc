@@ -1,8 +1,8 @@
-name: Build DEV
+name: Build STAGE
 
 on:
-  push:
-    branches-ignore:
+  pull_request:
+    branches:
       - master
 
 jobs:
@@ -10,9 +10,9 @@ jobs:
     env:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
-      RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
-      RELEASES_DIR: /var/www/dcs-docs/dev/releases/
-      CURRENT_DIR: /var/www/dcs-docs/dev/current
+      RELEASE_DIR: /var/www/dcs-docs/stage/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASES_DIR: /var/www/dcs-docs/stage/releases/
+      CURRENT_DIR: /var/www/dcs-docs/stage/current
     runs-on:
       - self-hosted
       - dcs
