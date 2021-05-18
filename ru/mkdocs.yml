@@ -36,6 +36,8 @@ nav:
         - p-47/04.cockpit.md
         - p-47/05.limits.md
         - p-47/06.procedures.md
+        - p-47/07.emergency.md
+        - p-47/08.combat.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
