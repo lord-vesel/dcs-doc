@@ -29,6 +29,10 @@ nav:
         - fw190a8/07.combat.md
         - fw190a8/08.radio.md
         - fw190a8/09.credits.md
+      - P-47D от ED:
+        - p-47/01.intro.md
+        - p-47/02.history.md
+        - p-47/03.design.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
