@@ -27,7 +27,7 @@ def converter(args):
             modword = ''
             clean_word = re.sub('(\(|\))','',word)
 
-            if bool(re.search(r'\d', clean_word)):
+            if bool(re.search(r'(\d|\.)', clean_word)):
                 modword = word
             elif clean_word not in abbrs:
                 modword = word.lower()
