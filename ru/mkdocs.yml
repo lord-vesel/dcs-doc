@@ -39,6 +39,9 @@ nav:
         - p-47/07.emergency.md
         - p-47/08.combat.md
         - p-47/10.supplements.md
+      - Spitfire Mk. IX от ED:
+        - spitfire-ix/01.intro.md
+        - spitfire-ix/02.common.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
