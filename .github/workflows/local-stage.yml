@@ -39,8 +39,8 @@ jobs:
     - name: Switch release
       run: |
         ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
-        for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
-        do rm -rf ${{env.RELEASES_DIR}}/$R
+        for R in `ls ${{env.RELEASES_DIR}}/refs/pull/ | sort -n | head -n -1`
+        do rm -rf ${{env.RELEASES_DIR}}/refs/pull/$R
         done
 
     - name: Status Success Notification

@@ -31,6 +31,7 @@ jobs:
 
     - name: Deploy
       run: |
+        rm -rf `ls -d ${{env.RELEASES_DIR}}/refs/heads/*/* | grep -v ${{ github.ref }}`
         [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
         [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
         rsync -a ru/site/ ${{env.RELEASE_DIR}}/ru/
@@ -39,8 +40,8 @@ jobs:
     - name: Switch release
       run: |
         ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
-        for R in `ls ${{env.RELEASES_DIR}} | sort -n | head -n -3`
-        do rm -rf ${{env.RELEASES_DIR}}/$R
+        for R in `ls ${{env.RELEASES_DIR}}/${{ github.ref }} | sort -n | head -n -2`
+        do rm -rf ${{env.RELEASES_DIR}}/${{ github.ref }}/$R
         done
 
     - name: Status Success Notification
