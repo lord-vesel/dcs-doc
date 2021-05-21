@@ -39,7 +39,7 @@ jobs:
     - name: Switch release
       run: |
         ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
-        for R in `ls ${{env.RELEASES_DIR}}/${{ github.ref }} | sort -n | head -n -3`
+        for R in `ls ${{env.RELEASES_DIR}}/${{ github.ref }} | sort -n | head -n -2`
         do rm -rf ${{env.RELEASES_DIR}}/${{ github.ref }}/$R
         done
 
