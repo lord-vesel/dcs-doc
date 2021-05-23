@@ -21,4 +21,5 @@ hide:
 [Ми-8 от Belsimtek](mi8/01.history.md) | Турбовальный  | `вертолёт`    | `СССР` `РФ`
 [F/A-18C от ED](fa18c/01.setup.md)     | Реактивный    | `поколение 4` | `США`
 [Су-25Т от ED](su25t/01.intro.md)      | Реактивный    | `штурмовик`   | `СССР` `РФ`
+[F-14 A/B от Heatblur](https://www.heatblur.se/F-14Manual/index.html)     | Реактивный    | `поколение 4` | `США`
 
