@@ -93,6 +93,7 @@ nav:
         - ns430/01.controls.md
         - ns430/02.usage.md
         - ns430/03.pages.md
+        - ns430/04.supplement.md
 
 #theme: readthedocs
 theme:
