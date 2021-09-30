@@ -2,9 +2,11 @@ site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
 repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
-google_analytics: ['UA-19502035-4', 'dcs-docs.lordvesel.win/ru/']
 site_author: "rost.lunegoff@gmail.com"
 extra:
+  analytics:
+    provider: google
+    property: UA-19502035-4
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/rlunegov
@@ -131,6 +133,7 @@ extra_css:
 plugins:
     - search:
         lang: ['en', 'ru']
+        full_path_in_title: yes
     - tags
 
 markdown_extensions:
@@ -142,6 +145,8 @@ markdown_extensions:
   - markdown_include.include
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
