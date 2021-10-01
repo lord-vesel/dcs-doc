@@ -51,6 +51,12 @@ nav:
         - spitfire-ix/07.flight.md
         - spitfire-ix/08.arms.md
         - spitfire-ix/09.supplements.md
+      - DH 98 Mosquito FB VI от ED:
+        - mosquito/01.intro.md
+        - mosquito/02.history.md
+        - mosquito/03.design.md
+        - mosquito/04.cockpit.md
+
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
