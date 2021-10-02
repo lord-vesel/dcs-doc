@@ -56,7 +56,10 @@ nav:
         - mosquito/02.history.md
         - mosquito/03.design.md
         - mosquito/04.cockpit.md
-
+        - mosquito/05.procedures.md
+        - mosquito/06.emergency.md
+        - mosquito/07.engaging.md
+        - mosquito/08.credits.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
