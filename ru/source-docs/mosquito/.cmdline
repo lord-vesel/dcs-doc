@@ -1,0 +1,1 @@
+pdftotext -nopgbrk -y 60 -W 1280 -H 510 -layout ~/nc/manuals/DCS\ DH\ Mosquito\ FB.VI\ Flight\ Manual\ RU.pdf source

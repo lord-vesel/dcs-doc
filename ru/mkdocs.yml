@@ -2,9 +2,11 @@ site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
 repo_name: lord-vesel/dcs-doc
 edit_uri: edit/develop/ru/docs
-google_analytics: ['UA-19502035-4', 'dcs-docs.lordvesel.win/ru/']
 site_author: "rost.lunegoff@gmail.com"
 extra:
+  analytics:
+    provider: google
+    property: UA-19502035-4
   social:
     - icon: fontawesome/brands/telegram
       link: https://t.me/rlunegov
@@ -49,6 +51,15 @@ nav:
         - spitfire-ix/07.flight.md
         - spitfire-ix/08.arms.md
         - spitfire-ix/09.supplements.md
+      - DH 98 Mosquito FB VI от ED:
+        - mosquito/01.intro.md
+        - mosquito/02.history.md
+        - mosquito/03.design.md
+        - mosquito/04.cockpit.md
+        - mosquito/05.procedures.md
+        - mosquito/06.emergency.md
+        - mosquito/07.engaging.md
+        - mosquito/08.credits.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
@@ -131,6 +142,7 @@ extra_css:
 plugins:
     - search:
         lang: ['en', 'ru']
+        full_path_in_title: yes
     - tags
 
 markdown_extensions:
@@ -142,6 +154,8 @@ markdown_extensions:
   - markdown_include.include
   - admonition
   - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.superfences
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
