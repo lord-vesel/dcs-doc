@@ -20,7 +20,8 @@ nav:
       - people.md
   - Документация:
 # - Вторая Мировая:
-      - i16.md
+      - И-16 от OctopusG:
+        - i16/i16.md
       - FW-190 A8 от ED:
         - fw190a8/01.intro.md
         - fw190a8/02.history.md
@@ -60,6 +61,8 @@ nav:
         - mosquito/06.emergency.md
         - mosquito/07.engaging.md
         - mosquito/08.credits.md
+      - МиГ-21БИС от Leatherneck:
+        - mig-21bis/01.history.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
