@@ -20,14 +20,13 @@ hide:
     [Spitfire Mk. IX от ED](spitfire-ix/01.intro.md) | Поршневой     | `вмв`         | `Великобритания`
     [DH 98 Mosquito FB VI от ED](mosquito/01.intro.md) | Поршневой     | `вмв`         | `Великобритания`
     [Ми-8 от Belsimtek](mi8/01.history.md) | Турбовальный  | `вертолёт`    | `СССР` `РФ`
-    [МиГ-21БИС от Leatherneck](mig-21bis/01.history.md) | Реактивный    | `поколение 3` | `СССР`
     [F/A-18C от ED](fa18c/01.setup.md)     | Реактивный    | `поколение 4` | `США`
     [Су-25Т от ED](su25t/01.intro.md)      | Реактивный    | `штурмовик`   | `СССР` `РФ`
-    <a href=https://www.heatblur.se/F-14Manual/index.html target=_blank>F-14 A/B от Heatblur</a>     | Реактивный    | `поколение 4` | `США`
-<!---    [F-14 A/B от Heatblur](https://www.heatblur.se/F-14Manual/index.html)     | Реактивный    | `поколение 4` | `США` -->
+    <a href=https://www.heatblur.se/F-14Manual/index.html target=_blank>F-14 A/B от Heatblur :octicons-link-external-16:</a>     | Реактивный    | `поколение 4` | `США`
 
 === "Прочие модули"
 
     Наименование                                          | Теги
     ------------------------------------------------------|-----
     [NS430 от Belsimtek](ns430/01.controls.md)            | `навигация`
+    [Supercarrier от ED](sc/01.nimitz.md)                 | `авианосец`
