@@ -20,7 +20,8 @@ nav:
       - people.md
   - Документация:
 # - Вторая Мировая:
-      - i16.md
+      - И-16 от OctopusG:
+        - i16/i16.md
       - FW-190 A8 от ED:
         - fw190a8/01.intro.md
         - fw190a8/02.history.md
@@ -60,6 +61,11 @@ nav:
         - mosquito/06.emergency.md
         - mosquito/07.engaging.md
         - mosquito/08.credits.md
+          #      - МиГ-21БИС от Leatherneck:
+          #        - mig-21bis/01.history.md
+          #        - mig-21bis/02.setup.md
+          #        - mig-21bis/03.basic.md
+          #        - mig-21bis/04.limits.md
 # - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
@@ -105,6 +111,13 @@ nav:
         - ns430/02.usage.md
         - ns430/03.pages.md
         - ns430/04.supplement.md
+      - Supercarrier от ED:
+        - sc/01.nimitz.md
+        - sc/02.departing.md
+        - sc/03.recovery.md
+        - sc/04.lso.md
+        - sc/05.me.md
+
 
 #theme: readthedocs
 theme:
@@ -154,9 +167,13 @@ markdown_extensions:
   - markdown_include.include
   - admonition
   - pymdownx.details
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.superfences
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
   - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
