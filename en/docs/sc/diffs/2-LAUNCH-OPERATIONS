@@ -1,0 +1,118 @@
+3,6c3,5
+< After startup, you will need to taxi to a catapult for launch. Catapults 1 and 2 are on the bow and catapults 3 and
+< 4 are on the waist. Unless you are directed to a specific catapult during the briefing, you may choose any of the
+< four.
+< Taxi to the desired catapult using small power inputs while using nosewheel steering in high gain.
+---
+> When you enter the aircraft, the assigned catapult will be displayed at the top right of the screen. Catapults 1
+> and 2 are on the bow and catapults 3 and 4 are on the waist. Taxi to the directed catapult using small power
+> inputs while using nosewheel steering in high gain.
+23,25c22,23
+< 
+< 2. Align with catapult track. When directed, slowly move forward of the JBD. The Taxi Director will provide
+< signals for left or right turns to align your nosewheel along the catapult track.
+---
+> 2. Align with catapult track. When directed, slowly move forward of the JBD. The Taxi Director will
+> provide signals for left or right turns to align your nosewheel along the catapult track.
+31,34d28
+< 3. Stop and extend launch bar. When directed, stop and hold the brakes. Extend the launch bar using
+< applicable aircraft controls.
+< 
+< 
+36a31,32
+> 3. Stop and extend launch bar. When directed, stop and hold the brakes. Extend the launch bar using
+> applicable aircraft controls.
+38,40d33
+< 4. Connect to catapult shuttle. Following the Director’s signals, taxi forward slowly to position the launch bar
+< over the shuttle. Significant power, as much as 80-85% RPM, may be required. When the launch bar drops over
+< the shuttle, the aircraft will be stopped as the holdback engages the catapult buffer. Reduce power to idle.
+44a38,41
+> 4. Connect to catapult shuttle. Following the Director’s signals, taxi forward slowly to position the
+> launch bar over the shuttle. Significant power, as much as 80-85% RPM, may be required. When the
+> launch bar drops over the shuttle, the aircraft will be stopped as the holdback engages the catapult
+> buffer. Reduce power to idle.
+46,47d42
+< 5. Seat launch bar in shuttle. When directed, raise the launch bar to seat it in the catapult shuttle. Note that
+< the bar will not fully retract until it is clear of the shuttle after launch.
+51a47,48
+> 5. Seat launch bar in shuttle. When directed, raise the launch bar to seat it in the catapult shuttle. Note
+> that the bar will not fully retract until it is clear of the shuttle after launch.
+54,57c51,53
+< 
+< 6. Run up engines and perform final checks. The Director will pass control to the Catapult Officer, who will
+< signal for engine run-up. Check the engine instruments and monitor the caution and warning lights. Wipeout the
+< controls and verify the full throw of the stick and rudder in all directions.
+---
+> 6. Run up engines and perform final checks. The Director will pass control to the Catapult Officer,
+> who will signal for engine run-up. Check the engine instruments and monitor the caution and warning
+> lights. Wipeout the controls and verify the full throw of the stick and rudder in all directions.
+63,68d58
+< 7. Select ‘SALUTE’ from radio menu. When ready for launch, give the ‘SALUTE’ command from the radio
+< menu or keyboard command [LCtrl+LShift+S]. The Catapult Officer will make final checks, looking fore and aft,
+< and then touch the deck.
+< 
+< 
+< 
+69a60,62
+> 7. Select ‘SALUTE’ from radio menu. When ready for launch, give the ‘SALUTE’ command from the
+> radio menu or keyboard command [LCtrl+LShift+S]. The Catapult Officer will make final checks,
+> looking fore and aft, and then touch the deck.
+72,75c65,68
+< 
+< 8. Launch. The catapult will fire, and the aircraft will accelerate, reaching end speed in about two seconds. As
+< the aircraft clears the end of the deck, rotate to a nose up attitude and establish a positive rate of climb. Gear
+< and flaps will be raised in accordance with the specific aircraft’s procedures.
+---
+> 8. Launch. The catapult will fire, and the aircraft will accelerate, reaching end speed in about two
+> seconds. As the aircraft clears the end of the deck, rotate to a nose up attitude and establish a
+> positive rate of climb. Gear and flaps will be raised in accordance with the specific aircraft’s
+> procedures.
+82a76,82
+> 
+> 
+> 7 nm
+> 
+> Climb on
+> 500ʼ / 300 KIAS planned
+> course
+90a91,110
+> 
+> 
+> 
+> Depart on
+> briefed radial
+> 
+> 
+> 
+> 
+> 7 nm 10 nm
+> 
+> 
+> 
+> 500ʼ / 300 KIAS
+> 
+> 
+> 
+> Climb and
+> intercept
+> 10 nm arc
+97a118,136
+> 
+> 
+> 
+> Depart on
+> briefed radial
+> 
+> 
+> 
+> 
+> 5 nm 7 nm 10 nm
+> 
+> 
+> 
+> Climb / 300 KIAS
+> 
+> 
+> 
+> 1,500ʼ Intercept
+> or above 10 nm arc

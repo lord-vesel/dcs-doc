@@ -23,7 +23,8 @@ hide:
     [МиГ-21БИС от Leatherneck](mig-21bis/01.history.md) | Реактивный    | `поколение 3` | `СССР`
     [F/A-18C от ED](fa18c/01.setup.md)     | Реактивный    | `поколение 4` | `США`
     [Су-25Т от ED](su25t/01.intro.md)      | Реактивный    | `штурмовик`   | `СССР` `РФ`
-    [F-14 A/B от Heatblur](https://www.heatblur.se/F-14Manual/index.html)     | Реактивный    | `поколение 4` | `США`
+    <a href=https://www.heatblur.se/F-14Manual/index.html target=_blank>F-14 A/B от Heatblur</a>     | Реактивный    | `поколение 4` | `США`
+<!---    [F-14 A/B от Heatblur](https://www.heatblur.se/F-14Manual/index.html)     | Реактивный    | `поколение 4` | `США` -->
 
 === "Прочие модули"
 

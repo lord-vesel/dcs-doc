@@ -1,0 +1,119 @@
+MISSION EDITOR FEATURES
+Overview
+The DCS: Supercarrier module uses the standard mission editor interface. A complete explanation may be
+found in the DCS: World User Manual located in your DCS World/Docs folder. That should be your first stop
+when learning to set up missions using these assets.
+
+
+
+
+In this section, we will briefly highlight some key features it is important to understand when setting up a mission
+with the Supercarrier.
+Ship Selection and Placement
+The new ship assets included with the Supercarrier module appear in the TYPE dropdown list. The new Nimitz
+Class carriers and Arleigh Burke destroyer are available when the COUNTRY is set to USA. The Admiral
+Kuznetsov carrier is available with the COUNTRY set to Russia.
+Note that the CVN-70 Carl Vinson and CVN-74 John C. Stennis are the original carrier assets included with
+DCS: World. They are still available for users who do not own the Supercarrier module.
+
+
+
+
+Wind Direction
+
+
+
+
+It is best to face the carrier into the wind on launch and recovery to eliminate crosswind and reduce the
+airspeed required to keep aircraft airborne. The carrier’s speed should be set so that the wind over deck (ship
+speed plus wind speed) is near 30 knots.
+It is important to remember the ship’s course in the mission editor is its true heading while Base Recovery
+Course (BRC) used in carrier operations is magnetic heading. To get the BRC, add or subtract the magnetic
+variation for the map being used or simply note the BRC shown at the LSO station in the mission.
+Communications and Navigation Equipment
+The radio frequency and NAVAID channels are all set in the mission editor. See the first section of this guide for
+a description of each system. See the specific aircraft manual for exact system operation in the air and any
+restrictions that may apply while setting them up on the carrier.
+
+
+Radio Frequency
+The ship’s ATC radio frequency and modulation are set by typing in the desired frequency or selecting the
+desired modulation (AM/FM) from the dropdown menu.
+All radio functions for the carrier (i.e. Marshal, Approach, Tower, and LSO) will use this single frequency. The
+channel presets for the aircraft used in the mission should be set to match.
+
+
+
+
+TACAN Channel
+In this example, TACAN channel and band 71X is used. The callsign is set to TDR. A morse code signal will be
+audible keying out those letters for identification. This identifier will also be shown on the aircraft’s displays
+where applicable.
+You must also select the unit within the group the TACAN signal will originate from. This should always be the
+carrier. Note that the carrier’s unit name was changed to CVN-71 to make it easier to identify in the list.
+
+
+
+
+ICLS Channel
+The carrier’s ICLS channel is set by adding an advanced waypoint action in the same way as TACAN.
+In this example, channel 11 will be used. Compatible aircraft will receive ICLS guidance on that channel. The
+originating unit is selected as CVN-71.
+AI Aircraft Parking and Taxi Logic
+When an AI aircraft starts or lands on a Supercarrier, there are one of 16 potential parking locations it can start
+from or be routed to after landing:
+• One on the stern, most aft of elevator 3
+• One on the stern, center aft of elevator 3
+• One on the stern, next elevator 3
+• Two on elevator 3
+• Four in front of elevator 1 and 2
+• One between elevator 1 and 2
+• Two on elevator 1
+• Two on elevator 2
+• Two on elevator 4
+
+
+
+
+When an aircraft lands, it requests a taxi route to exit the landing area (the box). Deck control will search (by
+priority order listed above) to locate an open parking location and provide a taxi route to it. What does deck
+control for routing an aircraft mean? First, it determines a free location based on the maximum number of open
+parking locations. For example: if the parking spot aft of the island is occupied, the next parking lot in priority
+order would be selected. Next, deck control will check that the chosen parking location is suitable for the landing
+aircraft type and that there are no taxi route obstructions like other “live” aircraft and static objects. Once these
+are satisfied, the landing aircraft is routed to the open, unobstructed parking location.
+Because of this, it is very important that mission creators do not place static objects on the deck that occupy or
+block the routes to and from the parking locations. Doing this can greatly reduce the number of available
+parking locations. If, however, a mission is constructed the prohibits landing aircraft from reaching a parking
+location, the aircraft will be automatically removed from the game.
+In a multiplayer mission, starting locations are automatically assigned to the 16 locations based on the order in
+which a client joins the mission.
+Static Object Placement
+Several new static objects are included with the Supercarrier module that allow you to add more life to the
+carrier deck, above and beyond the launch crews that are already present by default.
+The new static objects are available under the headings ‘Airfield and Deck Equipment’ and ‘Personnel’. Of
+course, all aircraft and other static objects included with DCS: World are compatible and may be used.
+
+
+
+
+Before starting, you should depress the unit icon at the bottom of the mission editor screen. Enabling this option
+will show the shape of the shape of all objects in the mission editor viewer. This allows placement of objects
+with much more precision. Then, zoom in so the carrier deck is visible.
+
+
+
+
+When an object is placed on the deck, it must be linked to the carrier. Select the carrier from the LINK UNIT
+You may find it helpful to add additional objects by copying and pasting an object that is already linked to the
+carrier, so you do not have to perform this step every time. You may do this by selecting the object, [Ctrl+C] to
+copy, then [Ctrl+V] to paste.
+
+
+
+
+It is important not to place static objects in locations they may interfere with flight operations so test your
+mission thoroughly to find any problems.
+Good hunting!
+The Eagle Dynamics SA team
+EAGLE DYNAMICS SA © 2020

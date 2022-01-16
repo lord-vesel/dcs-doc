@@ -1,0 +1,1086 @@
+6,7c6,8
+< Once inside the CCA, check in on Marshal frequency with call sign, position, altitude and fuel state. Marshal will
+< provide recovery holding instructions and pass the ship’s weather, altimeter setting and ship’s heading (BRC).
+---
+> Once inside the CCA, check in on Marshal frequency with call sign, position, altitude, and fuel state. Marshal
+> will provide recovery holding instructions and pass the ship’s weather, altimeter setting and ship’s heading
+> (BRC).
+16a18,34
+> 
+> 
+> Carrier Control Area
+> 
+> 
+> Checkin with
+> ʻINBOUNDʼ
+> radio call CaseI -
+> Proceed to holding
+> over carrier 50 nm
+> 
+> 
+> 
+> 
+> CaseII/ III -
+> Proceed to holding
+> behind carrier
+20c38
+< should have the carrier in sight and report ’SEE YOU AT 10’ over the radio. The Marshal controller will hand
+---
+> should have the carrier in sight and report ‘SEE YOU AT 10’ over the radio. The Marshal controller will hand
+22,24c40,43
+< The tower will clear you to leave the holding pattern and commence your landing approach. You will descend
+< from holding and fly by the carrier just outboard on the starboard side at 800 feet. You will give a ‘KISS OFF’
+< command to your flight and execute an overhead ‘break’ to the left and enter the landing pattern.
+---
+> The tower will clear you to leave the holding pattern and commence your landing approach, known as ‘breaking
+> the deck’. You will descend from holding and fly by the carrier just outboard on the starboard side at 800 feet.
+> You will give a ‘KISS OFF’ command to your flight and execute an overhead ‘break’ to the left and enter the
+> landing pattern.
+31a51,65
+> Landing
+> Pattern
+> 10 nm
+> Holding
+> Stack
+> 
+> 
+> 
+> 
+> Breaking
+> the Deck
+> 
+> 
+> 
+> 
+36,42d69
+< Marshal
+< At 50 miles or closer, you should select ‘INBOUND’ from the ATC carrier radio menu. Upon doing so, the
+< following message is sent from you to the marshal controller:
+< 
+< 
+< “Marshal, [SIDE NUMBER] holding hands with [SIDE NUMBER], marking mom’s [BEARING FROM SHIP
+< TO PLAYER] for [RANGE], angels [ALTITUDE], [NUMBER IN FLIGHT], low state [REMAINING FUEL].”
+44a72,75
+> Marshal
+> “Marshal, [SIDE NUMBER] holding hands with [SIDE NUMBER], marking mom’s [BEARING
+> FROM SHIP TO PLAYER] for [RANGE], angels [ALTITUDE], [NUMBER IN FLIGHT], low state
+> [REMAINING FUEL].”
+46,49c77,78
+< “[SIDE NUMBER], mother’s weather is [VISIBILITY], [CLOUDS], altimeter [PRESSURE]. CASE I recovery
+< expected BRC is [HEADING OF CARRIER]. Report a see me at 10.”
+< 
+< 
+---
+> “[SIDE NUMBER], mother’s weather is [VISIBILITY], [CLOUDS], altimeter [PRESSURE]. CASE I
+> recovery expected BRC is [HEADING OF CARRIER]. Report a see me at 10.”
+54d82
+< 
+62,63d89
+< 
+< 
+66,67d91
+< 
+< 
+70,71d93
+< 
+< 
+74,75d95
+< 
+< 
+77a98,99
+> 
+> 
+80,81c102,103
+< 2, 3 and 4 following in 90-degree increments. This holding pattern is often referred to as the “stack”. All aircraft
+< must remain within 5 nm of the carrier and no lower than 2,000 feet AGL.
+---
+> 2, 3 and 4 following in 90° increments. This holding pattern is often referred to as the “stack”. All aircraft must
+> remain within 5 nm of the carrier and no lower than 2,000 feet AGL.
+83a106,113
+> Pattern
+> altitude
+> by 10 nm
+> Point 2
+> Pattern
+> pattern
+> altitude climb
+> by 10 nm area
+85a116,117
+> 5 nm max Point 1
+> Point 3
+86a119,121
+> pattern
+> descent
+> area
+87a123,130
+> 
+> Point 4
+> 
+> 
+> 
+> Pattern
+> altitude
+> by 10 nm
+90,93c133,138
+< altitude. If there are two total flights, then they should be 180-degrees apart. Three flights should be 120-
+< degrees apart. Four flights will be 90-degrees apart.
+< You will leave the holding pattern on the ‘charlie’ signal from the tower.
+< Commencing the Approach
+---
+> altitude. If there are two total flights, then they should be 180° apart. Three flights should be 120° apart. Four
+> flights will be 90° apart.
+> You will leave the holding pattern, or ‘break the deck’ on the ‘Charlie’ signal from the tower.
+> 
+> 
+> Breaking the Deck
+95a141,149
+> “[TOWER], [SIDE NUMBER], overhead, angels [ALTITUDE], [NUMBER IN FLGHT], low state
+> [REMAINING FUEL].”
+> The tower responds with:
+> “[SIDE NUMBER], Tower, Roger. BRC is [CARRIER HEADING], your signal is Charlie.”
+> You will auto-respond with:
+> “[SIDE NUMBER].”
+> At this point, the next communication will be with the LSO at ¾ mile behind the carrier.
+> ship at 800 feet, paralleling BRC. The radio command ‘KISS OFF’ should be given to your flight and the landing
+> pattern should be entered.
+98,99d151
+< “[TOWER], [SIDE NUMBER], overhead, angels [ALTITUDE], [NUMBER IN FLGHT], low state [REMAINING
+< FUEL].”
+100a153,155
+> ʻsignal is ʻkiss offʼ
+> charlieʼ
+> 5 nm max
+102,103d156
+< The tower responds with:
+< “[SIDE NUMBER], Tower, Roger. BRC is [CARRIER HEADING], your signal is Charlie.”
+106,107c159,168
+< You will auto-respond with:
+< “[SIDE NUMBER].”
+---
+> 
+> 3 nm
+> 
+> Initial
+> 
+> 800ʼ
+> 
+> 
+> 800ʼ
+> 
+110,114d170
+< At this point, the next communication will be with the LSO at ¾ mile behind the carrier.
+< The flight will depart holding from outside point 3 and descend to 800 feet. An arcing turn will be flown to the
+< initial point 3nm astern of the ship. The flight will continue inbound and fly just outboard the starboard side of the
+< ship at 800 feet, paralleling BRC. The radio command ‘KISS OFF’ should be given to your flight and the landing
+< pattern should be entered.
+126,128c182,196
+< In the Groove
+< You will continue to descend in a left-hand turn, rolling out wings level ¾ nm astern of the ship in line with the
+< angled deck. This phase will be flown based on the state of the IFLOLS ball and verbal directions from the LSO.
+---
+> level
+> turn
+> Gradual
+> descent -
+> configure for
+> landing ʻkiss offʼ
+> 800ʼ
+> 
+> 
+> 
+> 
+> 600ʼ 1 ¼- 1 ½ nm
+> 
+> The ¾nm
+> Groove
+131a200
+> 450ʼ
+132a202,209
+> 
+> on speed
+> 450- 500ʼ
+> 
+> 
+> In the Groove
+> You will continue to descend in a left-hand turn, rolling out wings level ¾ nm astern of the ship in line with the
+> angled deck. This phase will be flown based on the state of the IFLOLS ball and verbal directions from the LSO.
+138,139d214
+< 
+< 
+141,143c216,217
+< “Wave off, gear” – Your landing gear is not extended.
+< “Wave off, flaps” – Your flaps are not configured for landing.
+< 
+---
+> • “Wave off, gear” – Your landing gear is not extended.
+> • “Wave off, flaps” – Your flaps are not configured for landing.
+148,149c222,224
+< “You’re high” – You are far above the glidepath.
+< “You’re low, POWER” – You are far below the glidepath.
+---
+> • “You’re high” – You are far above the glidepath.
+> • “You’re low, POWER” – You are far below the glidepath.
+> 
+153a229
+> 
+156,157c232
+< localizer centerline and 3.6-degree glidepath.
+< 
+---
+> localizer centerline and 3.6° glidepath.
+161,167d235
+<  • No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
+< than 2.5 degrees above optimal glidepath
+<  • Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
+<  • Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
+<  • Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
+<  • Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
+< 
+168a237,242
+> • No direction = under 1.7° left or right of localizer and less than 1.5° below and less than 2.5° above
+> optimal glidepath
+> • Off centerline = greater than 1.7° left or right of optimal localizer centerline
+> • Off glidepath = greater than 1.5° below and greater than 2.5° above optimal glidepath
+> • Far off centerline = greater than 2.9° left or right of optimal localizer centerline
+> • Far off glidepath = 2.7° or greater below or 4.9° or greater above optimal glidepath
+175,176c249,250
+< “Easy with the nose” – Aircraft has excessive pitch rate. (>5 degrees per second)
+< “Easy with your wings” – Aircraft has excessive roll angle. (>20 degrees)
+---
+> “Easy with the nose” – Aircraft has excessive pitch rate. (>5° per second)
+> “Easy with your wings” – Aircraft has excessive roll angle. (>20°)
+177a252
+> 
+180,181d254
+< 
+< 
+194a268,269
+> 
+> 
+200,203d274
+< 
+< 
+< 
+< 
+211,212d281
+< 
+< 
+214,222c283,290
+<  • WO - Waveoff
+<  • OWO - Own Waveoff
+<  • _OK_ - Perfect pass
+<  • OK - Reasonable deviations with good corrections
+<  • (OK) - Fair. Reasonable deviations
+<  • --- - No-grade. Below average but safe pass
+<  • C - Cut. Unsafe, gross deviations inside waveoff window
+<  • B - Bolter
+< 
+---
+> • WO - Waveoff
+> • OWO - Own Waveoff
+> • _OK_ - Perfect pass
+> • OK - Reasonable deviations with good corrections
+> • (OK) - Fair. Reasonable deviations
+> • --- - No-grade. Below average but safe pass
+> • C - Cut. Unsafe, gross deviations inside waveoff window
+> • B - Bolter
+225,248c293,313
+<  • AFU - All “fouled” up
+<  • DL - Drifted left
+<  • DR - Drifted right
+<  • EG - Eased gun (pulled throttles back to help set the hook for arrestment)
+<  • F - Fast
+<  • FD - Fouled deck
+<  • H - High
+<  • LL - Landed left
+<  • LO - Low
+<  • LR - Landed right
+<  • LUL - Lined up left
+<  • LUR - Lined up right
+<  • N - Nose
+<  • NERD - Not enough rate of descent
+<  • NSU - Not set up
+<  • P - Power
+<  • SLO – Slow
+<  • TMRD – Too much rate of descent
+<  • W - Wings
+<  • LLWD - Landed left wing down
+<  • LRWD - Landed right wing down
+<  • LNF - Landed nose
+<  • 3PTS - Landed 3 points
+< 
+---
+> • AFU - All “fouled” up
+> • DL - Drifted left
+> • DR - Drifted right
+> • EG - Eased gun (did not advance throttles to MIL/AB after touchdown)
+> • F - Fast
+> • FD - Fouled deck
+> • H - High
+> • LL - Landed left
+> • LO - Low
+> • LR - Landed right
+> • LUL - Lined up left
+> • LUR - Lined up right
+> • N - Nose
+> • NERD - Not enough rate of descent
+> • NSU - Not set up
+> • P - Power
+> • SLO – Slow
+> • LLWD - Landed left wing down
+> • LRWD - Landed right wing down
+> • LNF - Landed nose
+> • 3PTS - Landed 3 points
+251,259c316,323
+<  • BC - Ball call (before first 1/3 of glideslope)
+<  • X - At the start (first 1/3 of glideslope)
+<  • IM - In the middle (middle 1/3 of the glideslope)
+<  • IC - In close (last 1/3 of glideslope)
+<  • AR - At the ramp
+<  • TL - To land (between AR and first wire)
+<  • IW - In the wires
+<  • AW – After wires
+< 
+---
+> • BC - Ball call (before first 1/3 of glideslope)
+> • X - At the start (first 1/3 of glideslope)
+> • IM - In the middle (middle 1/3 of the glideslope)
+> • IC - In close (last 1/3 of glideslope)
+> • AR - At the ramp
+> • TL - To land (between AR and first wire)
+> • IW - In the wires
+> • AW – After wires
+261,262c325,326
+< Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., "(F)" means “a little fast”)
+< Note 2: Underline. For emphasis (e.g."_H_" means “very high”)
+---
+> Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., “(F)” means “a little fast”)
+> Note 2: Underline. For emphasis (e.g., “_H_” means “very high”)
+267,269d330
+< After landing, you have the option to taxi to a catapult and take off again immediately. To do so, alert the ground
+< crew by selecting ‘Request Launch’ from the ground crew communications menu. The catapult crew will be
+< ready to hook you up at whatever catapult you taxi to.
+279d339
+< 
+290a351,376
+> 
+> ʻINBOUNDʼ
+> ʻESTABLISHEDʼ
+> ATCMenu
+> ʻCOMMENCINGʼ ʻCHECKINʼ ʻPLATFORMʼ ʻSEE YOUAT10ʼ ʻBALLʼ ʻKISSOFFʼ
+> Actions
+> 
+> 
+> 4,000
+> FPM D
+> until 1 esc
+> Marshal ,200ʼ A ent
+> GL
+> Holding Descend to 800ʼ AGL
+> Level
+> Approach
+> Stack Handover 5,000ʼ AGL
+> (Platform) 10 nm 3 nm ¾nm
+> 
+> 
+> 
+> 5,000ʼ AGL 1,200ʼ AGL 800ʼ AGL Case I
+> AssignedAltitude 250 KIAS Landing
+> 250 KIAS
+> Pattern
+> CaseIII Procedures CaseI Procedures
+294a381,398
+> ʻINBOUNDʼ
+> ʻESTABLISHEDʼ
+> ATCMenu
+> ʻCOMMENCINGʼ ʻCHECKINʼ ʻPLATFORMʼ ʻBALLʼ
+> Actions
+> 
+> 4,00
+> 0F
+> until PM Des
+> 5,00 ce
+> 0ʼ AG nt
+> Marshal L
+> 2,000 FPM De
+> scent Level
+> Holding until 1,200ʼ AG Fly Needles
+> Approach L Fly Needles
+> Stack Handover 5,000ʼ AGL ACLS
+> (Platform) 10 nm Lock 6 nm 3 nm ¾nm
+297a402,407
+> AssignedAltitude 5,000ʼ AGL 1,200ʼ AGL 1,200ʼ AGL 600ʼ AGL 375ʼ AGL
+> 250 KIAS
+> 250 KIAS Configure for 150 KIAS On Speed On Speed
+> landing
+> 
+> 
+312a423,424
+> 
+> 
+317,328c429,435
+< 
+< 
+< “Marshal, [SIDE NUMBER] holding hands with [FLIGHT MEMBERS], marking mom’s [BEARING FROM
+< SHIP TO PLAYER] for [RANGE], angels [ALTITUDE], low state [REMAINING FUEL].”
+< 
+< 
+< Marshal responds with:
+<  “[SIDE NUMBER], [SHIP CALLSIGN] marshal, CASE II/III recovery, CV-1 approach, expected BRC
+< [CARRIER HEADING], altimeter [PRESSURE]. [SIDE NUMBER], marshal mother’s [MARSHAL RADIAL
+< BEARING] radial, [DISTANCE] DME, angels [ALTITUDE]. Expected approach time is [TIME]”
+< 
+< 
+---
+> “Marshal, [SIDE NUMBER] holding hands with [FLIGHT MEMBERS], marking mom’s
+> [BEARING FROM SHIP TO PLAYER] for [RANGE], angels [ALTITUDE], low state [REMAINING
+> FUEL].”
+> “[SIDE NUMBER], [SHIP CALLSIGN] marshal, CASE II/III recovery, CV-1 approach, expected
+> BRC [CARRIER HEADING], altimeter [PRESSURE]. [SIDE NUMBER], marshal mother’s
+> [MARSHAL RADIAL BEARING] radial, [DISTANCE] DME, angels [ALTITUDE]. Expected
+> approach time is [TIME]”
+332,333d438
+< 
+< 
+335,338c440,441
+< “[SIDE NUMBER], marshal on the [RADIAL BEARING], for [RANGE] DME, angels [ALTITUDE]. Expected
+< approach time [TIME]. Approach button is [CHANNEL].”
+< 
+< 
+---
+> “[SIDE NUMBER], marshal on the [RADIAL BEARING], for [RANGE] DME, angels [ALTITUDE].
+> Expected approach time [TIME]. Approach button is [CHANNEL].”
+341,342d443
+< 
+< 
+346,347d446
+< 
+< 
+357,358d455
+< 
+< 
+363,364d459
+< 
+< 
+372,373d466
+< 
+< 
+375,376d467
+< 
+< 
+379,380d469
+< 
+< 
+383,384d471
+< 
+< 
+386,387d472
+< 5,000 feet altitude, at which point the descent rate is reduced to 2,000 fpm. This is maintained until 1,200 feet
+< for CASE II.
+390a476,477
+> 
+> 
+394,395d480
+< 
+< 
+398,399d482
+< 
+< 
+404,405d486
+< 
+< 
+408,409d488
+< 
+< 
+412,413d490
+< 
+< 
+416,417d492
+< 
+< 
+420,421d494
+< 
+< 
+424,425d496
+< 
+< 
+428,429d498
+< 
+< 
+436c505
+< The Long Range Laser Lineup System (LRLLS) should be visible on the stern of the carrier. A steady amber
+---
+> The Long-Range Laser Lineup System (LRLLS) should be visible on the stern of the carrier. A steady amber
+440a510,529
+> Flash
+> 
+> 
+> 
+> 
+> Fast F
+> h
+> 
+> 
+> Slow Flash
+> Slow Flas
+> Fast
+> 
+> 
+> 
+> 
+> lash
+> Steady
+> 
+> 
+444,445d532
+< 
+< 
+448,449d534
+< 
+< 
+453,454d537
+< 
+< 
+457,458d539
+< 
+< 
+460d540
+< [SIDE NUMBER], [GLIDEPATH] [LOCALIZER].
+463,467c543,549
+< If ACLS circle is below and to the right of the velocity vector, the message would be: “305, down and right.”
+< If ACLS circle is above and to the left of the velocity vector, the message would be: “305, up and left.”
+< If ACLS circle is level and to the right of the velocity vector, the message would be: “305, on and right.”
+< If ACLS circle is over the velocity vector, the message would be: “305, on and on.”
+< 
+---
+> • If ACLS circle is below and to the right of the velocity vector, the message would be: “305, down and
+> right.”
+> • If ACLS circle is above and to the left of the velocity vector, the message would be: “305, up and
+> left.”
+> • If ACLS circle is level and to the right of the velocity vector, the message would be: “305, on and
+> right.”
+> • If ACLS circle is over the velocity vector, the message would be: “305, on and on.”
+471,472d552
+< 
+< 
+475,476d554
+< 
+< 
+478a557,558
+> 
+> 
+482,483d561
+< 
+< 
+486,487d563
+< 
+< 
+490,491d565
+< 
+< 
+493,500c567,572
+< If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 5-degrees to the
+< right of the landing deck angle: “Roger ball, 25 knots, starboard.”
+< If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 5-degrees to the
+< left of the landing deck angle: “Roger ball, 25 knots, port.”
+< If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 3-degrees to the
+< right of the landing deck angle: “Roger ball, 25 knots, axial.”
+< 
+< 
+---
+> • If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 5° to
+> the right of the landing deck angle: “Roger ball, 25 knots, starboard.”
+> • If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 5° to
+> the left of the landing deck angle: “Roger ball, 25 knots, port.”
+> • If the wind over the deck speed is 25 knots and the wind direction is coming from greater than 3° to
+> the right of the landing deck angle: “Roger ball, 25 knots, axial.”
+502,505d573
+< 
+< 
+< 
+< 
+507,508c575,577
+< “Wave off, gear” – Your landing gear is not extended.
+< “Wave off, flaps” – Your flaps are not configured for landing.
+---
+> • “Wave off, gear” – Your landing gear is not extended.
+> • “Wave off, flaps” – Your flaps are not configured for landing.
+> 
+512,513c581,583
+< “You’re high” – You are far above the glidepath.
+< “You’re low, POWER” – You are far below the glidepath.
+---
+> • “You’re high” – You are far above the glidepath.
+> • “You’re low, POWER” – You are far below the glidepath.
+> 
+517a588
+> 
+520,531c591,597
+< localizer centerline and 3.5-degree glidepath.
+< 
+< 
+< 
+< 
+<  • No direction = under 1.7 degrees left or right of localizer and less than 1.5 degrees below and less
+< than 2.5 degrees above optimal glidepath
+<  • Off centerline = greater than 1.7 degrees left or right of optimal localizer centerline
+<  • Off glidepath = greater than 1.5 degrees below and greater than 2.5 degrees above optimal glidepath
+<  • Far off centerline = greater than 2.9 degrees left or right of optimal localizer centerline
+<  • Far off glidepath = 2.7 degrees or greater below or 4.9 degrees or greater above optimal glidepath
+< 
+---
+> localizer centerline and 3.5° glidepath.
+> • No direction = under 1.7° left or right of localizer and less than 1.5° below and less than 2.5° above
+> optimal glidepath
+> • Off centerline = greater than 1.7° left or right of optimal localizer centerline
+> • Off glidepath = greater than 1.5° below and greater than 2.5° above optimal glidepath
+> • Far off centerline = greater than 2.9° left or right of optimal localizer centerline
+> • Far off glidepath = 2.7° or greater below or 4.9° or greater above optimal glidepath
+539,540c605,606
+< “Easy with the nose” – Aircraft has excessive pitch rate. (>5 degrees per second)
+< “Easy with your wings” – Aircraft has excessive roll angle. (>20 degrees)
+---
+> “Easy with the nose” – Aircraft has excessive pitch rate. (>5° per second)
+> “Easy with your wings” – Aircraft has excessive roll angle. (>20°)
+541a608
+> 
+544,545d610
+< 
+< 
+558a624,625
+> 
+> 
+563,567d629
+< and you will be free to taxi to a parking location.
+< 
+< 
+< 
+< 
+576,584c638,645
+<  • WO - Waveoff
+<  • OWO - Own Waveoff
+<  • _OK_ - Perfect pass
+<  • OK - Reasonable deviations with good corrections
+<  • (OK) - Fair. Reasonable deviations
+<  • --- - No-grade. Below average but safe pass
+<  • C - Cut. Unsafe, gross deviations inside waveoff window
+<  • B - Bolter
+< 
+---
+> • WO - Waveoff
+> • OWO - Own Waveoff
+> • _OK_ - Perfect pass
+> • OK - Reasonable deviations with good corrections
+> • (OK) - Fair. Reasonable deviations
+> • --- - No-grade. Below average but safe pass
+> • C - Cut. Unsafe, gross deviations inside waveoff window
+> • B - Bolter
+587,610c648,668
+<  • AFU - All “fouled” up
+<  • DL - Drifted left
+<  • DR - Drifted right
+<  • EG - Eased gun (pulled throttles back to help set the hook for arrestment)
+<  • F - Fast
+<  • FD - Fouled deck
+<  • H - High
+<  • LL - Landed left
+<  • LO - Low
+<  • LR - Landed right
+<  • LUL - Lined up left
+<  • LUR - Lined up right
+<  • N - Nose
+<  • NERD - Not enough rate of descent
+<  • NSU - Not set up
+<  • P - Power
+<  • SLO – Slow
+<  • TMRD – Too much rate of descent
+<  • W - Wings
+<  • LLWD - Landed left wing down
+<  • LRWD - Landed right wing down
+<  • LNF - Landed nose
+<  • 3PTS - Landed 3 points
+< 
+---
+> • AFU - All “fouled” up
+> • DL - Drifted left
+> • DR - Drifted right
+> • EG - Eased gun (did not advance throttles to MIL/AB after touchdown)
+> • F - Fast
+> • FD - Fouled deck
+> • H - High
+> • LL - Landed left
+> • LO - Low
+> • LR - Landed right
+> • LUL - Lined up left
+> • LUR - Lined up right
+> • N - Nose
+> • NERD - Not enough rate of descent
+> • NSU - Not set up
+> • P - Power
+> • SLO – Slow
+> • LLWD - Landed left wing down
+> • LRWD - Landed right wing down
+> • LNF - Landed nose
+> • 3PTS - Landed 3 points
+613,621c671,678
+<  • BC - Ball call (before first 1/3 of glideslope)
+<  • X - At the start (first 1/3 of glideslope)
+<  • IM - In the middle (middle 1/3 of the glideslope)
+<  • IC - In close (last 1/3 of glideslope)
+<  • AR - At the ramp
+<  • TL - To land (between AR and first wire)
+<  • IW - In the wires
+<  • AW – After wires
+< 
+---
+> • BC - Ball call (before first 1/3 of glideslope)
+> • X - At the start (first 1/3 of glideslope)
+> • IM - In the middle (middle 1/3 of the glideslope)
+> • IC - In close (last 1/3 of glideslope)
+> • AR - At the ramp
+> • TL - To land (between AR and first wire)
+> • IW - In the wires
+> • AW – After wires
+623,624c680,681
+< Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., "(F)" means “a little fast”)
+< Note 2: Underline. For emphasis (e.g."_H_" means “very high”)
+---
+> Note 1: Parentheses ( ) around any symbol signifies “a little” (e.g., “(F)” means “a little fast”)
+> Note 2: Underline. For emphasis (e.g., “_H_” means “very high”)
+628,631d684
+< 
+< After landing, you have the option to taxi to a catapult and take off again immediately. To do so, alert the ground
+< crew by selecting ‘Request Launch’ from the ground crew communications menu. The catapult crew will be
+< ready to hook you up at whatever catapult you taxi to.
+637c690,691
+< LANDING SIGNAL OFFICER (LSO) STATION
+---
+> LANDING SIGNAL OFFICER (LSO)
+> STATION
+641,642c695,696
+< You may enter the LSO station with keyboard command [LALT+F9].
+< You will be transported to the LSO position with the LSO workstation console in front of you. A separate Pilot's
+---
+> You may enter the LSO station with keyboard command [LAlt+F9].
+> You will be transported to the LSO position with the LSO workstation console in front of you. A separate Pilot’s
+660c714
+< You may look around using standard DCS view controls. Use keyboard command [LALT+C] to enable the
+---
+> You may look around using standard DCS view controls. Use keyboard command [LAlt +C] to enable the
+685d738
+< 
+729d781
+< box. Each aircraft is listed by side number.
+739,742d790
+< PLAT Camera View
+< The center of the window shows the view from the PLAT camera. The camera is mounted on the deck and
+< angled up at 3-degrees along the aircraft landing glideslope to the arrestor wires. Information is superimposed
+< over the image to aid in LSO duties.
+744a793,796
+> PLAT Camera View
+> The center of the window shows the view from the PLAT camera. The camera is mounted on the deck and
+> angled up at 3° along the aircraft landing glideslope to the arrestor wires. Information is superimposed over the
+> image to aid in LSO duties.
+762c814
+<  (not shown)
+---
+> (not shown)
+780,781d831
+< approach may land safely. A flashing ‘F’ means the deck is foul and the aircraft’s landing zone is obstructed.
+< Carrier Number. This is the hull number of the carrier, in this case CVN 71.
+825d874
+< 
+830a880,883
+> 
+> 
+> 
+> 
+832,833d884
+< The carrier’s TACAN beacon must be activated by adding an advanced waypoint action. This is usually set at
+< waypoint 0, the ship’s starting location.
+838a890,893
+> 
+> 
+> 
+> 
+844,864c899,909
+< At mission start, there are 20 possible aircraft spawn locations available: the 16 parking locations listed below
+< and 1 on each catapult. Aircraft assigned "Takeoff from ramp" or "Takeoff from parking hot" in the mission editor
+< will spawn in one of the 16 parking locations listed based on the sequence it was added to the carrier. In a
+< multiplayer mission, parking spots are assigned based on when a client joins the server.
+< Aircraft assigned "Takeoff from runway hot" in the mission editor will spawn on the catapult specified in the
+< mission editor by the mission designer.
+< The number of available parking locations is reduced when a multiplayer server is un-paused. Spots 1-4 are
+< deactivated to clear the taxi route for other launching and recovering aircraft, leaving 16 possible spawn
+< locations: the 12 remaining parking locations and the four catapults.
+< The parking layout for small aircraft like the F/A-18C Hornet is shown below. This layout is also applies to the S-
+< 3 Viking and E-2 Hawkeye support aircraft, except spots 1-4 are not used. The support aircraft are usually
+< airborne first so consider starting those either on a catapult or on spots 5-8.
+< 
+< 
+< 
+< 
+< The F-14 Tomcat is a larger aircraft and requires more ramp space. One parking spot on each of the elevators
+< and one spot on the stern is not available with an F-14 parked on the adjacent spot. Plan your launch sequence
+< accordingly, remembering aircraft occupy parking spots in the order they are added to the carrier. Those
+< unoccupied spots will become available again after aircraft begin to taxi clear.
+< 
+---
+> When an AI aircraft starts or lands on a Supercarrier, there are one of 16 potential parking locations it can start
+> from or be routed to after landing:
+> • One on the stern, most aft of elevator 3
+> • One on the stern, center aft of elevator 3
+> • One on the stern, next elevator 3
+> • Two on elevator 3
+> • Four in front of elevator 1 and 2
+> • One between elevator 1 and 2
+> • Two on elevator 1
+> • Two on elevator 2
+> • Two on elevator 4
+868,877d912
+< Aircraft that cannot fit on the flight deck are stored below on the hangar deck until a suitable parking spot is free.
+< In a multiplayer setting, this may result in a ‘your flight is delayed to start - please wait’ message until space is
+< available.
+< When an aircraft lands, it requests a taxi route to exit the landing area. Deck control will search for an open
+< parking location by priority order listed below and provide a taxi route to it. First, it determines a free location
+< based on the maximum number of open parking locations. For example, if the parking spot aft of the island is
+< occupied, the next parking spot in priority order will be selected. Next, deck control will check that the chosen
+< parking location is suitable for the landing aircraft type and that there are no taxi route obstructions like other
+< “live” aircraft or static objects. Once these requirements are satisfied, the landing aircraft is routed to the open,
+< unobstructed parking location.
+879,888c914,926
+< 
+< 
+< 
+< Aircraft like the F/A-18C Hornet, S-3 Viking and E-2 Hawkeye have a small deck footprint and will use any of
+< the available parking spots shown above. Large aircraft like the F-14 Tomcat may not be able to use some
+< parking spots or may prevent other aircraft from parking in the adjacent spots. For this reason, it is a good
+< practice to maintain an unobstructed path to elevator 1 and 2, forward of the carrier’s island structure. Aircraft
+< reaching those locations will be transported to the hangar deck below and help keep the deck clear.
+< If, however, a mission is constructed the prohibits landing aircraft from reaching a parking location, the aircraft
+< will be automatically removed from the simulation after landing.
+---
+> When an aircraft lands, it requests a taxi route to exit the landing area (the box). Deck control will search (by
+> priority order listed above) to locate an open parking location and provide a taxi route to it. What does deck
+> control for routing an aircraft mean? First, it determines a free location based on the maximum number of open
+> parking locations. For example: if the parking spot aft of the island is occupied, the next parking lot in priority
+> order would be selected. Next, deck control will check that the chosen parking location is suitable for the landing
+> aircraft type and that there are no taxi route obstructions like other “live” aircraft and static objects. Once these
+> are satisfied, the landing aircraft is routed to the open, unobstructed parking location.
+> Because of this, it is very important that mission creators do not place static objects on the deck that occupy or
+> block the routes to and from the parking locations. Doing this can greatly reduce the number of available
+> parking locations. If, however, a mission is constructed the prohibits landing aircraft from reaching a parking
+> location, the aircraft will be automatically removed from the game.
+> In a multiplayer mission, starting locations are automatically assigned to the 16 locations based on the order in
+> which a client joins the mission.
+890c928
+< A number of new static objects are included with the Supercarrier module that allow you to add more life to the
+---
+> Several new static objects are included with the Supercarrier module that allow you to add more life to the
+901,902d938
+< When an object is placed on the deck, it must be linked to the carrier. Select the carrier from the LINK UNIT
+< dropdown. Once this are set, the static object will be linked to the carrier and remain in position as it moves.
+906a943
+> When an object is placed on the deck, it must be linked to the carrier. Select the carrier from the LINK UNIT
+908,920c945,946
+< carrier, so you do not have to perform this step every time. You may do this by selecting the object, CTRL+C to
+< copy, then CTRL+V to paste.
+< It is important not to place static objects in locations they may interfere with flight operations so test your
+< mission thoroughly to find any problems. To assist with this, visual aids showing suitable locations on the deck
+< are included below.
+< Static
+< Launch Object Recovery
+< Operations Operations
+< Safe
+< 4 Zones 4
+< Aircraft Aircraft
+< 
+< 
+---
+> carrier, so you do not have to perform this step every time. You may do this by selecting the object, [Ctrl+C] to
+> copy, then [Ctrl+V] to paste.
+923d948
+< 1
+925d949
+< 2
+927,1103c951,952
+< 
+< 3
+< 
+< 
+< 4
+< 
+< 
+< 
+< 
+< 4
+< Static
+< Launch Object Recovery
+< Operations Operations
+< Safe
+< 8 Zones 8
+< Aircraft Aircraft
+< 
+< 
+< 
+< 
+< 1
+< 
+< 2
+< 
+< 
+< 3 5
+< 
+< 6
+< 4
+< 8
+< 
+< 
+< 7
+< 
+< 6
+< 
+< 5
+< 7
+< 4
+< 8
+< Static
+< Launch Object Recovery
+< Operations Operations
+< Safe
+< 16 Zones 16
+< Aircraft Aircraft
+< 
+< 
+< 
+< 
+< 10
+< 
+< 11
+< 
+< 11 All
+< Remaining
+< 1 12
+< 
+< 2 13 9
+< 
+< 
+< 3 5 All
+< Remaining
+< 6
+< 4
+< 8
+< 
+< 
+< 7
+< 
+< 6
+< 
+< 9 5
+< 7
+< 10 4
+< 8
+< GLOSSARY
+< Air Boss: Officer in charge of all flight deck and tower operations within 5 nautical miles of the ship. Located in
+< Pri-Fly.
+< Angels: Altitude in thousands of feet. For example, Angels 3 = 3,000 feet.
+< Axial Winds: Winds down the longitudinal axis of the ship created by the ship’s forward movement. This
+< causes a right-to-left crosswind across the angled deck.
+< Ball: Light projected by source lens on the IFLOLS. Also referred to as “Meatball.”
+< Bingo Fuel: Aircraft fuel state in sufficient quantity necessary to fly to the bingo airfield or carrier with X lbs.
+< remaining, depending on aircraft type.
+< Bolter: A touchdown on the carrier in which the arresting hook does not engage the arresting wires.
+< BRC: Base recovery course, which is the ship’s magnetic course.
+< Buster: Proceed at maximum airspeed.
+< Carrier Air Traffic Control Center (CATCC): The centralized department responsible for the status-keeping of
+< all carrier air operations and control of all airborne aircraft involved in launch and recovery.
+< Carrier Control Zone (CCZ): The airspace within a circular limit defined by a 5 mile radius around the ship
+< surface up to and including 2,500 feet under the control of the Air Boss during visual; flight rules conditions.
+< Case I: Refers to departure/recovery procedures and landing patterns conducted in visual conditions when
+< greater than 3,000-foot ceiling and 5 nautical mile visibility exists within the carrier control zone. Case I
+< recoveries will marshal overhead the ship and enter the pattern via the break.
+< Case II: Case II recovery occurs during daylight hours when conditions may be poor on the approach but
+< adequate for landing under visual flight rules. The cloud ceiling must be above 1,000 feet and visibility more
+< than 5 nm. Case II recovery is a controlled descent to the break and the pattern. It is used when a visual
+< penetration cannot be made. The approach may be via radar vectors or a TACAN or ADF approach. In no case
+< will more than a section of two aircraft execute a Case II recovery. Case II departure is a procedure used to
+< climb through instrument conditions to visual conditions.
+< Case III: Used for weather less than 1,000/5, or at night.
+< CCA: Carrier-controlled approach.
+< Charlie: Refers to the time the first aircraft is expected at the ramp. A “Charlie” call is a directive to enter the
+< landing pattern.
+< Chicks: Wingmen in a flight.
+< Clara: Meatball is not in sight.
+< Clearing Turn: Associated with a Case I or II departure. Immediately after launch, aircraft from bow cats initiate
+< a right turn then a turn to parallel the BRC. Aircraft launched from the waist cats initiate a left turn then a turn to
+< parallel the BRC. The purpose of these turns is to provide aircraft lateral separation on multiple launches from
+< the carrier.
+< Cross-Deck Pendant (CDP): Arresting gear wire
+< Cut Lights: Green lights mounted horizontally and centered above the IFLOLS lens box and are controlled by
+< the LSO. Utilized during Zip Lip and EMCON conditions instead of UHF to give pilots clearance to land, i.e.,
+< “Roger Ball.” Subsequent cut lights mean “power.” Also, used in conjunction with waveoff lights to signal bingo.
+< Datum Lights: Green reference lights mounted horizontally on the IFLOLS, seen on each side of the centered
+< cell.
+< Departure Reference Radial (DRR): Preassigned radial usually passed during the brief or as standard
+< operating procedure.
+< Emission Control Procedures (EMCON): Electronic emission control procedures are in effect at the ship to
+< avoid detection. All radio, radar, and navigation equipment transmissions are eliminated except as required for
+< safety of flight.
+< Expected Approach Time (EAT): The future time at which an aircraft is cleared to depart inbound or penetrate
+< from a pre-assigned fix. Aircraft depart and commence approach at assigned time if no further instructions are
+< received.
+< Father: Code name for the ship’s TACAN.
+< Feet Wet or Feet Dry: Aircraft crossing the coastline enroute to or returning from the ship.
+< Final Bearing (FB): The magnetic bearing assigned by CATCC for final approach (an extension of the landing
+< area centerline); usually BRC minus the landing area angle of 10°.
+< Foul Deck: Landing area is not free of all obstructions or the flight deck is not ready to recover aircraft.
+< Foul Line: A line painted on both sides of the landing area to define the minimum area that must be free of
+< obstructions in order to consider the deck clear.
+< Hangar Deck: Area below the flight deck used to store and repair aircraft.
+< Holdback: Metal fitting designed to break or release at a preset level of force during a catapult stroke.
+< Hook to Eye: The vertical distance measured between the pilot’s eye and the aircraft’s hook.
+< Hook to Ramp: The clearance distance between the aircraft’s hook point and the flight deck as it crosses the
+< ramp.
+< Improved Fresnel Lens Optical Landing System (IFLOLS): Pilot’s landing aid, i.e., meatball.
+< Interval: The time between you and the aircraft you are to follow.
+< In the Middle Position: A distance on the groove that is between the “start” and the “in close” position. The
+< middle-third of the groove.
+< Jet Blast Deflector (JBD): Hydraulically lifted deck plate mounted behind each catapult.
+< Landing Signals Officer (LSO). Controls all fixed-wing aircraft on final approach, or ‘in the groove’ during
+< carrier landings.
+< Launch Bar: Metal arm attached to the nose gear and used to launch the aircraft.
+< Mark your Father: State bearing and distance from ship.
+< Marshal: Holding pattern during Case I, II, and III recoveries. Also the term used for the ship’s radar controller.
+< Mother: Code name used to signify the carrier.
+< Overhead Time: The scheduled time a flight of aircraft is expected overhead the ship for pattern entry.
+< Paddles: The call sign for the LSO.
+< Pilot Landing Assistance Television (PLAT): Video camera system used to record carrier operations.
+< Plane Guard: SAR helicopter or ship assigned during aircraft launch and recovery, usually located in starboard
+< Delta for a helicopter, three miles astern for a ship.
+< Platform: A reporting point in the ship’s TACAN approach (normally at 20 NM from the ship at 5,000 feet) at
+< which the rate of descent is decreased to 2,000 feet per minute.
+< Popeye: Code word used to signify that aircraft is operating on instruments in poor weather or low visibility.
+< Pri-Fly: Tower location where the Air Boss oversees the pattern and flight deck operations.
+< Pull Back: Action following arrestment whereby the wire is partially retracted to allow the pilot to raise the
+< tailhook.
+< Push Back: Action taken anytime the aircraft needs to be moved back by deck personnel.
+< Ramp: The aft end of the flight deck.
+< Roger Ball: The call made by the LSO that indicates you are cleared to land and the LSO has positive control
+< (call made less than a mile prior to landing).
+< Roll Angle: Movement of the lens about the roll axis (set for each type of aircraft) to maintain a constant
+< targeted hook touchdown point.
+< RTB: Signal to return to base.
+< See You: Communication used to indicate that flight lead has the ship in sight.
+< Shuttle: The portion of the catapult that attaches to the launch bar during catapult launches.
+< Starboard Delta: Holding pattern used by the helicopters and COD aircraft flown on the starboard side of the
+< ship and using right-hand turns at 500 feet.
+< Start: The first-third of the groove length.
+< Suspend: Stop the catapult launch sequence.
+< Sweet Lock: Positive TACAN lock-on.
+< Tension: The portion of the catapult launch sequence when the shuttle is hydraulically moved forward to
+< remove slack.
+< Tiedown: Chocks and chains used to secure aircraft on the flight deck.
+< Zip Lip: Condition in which radio communications are minimized.
+---
+> It is important not to place static objects in locations they may interfere with flight operations so test your
+> mission thoroughly to find any problems.

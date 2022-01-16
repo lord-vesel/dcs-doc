@@ -1,0 +1,1 @@
+pdftotext -nopgbrk -y 60 -W 1280 -H 540 -f 5 -layout ~/nc/manuals/DCS\ Supercarrier\ Operations\ Guide\ RU.pdf source
