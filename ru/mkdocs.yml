@@ -9,7 +9,7 @@ extra:
     property: UA-19502035-4
   social:
     - icon: fontawesome/brands/telegram
-      link: https://t.me/rlunegov
+      link: /to-telega
       name: Пишите в Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
