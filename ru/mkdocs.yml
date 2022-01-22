@@ -119,7 +119,6 @@ nav:
         - sc/05.me.md
 
 
-#theme: readthedocs
 theme:
   name: material
   language: ru
