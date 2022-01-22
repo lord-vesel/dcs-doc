@@ -1,0 +1,510 @@
+NAVIGATION
+INS NAVIGATION
+The inertial navigation system (INS) is the primary navigation system of the F-16C and provides accurate
+attitude, navigation, and vertical and horizontal steering information. The Up-Front Controls (UFC) are the
+primary interface device to the INS. In this Navigation chapter we will discuss the practical application of using
+the INS for navigation purposes.
+
+
+INS Alignment
+The navigation system can be aligned by a variety of methods on the ground or in the air. This is started by
+positioning the INS knob on the Avionics Power panel to the desired position. The INS knob is set to NAV when
+the alignment is complete.
+
+
+
+
+The Normal (NORM) Alignment is the primary alignment mode. The NORM alignment requires approximately
+eight minutes to fully accomplish.
+The Stored Heading (STOR HDG) Alignment allows for a quick alignment in 90 seconds or less in some
+conditions. This can only be used if the aircraft has been set up specifically for this alignment beforehand.
+An Inflight Alignment (INFLT ALIGN) places the INS in ATT mode and performs an in-flight alignment. The
+pilot must hold the aircraft steady and level during this process.
+In Attitude (ATT) mode, only attitude and heading information is given to the avionics.
+
+
+Normal Gyrocompass (NORM) Alignment
+A full INS alignment in the NORM position should be accomplished prior to every flight. This is normally started
+just after engine start and avionics power-up to allow time for the full alignment to complete prior to taxi.
+1. Position the INS knob to the NORM position.
+This begins the INS alignment and calls up the INS page on the DED. The progress of the alignment may
+be monitored from here.
+Time into Alignment Alignment Status
+
+
+Latitude
+
+Longitude
+
+System Altitude
+Ground Speed
+True Heading
+
+
+
+Time into Alignment. This is the elapsed time in minutes and decimal seconds since the INS alignment
+began.
+Alignment Status. This is an estimate of the alignment quality. Values count down from 99 with the
+following meanings:
+ • 99 – Initialization
+ • 90 – Valid attitude data, coarse align begins
+ • 79 – Valid heading data
+ • 70 – Degraded navigation state, steady RDY displayed on DED, steady ALIGN displayed on HUD
+ • 60-20 – Circular error probability (CEP) multiplier compared to fully aligned state; 60 = 6.0 times
+normal CEP, 20 = 2.0 times normal CEP
+ • 10 – INS fully aligned, RDY flashes on DED, ALIGN flashes on HUD
+ • 6 – INS fully aligned and enhanced to 0.6 times normal precision with GPS data or other techniques
+Latitude. Latitude of start position.
+Longitude. Longitude of start position
+System Altitude. Altitude used by the fire control computer for air to ground weapons delivery
+True Heading. Last known true heading or heading derived during alignment
+Ground Speed. Current ground speed.
+2. Enter the latitude, longitude, and altitude for the starting location.
+The last known coordinates and estimate of altitude are displayed when the alignment begins, however the
+data must be re-entered even if it is still correct.
+If the data is accurate, use the DCS switch to highlight each line and press ENTR for each in turn. If the
+data is not accurate, enter the correct data for each field with the ICP keypad.
+Failure to enter the data will flag the alignment as degraded and not allow important monitoring functions to
+take place. Navigation, weapons delivery and targeting pod pointing errors may also result.
+The alignment will stop and start again if the data is entered later than two minutes into the alignment.
+3. Monitor alignment progress and switch INS knob to NAV.
+The RDY on the DED and ALIGN on the HUD will begin to flash when the alignment is complete. This
+should happen in 8 minutes or less. Position the INS knob to NAV to accept the alignment.
+
+
+
+Alignment Status
+
+
+
+
+Stored Heading (STOR HDG) Alignment
+A Stored Heading alignment option is available to allow a faster INS alignment in certain situations. This can be
+useful for “scramble” missions or for situations when your playtime is limited.
+This alignment assumes a full gyrocompass alignment was already performed before the aircraft was last shut
+down and the aircraft has not been moved. The previously computed true heading is stored in the Inertial
+Navigation Unit (INU), a component of the INS, and is used to give the alignment process a head start. The new
+alignment should take about 90 seconds.
+1. Position the INS knob to the STOR HDG position.
+This begins the INS alignment and calls up the INS page on the DED. The progress of the alignment may
+be monitored from here just as on a normal alignment.
+Time into Alignment Alignment Status
+
+
+Latitude
+
+Longitude
+
+System Altitude
+Ground Speed
+True Heading
+
+
+
+2. Verify, but do not enter, the latitude, longitude, altitude, and true heading for the starting location.
+3. Monitor alignment progress and switch INS knob to NAV.
+The RDY on the DED and ALIGN on the HUD will begin to flash when the alignment is complete. This
+should happen in about 90 seconds. Position the INS knob to NAV to accept the alignment.
+Alignment Status
+
+
+
+
+Inflight (INFLT) Alignment
+It is possible to lose your INS alignment inflight due to electrical failure, battle damage or switchology errors. A
+new alignment may be obtained while airborne provided the INS is functional and GPS data is available. If GPS
+is not available, the inflight alignment will not complete.
+1. Position the INS knob to OFF for 10 seconds.
+2. Maintain straight, level and unaccelerated flight.
+3. Position the INS knob to the INFLT position.
+This begins the inflight INS alignment and calls up the INFLT ALIGN page on the DED. No action or data
+entry is required on this page if GPS data is available. An initial heading may be entered based on
+magnetic compass reading or other outside sources, but this is not required.
+
+
+
+
+Initial Heading
+
+
+
+
+The STBY mnemonic will replace the max G indication in the HUD, showing that coarse alignment of the
+inertial platform is in progress. Horizon line, pitch ladders and compass information may be displayed but
+will not be accurate.
+Alignment Status
+
+
+
+
+4. Maintain straight, level and unaccelerated flight for approximately one minute, until ALIGN appears
+in the HUD.
+
+
+
+
+Alignment Status
+
+
+
+
+This indicates that coarse alignment is complete and fine alignment is in progress. Attitude information
+becomes available in the HUD and ADI, and the aircraft may be maneuvered normally.
+Shortly after attitude information appears, the flight path marker, steering cue, aircraft heading, and HSI
+navigation data become available. Reliability of the data increases as the alignment progresses.\
+5. Switch INS knob to NAV after Max-G replaces ALIGN in the HUD.
+Replacement of ALIGN with Max-G shows that the alignment is complete. The mission may proceed
+normally from there.
+Max-G
+
+
+
+
+HUD Indication
+You can view your current heading on the top or bottom of the HUD, depending on the selected master mode.
+The heading scale shows your current magnetic heading indicated by the central caret.
+The Steering Cue shows the heading to your selected steerpoint. If you turn the aircraft to align the Flight Path
+Marker with the Steering Cue, you will be flying to your steerpoint.
+
+
+
+Flight Path Marker
+Steering Cue
+
+
+Steerpoint Symbol
+
+
+
+
+Magnetic Heading
+Horizontal Situation Display (HSD) Indication
+When there is an active steerpoint, it will be displayed on the HSD as a solid circle. Other steerpoints will be
+displayed as empty circles with lines connecting them all to show the route. The ownship marker shows your
+aircraft’s current position.
+
+
+
+
+Navigation Route Steerpoints
+
+
+Current Steerpoint
+
+
+
+Ownship Marker
+
+
+
+
+Horizontal Situation Indicator (HSI) Indication
+The HSI is your primary gauge to assist in navigation to steerpoints, TACAN beacons, and radio beacons.
+While you will likely be using HUD symbology for most of your navigation purposes, a firm understanding of the
+HSI is necessary for access to additional navigation data that is not present on the HUD or DED displays, and
+in case of battle damage.
+Lubber Line
+
+
+Range Indicator
+Course Indicator
+
+To - From Indicator
+Bearing Pointer
+
+Course Pointer Course Deviation Indicator
+
+Heading Bug
+
+Aircraft Symbol
+Compass Card
+Course Deviation Scale
+Course Set Knob
+Heading Set Knob
+
+Current Mode
+
+Mode Selector
+
+
+
+
+Compass Card. Arrayed around the periphery of the HSI, this is a compass that rotates such that the top of the
+compass indicates the aircraft’s magnetic heading.
+Aircraft Symbol. In the center of the gauge is the aircraft symbol that always remains static. All HSI displays
+reference this symbol.
+Lubber Line. This is a fixed line that runs from the aircraft symbol to the top of the gauge. This line represents
+current aircraft heading in relation to the compass card.
+Range Indicator. Indicating range in nautical miles, this three-place drum indicator provides slant distance from
+your aircraft to the selected steerpoint or TACAN station.
+Bearing Pointer. This arrow-shaped indicator moves around the outside of the compass card and points to the
+current steerpoint or TACAN station. Located 180° from the Bearing Pointer head is the tail that represents the
+reciprocal bearing.
+Heading Set Knob. Located in the lower left portion of the gauge, when rotated, this knob allows you to set the
+position of the Heading Marker on the compass card.
+Heading Bug. Shown as two thick lines on the outside of the compass card, this marker can be moved around
+the compass card using the Heading Set Knob. After being set, this marker rotates with the Compass Card to
+provide a heading to the selected magnetic bearing.
+Course Set Knob. Positioned in the lower right corner of the gauge, this knob, when rotated, allows you to set
+the course numeric in the Course Selector Window and move the course pointer around the compass card.
+Course Indicator. This window displays the course set using the Course Set Knob numerically in degrees.
+Course Pointer. Set by the Course Set Knob, these two lines represent the set course and reciprocal course
+on the compass card.
+Course Deviation Indicator. This line that runs through the center area of the gauge provides an indication of
+how accurately you are flying on the set course line. When the line runs through the aircraft symbol in the center
+of the gauge, you are on course. If it is to either side, you need to correct your heading to place the aircraft back
+on the course line.
+To-From Indicator. These two triangles along the intended course line indicate the course the aircraft will fly to
+or away from the selected TACAN station or steerpoint.
+TACAN NAVIGATION
+The Tactical Air Navigation (TACAN) system is a world-wide array of omni-directional beacons with unique
+frequency codes used primarily by military aircraft. Civilian aircraft use a similar system called VOR’s (VHF
+omni-direction Beacon) on a different frequency range. Many VOR stations are collocated with a TACAN. These
+stations broadcast both signals so they can be used by military and/or civilian aircraft. These stations are known
+as “VORTACS”.
+TACAN beacons can not only be set on the ground, but they can also be attached to aircraft and even ships
+(aircraft carriers). TACAN serves as a useful means to quickly navigate to a defined location.
+The TACAN is part of the MIDS terminal and must be activated by rotating the MIDS LVT knob on the Avionics
+Power Panel to the ON position. TACAN audio tone volume is controlled on the AUDIO 2 panel.
+
+
+
+
+The currently selected TACAN station is always displayed on the bottom right of the DED CNI page. You can
+see station 1X is selected in this example.
+
+
+
+
+Before navigating using TACAN though, you will want to do the following:
+Select TACAN Station
+1. To select a new station, press the T-ILS priority function button on the ICP. That displays the TACAN/ILS
+page on the DED. Information on the TACAN system is displayed on the left half of the page.
+
+
+
+
+2. On the ICP, toggle the DCS switch down to highlight the CHAN field. Use the ICP keypad to type in the
+new channel. Press ENTR to accept the changes.
+In this example, channel 25 is entered. The system has identified it as beacon GTB, a TACAN station at
+Tbilisi.
+
+
+
+
+3. If required, you may change the band by typing 0 (M-SEL) into the CHAN field or scratchpad and pressing
+ENTR. This toggles the band between X and Y.
+4. On the ICP, toggle the DCS right to cycle through the following options: REC, T/R, A/A REC, or A/A TR.
+REC. The TACAN operates in receive mode only and provides bearing, course deviation, and station
+identification.
+T/R. The TACAN acts in a transceiver mode (send and receive) and provides bearing, range, deviation,
+and station identification. This will be your most common selection.
+A/A REC. TACAN operates in Air-to-Air mode and can only receive bearing, course deviation and station
+identification for a TACAN-equipped aircraft.
+A/A T/R. TACAN operates in Air-to-Air transceiver mode and provides bearing, range, deviation, and
+station identification with a TACAN-equipped aircraft.
+In most cases, you will keep the TACAN set to the T/R mode.
+
+
+
+
+5. Toggle the DCS left to RTN. This will return you to the CNI page where your new TACAN channel is
+displayed at the bottom right.
+Navigate to Selected TACAN Station
+Once a valid TACAN station has been entered on the DED, the station is within operative range, steering
+information is available on the HSI.
+Press the Mode selector until TCN is displayed in the Current Mode field. Operation is identical to steerpoint
+navigation except the bearing pointer points to the TACAN station instead of the steerpoint.
+
+Lubber Line
+
+
+Range Indicator
+Course Indicator
+
+To - From Indicator
+Bearing Pointer
+
+Course Pointer Course Deviation Indicator
+
+Aircraft Symbol
+
+Course Deviation Scale
+Compass Card
+Heading Marker
+Course Set Knob
+Heading Set Knob
+
+Current Mode
+
+
+Mode Selector
+
+
+
+Note: TACANs are considered reliable for only 130 nm, so the maximum distance between TACAN stations is
+generally 260 nm.
+INSTRUMENT LANDING SYSTEM NAVIGATION
+The landing approach using the Instrumented Landing System (ILS) is generally used under Instrument Flight
+Rules (IFR) conditions due to night or bad weather. When used, the ILS provides vertical and horizontal
+steering information to help you fly down the correct glide slope and heading to a safe landing. The ILS
+frequency is set using the Up-Front Controls (UFC) and ILS steering is selected on the HSI. Steering
+information is then presented on the HUD, ADI and HSI instruments. The ILS provides steering for a straight in
+approach.
+In addition to the instrument indications, the ILS has a localizer audio signal. The ILS provides an audio cue
+when flying over either the outer or inner marker beacons. You can control the audio levels on the Audio 2
+control panel.
+Most, but not all runways, allow landings from either direction but will depend on the wind direction. The ILS
+system should be used for the appropriate landing runway as directed by ATC.
+The ILS system must be activated by rotating the ILS knob on the Audio 2 Control Panel out of the OFF
+position.
+
+
+
+
+The ILS operates between 108.1 and 111.95 MHz. The frequency for any runway equipped for ILS may be
+seen on the Mission Planner map before mission start or in-game using the F10 map view. Click any airfield
+and the information will be displayed.
+In the next example, we will set the system up for a landing at Vaziani runway 31, using frequency 108.75.
+
+
+Select ILS Frequency
+1. To select a new station, press the T-ILS priority function button on the ICP. That displays the TACAN/ILS
+page on the DED. Information on the ILS system is displayed on the right half of the page.
+2. On the ICP, toggle the DCS switch down to highlight the FREQ field. Use the ICP keypad to type in the
+new frequency.
+Press ENTR to accept the changes.
+3. Then, toggle the DCS switch down to highlight the CRS field. Use the ICP keypad to type in the localizer
+course.
+Press ENTR to accept the changes.
+
+
+
+
+In this example, we set the system up for a landing at Vaziani runway 31, using frequency 108.75. CMD STRG
+is highlighted indicating the ILS signal is being received.
+
+
+Navigate with ILS Glide Slope and Localizer
+Once a valid ILS station has been entered, the station is within operative range, and ILS is selected as the
+activate navigation mode, you will be provided steering information on the ADI and HSI to the selected station
+(much like TACAN).
+Selecting one of the PLS (Precision Landing System) modes on the HSI is required before ILS deviation data
+(localizer and glide slope) can be displayed on the HSI, HUD, and ADI.
+HSI Indications
+Press the Mode Select button on the HSI until either PLS NAV or PLS TCN mode is displayed.
+
+
+
+Manually Selected Course
+Range to STPT or
+TACAN
+
+STPT or TACAN Bearing
+Localizer Deviation
+Indicator Course Pointer
+
+
+
+
+PLS Mode Indicator
+
+
+
+
+Mode Selector
+
+
+
+
+Operation is identical to steerpoint navigation except the bearing pointer points to the ILS localizer instead of
+the steerpoint.
+
+
+ADI Indications
+The ADI provides indications that show your position in relation to the glideslope.
+
+
+
+
+Glideslope Localizer and Glideslope Deviation
+Deviation Scale
+
+
+
+
+Glideslope
+Indicator
+Localizer and Glide Slope Deviation. When the horizontal bar is centered on the ADI, you are flying on glide
+slope. If the bar is above the center of the ADI, it indicates that you are below glide slope and you need to
+increase altitude. The vertical localizer bar indicates if you are left or right of runway alignment. If the bar is right
+of ADI center, fly to the right to center it, then resume localizer course. For a proper glide slope approach, you
+want the two bars centered and forming a perfect cross on the ADI (aka “center the bars”).
+Glide Slope Deviation Scale and Glide Slope Indicator. Located along the left side of the ADI, this fixed
+scale and moving caret indicator displays the position of the glide slope in relation to the aircraft. Basically, the
+caret is the glide slope. If it is high, you are low. For example: if the caret is on the bottom dot, you are above
+the glide slope. The common terminology would be “you are 2 dots high”. Conversely, if the caret is on the first
+dot above middle you are below the glide slope. The term would be “you are 1 dot low”. It is a general rule that if
+you go more than 1 dot low or more than 2 dots high you go missed approach and try again.
+Glide Slope and Localizer Warning Flags (not visible). When displayed, this indicates that there is a problem
+in receiving adequate ILS glide slope or localizer signal.
+
+
+HUD Indications
+The HUD also shows your position in relation to the glideslope. Command Steering guidance is also provided if
+CMD STRG is highlighted on the ILS DED page.
+
+
+
+
+Localizer and
+Glideslope Deviation Command Steering
+
+
+
+Flightpath Marker
+
+
+
+
+Command Steering Symbol. This symbol will be displayed on the HUD to guide you through the approach
+when valid localizer data is received. A tic mark appears on the symbol when nearing the center of the
+glideslope to indicate the pitch steering data is valid.
+Localizer and Glide Slope Bars. These bars serve the same function as those on the ADI. When the
+horizontal bar is centered on the Flight Path Marker (FPM), you are flying down the glide slope projected by
+the ILS vertical steering component. If the bar is above the center of the FPM, it indicates that you are below
+glide slope and you need to increase altitude. The vertical localizer bar indicates if you are left or right of runway
+alignment. If the bar is right of FPM center, fly to the right to center it. For a proper glide slope approach, you
+want the two bars centered and forming a perfect cross on the FPM (aka “center the bars”).
+AUTOPILOT
+The two autopilot switches allow you to set and hold pitch and roll. Any combination of switch settings may be
+used.
+
+
+
+
+PITCH – ALT HOLD. This maintains the aircraft at a constant altitude. The autopilot will attempt to maintain the
+current altitude from when the switch is set but may not be able to capture the desired altitude if the aircraft is in
+a climb or dive. An altitude within the control authority of the autopilot will be commanded. The altitude may be
+changed by pressing the paddle switch, flying to a new altitude, and releasing the paddle switch.
+PITCH – ATT HOLD. This maintains the aircraft’s current pitch attitude, nose up or nose down. The autopilot
+will not engage if the pitch angle exceeds ±60°, however, the switch may remain engaged. The stick may be
+used to change the attitude in this mode.
+ROLL – HDG SEL. This causes the aircraft to fly the heading selected on the HSI. Roll commands are limited
+to a 30° bank or a 20° per second roll rate to capture the desired heading. The autopilot will not engage if the
+roll angle exceeds ±60°, however, the switch may remain engaged.
+ROLL – ATT HOLD. This maintains the aircraft’s current roll attitude. The autopilot will not engage if the roll
+angle exceeds ±60°, however, the switch may remain engaged. The stick may be used to change the attitude in
+this mode.
+The switches are held in place until they are returned to the OFF position or any of these situations occur:
+ • air refueling door opened
+ • alt flaps extended below 400 knots
+ • A/P FAIL PFL
+ • AoA exceeds 15°
+ • DBU on
+ • landing gear extended
+ • low-speed warning
+ • MPO switch in OVERRIDE
+ • STBY GAIN PFL
+ • TRIM/AP DISC switch set to DISC
+Holding the paddle switch presses disengages the autopilot until the switch is released.
