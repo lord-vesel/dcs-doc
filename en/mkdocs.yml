@@ -31,8 +31,19 @@ nav:
     - F-16C Viper by ED:
       - f16/01.history.md
       - f16/02.stores.md
-      - f16/03.cockpit.md
-      - f16/04.hotas.md
+      - Cockpit:
+        - f16/03.cockpit.md
+        - f16/04.hotas.md
+        - f16/05.ufc.md
+        - f16/06.mfd.md
+        - f16/07.hud.md
+      - Navigation:
+        - f16/08.insnav.md
+        - f16/09.tacannav.md
+        - f16/10.ilsnav.md
+        - f16/11.autopilot.md
+      - f16/12.radio.md
+
 
 theme:
   name: material
