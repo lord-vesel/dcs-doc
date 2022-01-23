@@ -43,6 +43,7 @@ nav:
         - f16/10.ilsnav.md
         - f16/11.autopilot.md
       - f16/12.radio.md
+      - f16/13.procedures.md
 
 
 theme:
@@ -102,4 +103,4 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  - attr_list
