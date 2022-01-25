@@ -44,6 +44,11 @@ nav:
         - f16/11.autopilot.md
       - f16/12.radio.md
       - f16/13.procedures.md
+      - f16/14.radar.md
+      - f16/15.datalink.md
+      - f16/16.ltpod.md
+      - f16/17.hmcs.md
+      - f16/18.ata.md
 
 
 theme:
