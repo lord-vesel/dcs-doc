@@ -18,9 +18,8 @@ def converter(args):
     norm_titles = []
 
     for t in titles:
-        m = re.split('(^#+\ +[А-ЯA-Z])',t)
-        up = m[1]
-
+        m = re.split('(^#+\ +)',t)
+        hlevel = m[1]
         modlist = []
 
         for word in re.split('\ ',m[2]):
@@ -30,7 +29,7 @@ def converter(args):
             if bool(re.search(r'(\d|\.)', clean_word)):
                 modword = word
             elif clean_word not in abbrs:
-                modword = word.lower()
+                modword = word.title()
             else:
                 modword = word
 
@@ -38,9 +37,9 @@ def converter(args):
 
         lowered_string = " ".join(modlist)
 
-        print(up + lowered_string)
+        print(hlevel + lowered_string)
 
-        norm_titles.append(up + lowered_string)
+        norm_titles.append(hlevel + lowered_string)
 
     titles_dict = dict(zip(titles,norm_titles))
 
