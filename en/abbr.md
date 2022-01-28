@@ -6,6 +6,7 @@
 *[Ah]:       Amper x hour
 *[AI]:       Artificial Intelligence
 *[ALTM]:     Altimeter
+*[ALIC]:     Aircraft Launcher Interface Computer
 *[AM]:       Amplitude Modulation
 *[ATTD]:     Attitude
 *[AVGAS]:    Aviation Gasoline
@@ -101,6 +102,29 @@
 *[XMSN]:       Transmission
 *[XMTR]:       Transmitter
 *[ΔF]:         Increment of Equivalent Flat Plate Drag Area
+
+*[CWAR]: Continuous-wave acquisition radar
+*[EWR]: Early-warning radar
+*[FCR]: Fire control radar
+*[GIR]: Guidance and illumination radar
+*[MRCC]: Mobile air target reconnaissance and command center
+*[RR]: Ranging radar
+*[SR]: Surveillance radar
+*[STR]: Search and tracking radar
+*[TAR]: Target acquisition radar
+*[TELAR]: Transporter erector launcher and radar
+*[TR]: Tracking radar
+
+*[LASR]: 
+*[DED]: Data Entry Display
+*[HOTAS]: 
+*[TGP]: 
+*[STBY]: 
+*[AMRAAM]: 
+*[JDAM]: Joint Direct Attack Munitions
+*[JSOW]: Joint Standoff Weapon
+*[CMDS]: Countermeasures Dispensing Set
+
 *[IAS]:       Приборная воздушная скорость
 *[CAS]:       Истинная воздушная скорость
 *[GPS]:       Global Positioning System – среднеорбитальная спутниковая      радионавигационная система НАВСТАР, разработанная в США

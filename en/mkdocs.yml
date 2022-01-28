@@ -1,17 +1,25 @@
-site_name: DCS Documentation Centralized
+site_name: DCS Documentation
 repo_url: https://github.com/lord-vesel/dcs-doc
 repo_name: lord-vesel/dcs-doc
-edit_uri: edit/develop/ru/docs
-google_analytics: ['UA-19502035-4', 'auto']
+edit_uri: edit/develop/en/docs
 site_author: "rost.lunegoff@gmail.com"
-copyright: "<a href=https://t.me/rlunegov>Telegram author</a>"
+extra:
+  analytics:
+    provider: google
+    property: UA-19502035-4
+  social:
+    - icon: fontawesome/brands/telegram
+      link: /to-telega
+      name: Contact via Telegram
+    - icon: fontawesome/solid/envelope
+      link: mailto:rost.lunegoff@gmail.com
 
 nav:
   - About:
       - index.md
       - help.md
       - people.md
-  - Carrirers:
+  - Docs:
     - Supercarrier by ED:
       - sc/01.quickstart.md
       - sc/02.nimitz.md
@@ -20,35 +28,90 @@ nav:
       - sc/05.lso.md
       - sc/06.editor.md
       - sc/07.glossary.md
+    - F-16C Viper by ED:
+      - f16/01.history.md
+      - f16/02.stores.md
+      - Cockpit:
+        - f16/03.cockpit.md
+        - f16/04.hotas.md
+        - f16/05.ufc.md
+        - f16/06.mfd.md
+        - f16/07.hud.md
+      - Navigation:
+        - f16/08.insnav.md
+        - f16/09.tacannav.md
+        - f16/10.ilsnav.md
+        - f16/11.autopilot.md
+      - f16/12.radio.md
+      - f16/13.procedures.md
+      - f16/14.radar.md
+      - f16/15.datalink.md
+      - f16/16.ltpod.md
+      - f16/17.hmcs.md
+      - f16/18.ata.md
+      - f16/19.atg.md
+      - f16/20.defence.md
+      - f16/21.append.md
 
 
-#theme: readthedocs
 theme:
   name: material
-  language: en
+  language: ru
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
+    #  palette:
+    #    primary: black
+    #    accent: blue
   palette:
-    primary: indigo
-    accent: blue
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   features:
-    - instant
+    - navigation.instant
+    - navigation.tabs
+    - toc.integrate
+      # - navigation.indexes
 
 extra_css:
   - css/materal-add.css
 plugins:
     - search:
         lang: ['en', 'ru']
+        full_path_in_title: yes
     - tags
 
 markdown_extensions:
   - toc:
       baselevel: 1
-  - mdx_superscript
+      permalink: true
+        #- mdx_superscript
   - markdown_captions
   - markdown_include.include
   - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences
   - abbr
   - kbdextension:
       brackets_css: keyboard-css
+  - meta
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde

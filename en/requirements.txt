@@ -1,6 +1,7 @@
 mkdocs
 mkdocs-material
 markdownsuperscript
+MarkdownSubscript
 markdown-captions
 markdown-include
 kbdextension
