@@ -13,16 +13,20 @@ extra:
       name: Пишите в Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
+
+docs_dir: !ENV [DOCSPATH, 'docs']
+
 nav:
   - О проекте:
       - index.md
       - help.md
       - people.md
   - Документация:
-# - Вторая Мировая:
       - И-16 от OctopusG:
+        - i16/index.md
         - i16/i16.md
       - FW-190 A8 от ED:
+        - fw190a8/index.md
         - fw190a8/01.intro.md
         - fw190a8/02.history.md
         - fw190a8/03.design.md
@@ -33,6 +37,7 @@ nav:
         - fw190a8/08.radio.md
         - fw190a8/09.credits.md
       - P-47D от ED:
+        - p-47/index.md
         - p-47/01.intro.md
         - p-47/02.history.md
         - p-47/03.design.md
@@ -43,6 +48,7 @@ nav:
         - p-47/08.combat.md
         - p-47/10.supplements.md
       - Spitfire Mk. IX от ED:
+        - spitfire-ix/index.md
         - spitfire-ix/01.intro.md
         - spitfire-ix/02.common.md
         - spitfire-ix/03.cockpit.md
@@ -53,6 +59,7 @@ nav:
         - spitfire-ix/08.arms.md
         - spitfire-ix/09.supplements.md
       - DH 98 Mosquito FB VI от ED:
+        - mosquito/index.md
         - mosquito/01.intro.md
         - mosquito/02.history.md
         - mosquito/03.design.md
@@ -62,12 +69,13 @@ nav:
         - mosquito/07.engaging.md
         - mosquito/08.credits.md
           #      - МиГ-21БИС от Leatherneck:
+          #        - mig-21bis/index.md
           #        - mig-21bis/01.history.md
           #        - mig-21bis/02.setup.md
           #        - mig-21bis/03.basic.md
           #        - mig-21bis/04.limits.md
-# - Современная авиация:
       - F/A-18C от ED:
+        - fa18c/index.md
         - fa18c/01.setup.md
         - fa18c/02.cockpit.md
         - fa18c/03.mfdu.md
@@ -82,14 +90,15 @@ nav:
         - fa18c/12.ew.md
         - fa18c/13.credits.md
       - Су-25Т от ED:
+        - su25t/index.md
         - su25t/01.intro.md
         - su25t/02.simple.md
         - su25t/03.cockpit.md
         - su25t/04.radio.md
         - su25t/05.model.md
         - su25t/06.combat.md
-# - Вертолёты:
       - Ми-8МТВ2 от Belsimtek:
+        - mi8/index.md
         - mi8/01.history.md
         - mi8/02.geninfo.md
         - mi8/03.dynamic.md
@@ -107,11 +116,13 @@ nav:
         - mi8/17.credits.md
         - mi8/18.sources.md
       - NS430 от Belsimtek:
+        - ns430/index.md
         - ns430/01.controls.md
         - ns430/02.usage.md
         - ns430/03.pages.md
         - ns430/04.supplement.md
       - Supercarrier от ED:
+        - sc/index.md
         - sc/01.nimitz.md
         - sc/02.departing.md
         - sc/03.recovery.md
@@ -147,7 +158,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - toc.integrate
-      # - navigation.indexes
+    - navigation.indexes
 
 extra_css:
   - css/materal-add.css
@@ -161,7 +172,6 @@ markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
-  - mdx_superscript
   - markdown_captions
   - markdown_include.include
   - admonition
@@ -176,3 +186,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
