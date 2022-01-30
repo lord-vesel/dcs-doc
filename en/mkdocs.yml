@@ -14,6 +14,8 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
 
+docs_dir: !ENV [DOCSPATH, 'docs']
+
 nav:
   - About:
       - index.md
@@ -21,6 +23,7 @@ nav:
       - people.md
   - Docs:
     - Supercarrier by ED:
+      - sc/index.md
       - sc/01.quickstart.md
       - sc/02.nimitz.md
       - sc/03.launch.md
@@ -29,6 +32,7 @@ nav:
       - sc/06.editor.md
       - sc/07.glossary.md
     - F-16C Viper by ED:
+      - f16/index.md
       - f16/01.history.md
       - f16/02.stores.md
       - Cockpit:
@@ -82,7 +86,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - toc.integrate
-      # - navigation.indexes
+    - navigation.indexes
 
 extra_css:
   - css/materal-add.css
@@ -96,7 +100,6 @@ markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
-        #- mdx_superscript
   - markdown_captions
   - markdown_include.include
   - admonition

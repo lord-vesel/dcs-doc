@@ -13,13 +13,15 @@ extra:
       name: Пишите в Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
+
+docs_dir: !ENV [DOCSPATH, 'docs']
+
 nav:
   - О проекте:
       - index.md
       - help.md
       - people.md
   - Документация:
-# - Вторая Мировая:
       - И-16 от OctopusG:
         - i16/i16.md
       - FW-190 A8 от ED:
@@ -66,7 +68,6 @@ nav:
           #        - mig-21bis/02.setup.md
           #        - mig-21bis/03.basic.md
           #        - mig-21bis/04.limits.md
-# - Современная авиация:
       - F/A-18C от ED:
         - fa18c/01.setup.md
         - fa18c/02.cockpit.md
@@ -88,8 +89,8 @@ nav:
         - su25t/04.radio.md
         - su25t/05.model.md
         - su25t/06.combat.md
-# - Вертолёты:
       - Ми-8МТВ2 от Belsimtek:
+        - mi8/index.md
         - mi8/01.history.md
         - mi8/02.geninfo.md
         - mi8/03.dynamic.md
@@ -147,7 +148,7 @@ theme:
     - navigation.instant
     - navigation.tabs
     - toc.integrate
-      # - navigation.indexes
+    - navigation.indexes
 
 extra_css:
   - css/materal-add.css
@@ -161,7 +162,7 @@ markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
-  - mdx_superscript
+      #  - mdx_superscript
   - markdown_captions
   - markdown_include.include
   - admonition
