@@ -45,16 +45,10 @@ jobs:
 
     - name: Status Success Notification
       if: ${{ success() }}
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out https://dcs-docs-stage.lordvesel.win/ru/"
+      run: |
+        ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out https://dcs-docs-stage.lordvesel.win/ru/"
         
     - name: Status Fail Notification
       if: ${{ failure() }}
-      uses: appleboy/telegram-action@master
-      with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
-        args: "💩 GITHUB: Deploy STAGE failed from ${{ github.head_ref }}."
+      run: |
+        ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed from ${{ github.head_ref }}."
