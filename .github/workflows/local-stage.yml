@@ -10,7 +10,7 @@ jobs:
     env:
       DEPLOY_USER: gh-dcs-deploy
       DEPLOY_HOST: lordvesel.win
-      RELEASE_DIR: /var/www/dcs-docs/stage/releases/${{ github.ref }}/${{ github.run_number }}
+      RELEASE_DIR: /var/www/dcs-docs/stage/releases/${{ github.run_number }}
       RELEASES_DIR: /var/www/dcs-docs/stage/releases/
       CURRENT_DIR: /var/www/dcs-docs/stage/current
     runs-on:
