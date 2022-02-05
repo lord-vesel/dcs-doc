@@ -1,0 +1,1 @@
+pdftotext -nopgbrk -y 60 -W 1280 -H 490 -f 16 -layout ~/nc/manuals/DCS\ FA-18C\ Early\ Access\ Guide\ EN.pdf source
