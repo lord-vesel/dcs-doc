@@ -128,6 +128,8 @@ nav:
         - sc/03.recovery.md
         - sc/04.lso.md
         - sc/05.me.md
+  - Задонатить на хостинг:
+    - donate.md
 
 
 theme:
