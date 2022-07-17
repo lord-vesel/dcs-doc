@@ -24,7 +24,8 @@ nav:
   - Документация:
       - И-16 от OctopusG:
         - i16/index.md
-        - i16/i16.md
+        - i16/01.history.md
+        - i16/02.design.md
       - FW-190 A8 от ED:
         - fw190a8/index.md
         - fw190a8/01.intro.md
