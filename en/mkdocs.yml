@@ -60,6 +60,7 @@ nav:
       - fa18c/index.md
       - fa18c/01.history.md
       - fa18c/02.stores.md
+      - fa18c/03.cockpit.md
 
 
 theme:

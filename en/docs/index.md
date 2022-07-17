@@ -6,5 +6,6 @@
 
 **LISTING**
 
-- [F-16C Viper by ED](f16/index.md)
-- [Supercarrier by ED](sc/index.md)
+- [F-16C Viper](f16/index.md) by ED
+- [F/A-18C](fa18c/index.md) by ED
+- [Supercarrier](sc/index.md) by ED

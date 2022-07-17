@@ -163,10 +163,13 @@ theme:
 extra_css:
   - css/materal-add.css
 plugins:
-    - search:
+    - mksearch:
         lang: ['en', 'ru']
         full_path_in_title: yes
-    - tags
+          #    - search:
+          #        lang: ['en', 'ru']
+          #        full_path_in_title: yes
+          #    - tags
 
 markdown_extensions:
   - toc:
