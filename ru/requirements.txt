@@ -1,7 +1,9 @@
 mkdocs
 mkdocs-material
+markdown==3.3
 markdown-captions
 markdown-include
 kbdextension
 git+https://github.com/jldiaz/mkdocs-plugin-tags
 git+https://github.com/stuebersystems/mkdocs-img2fig-plugin
+git+https://github.com/flywire/caption

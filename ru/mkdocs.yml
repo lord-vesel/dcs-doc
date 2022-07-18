@@ -176,7 +176,6 @@ markdown_extensions:
       baselevel: 1
       permalink: true
   - markdown_captions
-  - markdown_include.include
   - admonition
   - pymdownx.details
   - pymdownx.tabbed:
@@ -193,3 +192,6 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.snippets:
+      auto_append:
+        - abbr.md
