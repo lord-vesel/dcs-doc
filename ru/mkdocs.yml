@@ -26,6 +26,7 @@ nav:
         - i16/index.md
         - i16/01.history.md
         - i16/02.design.md
+        - i16/03.cockpit.md
       - FW-190 A8 от ED:
         - fw190a8/index.md
         - fw190a8/01.intro.md
@@ -129,8 +130,6 @@ nav:
         - sc/03.recovery.md
         - sc/04.lso.md
         - sc/05.me.md
-  - Задонатить на хостинг:
-    - donate.md
 
 
 theme:
