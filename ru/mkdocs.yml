@@ -135,6 +135,7 @@ nav:
 theme:
   name: material
   language: ru
+  custom_dir: overrides
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
@@ -161,6 +162,7 @@ theme:
     - navigation.tabs
     - toc.integrate
     - navigation.indexes
+    - announce.dismiss
 
 extra_css:
   - css/materal-add.css
@@ -192,6 +194,3 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-  - pymdownx.snippets:
-      auto_append:
-        - abbr.md
