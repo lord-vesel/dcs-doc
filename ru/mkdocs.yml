@@ -136,6 +136,8 @@ nav:
 
 theme:
   name: material
+  icon:
+    logo: fontawesome/solid/jet-fighter
   language: ru
   custom_dir: overrides
   font:
