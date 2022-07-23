@@ -23,7 +23,7 @@ jobs:
 
     - name: Build mkdocs
       run: |
-        docker run -i --rm -v $PWD:/build -w /build python:3.8-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+        docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
         cd ru && pip install -r requirements.txt && \
         mkdocs build && \
         cd ../en && mkdocs build && \

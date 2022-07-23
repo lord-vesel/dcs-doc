@@ -23,51 +23,55 @@ nav:
       - people.md
   - Документация:
       - И-16 от OctopusG:
-        - i16/index.md
-        - i16/i16.md
+          - i16/index.md
+          - i16/01.history.md
+          - i16/02.design.md
+          - i16/03.cockpit.md
+          - i16/04.procedures.md
+          - i16/05.sources.md
       - FW-190 A8 от ED:
-        - fw190a8/index.md
-        - fw190a8/01.intro.md
-        - fw190a8/02.history.md
-        - fw190a8/03.design.md
-        - fw190a8/04.cockpit.md
-        - fw190a8/05.stdprocs.md
-        - fw190a8/06.emergency.md
-        - fw190a8/07.combat.md
-        - fw190a8/08.radio.md
-        - fw190a8/09.credits.md
+          - fw190a8/index.md
+          - fw190a8/01.intro.md
+          - fw190a8/02.history.md
+          - fw190a8/03.design.md
+          - fw190a8/04.cockpit.md
+          - fw190a8/05.stdprocs.md
+          - fw190a8/06.emergency.md
+          - fw190a8/07.combat.md
+          - fw190a8/08.radio.md
+          - fw190a8/09.credits.md
       - P-47D от ED:
-        - p-47/index.md
-        - p-47/01.intro.md
-        - p-47/02.history.md
-        - p-47/03.design.md
-        - p-47/04.cockpit.md
-        - p-47/05.limits.md
-        - p-47/06.procedures.md
-        - p-47/07.emergency.md
-        - p-47/08.combat.md
-        - p-47/10.supplements.md
+          - p-47/index.md
+          - p-47/01.intro.md
+          - p-47/02.history.md
+          - p-47/03.design.md
+          - p-47/04.cockpit.md
+          - p-47/05.limits.md
+          - p-47/06.procedures.md
+          - p-47/07.emergency.md
+          - p-47/08.combat.md
+          - p-47/10.supplements.md
       - Spitfire Mk. IX от ED:
-        - spitfire-ix/index.md
-        - spitfire-ix/01.intro.md
-        - spitfire-ix/02.common.md
-        - spitfire-ix/03.cockpit.md
-        - spitfire-ix/04.design.md
-        - spitfire-ix/05.power.md
-        - spitfire-ix/06.systems.md
-        - spitfire-ix/07.flight.md
-        - spitfire-ix/08.arms.md
-        - spitfire-ix/09.supplements.md
+          - spitfire-ix/index.md
+          - spitfire-ix/01.intro.md
+          - spitfire-ix/02.common.md
+          - spitfire-ix/03.cockpit.md
+          - spitfire-ix/04.design.md
+          - spitfire-ix/05.power.md
+          - spitfire-ix/06.systems.md
+          - spitfire-ix/07.flight.md
+          - spitfire-ix/08.arms.md
+          - spitfire-ix/09.supplements.md
       - DH 98 Mosquito FB VI от ED:
-        - mosquito/index.md
-        - mosquito/01.intro.md
-        - mosquito/02.history.md
-        - mosquito/03.design.md
-        - mosquito/04.cockpit.md
-        - mosquito/05.procedures.md
-        - mosquito/06.emergency.md
-        - mosquito/07.engaging.md
-        - mosquito/08.credits.md
+          - mosquito/index.md
+          - mosquito/01.intro.md
+          - mosquito/02.history.md
+          - mosquito/03.design.md
+          - mosquito/04.cockpit.md
+          - mosquito/05.procedures.md
+          - mosquito/06.emergency.md
+          - mosquito/07.engaging.md
+          - mosquito/08.credits.md
           #      - МиГ-21БИС от Leatherneck:
           #        - mig-21bis/index.md
           #        - mig-21bis/01.history.md
@@ -75,72 +79,70 @@ nav:
           #        - mig-21bis/03.basic.md
           #        - mig-21bis/04.limits.md
       - F/A-18C от ED:
-        - fa18c/index.md
-        - fa18c/01.setup.md
-        - fa18c/02.cockpit.md
-        - fa18c/03.mfdu.md
-        - fa18c/04.hud.md
-        - fa18c/05.procedures.md
-        - fa18c/06.radios.md
-        - fa18c/07.modes.md
-        - fa18c/08.nav-mode.md
-        - fa18c/09.a-g-mode.md
-        - fa18c/10.a-a-mode.md
-        - fa18c/11.counter-measures.md
-        - fa18c/12.ew.md
-        - fa18c/13.credits.md
+          - fa18c/index.md
+          - fa18c/01.setup.md
+          - fa18c/02.cockpit.md
+          - fa18c/03.mfdu.md
+          - fa18c/04.hud.md
+          - fa18c/05.procedures.md
+          - fa18c/06.radios.md
+          - fa18c/07.modes.md
+          - fa18c/08.nav-mode.md
+          - fa18c/09.a-g-mode.md
+          - fa18c/10.a-a-mode.md
+          - fa18c/11.counter-measures.md
+          - fa18c/12.ew.md
+          - fa18c/13.credits.md
       - Су-25Т от ED:
-        - su25t/index.md
-        - su25t/01.intro.md
-        - su25t/02.simple.md
-        - su25t/03.cockpit.md
-        - su25t/04.radio.md
-        - su25t/05.model.md
-        - su25t/06.combat.md
+          - su25t/index.md
+          - su25t/01.intro.md
+          - su25t/02.simple.md
+          - su25t/03.cockpit.md
+          - su25t/04.radio.md
+          - su25t/05.model.md
+          - su25t/06.combat.md
       - Ми-8МТВ2 от Belsimtek:
-        - mi8/index.md
-        - mi8/01.history.md
-        - mi8/02.geninfo.md
-        - mi8/03.dynamic.md
-        - mi8/04.powerplant.md
-        - mi8/05.cockpit.md
-        - mi8/06.radios.md
-        - mi8/07.systems.md
-        - mi8/08.restrictions.md
-        - mi8/09.flights.md
-        - mi8/10.emergency.md
-        - mi8/11.weapons.md
-        - mi8/12.engagement.md
-        - mi8/13.specialtasks.md
-        - mi8/15.abbr.md
-        - mi8/17.credits.md
-        - mi8/18.sources.md
+          - mi8/index.md
+          - mi8/01.history.md
+          - mi8/02.geninfo.md
+          - mi8/03.dynamic.md
+          - mi8/04.powerplant.md
+          - mi8/05.cockpit.md
+          - mi8/06.radios.md
+          - mi8/07.systems.md
+          - mi8/08.restrictions.md
+          - mi8/09.flights.md
+          - mi8/10.emergency.md
+          - mi8/11.weapons.md
+          - mi8/12.engagement.md
+          - mi8/13.specialtasks.md
+          - mi8/15.abbr.md
+          - mi8/17.credits.md
+          - mi8/18.sources.md
       - NS430 от Belsimtek:
-        - ns430/index.md
-        - ns430/01.controls.md
-        - ns430/02.usage.md
-        - ns430/03.pages.md
-        - ns430/04.supplement.md
+          - ns430/index.md
+          - ns430/01.controls.md
+          - ns430/02.usage.md
+          - ns430/03.pages.md
+          - ns430/04.supplement.md
       - Supercarrier от ED:
-        - sc/index.md
-        - sc/01.nimitz.md
-        - sc/02.departing.md
-        - sc/03.recovery.md
-        - sc/04.lso.md
-        - sc/05.me.md
-  - Задонатить на хостинг:
-    - donate.md
+          - sc/index.md
+          - sc/01.nimitz.md
+          - sc/02.departing.md
+          - sc/03.recovery.md
+          - sc/04.lso.md
+          - sc/05.me.md
 
 
 theme:
   name: material
+  icon:
+    logo: fontawesome/solid/jet-fighter
   language: ru
+  custom_dir: overrides
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
-    #  palette:
-    #    primary: black
-    #    accent: blue
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -148,27 +150,31 @@ theme:
       accent: blue
       toggle:
         icon: material/weather-sunny
-        name: Switch to dark mode
+        name: Тёмное оформление
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
       accent: light blue
       toggle:
         icon: material/weather-night
-        name: Switch to light mode
+        name: Светлое оформление
   features:
     - navigation.instant
     - navigation.tabs
-    - toc.integrate
+    - navigation.tracking
     - navigation.indexes
+    - toc.integrate
+    - announce.dismiss
 
 extra_css:
   - css/materal-add.css
 plugins:
-    - search:
-        lang: ['en', 'ru']
-        full_path_in_title: yes
-    - tags
+  - search:
+      lang:
+        - en
+        - ru
+      full_path_in_title: yes
+  - tags
 
 markdown_extensions:
   - toc:
