@@ -61,6 +61,9 @@ nav:
           - fa18c/01.history.md
           - fa18c/02.stores.md
           - fa18c/03.cockpit.md
+          - fa18c/04.ddi.md
+          - fa18c/05.hud.md
+          - fa18c/06.procedures.md
 
 
 theme:
