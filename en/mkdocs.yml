@@ -22,56 +22,56 @@ nav:
       - help.md
       - people.md
   - Docs:
-    - Supercarrier:
-      - sc/index.md
-      - sc/01.quickstart.md
-      - sc/02.nimitz.md
-      - sc/03.launch.md
-      - sc/04.recovery.md
-      - sc/05.lso.md
-      - sc/06.editor.md
-      - sc/07.glossary.md
-    - F-16C Viper:
-      - f16/index.md
-      - f16/01.history.md
-      - f16/02.stores.md
-      - Cockpit:
-        - f16/03.cockpit.md
-        - f16/04.hotas.md
-        - f16/05.ufc.md
-        - f16/06.mfd.md
-        - f16/07.hud.md
-      - Navigation:
-        - f16/08.insnav.md
-        - f16/09.tacannav.md
-        - f16/10.ilsnav.md
-        - f16/11.autopilot.md
-      - f16/12.radio.md
-      - f16/13.procedures.md
-      - f16/14.radar.md
-      - f16/15.datalink.md
-      - f16/16.ltpod.md
-      - f16/17.hmcs.md
-      - f16/18.ata.md
-      - f16/19.atg.md
-      - f16/20.defence.md
-      - f16/21.append.md
-    - F/A-18C:
-      - fa18c/index.md
-      - fa18c/01.history.md
-      - fa18c/02.stores.md
-      - fa18c/03.cockpit.md
+      - Supercarrier:
+          - sc/index.md
+          - sc/01.quickstart.md
+          - sc/02.nimitz.md
+          - sc/03.launch.md
+          - sc/04.recovery.md
+          - sc/05.lso.md
+          - sc/06.editor.md
+          - sc/07.glossary.md
+      - F-16C Viper:
+          - f16/index.md
+          - f16/01.history.md
+          - f16/02.stores.md
+          - Cockpit:
+              - f16/03.cockpit.md
+              - f16/04.hotas.md
+              - f16/05.ufc.md
+              - f16/06.mfd.md
+              - f16/07.hud.md
+          - Navigation:
+              - f16/08.insnav.md
+              - f16/09.tacannav.md
+              - f16/10.ilsnav.md
+              - f16/11.autopilot.md
+          - f16/12.radio.md
+          - f16/13.procedures.md
+          - f16/14.radar.md
+          - f16/15.datalink.md
+          - f16/16.ltpod.md
+          - f16/17.hmcs.md
+          - f16/18.ata.md
+          - f16/19.atg.md
+          - f16/20.defence.md
+          - f16/21.append.md
+      - F/A-18C:
+          - fa18c/index.md
+          - fa18c/01.history.md
+          - fa18c/02.stores.md
+          - fa18c/03.cockpit.md
 
 
 theme:
   name: material
-  language: ru
+  icon:
+    logo: fontawesome/solid/jet-fighter
+  language: en
+  custom_dir: overrides
   font:
     text: 'Roboto Slab'
     code: 'Fira Mono'
-    #  palette:
-    #    primary: black
-    #    accent: blue
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -90,16 +90,20 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
-    - toc.integrate
+    - navigation.tracking
     - navigation.indexes
+    - toc.integrate
+    - announce.dismiss
 
 extra_css:
   - css/materal-add.css
 plugins:
-    - search:
-        lang: ['en', 'ru']
-        full_path_in_title: yes
-    - tags
+  - search:
+      lang:
+        - en
+        - ru
+      full_path_in_title: yes
+  - tags
 
 markdown_extensions:
   - toc:

@@ -1,13 +1,12 @@
 ---
 hide:
   - toc
+  - footer
 ---
 
 # Документация DCS
 
-![](https://github.com/lord-vesel/dcs-doc/workflows/Build%20DCS%20docs/badge.svg?branch=master)
-
-Цель этого проекта — предоставить в удобном и централизованном виде документацию модулей симулятора боевых действий <a href="https://www.digitalcombatsimulator.com" target="_blank">DCS компании Eagle Dynamics.</a>
+Цель этого проекта — предоставить в удобном и централизованном виде документацию модулей симулятора боевых действий <a href="https://www.digitalcombatsimulator.com" target="_blank">DCS компании Eagle Dynamics,</a> избавив её от жёсткой вёрстки PDF и сделав доступной для различных устройств.
 
 
 === "Список модулей ЛА"
@@ -20,7 +19,7 @@ hide:
     - [Ми-8МТВ2 от Belsimtek](mi8/index.md)
     - [F/A-18C от ED](fa18c/index.md)    
     - [Су-25Т от ED](su25t/index.md)     
-    - <a href=https://www.heatblur.se/F-14Manual/index.html target=_blank>F-14 A/B от Heatblur :octicons-link-external-16:</a>
+    - <a href=https://www.heatblur.se/F-14Manual/index.html target=_blank>F-14 A/B от Heatblur :fontawesome-solid-square-arrow-up-right:</a>
     - [F-16C от ED (Англ.)](../en/f16/)
 
 === "Прочие модули"

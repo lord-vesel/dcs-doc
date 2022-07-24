@@ -1,5 +1,6 @@
 mkdocs
-mkdocs-material
+mkdocs-material==8.4.0rc1
+markdown
 markdown-captions
 markdown-include
 kbdextension
