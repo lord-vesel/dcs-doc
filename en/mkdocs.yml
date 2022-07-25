@@ -64,6 +64,9 @@ nav:
           - fa18c/04.ddi.md
           - fa18c/05.hud.md
           - fa18c/06.procedures.md
+          - fa18c/07.comms.md
+          - fa18c/08.modes.md
+          - fa18c/09.nav.md
 
 
 theme:
