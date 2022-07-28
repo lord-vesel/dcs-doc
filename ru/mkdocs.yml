@@ -13,6 +13,10 @@ extra:
       name: Пишите в Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
+  sponsors:
+    - label: "flightsimgeeks.ru"
+      link: https://flightsimgeeks.ru/
+      logo: https://flightsimgeeks.ru/wp-content/uploads/2022/07/fsg_logo_retina.png
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 
