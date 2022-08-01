@@ -46,7 +46,9 @@ jobs:
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out \nhttps://dcs-docs-stage.lordvesel.win/ru/\nhttps://dcs-docs-stage.lordvesel.win/en/"
+          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out
+          https://dcs-docs-stage.lordvesel.win/ru/
+          https://dcs-docs-stage.lordvesel.win/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
