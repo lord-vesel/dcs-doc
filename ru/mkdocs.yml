@@ -141,7 +141,7 @@ theme:
   language: ru
   custom_dir: overrides
   font:
-    text: 'Roboto Slab'
+    text: 'Fira Sans'
     code: 'Fira Mono'
   palette:
     - media: "(prefers-color-scheme: light)"
