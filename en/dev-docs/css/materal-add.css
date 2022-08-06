@@ -1,16 +1,16 @@
 .md-typeset h1 {
     color: var(--md-default-fg-color);
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .md-typeset h2 {
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .md-typeset h3 {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 	letter-spacing: 0em;
 }
 .md-typeset h4 {
