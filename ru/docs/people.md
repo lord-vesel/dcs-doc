@@ -2,7 +2,7 @@
 
 Автор проекта:
 
-[third_man](https://forums.eagle.ru/profile/57900-third_man/), телега: [https://t.me/rlunegov](https://t.me/rlunegov)
+[third_man](https://forums.eagle.ru/profile/57900-third_man/), телега: [:fontawesome-brands-telegram:](/to-telega)
 
 Контрибуторы:
 
