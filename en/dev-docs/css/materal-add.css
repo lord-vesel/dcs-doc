@@ -42,10 +42,16 @@ kbd.keyboard-css {
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .md-typeset figure {
-    text-align: left;
+    width: 100%;
+    margin: 1em 2em;
 }
 .md-typeset figcaption {
     max-width: 100%;
     margin: .5em auto;
     font-style: italic;
 }
+
+.md-typeset figure img {
+    display:inline;
+}
+
