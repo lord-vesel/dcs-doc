@@ -1,4 +1,4 @@
-# COMMS
+# Contributors
 
 Project initiator:
 

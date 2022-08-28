@@ -92,7 +92,9 @@ extra_css:
   - css/materal-add.css
 plugins:
     - search:
-        lang: ['en', 'ru']
+        lang:
+          - en
+          - ru
         full_path_in_title: yes
     - tags
 
