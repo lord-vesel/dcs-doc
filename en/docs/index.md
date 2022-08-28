@@ -4,7 +4,8 @@
 
 <a href="https://www.digitalcombatsimulator.com" target="_blank">Eagle Dynamic's DCS</a> documentation delivered modern way.
 
-**LISTING**
+=== "Planes"
+    - [F-16C Viper by ED](f16/index.md)
 
-- [F-16C Viper by ED](f16/index.md)
-- [Supercarrier by ED](sc/index.md)
+=== "Others"
+    - [Supercarrier by ED](sc/index.md)
