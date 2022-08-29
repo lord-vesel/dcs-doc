@@ -43,7 +43,6 @@ kbd.keyboard-css {
 }
 .md-typeset figure {
     width: 100%;
-    margin: 1em 2em;
 }
 .md-typeset figcaption {
     max-width: 100%;
@@ -53,5 +52,10 @@ kbd.keyboard-css {
 
 .md-typeset figure img {
     display:inline;
+}
+
+.md-typeset :is(.admonition,
+details) {
+ font-size:1em;
 }
 
