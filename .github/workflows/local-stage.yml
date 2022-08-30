@@ -56,4 +56,4 @@ jobs:
       - name: Status Fail Notification
         if: ${{ failure() }}
         run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed PR ${{ steps.pr-url.outputs.url }."
+          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed PR ${{ steps.pr-url.outputs.url }}."
