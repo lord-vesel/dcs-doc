@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - uses: kceb/pull-request-url-action@v1
+        id: pr-url
 
       - name: Build mkdocs
         run: |
@@ -46,11 +48,12 @@ jobs:
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out
+          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed PR ${{ steps.pr-url.outputs.url }}. Check out
+
           https://dcs-docs-stage.lordvesel.win/ru/
           https://dcs-docs-stage.lordvesel.win/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
         run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed from ${{ github.head_ref }}."
+          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed PR ${{ steps.pr-url.outputs.url }."

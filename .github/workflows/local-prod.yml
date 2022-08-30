@@ -47,6 +47,7 @@ jobs:
         if: ${{ success() }}
         run: |
           ntfy -b telegram send "⚡ GITHUB: Successfuly deployed PROD. Check out
+
           https://dcs-docs.lordvesel.win/ru/
           https://dcs-docs.lordvesel.win/en/"
 
