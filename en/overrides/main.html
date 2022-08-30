@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block announce %}
+<span class="twemoji">
+  {% include ".icons/fontawesome/solid/circle-exclamation.svg" %}
+</span>
+<b><a href="/en/fa18c/">F/A-18C</a> manual added</b>
+{% endblock %}
+
+{% block extrahead %}
+  {% set title = config.site_name %}
+  {% if page and page.meta and page.meta.title %}
+    {% set title = title ~ " - " ~ page.meta.title %}
+  {% elif page and page.title and not page.is_homepage %}
+    {% set title = title ~ " - " ~ page.title %}
+  {% endif %}
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://dcs-docs.lordvesel.win/ru/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Официальная документация DCS в гибком формате">
+  <meta property="og:description" content="undefined">
+  <meta property="og:image" content="https://dcs-docs.lordvesel.win/ru/img/og.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="dcs-docs.lordvesel.win">
+  <meta property="twitter:url" content="https://dcs-docs.lordvesel.win/ru/">
+  <meta name="twitter:title" content="Официальная документация DCS в гибком формате">
+  <meta name="twitter:description" content="undefined">
+  <meta name="twitter:image" content="https://dcs-docs.lordvesel.win/ru/img/og.png">
+{% endblock %}

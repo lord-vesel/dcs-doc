@@ -1,24 +1,28 @@
 .md-typeset h1 {
     color: var(--md-default-fg-color);
-    font-weight: 400;
-    font-size: 1.8rem;
+    font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .md-typeset h2 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5rem;
 }
 .md-typeset h3 {
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+	letter-spacing: 0em;
 }
 .md-typeset h4 {
     margin: 1em 0;
-	font-weight: 700;
-	letter-spacing: -0.01em;
+	font-weight: 600;
+    font-size: 1.1rem;
+	letter-spacing: 0em;
 }
 .md-typeset h5 {
     margin: 1.25em 0;
 	font-weight: 700;
+    font-size: 0.9rem;
 	letter-spacing: -0.01em;
     color: var(--md-typeset-color);
 }
@@ -38,10 +42,20 @@ kbd.keyboard-css {
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .md-typeset figure {
-    text-align: left;
+    width: 100%;
 }
 .md-typeset figcaption {
     max-width: 100%;
     margin: .5em auto;
     font-style: italic;
 }
+
+.md-typeset figure img {
+    display:inline;
+}
+
+.md-typeset :is(.admonition,
+details) {
+ font-size:1em;
+}
+

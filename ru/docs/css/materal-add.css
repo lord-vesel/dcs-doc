@@ -1,52 +1,37 @@
 .md-typeset h1 {
-  color: var(--md-default-fg-color);
-  font-weight: 400;
-  font-size: 1.8rem;
+    color: var(--md-default-fg-color);
+    font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .md-typeset h2 {
-  font-weight: 400;
-  font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
-
 .md-typeset h3 {
-  font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+	letter-spacing: 0em;
 }
-
 .md-typeset h4 {
-  margin: 1em 0;
-  font-weight: 700;
-  letter-spacing: -0.01em;
+    margin: 1em 0;
+	font-weight: 600;
+    font-size: 1.1rem;
+	letter-spacing: 0em;
 }
-
 .md-typeset h5 {
-  margin: 1.25em 0;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: var(--md-typeset-color);
+    margin: 1.25em 0;
+	font-weight: 700;
+    font-size: 0.9rem;
+	letter-spacing: -0.01em;
+    color: var(--md-typeset-color);
 }
-
 .md-typeset table:not([class]) th {
-  padding: .1rem .3rem;
-  min-width: auto;
+    padding: .1rem .3rem;
 }
-
 .md-typeset table:not([class]) td {
-  padding: .2rem .4rem;
+    padding: .2rem .4rem;
 }
-
-kbd.keyboard-keys-css {
-  display: inline-block;
-  padding: 0 .6666666667em;
-  color: var(--md-default-fg-color);
-  font-size: .75em;
-  vertical-align: text-top;
-  word-break: break-word;
-  background-color: var(--md-typeset-kbd-color);
-  border-radius: .1rem;
-  box-shadow: 0 .1rem 0 .05rem var(--md-typeset-kbd-border-color),0 .1rem 0 var(--md-typeset-kbd-border-color),0 -0.1rem .2rem var(--md-typeset-kbd-accent-color) inset;
-}
-
 kbd.keyboard-css {
     font-family: Menlo, Consolas, monospace;
     padding: 2px 6px;
@@ -56,48 +41,13 @@ kbd.keyboard-css {
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-
 .md-typeset figure {
-  text-align: left;
-  margin: 0;
+    text-align: left;
 }
-
 .md-typeset figcaption {
-  max-width: 100%;
-  margin: .5em auto;
-  font-style: italic;
-}
-
-.lower-dopusk {
-  vertical-align: -40%;
-  font-size: smaller;
-  margin-left: -31px;
-}
-
-.upper-dopusk {
-  vertical-align: 40%;
-  font-size: smaller;
-}
-
-.formula span{
-  display: inline-block;
-}
-
-.formula span sup,
-.formula span sub {
-  display: block;
-  font-size: 65%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-.formula span sup {
-  top: -0.6em;
-}
-
-.formula span sub {
-  top: 0.4em;
+    max-width: 100%;
+    margin: .5em auto;
+    font-style: italic;
 }
 
 .md-copyright {
