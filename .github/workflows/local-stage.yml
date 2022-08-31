@@ -23,7 +23,8 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add \
+          git gcc linux-headers musl-dev curl && \
           cd ru && pip install -r requirements.txt && \
           curl -L https://github.com/mikefarah/yq/releases/download/v4.27.3/yq_linux_amd64 -o /usr/bin/yq && \
           chmod +x /usr/bin/yq && \
