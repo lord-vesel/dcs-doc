@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - uses: kceb/pull-request-url-action@v1
-        id: pr-url
+        name: pr-url
 
       - uses: kceb/pull-request-url-action@v1
         name: pr-url
