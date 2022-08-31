@@ -32,13 +32,6 @@ jobs:
           cd ../en && mkdocs build && \
           chown -R 1004:1004 ../'
 
-      - name: Deploy
-        run: |
-          [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
-          [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
-          rsync -a ru/site/ ${{env.RELEASE_DIR}}/ru/
-          rsync -a en/site/ ${{env.RELEASE_DIR}}/en/
-
       - name: CSS
         run: |
           export T=$(date +%s)
@@ -48,6 +41,13 @@ jobs:
             yq -i '.extra_css[0] = strenv(CSS)' $L/mkdocs.yml
             mv $L/docs/css/materal-add.css $L/docs/$CSS
           done
+
+      - name: Deploy
+        run: |
+          [[ -d ${{env.RELEASE_DIR}}/ru ]] || mkdir -p ${{env.RELEASE_DIR}}/ru
+          [[ -d ${{env.RELEASE_DIR}}/en ]] || mkdir -p ${{env.RELEASE_DIR}}/en
+          rsync -a ru/site/ ${{env.RELEASE_DIR}}/ru/
+          rsync -a en/site/ ${{env.RELEASE_DIR}}/en/
 
       - name: Switch release
         run: |
