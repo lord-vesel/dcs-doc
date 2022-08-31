@@ -21,16 +21,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build mkdocs
-        run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add \
-          git gcc linux-headers musl-dev curl && \
-          cd ru && pip install -r requirements.txt && \
-          curl -L https://github.com/mikefarah/yq/releases/download/v4.27.3/yq_linux_amd64 -o /usr/bin/yq && \
-          chmod +x /usr/bin/yq && \
-          mkdocs build && \
-          cd ../en && mkdocs build && \
-          chown -R 1004:1004 ../'
+      - uses: kceb/pull-request-url-action@v1
+        name: pr-url
 
       - name: CSS
         run: |
@@ -41,6 +33,15 @@ jobs:
             yq -i '.extra_css[0] = strenv(CSS)' $L/mkdocs.yml
             mv $L/docs/css/materal-add.css $L/docs/$CSS
           done
+
+      - name: Build mkdocs
+        run: |
+          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add \
+          git gcc linux-headers musl-dev && \
+          cd ru && pip install -r requirements.txt && \
+          mkdocs build && \
+          cd ../en && mkdocs build && \
+          chown -R 1004:1004 ../'
 
       - name: Deploy
         run: |
@@ -59,11 +60,11 @@ jobs:
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE from ${{ github.head_ref }}. Check out
+          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed STAGE PR ${{ steps.pr-url.outputs.url }}. Check out
           https://dcs-docs-stage.lordvesel.win/ru/
           https://dcs-docs-stage.lordvesel.win/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
         run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed from ${{ github.head_ref }}."
+          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed PR ${{ steps.pr-url.outputs.url }}."
