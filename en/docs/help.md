@@ -2,7 +2,7 @@
 
 ## How it works
 
-Every page presented in main menu basically is a [Markdown](https://www.markdownguide.org/getting-started/) .md file. 
+Every page presented in main menu basically is a [Markdown](https://www.markdownguide.org/getting-started/) .md file.
 The site is built with [Mkdocs](https://www.mkdocs.org/) from markdown files and images.
 One can examine raw files contents and structure on [github repository page](https://github.com/lord-vesel/dcs-doc/).
 
@@ -10,7 +10,7 @@ One can examine raw files contents and structure on [github repository page](htt
 
 ### Exporting PDF data
 
-To export data [poppler-utils](http://poppler.freedesktop.org) `pdftotext` and `pdfimages` may be used. 
+To export data [poppler-utils](http://poppler.freedesktop.org) `pdftotext` and `pdfimages` may be used.
 Alternatively exported text may be obtained from [project lead](people.md).
 
 pdftotext recommended options: `-nopgbrk -y 60 -W 1280 -H 600 -layout`
@@ -82,13 +82,13 @@ important controls located easily within reach.
 
 Result:
 
->The cockpit in the Fw 190 A-8 was a revolutionary 
+>The cockpit in the Fw 190 A-8 was a revolutionary
 >design that attempted to put all levers and
->instruments easily within reach. It was one 
+>instruments easily within reach. It was one
 >of the first examples of ergonomic cockpit design and can
->be seen as the early precursor of today’s 
+>be seen as the early precursor of today’s
 >hands on throttle and stick (HOTAS) cockpits.
->In stark contrast to its competitor, the Bf 
+>In stark contrast to its competitor, the Bf
 >109, the Fw 190 offered its pilot comfortable access to most
 >important controls located easily within reach.
 
@@ -107,14 +107,14 @@ important controls located easily within reach.
 
 Result:
 
->The cockpit in the Fw 190 A-8 was a revolutionary 
+>The cockpit in the Fw 190 A-8 was a revolutionary
 >design that attempted to put all levers and
->instruments easily within reach. It was one 
+>instruments easily within reach. It was one
 >of the first examples of ergonomic cockpit design and can
->be seen as the early precursor of today’s 
+>be seen as the early precursor of today’s
 >hands on throttle and stick (HOTAS) cockpits.
 >
->In stark contrast to its competitor, the Bf 
+>In stark contrast to its competitor, the Bf
 >109, the Fw 190 offered its pilot comfortable access to most
 >important controls located easily within reach.
 
@@ -207,7 +207,6 @@ Result:
 
 If you want to add a paragraph, picture, table, etc. to a list item without interrupting the numbering, this block must have an indent of four spaces from the beginning of the line, as well as separated by empty lines before and after:
 
-
     1. Установить шаг винта на 12:00, отключить автоматическое управление шагом винта.
     2. Выполнять прогон без задержек. Контролируйте параметры работы по таблице:
     
@@ -243,16 +242,16 @@ Result:
 
 > 1. Установить шаг винта на 12:00, отключить автоматическое управление шагом винта.
 > 2. Выполнять прогон без задержек. Контролируйте параметры работы по таблице:
-> 
+>
 >     Шаг винта | Обороты, об/мин | Наддув, ata | Давление топлива, atü | Давление масла, atü | Температура масла, °С
 >     ----------|-----------------|-------------|-----------------------|---------------------|----------------------
 >     12:00 часов (Базовая настройка 12:35 при 25°) | 2430 ± 40 | 1,42 | От 1,25<br>До 1,75 | 15<br>8-9 | до 45<br>выше 45
-> 
+>
 >     Проверка магнето и свечей зажигания на 2400 об/мин – последовательно переключать магнето в положения М1 и М2.<br>
 >     Обороты двигателя не должны упасть более, чем на 50 об/мин.
-> 
+>
 > 3. Проверка автомата управления шагом винта. Контролировать соответствие параметров “Наддув – Обороты” по таблице:
-> 
+>
 >     Наддув, <br>ata | Связанные обороты, <br>об/мин
 >     ------------|------------
 >     0,85 | 1600
@@ -264,9 +263,9 @@ Result:
 >     1,28 | 2350
 >     1,32 | 2400
 >     1,42 | 2700
-> 
+>
 >     При включении автомата шага винта показатели приборов не должны отличаться от табличных значений более, чем на ±80 оборотов. Причина расхождений: инертность центрального поста управления и неточность индикации тахометра.
-> 
+>
 > 4. Избегайте длительной работы двигателя на малых/холостых оборотах по причине недостаточной смазки клапанов и, если требуется более длительное время ожидания, установите обороты 1200 об/мин.
 
 #### Tables
@@ -362,4 +361,3 @@ Result:
 
 > Switch the ignition switch (magneto) to position M1+M2.
 > Forward [[End]], backward [[Shift]] + [[End]].
-
