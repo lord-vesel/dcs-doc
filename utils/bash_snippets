@@ -9,3 +9,5 @@ first=""; for i in *; do if [[ -z $first ]]; then first=$i; else convert $first 
 
 
 sed -E 's/(\ |\+)\[\ ?([\ \.,A-Za-z0-9-]+)\ ?\]/\1\[\[\2\]\]/g' 
+
+grep -v '#' mkdocs.yml | yq .nav | grep -Po '\K[a-z0-9/\.-]+(?=.md)' | grep -v '/index' | while read p; do echo :::: $p ::::; diff <(curl https://dcs-docs.lordvesel.win/ru/$p/ -s) <(curl https://dcs-docs-stage.lordvesel.win/ru/$p/ -s); done > stage.report
