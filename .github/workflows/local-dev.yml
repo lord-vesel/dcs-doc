@@ -16,7 +16,7 @@ jobs:
     runs-on:
       - self-hosted
       - dcs
-    if: "contains(github.event.head_commit.message, 'do deploy')"
+    if: "contains(github.event.head_commit.message, 'build dev')"
 
     steps:
       - name: Checkout
@@ -24,7 +24,7 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          docker run -e DOCSPATH=dev-docs -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
           cd ../en && mkdocs build && \
@@ -41,7 +41,7 @@ jobs:
       - name: Switch release
         run: |
           ln -sfn ${{env.RELEASE_DIR}} ${{env.CURRENT_DIR}}
-          for R in `ls ${{env.RELEASES_DIR}}/${{ github.ref }} | sort -n | head -n -2`
+          for R in `ls ${{env.RELEASES_DIR}}/${{ github.ref }} | sort -n | head -n -1`
           do rm -rf ${{env.RELEASES_DIR}}/${{ github.ref }}/$R
           done
 
