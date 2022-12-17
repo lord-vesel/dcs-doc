@@ -13,6 +13,7 @@ jobs:
       RELEASE_DIR: /var/www/dcs-docs/stage/releases/${{ github.run_number }}
       RELEASES_DIR: /var/www/dcs-docs/stage/releases/
       CURRENT_DIR: /var/www/dcs-docs/stage/current
+      PRURL: "${{ github.server_url }}/${{ github.repository }}/pull/${{ github.event.number }}"
     runs-on:
       - self-hosted
       - dcs
@@ -38,7 +39,7 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add \
+          docker run -i --rm -v $PWD:/build -w /build python:3.11-alpine sh -c 'apk add \
           git gcc linux-headers musl-dev && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
@@ -59,15 +60,24 @@ jobs:
           do rm -rf ${{env.RELEASES_DIR}}$R
           done
 
+      - name: Post PR comment on success
+        if: ${{ success() }}
+        uses: github-actions-up-and-running/pr-comment@v1.0.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          message: |
+            👍 Stage sites:
+            https://dcs-docs-stage.${{env.DEPLOY_HOST}}/ru
+            https://dcs-docs-stage.${{env.DEPLOY_HOST}}/en
+
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed PR ${{ steps.pr-url.outputs.url }}
-
+          ntfy -b telegram send "⚡ DCS DOCS: Successfuly deplod STAGE ${{env.PRURL}}
           https://dcs-docs-stage.lordvesel.win/ru/
           https://dcs-docs-stage.lordvesel.win/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
         run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy STAGE failed PR ${{ steps.pr-url.outputs.url }}."
+          ntfy -b telegram send "💩 DCS DOCS: Deploy STAGE failed ${{env.PRURL}}."
