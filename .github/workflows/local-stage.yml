@@ -22,11 +22,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: kceb/pull-request-url-action@v1
-        name: pr-url
-
-      - uses: kceb/pull-request-url-action@v1
-        name: pr-url
 
       - name: CSS
         run: |
@@ -66,14 +61,16 @@ jobs:
         uses: mshick/add-pr-comment@v2
         with:
           message: |
-            👍 Stage sites:
+            👍 STAGE updated with commit \"${{ github.event.push.head_commit.message }}\" by ${{ github.event.push.pusher }}.
+
             https://dcs-docs-stage.${{env.DEPLOY_HOST}}/ru
             https://dcs-docs-stage.${{env.DEPLOY_HOST}}/en
 
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ DCS DOCS: Successfuly deplod STAGE ${{env.PRURL}}
+          ntfy -b telegram send "⚡ DCS DOCS: Successfuly deployed STAGE ${{env.PRURL}}
+
           https://dcs-docs-stage.lordvesel.win/ru/
           https://dcs-docs-stage.lordvesel.win/en/"
 
