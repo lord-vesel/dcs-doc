@@ -1,25 +1,3 @@
-site_name: Документация DCS
-repo_url: https://github.com/lord-vesel/dcs-doc
-repo_name: lord-vesel/dcs-doc
-edit_uri: edit/develop/ru/docs
-site_author: "rost.lunegoff@gmail.com"
-extra:
-  analytics:
-    provider: google
-    property: UA-19502035-4
-  social:
-    - icon: fontawesome/brands/telegram
-      link: /to-telega
-      name: Пишите в Telegram
-    - icon: fontawesome/solid/envelope
-      link: mailto:rost.lunegoff@gmail.com
-  sponsors:
-    - label: "flightsimgeeks.ru"
-      link: https://flightsimgeeks.ru/
-      logo: https://flightsimgeeks.ru/wp-content/uploads/2022/07/fsg_logo_retina.png
-
-docs_dir: !ENV [DOCSPATH, 'docs']
-
 nav:
   - О проекте:
       - index.md
@@ -142,6 +120,27 @@ nav:
           - ka50/02.design.md
           - ka50/03.armament.md
 
+site_name: Документация DCS
+repo_url: https://github.com/lord-vesel/dcs-doc
+repo_name: lord-vesel/dcs-doc
+edit_uri: edit/develop/ru/docs
+site_author: "rost.lunegoff@gmail.com"
+extra:
+  analytics:
+    provider: google
+    property: UA-19502035-4
+  social:
+    - icon: fontawesome/brands/telegram
+      link: /to-telega
+      name: Пишите в Telegram
+    - icon: fontawesome/solid/envelope
+      link: mailto:rost.lunegoff@gmail.com
+  sponsors:
+    - label: PRO Авиасимуляторы
+      link: https://vk.com/flightsimgeeks
+      logo: https://flightsimgeeks.ru/wp-content/uploads/2022/07/fsg_logo_retina.png
+
+docs_dir: !ENV [DOCSPATH, 'docs']
 
 theme:
   name: material
