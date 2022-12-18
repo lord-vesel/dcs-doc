@@ -48,11 +48,11 @@ jobs:
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed DEV from ${{ github.head_ref }}. Check out
+          ntfy -b telegram send "⚡ DCS DOCS: Successfuly deployed DEV branch ${{ github.ref }}.
           https://dcs-docs-dev.lordvesel.win/ru/
           https://dcs-docs-dev.lordvesel.win/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
         run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy DEV failed from ${{ github.head_ref }}."
+          ntfy -b telegram send "💩 DCS DOCS: failed to deploy DEV branch ${{ github.ref }}."
