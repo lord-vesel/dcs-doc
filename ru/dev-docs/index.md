@@ -19,6 +19,7 @@ hide:
     - [Ми-8МТВ2 от Belsimtek](mi8/index.md)
     - [F/A-18C от ED](fa18c/index.md)    
     - [Су-25Т от ED](su25t/index.md)
+    - [Ка-50 от ED](ka50/index.md)
 
     Внешние:
 

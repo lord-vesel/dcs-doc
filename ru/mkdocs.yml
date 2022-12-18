@@ -136,6 +136,11 @@ nav:
           - sc/03.recovery.md
           - sc/04.lso.md
           - sc/05.me.md
+      - Ка-50 от ED:
+          - ka50/index.md
+          - ka50/01.history.md
+          - ka50/02.design.md
+          - ka50/03.armament.md
 
 
 theme:
