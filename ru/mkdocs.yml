@@ -119,6 +119,9 @@ nav:
           - ka50/01.history.md
           - ka50/02.design.md
           - ka50/03.armament.md
+          - ka50/04.dynamic.md
+          - ka50/05.coaxialdynamics.md
+          - ka50/06.cockpit.md
 
 site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
