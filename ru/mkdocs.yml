@@ -123,6 +123,7 @@ nav:
           - ka50/05.coaxialdynamics.md
           - ka50/06.cockpit.md
           - ka50/07.abris.md
+          - ka50/08.hud.md
 
 site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
