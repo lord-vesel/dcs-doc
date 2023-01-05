@@ -127,6 +127,8 @@ nav:
           - ka50/09.preflight.md
           - ka50/10.flight.md
           - ka50/11.engagement.md
+          - ka50/12.todo.md
+          - ka50/13.systems.md
 
 site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
