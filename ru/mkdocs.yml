@@ -129,6 +129,9 @@ nav:
           - ka50/11.engagement.md
           - ka50/12.todo.md
           - ka50/13.systems.md
+          - ka50/14.comms.md
+          - ka50/15.me.md
+          - ka50/16.appendix.md
 
 site_name: Документация DCS
 repo_url: https://github.com/lord-vesel/dcs-doc
