@@ -23,12 +23,18 @@ def converter(args):
 
         modlist = []
 
-        for word in re.split('\ ',m[2]):
+        for word in re.split('\ ',t):
+            if args.debug:
+                print('word in title: ' + word)
             modword = ''
             clean_word = re.sub('(\(|\))','',word)
+            if args.debug:
+                print('clean word: ' + clean_word)
 
-            if bool(re.search(r'(\d|\.)', clean_word)):
+            if bool(re.search(r'(\d+|\.|"|«)', clean_word)):
                 modword = word
+                if args.debug:
+                    print('modword regexp: ' + modword )
             elif clean_word not in abbrs:
                 modword = word.lower()
             else:
@@ -36,11 +42,14 @@ def converter(args):
 
             modlist.append(modword)
 
+        if modlist[1] not in abbrs and not bool(re.search(r'(\d+|\.|"|«)', modlist[1])):
+            modlist[1] = modlist[1].title()
+
         lowered_string = " ".join(modlist)
 
-        print(up + lowered_string)
+        print(lowered_string)
 
-        norm_titles.append(up + lowered_string)
+        norm_titles.append(lowered_string)
 
     titles_dict = dict(zip(titles,norm_titles))
 
