@@ -4,7 +4,7 @@ hide:
   - footer
 ---
 
-# Документация модулей DCS
+# Документация DCS
 
 Цель этого проекта — предоставить в удобном и централизованном виде документацию модулей симулятора боевых действий <a href="https://www.digitalcombatsimulator.com" target="_blank">DCS компании Eagle Dynamics,</a> избавив её от жёсткой вёрстки PDF и сделав доступной для различных устройств.
 
@@ -19,6 +19,7 @@ hide:
     - [Ми-8МТВ2 от Belsimtek](mi8/index.md)
     - [F/A-18C от ED](fa18c/index.md)    
     - [Су-25Т от ED](su25t/index.md)
+    - [Ка-50 от ED](ka50/index.md)
 
     Внешние:
 

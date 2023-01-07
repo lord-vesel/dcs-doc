@@ -1,0 +1,1 @@
+pdftotext -nopgbrk -y 60 -y 100 -W 1280 -H 680 -f 18 -layout ~/nc/manuals/DCS\ AV8BNA.pdf source

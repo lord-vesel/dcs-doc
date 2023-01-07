@@ -130,3 +130,14 @@ kbd.keyboard-css {
     margin: auto;
     display: flex;
 }
+
+a.anonce {
+    color: var(--md-footer-fg-color);
+    text-decoration: underline;
+}
+.emoji-green {
+    color: green;
+}
+.emoji-red {
+    color: red;
+}
