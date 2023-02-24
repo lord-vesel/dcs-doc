@@ -73,12 +73,12 @@ nav:
           - fa18c/13.l2tpod.md
           - fa18c/14.cm.md
           - fa18c/15.append.md
-            #      - AV-8B Harrier II:
-            #          - av8b/index.md
-            #          - av8b/01.aircraft.md
-            #          - av8b/02.cockpit.md
-            #          - av8b/03.controls.md
-            #          - av8b/04.engine.md
+      - AV-8B Harrier II:
+          - av8b/index.md
+          - av8b/01.aircraft.md
+          - av8b/02.cockpit.md
+          - av8b/03.controls.md
+          - av8b/04.engine.md
 
 
 theme:
@@ -112,9 +112,10 @@ theme:
   features:
     - navigation.instant
     - navigation.tabs
-    - navigation.tracking
     - navigation.indexes
+    - navigation.top
     - toc.integrate
+    - toc.follow
     - announce.dismiss
 
 extra_css:
