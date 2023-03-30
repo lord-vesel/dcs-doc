@@ -151,7 +151,8 @@ extra:
   sponsors:
     - label: PRO Авиасимуляторы
       link: https://vk.com/flightsimgeeks
-      logo: https://flightsimgeeks.ru/wp-content/uploads/2022/07/fsg_logo_retina.png
+      logo:
+        icon: fontawesome/brands/vk
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 
@@ -159,6 +160,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/jet-fighter
+  favicon: img/jet-fighter.svg
   language: ru
   custom_dir: overrides
   font:
