@@ -16,11 +16,13 @@
 <span style="md-footer-heading">Дружественные проекты:</span>
 {% for s in config.extra.sponsors %}
    <a href="{{ s.link }}" target="_blank">
-       <p>{{ s.label }}</p>
+       <p>{% if s.logo.icon %}<span class="twemoji">{% include '.icons/' + s.logo.icon + '.svg' %}</span> {% endif %}{{ s.label }}</p>
    </a>
+{% if s.logo.img %}
    <a href="{{ s.link }}" target="_blank">
-   <img src="{{ s.logo }}">
+   <img src="{{ s.logo.img }}">
    </a>
+{% endif %}
 {% endfor %}
 </div>
 {% endif %}

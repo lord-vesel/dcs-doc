@@ -151,7 +151,8 @@ extra:
   sponsors:
     - label: PRO Авиасимуляторы
       link: https://vk.com/flightsimgeeks
-      logo: https://flightsimgeeks.ru/wp-content/uploads/2022/07/fsg_logo_retina.png
+      logo:
+        icon: simple/vk
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 
