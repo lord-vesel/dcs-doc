@@ -152,7 +152,7 @@ extra:
     - label: PRO Авиасимуляторы
       link: https://vk.com/flightsimgeeks
       logo:
-        icon: simple/vk
+        icon: fontawesome/brands/vk
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 
@@ -160,6 +160,7 @@ theme:
   name: material
   icon:
     logo: fontawesome/solid/jet-fighter
+  favicon: img/jet-fighter.svg
   language: ru
   custom_dir: overrides
   font:
