@@ -56,16 +56,6 @@ jobs:
           do rm -rf ${{env.RELEASES_DIR}}$R
           done
 
-          #      - name: Post PR comment on success
-          #        if: ${{ success() }}
-          #        uses: mshick/add-pr-comment@v2
-          #        with:
-          #          message: |
-          #            👍 STAGE updated with commit \"${{ github.event.push.head_commit.message }}\" by ${{ github.event.push.pusher }}.
-          #
-          #            https://dcs-docs-stage.${{env.DEPLOY_HOST}}/ru
-          #            https://dcs-docs-stage.${{env.DEPLOY_HOST}}/en
-
       - name: Status Success Notification
         if: ${{ success() }}
         run: |
