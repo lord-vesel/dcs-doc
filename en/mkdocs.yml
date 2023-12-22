@@ -32,6 +32,7 @@ nav:
           - sc/06.editor.md
           - sc/07.glossary.md
       - AH-64D Apache:
+          - ah64d/index.md
           - The AH-64D:
               - ah64d/01.history.md
               - ah64d/02.overview.md
