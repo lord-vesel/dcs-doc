@@ -3,5 +3,9 @@ mkdocs-material
 markdown-captions
 markdown-include
 kbdextension
-git+https://github.com/jldiaz/mkdocs-plugin-tags
+#git+https://github.com/jldiaz/mkdocs-plugin-tags
 git+https://github.com/stuebersystems/mkdocs-img2fig-plugin
+mkdocs-git-revision-date-localized-plugin
+mkdocs-git-committers-plugin-2
+wheel
+pymdown-extensions

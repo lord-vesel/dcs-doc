@@ -141,7 +141,7 @@ site_author: "rost.lunegoff@gmail.com"
 extra:
   analytics:
     provider: google
-    property: UA-19502035-4
+    property: !ENV GOOGLE_ANAL
   social:
     - icon: fontawesome/brands/telegram
       link: /to-telega
@@ -197,14 +197,24 @@ plugins:
       lang:
         - en
         - ru
-      full_path_in_title: yes
-  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: lord-vesel/dcs-doc
+      branch: master
+      #repo_location: ..
+      search_parent_directories: true
+      docs_path: ru/docs/
+      token: !ENV COMMITERS_TOKEN
+      enabled: !ENV [CI, false]
 
 markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - markdown_captions
   - markdown_include.include
   - admonition
@@ -217,8 +227,8 @@ markdown_extensions:
       brackets_css: keyboard-css
   - meta
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - pymdownx.caret
   - pymdownx.mark
