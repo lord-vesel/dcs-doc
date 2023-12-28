@@ -33,8 +33,8 @@ nav:
           - sc/07.glossary.md
       - AH-64D Apache:
           - ah64d/index.md
-          - The AH-64D:
-              - ah64d/01.history.md
+          - ah64d/01.history.md
+          - Overview:
               - ah64d/02.overview.md
               - ah64d/03.weapons.md
               - ah64d/04.plt-cockpit.md
@@ -191,6 +191,9 @@ plugins:
           #      full_path_in_title: yes
   - git-revision-date-localized:
       enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: !ENV [CI, false]
   - git-committers:
       repository: lord-vesel/dcs-doc
       branch: master
@@ -198,6 +201,8 @@ plugins:
       docs_path: en/docs/
       token: !ENV COMMITERS_TOKEN
       enabled: !ENV [CI, false]
+      exclude:
+        - index.md
 markdown_extensions:
   - toc:
       baselevel: 1
