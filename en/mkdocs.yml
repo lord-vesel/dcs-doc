@@ -45,6 +45,7 @@ nav:
               - ah64d/09.mpd.md
               - ah64d/10.fmc.md
           - Procedures:
+              - ah64d/11.procedures.md
               - ah64d/11.startup.md
               - ah64d/12.taxi.md
               - ah64d/13.hovering.md
