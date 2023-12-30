@@ -21,10 +21,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Build mkdocs
         run: |
           docker run -e DOCSPATH=dev-docs -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          git config --global --add safe.directory /build && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
           cd ../en && mkdocs build && \

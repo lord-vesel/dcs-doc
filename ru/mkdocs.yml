@@ -4,14 +4,14 @@ nav:
       - help.md
       - people.md
   - Документация:
-      - И-16 от OctopusG:
+      - И-16:
           - i16/index.md
           - i16/01.history.md
           - i16/02.design.md
           - i16/03.cockpit.md
           - i16/04.procedures.md
           - i16/05.sources.md
-      - FW-190 A8 от ED:
+      - FW-190 A8:
           - fw190a8/index.md
           - fw190a8/01.intro.md
           - fw190a8/02.history.md
@@ -22,7 +22,7 @@ nav:
           - fw190a8/07.combat.md
           - fw190a8/08.radio.md
           - fw190a8/09.credits.md
-      - P-47D от ED:
+      - P-47D:
           - p-47/index.md
           - p-47/01.intro.md
           - p-47/02.history.md
@@ -33,7 +33,7 @@ nav:
           - p-47/07.emergency.md
           - p-47/08.combat.md
           - p-47/10.supplements.md
-      - Spitfire Mk. IX от ED:
+      - Spitfire Mk. IX:
           - spitfire-ix/index.md
           - spitfire-ix/01.intro.md
           - spitfire-ix/02.common.md
@@ -44,7 +44,7 @@ nav:
           - spitfire-ix/07.flight.md
           - spitfire-ix/08.arms.md
           - spitfire-ix/09.supplements.md
-      - DH 98 Mosquito FB VI от ED:
+      - DH 98 Mosquito FB VI:
           - mosquito/index.md
           - mosquito/01.intro.md
           - mosquito/02.history.md
@@ -60,7 +60,7 @@ nav:
           #        - mig-21bis/02.setup.md
           #        - mig-21bis/03.basic.md
           #        - mig-21bis/04.limits.md
-      - F/A-18C от ED:
+      - F/A-18C:
           - fa18c/index.md
           - fa18c/01.setup.md
           - fa18c/02.cockpit.md
@@ -75,7 +75,7 @@ nav:
           - fa18c/11.counter-measures.md
           - fa18c/12.ew.md
           - fa18c/13.credits.md
-      - Су-25Т от ED:
+      - Су-25Т:
           - su25t/index.md
           - su25t/01.intro.md
           - su25t/02.simple.md
@@ -83,7 +83,7 @@ nav:
           - su25t/04.radio.md
           - su25t/05.model.md
           - su25t/06.combat.md
-      - Ми-8МТВ2 от Belsimtek:
+      - Ми-8МТВ2:
           - mi8/index.md
           - mi8/01.history.md
           - mi8/02.geninfo.md
@@ -101,20 +101,20 @@ nav:
           - mi8/15.abbr.md
           - mi8/17.credits.md
           - mi8/18.sources.md
-      - NS430 от Belsimtek:
+      - NS430:
           - ns430/index.md
           - ns430/01.controls.md
           - ns430/02.usage.md
           - ns430/03.pages.md
           - ns430/04.supplement.md
-      - Supercarrier от ED:
+      - Supercarrier:
           - sc/index.md
           - sc/01.nimitz.md
           - sc/02.departing.md
           - sc/03.recovery.md
           - sc/04.lso.md
           - sc/05.me.md
-      - Ка-50 от ED:
+      - Ка-50:
           - ka50/index.md
           - ka50/01.history.md
           - ka50/02.design.md
@@ -141,7 +141,7 @@ site_author: "rost.lunegoff@gmail.com"
 extra:
   analytics:
     provider: google
-    property: UA-19502035-4
+    property: !ENV GOOGLE_ANAL
   social:
     - icon: fontawesome/brands/telegram
       link: /to-telega
@@ -197,14 +197,29 @@ plugins:
       lang:
         - en
         - ru
-      full_path_in_title: yes
-  - tags
+  - git-revision-date-localized:
+      enable_creation_date: true
+      exclude:
+        - index.md
+      enabled: !ENV [CI, false]
+  - git-committers:
+      repository: lord-vesel/dcs-doc
+      branch: master
+      #repo_location: ..
+      search_parent_directories: true
+      docs_path: ru/docs/
+      token: !ENV COMMITERS_TOKEN
+      exclude:
+        - index.md
+      enabled: !ENV [CI, false]
 
 markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
-      slugify: !!python/name:pymdownx.slugs.uslugify
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - markdown_captions
   - markdown_include.include
   - admonition
@@ -217,8 +232,8 @@ markdown_extensions:
       brackets_css: keyboard-css
   - meta
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - attr_list
   - pymdownx.caret
   - pymdownx.mark

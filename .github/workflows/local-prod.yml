@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: CSS
         run: |
@@ -33,7 +35,8 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          docker run -i --rm -e CI -e COMMITERS_TOKEN=${{secrets.COMMITERS_TOKEN}} -e GOOGLE_ANAL=${{secrets.GOOGLE_ANAL}} -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          git config --global --add safe.directory /build && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
           cd ../en && mkdocs build && \

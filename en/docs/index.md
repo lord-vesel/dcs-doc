@@ -10,6 +10,7 @@ hide:
 
 **LISTING**
 
+- [AH-64D Apache](ah64d/index.md) by ED
 - [F-16C Viper](f16/index.md) by ED
 - [F/A-18C](fa18c/index.md) by ED
 - [Supercarrier](sc/index.md) by ED
