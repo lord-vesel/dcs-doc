@@ -59,3 +59,7 @@ details) {
  font-size:1em;
 }
 
+a.anonce {
+    color: var(--md-footer-fg-color);
+    text-decoration: underline;
+}

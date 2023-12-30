@@ -35,7 +35,7 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.11-alpine sh -c 'apk add \
+          docker run -i --rm -e CI -e COMMITERS_TOKEN -e GOOGLE_ANAL -v $PWD:/build -w /build python:3.11-alpine sh -c 'apk add \
           git gcc linux-headers musl-dev && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
