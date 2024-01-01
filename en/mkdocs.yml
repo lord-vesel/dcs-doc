@@ -52,20 +52,20 @@ nav:
               - ah64d/14.takeoff.md
               - ah64d/15.landing.md
               - ah64d/16.shutdown.md
-                #          - Navigation:
-                #              - ah64d/17.nav.md
-                #              - ah64d/18.points.md
-                #              - ah64d/19.routes.md
-                #              - ah64d/20.radio-nav.md
-                #          - Radio Communications:
-                #              - ah64d/21.comm.md
-                #              - ah64d/22.comm-control.md
-                #          - Tactical Employment:
-                #              - ah64d/23.in-combat.md
-                #              - ah64d/24.tactical.md
-                #              - ah64d/25.sensors.md
-                #              - ah64d/26.acq-sources.md
-                #              - ah64d/27.night-vision.md
+          - Navigation:
+              - ah64d/17.nav.md
+              - ah64d/18.points.md
+              - ah64d/19.routes.md
+              - ah64d/20.radio-nav.md
+          - Radio Communications:
+              - ah64d/21.comm.md
+              - ah64d/22.comm-control.md
+          - Tactical Employment:
+              - ah64d/23.in-combat.md
+              - ah64d/24.tactical.md
+              - ah64d/25.sensors.md
+              - ah64d/26.acq-sources.md
+              - ah64d/27.night-vision.md
                 #          - Helmet-Mounted Display (HMD):
                 #              - ah64d/28.hmd.md
                 #              - ah64d/29.hmd-had.md
@@ -189,7 +189,7 @@ plugins:
       lang:
         - en
         - ru
-          #      full_path_in_title: yes
+        #      full_path_in_title: yes
   - git-revision-date-localized:
       enable_creation_date: true
       exclude:
@@ -215,7 +215,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.superfences
-  - abbr
+    #  - abbr
   - kbdextension:
       brackets_css: keyboard-css
   - meta
