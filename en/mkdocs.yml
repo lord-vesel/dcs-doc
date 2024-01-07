@@ -66,11 +66,11 @@ nav:
               - ah64d/25.sensors.md
               - ah64d/26.acq-sources.md
               - ah64d/27.night-vision.md
-                #          - Helmet-Mounted Display (HMD):
-                #              - ah64d/28.hmd.md
-                #              - ah64d/29.hmd-had.md
-                #              - ah64d/30.hmd-acq.md
-                #              - ah64d/31.hmd-controls.md
+                #- Helmet-Mounted Display (HMD):
+          - ah64d/28.hmd.md
+            # - ah64d/29.hmd-had.md
+            #  - ah64d/30.hmd-acq.md
+            #  - ah64d/31.hmd-controls.md
                 #          - Target Acquisition Designation Sight (TADS):
                 #              - ah64d/32.tads.md
                 #              - ah64d/33.tads-sym.md
