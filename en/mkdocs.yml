@@ -71,12 +71,12 @@ nav:
             # - ah64d/29.hmd-had.md
             #  - ah64d/30.hmd-acq.md
             #  - ah64d/31.hmd-controls.md
-                #          - Target Acquisition Designation Sight (TADS):
-                #              - ah64d/32.tads.md
-                #              - ah64d/33.tads-sym.md
-                #              - ah64d/34.tads-targeting.md
-                #              - ah64d/35.tads-acq.md
-                #              - ah64d/36.tads-controls.md
+          - Target Acquisition Designation Sight (TADS):
+              - ah64d/32.tads.md
+              - ah64d/33.tads-sym.md
+              - ah64d/34.tads-targeting.md
+              - ah64d/35.tads-acq.md
+              - ah64d/36.tads-controls.md
                 #          - Datalink:
                 #              - ah64d/36.dl-comms.md
                 #              - ah64d/37.dl-messages.md
