@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     env:
-      DEPLOY_USER: gh-dcs-deploy
-      DEPLOY_HOST: lordvesel.win
       RELEASE_DIR: /var/www/dcs-docs/prod/releases/${{ github.ref }}/${{ github.run_number }}
       RELEASES_DIR: /var/www/dcs-docs/prod/releases/
       CURRENT_DIR: /var/www/dcs-docs/prod/current
@@ -35,7 +33,7 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -e CI -e COMMITERS_TOKEN=${{secrets.COMMITERS_TOKEN}} -e GOOGLE_ANAL=${{secrets.GOOGLE_ANAL}} -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
+          podman run -i --rm -e CI -e COMMITERS_TOKEN=${{secrets.COMMITERS_TOKEN}} -e GOOGLE_ANAL=${{secrets.GOOGLE_ANAL}} -v $PWD:/build -w /build python:3.10-alpine sh -c 'apk add git gcc linux-headers musl-dev && \
           git config --global --add safe.directory /build && \
           cd ru && pip install -r requirements.txt && \
           mkdocs build && \
@@ -61,8 +59,8 @@ jobs:
         run: |
           ntfy -b telegram send "⚡ GITHUB: Successfuly deployed PROD. Check out
 
-          https://dcs-docs.lordvesel.win/ru/
-          https://dcs-docs.lordvesel.win/en/"
+          https://dcs.man-sim.org/ru/
+          https://dcs.man-sim.org/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}

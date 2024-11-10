@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     env:
-      DEPLOY_USER: gh-dcs-deploy
-      DEPLOY_HOST: lordvesel.win
       RELEASE_DIR: /var/www/dcs-docs/stage/releases/${{ github.run_number }}
       RELEASES_DIR: /var/www/dcs-docs/stage/releases/
       CURRENT_DIR: /var/www/dcs-docs/stage/current
@@ -37,7 +35,7 @@ jobs:
 
       - name: Build mkdocs
         run: |
-          docker run -i --rm -v $PWD:/build -w /build python:3.11-alpine sh -c 'apk add \
+          podman run -i --rm -v $PWD:/build -w /build python:3.11-alpine sh -c 'apk add \
           git gcc linux-headers musl-dev && \
           git config --global --add safe.directory /build && \
           cd ru && pip install -r requirements.txt && \
@@ -64,8 +62,8 @@ jobs:
         run: |
           ntfy -b telegram send "⚡ DCS DOCS: Successfuly deployed STAGE ${{env.PRURL}}
 
-          https://dcs-docs-stage.lordvesel.win/ru/
-          https://dcs-docs-stage.lordvesel.win/en/"
+          https://dcs-docs-stage.man-sim.org/ru/
+          https://dcs-docs-stage.man-sim.org/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
