@@ -8,8 +8,6 @@ on:
 jobs:
   build:
     env:
-      DEPLOY_USER: gh-dcs-deploy
-      DEPLOY_HOST: lordvesel.win
       RELEASE_DIR: /var/www/dcs-docs/dev/releases/${{ github.ref }}/${{ github.run_number }}
       RELEASES_DIR: /var/www/dcs-docs/dev/releases/
       CURRENT_DIR: /var/www/dcs-docs/dev/current
@@ -52,8 +50,8 @@ jobs:
         if: ${{ success() }}
         run: |
           ntfy -b telegram send "⚡ DCS DOCS: Successfuly deployed DEV branch ${{ github.ref }}.
-          https://dcs-docs-dev.lordvesel.win/ru/
-          https://dcs-docs-dev.lordvesel.win/en/"
+          https://dcs-docs-dev.man-sim.org/ru/
+          https://dcs-docs-dev.man-sim.org/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
