@@ -11,7 +11,7 @@ and heading stored in the aircraft memory from when it was last shut down. This 
 position signals, shortens the alignment process considerably, allowing an AH-64D to takeoff within minutes if
 necessary.
 
-![Navigational Sensors](img/img-217-1-screen.jpg)
+![Navigational Sensors](../img/img-217-1-screen.jpg)
 
 
 While in flight, the AH-64D receives continuous position updates from GPS satellites to maintain INU position

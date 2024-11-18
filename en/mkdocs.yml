@@ -53,10 +53,14 @@ nav:
               - ah64d/15.landing.md
               - ah64d/16.shutdown.md
           - Navigation:
-              - ah64d/17.nav.md
-              - ah64d/18.points.md
-              - ah64d/19.routes.md
-              - ah64d/20.radio-nav.md
+              - ah64d/nav/index.md
+              - ah64d/nav/18.points.md
+              - ah64d/nav/19.routes.md
+              - ah64d/nav/20.radio-nav.md
+             # - ah64d/17.nav.md
+             # - ah64d/18.points.md
+             # - ah64d/19.routes.md
+             # - ah64d/20.radio-nav.md
           - Radio Communications:
               - ah64d/21.comm.md
               - ah64d/22.comm-control.md
@@ -215,7 +219,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.superfences
-    #  - abbr
+  #- abbr
   - kbdextension:
       brackets_css: keyboard-css
   - meta
