@@ -78,9 +78,9 @@ nav:
           - Target Acquisition Designation Sight (TADS):
               - ah64d/32.tads.md
               - ah64d/33.tads-sym.md
-              - ah64d/34.tads-targeting.md
-              - ah64d/35.tads-acq.md
-              - ah64d/36.tads-controls.md
+              - ah64d/34.tads-targeting-modes.md
+              - ah64d/35.tads-acq-ranging.md
+              - ah64d/36.tads-hands-controls.md
                 #          - Datalink:
                 #              - ah64d/36.dl-comms.md
                 #              - ah64d/37.dl-messages.md
