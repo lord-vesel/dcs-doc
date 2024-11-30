@@ -52,8 +52,8 @@ jobs:
         if: ${{ success() }}
         run: |
           ntfy -b telegram send "⚡ DCS DOCS: Successfuly deployed DEV branch ${{ github.ref }}.
-          https://dcs-docs-dev.lordvesel.win/ru/
-          https://dcs-docs-dev.lordvesel.win/en/"
+          https://dcs-docs-dev.man-sim.org/ru/
+          https://dcs-docs-dev.man-sim.org/en/"
 
       - name: Status Fail Notification
         if: ${{ failure() }}
