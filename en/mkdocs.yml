@@ -81,12 +81,12 @@ nav:
               - ah64d/34.tads-targeting-modes.md
               - ah64d/35.tads-acq-ranging.md
               - ah64d/36.tads-hands-controls.md
-                #          - Datalink:
-                #              - ah64d/36.dl-comms.md
-                #              - ah64d/37.dl-messages.md
-                #              - ah64d/38.dl-points.md
-                #              - ah64d/39.dl-reports.md
-                #              - ah64d/40.battle-area.md
+          - Datalink:
+              - ah64d/36.dl-comms.md
+              - ah64d/37.dl-messages.md
+              - ah64d/38.dl-points.md
+              - ah64d/39.dl-reports.md
+              - ah64d/40.battle-area.md
                 #          - Weapons Employment:
                 #              - ah64d/41.weapons-empl.md
                 #              - ah64d/42.aws.md
