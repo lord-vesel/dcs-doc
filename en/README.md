@@ -12,4 +12,4 @@ To build the site and run web-server:
 
 The site will be available on http://127.0.0.1:8000/
 
-Workflow is described here https://dcs-docs.man-sim.org/en/help/
+Workflow is described here https://dcs.man-sim.org/en/help/
