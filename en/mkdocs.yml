@@ -73,8 +73,7 @@ nav:
               - ah64d/tads-targeting-modes.md
               - ah64d/tads-acq-ranging.md
               - ah64d/tads-hands-controls.md
-          - Fire Control Radar (FCR):
-              - ah64d/fcr.md
+          - ah64d/fcr.md
           - Datalink:
               - ah64d/dl-comms.md
               - ah64d/dl-messages.md

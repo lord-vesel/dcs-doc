@@ -328,7 +328,7 @@ affiliation of the target (friend or foe). The target is accordingly classified 
 **Unknown.** Any target that cannot be classified.
 
 
-(See FCR Target Symbols for more information.)
+(See FCR Target Symbols for more information.) //link
 
 **Target Prioritization**
 
@@ -358,412 +358,359 @@ parameters may be selected by the aircrew, but the last two parameters are fixed
      phase, if the appropriate show options are
      enabled.
 
-     NOTE: No Fire Zones take precedence
-     over Priority Fire Zones. Any targets
-     located within an active NFZ and an active
-     PFZ will not be prioritized.
-                                                  
-                                                  
-2.   Active Priority Fire Zones. The aircrew                      may selectively activate, deactivate, draw,
+    !!! note
+        No Fire Zones take precedence
+        over Priority Fire Zones. Any targets
+        located within an active NFZ and an active
+        PFZ will not be prioritized.
+
+2.   **Active Priority Fire Zones.** The aircrew                      may selectively activate, deactivate, draw,
      or delete PFZ’s using the TSD Battle Area Management sub-page, which will elevate the ranking of any
      target within the boundaries of the active PFZ above all other targets, even those targets outside the PFZ
      that may pose a greater threat to the aircraft.
-3.    Priority Scheme. The aircrew may select one of three Priority Schemes
-                                                                                                        1    Air Defense Vehicle
+
+3.    **Priority Scheme.** The aircrew may select one of three Priority Schemes
       on the FCR Utility sub-page. The default Priority Schemes are considered
-                                                                                                        2    Tracked Vehicle
-
-
-
-
-                                                                                           Active PFZ
       the base level prioritization parameter which are always enabled when
-                                                                                                        3    Tracked Vehicle
       employing the FCR in GTM, RMAP, or ATM, even when there are no active
-                                                                                                        4    Tracked Vehicle
       PFZ’s or NFZ’s. The Priority Scheme should be selected based on the
-      current tactical situation. (See Priority Schemes for more information.)                          5    Wheeled Vehicle
-                                                                                                        6    Unknown
-      •      Default Scheme A. Stationary ground targets and airborne targets                           7    Air Defense Vehicle
-             will be prioritized over moving ground targets.                                            8    Helicopter
+      current tactical situation. (See Priority Schemes for more information.)
 
-      •      Default Scheme B. Stationary ground targets will be prioritized                            9    Helicopter
+    - **Default Scheme A.** Stationary ground targets and airborne targets
+             will be prioritized over moving ground targets.
 
-             over moving ground targets or airborne targets.                                            10   Tracked Vehicle
-                                                                                                        11   Tracked Vehicle
-      •      Default Scheme C. Moving ground targets and airborne targets will                          12   Tracked Vehicle
-             be prioritized over stationary ground targets.                                             13   Wheeled Vehicle
+    - **Default Scheme B.** Stationary ground targets will be prioritized
+             over moving ground targets or airborne targets.
 
-4.    Target Classification. Targets are ranked by their classification in the        High              14   Wheeled Vehicle
-                                                                                     Priority
-      following order: Air Defense Vehicle, Helicopter, Fixed-Wing, Tracked          Targets
-                                                                                                        15   Unknown
-      Vehicle, Wheeled Vehicle, Unknown.                                                                16   Unknown
+    - **Default Scheme C.** Moving ground targets and airborne targets will
+             be prioritized over stationary ground targets.
 
-                                                                                                        17   Unknown
-      (See FCR Target Symbols for more information.)                                  Low
-                                                                                     Priority           18   Unknown
-5.    Target Proximity. Targets that are equally ranked by the first four            Targets            19   Unknown
-      parameters are ranked in priority by their distance to the ownship. Targets                       ↓
-      that are closer to the ownship are ranked higher in priority over those that        Priority Target List
+
+4.    **Target Classification.** Targets are ranked by their classification in the
+      following order: Air Defense Vehicle, Helicopter, Fixed-Wing, Tracked
+      Vehicle, Wheeled Vehicle, Unknown.
+
+      (See FCR Target Symbols for more information.) //link
+
+
+5.    **Target Proximity.** Targets that are equally ranked by the first four
+      parameters are ranked in priority by their distance to the ownship. Targets
+      that are closer to the ownship are ranked higher in priority over those that
       are further away.
+
+![Priority Target List](img/img-348-1-screen.jpg)
+
 In the example above and to the right (based on the MPD images below), Default Scheme C has been selected,
 a scanburst has been completed, and a PFZ and an NFZ have been activated within the FCR footprint. Even
 though the selected Priority Scheme prioritizes moving ground targets and airborne targets over stationary ground
 targets, the six stationary ground targets within the active PFZ are placed above those outside of the PFZ. The
 targets inside the active PFZ have been further prioritized by the last three parameters, followed by the targets
 outside the active PFZ which have been prioritized in the same manner.
+
 When the TSD is set to ATK Phase, low priority targets and any targets within active No Fire Zones are displayed
 as partial-intensity target symbols, at 50% of the size of high priority target symbols.
 
+![ ](img/img-348-2-screen.jpg)
 
 
-
-        Targets prioritized
-     within Priority Fire Zone                                 High Priority                                     Low Priority
-                                                                 Targets                                           Targets
+![FCR Target Prioritization](img/img-348-3-screen.jpg)
 
 
+#### NTS/ANTS Designation
 
-
-                                                                                                                  Civilian
-                                                               Friendly Ground                                Infrastructure
-                                                               Force Positions
-     Targets not prioritized
-      within No Fire Zone
-
-
-
-
-                                           FCR Target Prioritization
-NTS/ANTS Designation
 At the completion of the first scan cycle within the scanburst, or if the first scan is aborted for any reason, the
 Next-To-Shoot (NTS) and Alternate Next-To-Shoot (ANTS) targets are designated as the first and second priority
 targets, respectively. The NTS target will be surrounded by a diamond symbol and the ANTS will be surrounded
 by an inverted triangle symbol.
+
 If the High Priority Target List is updated with new target data as the FCR performs subsequent scan cycles within
 the scanburst, the NTS and ANTS designations may shift to other targets throughout the scan. However, if a
 weapon is actioned in the same crewstation that is using the FCR as the selected sight, the NTS designation will
 become “frozen”. If another target is subsequently detected that is determined to be a higher priority while the
 NTS is frozen, the ANTS triangle will shift to that target and flash for 3 seconds.
+
 The NTS designates the target handover that will be sent to the next AGM-114L missile,
 transmitted in the next RF Handover (RFHO), or the 3-dimensional location used to
 calculate the weapon aiming solution for the Area Weapon System (AWS) or Aerial Rocket
 Sub-system (ARS).
-                                                                                                    Next-To-Shoot
-The NTS diamond will remain dashed unless all three of the following criteria are met.                  (NTS)
+
+
+![Next-To-Shoot (NTS)](img/img-349-4-screen.jpg)
+![Alternate Next-To-Shoot (ANTS)](img/img-349-5-screen.jpg)
+
+The NTS diamond will remain dashed unless all three of the following criteria are met.
+
 -     The FCR is the selected sight within the crewstation.
 -     A weapon is actioned within the crewstation in which FCR is the selected sight.
--     The A/S button on the Armament Panel is set to ARM.
-                                                                                                      Alternate
-     1     Air Defense Vehicle   A solid NTS diamond indicates to the crewmember using the
-                                                                                                   Next-To-Shoot
-    2      Tracked Vehicle       FCR as the selected sight that a weapon system is ready to be
-                                                                                                       (ANTS)
-    3      Tracked Vehicle       fired at the current NTS target. Each time an RF missile is fired
-    4      Tracked Vehicle       at the NTS target or an RFHO is transmitted, the NTS and ANTS designations will
-    5      Wheeled Vehicle       automatically sequence to the next targets on the High Priority Target List, allowing
-    6      Unknown               rapid engagement of the high priority targets by RF missiles fired from the ownship
-    7      Air Defense Vehicle
-                                 and/or other AH-64D’s receiving RF Handovers.
-    8      Helicopter            The NTS and ANTS may be manually sequenced by pressing the NTS button (VAB L1)
-    9      Helicopter            on the FCR page. Each time this button is pressed, the NTS and ANTS designations will
-    10     Tracked Vehicle       sequence to the next targets on the High Priority Target List in the same manner as
-    11     Tracked Vehicle       when an RF missile is fired or an RFHO is transmitted. When the NTS and ANTS
-    12     Tracked Vehicle       designations reach the end of the High Priority Target List, they will sequence back to
-    13     Wheeled Vehicle       the top of the list in a cyclic manner.
-    14     Wheeled Vehicle
-                                 (See RF Target Handovers in        1    Air Defense Vehicle   1     Tracked Vehicle
-    15     Unknown
-                                 the Datalink chapter for more      2    Air Defense Vehicle   2     Air Defense Vehicle
-    16     Unknown
-                                 information.)                      3    Tracked Vehicle       3     Tracked Vehicle
-         NTS Button                                                 4    Tracked Vehicle       4     Tracked Vehicle
-          (VAB L1)                                                  5    Tracked Vehicle       5     Tracked Vehicle
-                                                                    6    Wheeled Vehicle       6     Wheeled Vehicle
-                                                                    7    Unknown               7     Unknown
+-     The A/S button on the [Armament Panel](plt-cockpit.md#armament-panel) is set to ARM.
+
+A solid NTS diamond indicates to the crewmember using the
+FCR as the selected sight that a weapon system is ready to be
+fired at the current NTS target. Each time an RF missile is fired
+at the NTS target or an RFHO is transmitted, the NTS and ANTS designations will
+automatically sequence to the next targets on the High Priority Target List, allowing
+rapid engagement of the high priority targets by RF missiles fired from the ownship
+and/or other AH-64D’s receiving RF Handovers.
+
+The NTS and ANTS may be manually sequenced by pressing the NTS button (VAB L1)
+on the FCR page. Each time this button is pressed, the NTS and ANTS designations will
+sequence to the next targets on the High Priority Target List in the same manner as
+when an RF missile is fired or an RFHO is transmitted. When the NTS and ANTS
+designations reach the end of the High Priority Target List, they will sequence back to
+the top of the list in a cyclic manner.
+
+(See RF Target Handovers in
+the Datalink chapter for more
+information.) //link
+
+![NTS Button (VAB L1)](img/img-349-2-screen.jpg)
+
 The MPD cursor may also be used to manually
-                                                                    7                          8     Air Defense Vehicle
 designate the NTS target on the FCR page. However,
-                                                                    8    Helicopter            9     Helicopter
 when an NTS target is manually designated in this
-                                                                    9    Helicopter            10    Helicopter
 manner, that target is placed at the top of the High
-                                                                   10    Tracked Vehicle       10
 Priority Target List, with every other target shifting
-                                                                   11    Tracked Vehicle       11    Tracked Vehicle
 down the list as necessary.
-                                                                   12    Tracked Vehicle       12    Tracked Vehicle
-If a different target is manually designated as NTS by             13    Wheeled Vehicle       13    Wheeled Vehicle
-the MPD cursor, that target is then placed at the top of           14    Wheeled Vehicle       14    Wheeled Vehicle
-the High Priority Target List, and the previous target             15    Unknown               15    Unknown
-that had been manually designated as NTS is returned               16    Unknown               16    Unknown
+
+If a different target is manually designated as NTS by
+the MPD cursor, that target is then placed at the top of
+the High Priority Target List, and the previous target
+that had been manually designated as NTS is returned
 to its previous ranking as necessary.
-                                                                        NTS Designation using MPD Cursor
-Fire Control Radar (FCR) Page
+
+![NTS Designation using MPD Cursor](img/img-349-3-screen.jpg)
+
+
+### Fire Control Radar (FCR) Page
+
 The FCR page presents radar targeting data and/or terrain video to the crew in a format that is dependent on
 the selected FCR mode. When set to GTM, RMAP, or ATM, the FCR page displays the 16 highest priority targets
 that have been detected by the FCR, any of which may be designated for engagement.
-                                             1. C-Scope       2. FCR Centerline Symbol     3. UTIL sub-page
 
+![](img/img-350-1-screen.jpg)
 
-
-                                                                                                                       5. Lubber Line
-
-
-                                                                                                                       6. Total Target
-             4. Heading Tape                                                                                           Status Window
-
-
-      7. Next-To-Shoot Select                                                                                          8. Zoom Select
-
-
-                9. Centerline                                                                                               9. Centerline
-               Steering Arrow                                                                                              Steering Arrow
-
-
-
-
-         10. FCR TGT format                                                                                            11. RF Handover Select
-
-
-          12. Elevation Mode                                                                                               13. NTS Target
-
-
-     14. Alternate NTS Target                                                                                          15. Acquisition Source
-
-
-                                                                                                                       17. SHOT Symbol
-           16. Elevation Scale
-
-
-
-
-                                 18. Current FCR Centerline      19. High Action Display     20. Previous FCR Centerline
-
-1.     C-Scope (C SCP). When enabled, FCR symbols are displayed within Flight or Weapon symbology formats
+1. **C-Scope (C SCP).** When enabled, FCR symbols are displayed within Flight or Weapon symbology formats
        in the corresponding crewstation. FCR target symbols, the NTS target symbol, the ANTS target symbol, and
        SHOT symbols are displayed virtually in azimuth and elevation corresponding with their 3-dimensional
        positions. This setting is independent between crewstations. (See C-Scope for more information.)
-2.     FCR Centerline Symbol. Indicates the magnetic heading to which the centerline of the FCR scan volume
+2. **FCR Centerline Symbol.** Indicates the magnetic heading to which the centerline of the FCR scan volume
        is aligned. The centerline symbol is only displayed when either crewmember has selected FCR as a sight.
-3.     FCR Utility sub-page. Displays the FCR Utility sub-page.
-4.     Heading Tape. Displays a 180° hemisphere of magnetic headings. Major tick marks are displayed in 30°
+3. **FCR Utility sub-page.** Displays the FCR Utility sub-page.
+4. **Heading Tape.** Displays a 180° hemisphere of magnetic headings. Major tick marks are displayed in 30°
        increments and marked by a cardinal direction or heading in the tens value. Minor tick marks are displayed
        in 10° increments.
-5.     Lubber Line. The Lubber Line is aligned to the centerline of the aircraft.
+5. **Lubber Line.** The Lubber Line is aligned to the centerline of the aircraft.
        NOTE: When set to GTM or RMAP mode, FCR target data is presented from the perspective of the FCR
        centerline during the most recent FCR scanburst, not the aircraft centerline.
-6.     Total Target Status Window. Indicates the total number of battlefield targets the FCR has detected
+6. **Total Target Status Window.** Indicates the total number of battlefield targets the FCR has detected
        within the current scan cycle.
-7.     Next-To-Shoot (NTS) Select. Advances the NTS and ANTS target designations through the 16 high
+7. **Next-To-Shoot (NTS) Select.** Advances the NTS and ANTS target designations through the 16 high
        priority targets in a descending order before cycling back to the first target on the list.
-8.   Zoom Select. Enables the cursor to designate a location within the FCR footprint to enter ZOOM format.
+8. **Zoom Select.** Enables the cursor to designate a location within the FCR footprint to enter ZOOM format.
      When selected, the MPD cursor will be displayed in Zoom format when positioned within the FCR footprint.
-9.   Centerline Steering Arrows. Rotates the FCR centerline in azimuth, equal to the selected scan size, and
+9. **Centerline Steering Arrows.** Rotates the FCR centerline in azimuth, equal to the selected scan size, and
      de-slaves the FCR centerline from the selected acquisition source.
-     •    Wide (W). The FCR centerline will rotate 90° in azimuth if the FCR mode is GTM or RMAP.
-     •    Medium (M). The FCR centerline will rotate 45° in azimuth if the FCR mode is GTM or RMAP. The FCR
+
+    - **Wide (W).** The FCR centerline will rotate 90° in azimuth if the FCR mode is GTM or RMAP.
+
+    - **Medium (M).** The FCR centerline will rotate 45° in azimuth if the FCR mode is GTM or RMAP. The FCR
           centerline will rotate 90° in azimuth if the FCR mode is ATM.
-     •    Narrow (N). The FCR centerline will rotate 30° in azimuth if the FCR mode is GTM or RMAP. The FCR
+
+    - **Narrow (N).** The FCR centerline will rotate 30° in azimuth if the FCR mode is GTM or RMAP. The FCR
           centerline will rotate 90° in azimuth if the FCR mode is ATM.
-     •    Zoom (Z). The FCR centerline will rotate 15° in azimuth if the FCR mode is GTM or RMAP. The FCR
+
+    - **Zoom (Z).** The FCR centerline will rotate 15° in azimuth if the FCR mode is GTM or RMAP. The FCR
           centerline will rotate 45° in azimuth if the FCR mode is ATM.
-     When set to GTM or RMAP mode, the FCR centerline will be limited to ±90° to either side of the aircraft
+
+    When set to GTM or RMAP mode, the FCR centerline will be limited to ±90° to either side of the aircraft
      centerline and cannot be rotated while the FCR is scanning.
-10. FCR TGT format. Displays the FCR Target format.
-11. RF Handover (RFHO) Select. Displays a list of Primary members within the selected datalink network
+
+10. **FCR TGT format.** Displays the [FCR Target format](#fcr-target-format).
+11. **RF Handover (RFHO) Select.** Displays a list of Primary members within the selected datalink network
     that may be selected to receive the RFHO datalink message. (See the RF Target Handovers in the Datalink
-    chapter for more information.)
-12. Elevation Mode (ELEV). Selects how the FCR antenna elevation will be controlled.
-     •    AUTO. The FCR antenna will automatically adjust its elevation based on the height above terrain as
+    chapter for more information.) //link
+12. **Elevation Mode (ELEV).** Selects how the FCR antenna elevation will be controlled.
+
+    - **AUTO.** The FCR antenna will automatically adjust its elevation based on the height above terrain as
           measured by the radar altimeter.
           This mode should be used when operating over relatively flat terrain.
-     •    MAN. The FCR antenna may be manually adjusted within the crewstation in which the FCR is the
+
+    - **MAN.** The FCR antenna may be manually adjusted within the crewstation in which the FCR is the
           selected sight. When the mode is set to MAN, arrow buttons will be displayed on the FCR page at VAB
           L5 and L6 which may be used to adjust the elevation in fixed increments, or the CPG may use the MAN
           TRK controller on the TEDAC Right Handgrip to smoothly adjust the antenna elevation. However, the
           antenna elevation may not be adjusted while the FCR is scanning in GTM or RMAP mode.
           This mode should be used when operating over terrain that varies in elevation.
-          NOTE: If the FCR elevation mode is set to MAN, the mode may be set back to AUTO on the FCR Utility
+
+    !!! note
+        If the FCR elevation mode is set to MAN, the mode may be set back to AUTO on the [FCR Utility](#fcr-utility-util-sub-page)
           sub-page.
-13. Next-To-Shoot (NTS) Target. The NTS target symbol indicates the designated target location to which
+
+13. **Next-To-Shoot (NTS) Target.** The NTS target symbol indicates the designated target location to which
     all sighting functions of the FCR are performed, or which target will be transmitted via an RFHO.
      When the first scan within a scanburst is completed, the NTS target symbol is set to the target the FCR has
      classified as the highest priority; however, the crewmember may manually designate the NTS target using
      the NTS Select button (VAB L1) or by selecting a target symbol on the FCR page with the MPD cursor.
      When a weapon is actioned, the NTS target is the target that will be engaged.
-     •    If the Area Weapon System (AWS) is actioned, the weapon aiming solution for the 30mm gun turret is
+
+    - If the Area Weapon System (AWS) is actioned, the weapon aiming solution for the 30mm gun turret is
           calculated to the location of the NTS target.
-     •    If the Aerial Rocket Sub-system is actioned, the Rocket Steering Cursor indicates the weapon aiming
+
+    - If the Aerial Rocket Sub-system is actioned, the Rocket Steering Cursor indicates the weapon aiming
           solution to the location of the NTS target.
-     •    If the Hellfire Modular Missile System (HMMS) is actioned, the Missile Constraints Box indicates the
+
+    - If the Hellfire Modular Missile System (HMMS) is actioned, the Missile Constraints Box indicates the
           target handover position of the NTS target when the RF missile is not tracking the target.
-14. Alternate Next-To-Shoot (ANTS) Target. The Alternate NTS target symbol indicates the FCR target that
+
+14. **Alternate Next-To-Shoot (ANTS) Target.** The Alternate NTS target symbol indicates the FCR target that
     will become Next-To-Shoot (NTS) if the NTS Select button (VAB L1) is pressed or an RF missile is fired at
     the current NTS target.
+
      When the first scan within a scanburst is completed, the ANTS target symbol is set to the target the FCR
      has classified as the second highest priority; however, if a crewmember manually designates a different NTS
      target using the MPD cursor, the ANTS target symbol will be set to the highest priority target as classified
      by the FCR.
-15. Acquisition (ACQ) Source. Displays the acquisition source selection menu. (See Acquisition Sources in
-    the Tactical Employment chapter for more information.)
-16. Elevation Scale. Displays the current elevation setting of the FCR antenna relative to the FCR radome.
+
+15. **Acquisition (ACQ) Source.** Displays the acquisition source selection menu. (See [Acquisition Sources](tads-acq-ranging.md#acquisition-sources) in    the Tactical Employment chapter for more information.)
+16. **Elevation Scale.** Displays the current elevation setting of the FCR antenna relative to the FCR radome.
     When set to GTM or RMAP mode, the upper and lower major tick marks correspond to +25° and -25°
     respectively, the major tick mark in the center corresponds to -6.25°, and each minor tick mark represents
     an interval of ±6.25°. When set to ATM, the upper and lower major tick marks correspond to +23° and -
     12° respectively, the major tick mark in the center corresponds to +3°, and each minor tick mark represents
     an interval of ±5°.
-17. SHOT Symbol. Missile engagement locations are stored to the ownship SHOT file and displayed on the
+17. **SHOT Symbol.** Missile engagement locations are stored to the ownship SHOT file and displayed on the
     TSD and FCR pages as green X symbols. Missile engagement locations received via the datalink are displayed
     as partial-intensity green X symbols on the TSD and FCR pages.
-     SHOT symbols are displayed over FCR target symbols if a missile engagement is stored after the FCR scan
+
+    SHOT symbols are displayed over FCR target symbols if a missile engagement is stored after the FCR scan
      in which the target was detected. If subsequent FCR scans are performed, the SHOT symbol will be displayed
      under FCR target symbols.
-     SHOT symbols represent locations to which an AGM-114 missile has been fired for the purposes of post-
+
+    SHOT symbols represent locations to which an AGM-114 missile has been fired for the purposes of post-
      attack battle damage assessment (BDA). These symbols do not indicate whether the AGM-114 successfully
      hit a target nor what target was actually struck by the missile.
-     See TSD SHOT sub-page in the Datalink chapter for more information.
-18. Current FCR Centerline. Indicates the current azimuth of the FCR centerline when the FCR is powered.
-19. High Action Display (HAD). The HAD provides prioritized sight and weapon status messages to the crew
-    for targeting and weapons employment. (See High Action Display in the Helmet-Mounted Display chapter
+     See TSD SHOT sub-page in the Datalink chapter for more information. //link
+
+18. **Current FCR Centerline.** Indicates the current azimuth of the FCR centerline when the FCR is powered.
+19. **High Action Display (HAD).** The HAD provides prioritized sight and weapon status messages to the crew
+    for targeting and weapons employment. (See [High Action Display](hmd.md#hmd-high-action-display) in the Helmet-Mounted Display chapter
     for more information.)
-20. Previous FCR Centerline. Indicates the azimuth of the FCR centerline during the most recent scan when
+20. **Previous FCR Centerline.** Indicates the azimuth of the FCR centerline during the most recent scan when
     the FCR is powered and not scanning. When a new scan is initiated, the Previous FCR Centerline moves to
     the location of the Current FCR Centerline until the scan is completed.
-FCR Zoom Format
+
+#### FCR Zoom Format
+
 The FCR page may be expanded within a designated sector of the FCR footprint by using the ZOOM function,
 which displays a closer, more detailed view of FCR target symbols located within a small area. When enabled,
 the selected area within the FCR footprint is enlarged by a 6:1 ratio.
+
 The ZOOM format may be accessed in either crewstation by pressing the ZOOM button (VAB R1) on the FCR
 page. When ZOOM is pressed, the MPD Zoom cursor is displayed, which represents the relative area of the FCR
 footprint that will be expanded. Once the MPD Zoom cursor is placed over the desired location, Cursor-Enter may
 be pressed to enter the FCR ZOOM format. The ZOOM button (VAB R1) may be subsequently de-selected to exit
 the FCR ZOOM format.
 
+![ZOOM selected on FCR page](img/img-353-1-screen.jpg)
 
 
+![FCR page in Zoom format](img/img-353-2-screen.jpg)
 
-                    ZOOM (VAB R1) selected                                     Exits Zoom format
-
-
-
-
-          MPD Zoom Cursor
-
-
-
-
-              ZOOM selected on FCR page (Left) and FCR page in Zoom format (Right)
 
 Alternatively, the CPG may directly enter the FCR ZOOM format by pressing the ZOOM button on the TEDAC Right
 Handgrip. However, this method of entering ZOOM format of the FCR page bypasses the selection of the enlarged
 area using the MPD Cursor, and the ZOOM format will be centered on the current Next-To-Shoot (NTS) target.
 The ZOOM format may only be accessed when all three of the following criteria are met.
+
 - The FCR is the selected sight within the crewstation.
 - A Next-To-Shoot (NTS) target has been designated by the FCR.
 - The FCR is not scanning.
+
 If an FCR scan is initiated while ZOOM is enabled, the FCR page will exit ZOOM format for the duration of the
 scan and will re-enter ZOOM format when the FCR scan is completed.
-FCR Target Format
+
+#### FCR Target Format
+
 Pressing the TGT button (VAB L4) displays the FCR page in Target format. The TGT format of the FCR page
 allows either crewmember to store FCR target locations as Target points within the TGT/THRT partition of the
 navigational database.
+
 When the TGT format is displayed, cursor-selecting an FCR target symbol on the FCR page will store a Target
 (TG) point at that FCR target’s location. However, if point indexes T01 through T49 within the TGT/THRT partition
 are already occupied with point data, Target points can no longer be stored from the FCR TGT format.
+
 Alternatively, the CPG may store the current Next-To-Shoot (NTS) target as a Target (TG) point without entering
 the FCR TGT format by pressing the STORE/UPDT switch to the STORE position on the TEDAC Left Handgrip
 while the FCR is the CPG’s selected sight.
 
+![](img/img-354-1-screen.jpg)
 
 
-
-                                                                                          2. Next Target Point
-                                                                                             Status Window
-
-
-
-
-                                                                                            3. Stored Target
-                                                                                          Points Status Window
-
-      1. Store All Targets
-
-
-
-
-1.   Store All Targets (ALL). All FCR targets displayed on the FCR page will be stored as Target (TG) points
+1.   **Store All Targets (ALL).** All FCR targets displayed on the FCR page will be stored as Target (TG) points
      in TGT/THRT point indexes that are not already occupied with point data.
      If ALL is selected or any FCR target symbol is cursor-selected while the FCR TGT format is displayed, the
      ALL option is removed.
-2.   Next Target Point Status Window. Displays the next TGT/THRT point index that is available for storing
+
+2.   **Next Target Point Status Window.** Displays the next TGT/THRT point index that is available for storing
      an FCR target.
-3.   Stored Target Points Status Window. Displays the TGT/THRT point indexes of each Target point that
+
+3.   **Stored Target Points Status Window.** Displays the TGT/THRT point indexes of each Target point that
      has been stored from the FCR TGT format.
-FCR Utility (UTIL) Sub-Page
+
+#### FCR Utility (UTIL) Sub-Page
+
 The UTIL sub-page allows either crewmember to toggle power to the FCR or RFI systems, adjust the settings of
 the mast-mounted radome and/or FCR antenna elevation, or change the parameters for target prioritization.
 
+![](img/img-355-1-screen.jpg)
 
-
-
-                                                                                         2. RFI Training Mode
-
-
-               1. RFI Power                                                              3. RFI Mode
-
-
-               4. FCR Power                                                              5. FCR Stow
-
-
-     6. FCR Lethal Ranges                                                                 7. PRIORITY Scheme
-
-
-           9. Elevation Mode                                                              8. No function
-
-
-         10. Terrain Settings                                                            11. MMA State
-
-
-
-
-1.   RFI Power. Not implemented.
-2.   RFI Training Mode. Not implemented.
-3.   RFI Mode. Not implemented.
-4.   FCR Power. Enables/disables the Fire Control Radar. FCR power will be inhibited if the MMA state (VAB R6)
+1. **RFI Power.** Not implemented.
+2. **RFI Training Mode.** Not implemented.
+3. **RFI Mode.** Not implemented.
+4. **FCR Power.** Enables/disables the Fire Control Radar. FCR power will be inhibited if the MMA state (VAB R6)
      is set to PINNED.
-5.   FCR Stow. Manually commands the FCR radome to the stow position, rotating the mast-mounted assembly
+5. **FCR Stow.** Manually commands the FCR radome to the stow position, rotating the mast-mounted assembly
      180° toward the rear, facing aft. If either crewmember is using the FCR as their sight, this option will be
      “barriered” and unavailable for selection. If either crewmember selects FCR as their sight while the FCR
      radome is stowed, or if the FCR is linked to the TADS, this option will be automatically de-selected.
-6.   FCR Lethal Ranges. Not implemented.
-7.   PRIORITY - Scheme. Selects how the FCR will prioritize targets detected on, or over, the battlefield when
+6. **FCR Lethal Ranges.** Not implemented.
+7. **PRIORITY - Scheme.** Selects how the FCR will prioritize targets detected on, or over, the battlefield when
      the FCR mode is set to GTM, RMAP, or ATM. (See Priority Schemes for more information.)
-     •        Default Scheme A. Stationary ground targets and airborne targets will be prioritized over moving
+
+    - **Default Scheme A.** Stationary ground targets and airborne targets will be prioritized over moving
               ground targets.
-     •        Default Scheme B. Stationary ground targets will be prioritized over moving ground targets or
+    - **Default Scheme B.** Stationary ground targets will be prioritized over moving ground targets or
               airborne targets.
-     •        Default Scheme C. Moving ground targets and airborne targets will be prioritized over stationary
+    - **Default Scheme C.** Moving ground targets and airborne targets will be prioritized over stationary
               ground targets.
-8.   PRIORITY - Mission. No function.
-9.    Elevation Mode. Selects the FCR elevation control mode when the FCR mode is set to GTM or RMAP.
-      •     AUTO. The FCR antenna will automatically adjust its elevation based on the altitude above terrain as
+
+8. **PRIORITY - Mission.** No function.
+9. **Elevation Mode.** Selects the FCR elevation control mode when the FCR mode is set to GTM or RMAP.
+
+
+    - **AUTO.** The FCR antenna will automatically adjust its elevation based on the altitude above terrain as
             measured by the radar altimeter.
             This mode should be used when operating over relatively flat terrain.
-      •     MAN. The FCR antenna may be manually adjusted within the crewstation in which the FCR is the
+
+    - **MAN.** The FCR antenna may be manually adjusted within the crewstation in which the FCR is the
             selected sight. When the mode is set to MAN, arrow buttons will be displayed on the FCR page which
             may be used to adjust the elevation in fixed increments, or the CPG may use the MAN TRK controller
             on the TEDAC Right Handgrip to smoothly adjust the antenna elevation.
             This mode should be used when operating over terrain that varies in elevation.
-10. Terrain Settings. Configures terrain processing settings for rejecting false targets and ground clutter. (N/I)
-11. Mast-Mounted Assembly (MMA) State. Sets the current state of the mast-mounted assembly.
-      •     NORM. Permits the FCR to be powered. The MMA may be rotated.
-      •     PINNED. Inhibits the FCR from being powered. The MMA cannot rotate.
+
+10. **Terrain Settings.** Configures terrain processing settings for rejecting false targets and ground clutter. (N/I)
+11. **Mast-Mounted Assembly (MMA) State.** Sets the current state of the mast-mounted assembly.
+
+
+    - **NORM.** Permits the FCR to be powered. The MMA may be rotated.
+
+    - **PINNED.** Inhibits the FCR from being powered. The MMA cannot rotate.
       When toggling the MMA state from PINNED to NORM, the FCR and RFI will be initialized automatically.
 
 
-FCR Sight Status Messages
+
+#### FCR Sight Status Messages
+
 The following status messages pertain to the use of the FCR as the selected sight within the crewstation.
 
  SIGHT STATUS         CONDITION                          CORRECTIVE ACTION
@@ -1257,8 +1204,8 @@ an air target while using the FCR as the selected sight, a smaller scan size is 
 at which the target’s position and velocity is updated within the FCR scan volume.
 The target update rate for each FCR scan size is listed below, which may vary for scan sizes other than Wide,
 depending on whether the target is in the center of the scan volume or near the edge.
-     •    Wide scan size (360°) – 6 seconds.                       •    Narrow scan size (90°) – 1.5 to 3 seconds.
-     •    Medium scan size (180°) – 3 to 6 seconds.                •    Zoom scan size (45°) – 0.75 to 1.5 seconds.
+    - Wide scan size (360°) – 6 seconds.                       •    Narrow scan size (90°) – 1.5 to 3 seconds.
+    - Medium scan size (180°) – 3 to 6 seconds.                •    Zoom scan size (45°) – 0.75 to 1.5 seconds.
 
 Vertical Dimensions of Scan Volume
 The default elevation setting when the FCR is set to ATM is +3°, which will align the lower limit of the FCR vertical
@@ -1523,23 +1470,23 @@ automatically be set to HMD and any actioned weapon in the CPG
 crewstation will be de-actioned.
 If any of the following criteria are met, the TADS cannot be linked to
 the FCR and the LINK switch position will be ignored.
-     •    An NTS target has not been designated by the FCR.
-     •    The crewmember’s selected sight is HMD.
-     •    The crewmember’s acquisition source is set to TADS.
-     •    Either crewmember’s NVS Mode switch is set to NORM or
+    - An NTS target has not been designated by the FCR.
+    - The crewmember’s selected sight is HMD.
+    - The crewmember’s acquisition source is set to TADS.
+    - Either crewmember’s NVS Mode switch is set to NORM or
           FIXED with TADS as the selected NVS sensor.
 If the TADS is already linked to the FCR and a new scanburst is
 commanded, the TADS will remain linked but will return to the fixed
 forward position until a new NTS target is designated.
 The following TADS controls on the TEDAC handgrips will remain                       TADS Linked to
 operational in the CPG crewstation while the TADS is linked to the FCR.              FCR NTS Target
-     •    Sensor Select switch.             •    IAT/OFS switch.          •   FLIR Polarity button.
-     •    Field-Of-View Select switch.      •    LMC button.              •   SLAVE button.
+    - Sensor Select switch.             •    IAT/OFS switch.          •   FLIR Polarity button.
+    - Field-Of-View Select switch.      •    LMC button.              •   SLAVE button.
 If any of the following criteria are met within the crewstation that selected LINK, LINK will be disabled and the
 TADS will return to the fixed forward position.
-     •    The crewmember re-selects LINK while the TADS is already linked to the FCR NTS target.
-     •    The crewmember selects HMD as the sight.
-     •    The crewmember selects a different acquisition source.
+    - The crewmember re-selects LINK while the TADS is already linked to the FCR NTS target.
+    - The crewmember selects HMD as the sight.
+    - The crewmember selects a different acquisition source.
 Alternatively, the CPG may press the Sight Select switch to the TADS position to disable LINK and take control of
 the TADS as the selected sight to independently track, lase, and engage targets as necessary.
 Linking TADS for Combat Identification (CID)/Battle Damage Assessment (BDA) of an FCR Target
@@ -1577,15 +1524,15 @@ NTS target, perform the following:
 1.   Sight Slave (SLAVE) button – Press.
 2.   Sight Manual Tracker (MAN TRK) – Slew and
      employ TADS as desired.
-     •    Sensor Select switch – Select FLIR or
+    - Sensor Select switch – Select FLIR or
           DTV as desired.
                                                        Image Auto                    Sight Manual                    Sight Slave
-     •    Field-Of-View Select switch – Select as      Track/Offset                     Tracker
+    - Field-Of-View Select switch – Select as      Track/Offset                     Tracker
           desired.
-     •    FLIR Polarity button – Press as desired.
-     •    Manual tracking - Engage Linear Motion
+    - FLIR Polarity button – Press as desired.
+    - Manual tracking - Engage Linear Motion
           Compensation (LMC) as necessary.                                      Linear Motion
-     •    Automatic tracking - Engage Image Auto                               Compensation
+    - Automatic tracking - Engage Image Auto                               Compensation
                                                                                (opposite side)
           Track (IAT).
 3.   Sight Slave (SLAVE) button – Press to slave the TADS back to FCR NTS target.
@@ -1604,21 +1551,21 @@ the FCR to the TADS, the Pilot’s sight will automatically be set to HMD, and a
 actioned weapon in the Pilot crewstation will be de-actioned.
 If any of the following criteria are met, the FCR cannot be linked to the TADS and the
 LINK switch position will be ignored.
-     •    The CPG’s selected sight is HMD.
-     •    The CPG’s acquisition source is set to FCR.
-     •    Either crewmember’s NVS Mode switch is set to NORM or FIXED with TADS
+    - The CPG’s selected sight is HMD.
+    - The CPG’s acquisition source is set to FCR.
+    - Either crewmember’s NVS Mode switch is set to NORM or FIXED with TADS
           as the selected NVS sensor.
 The following FCR controls will become operational on the CPG’s Collective Mission
 Grip and TEDAC handgrips while the FCR is linked to the TADS.
-     •    Mode Select switch.                 •    Scan Size Select switch.
-     •    Scan Select switch.                 •    ZOOM button.
+    - Mode Select switch.                 •    Scan Size Select switch.
+    - Scan Select switch.                 •    ZOOM button.
 If any of the following criteria are met within the CPG crewstation after selecting
 LINK, LINK will be disabled and the FCR will return to the fixed forward position.
-     •    The CPG re-selects LINK while the FCR is already linked to the TADS LOS.
+    - The CPG re-selects LINK while the FCR is already linked to the TADS LOS.
                                                                                                        FCR Linked to
-     •    The CPG selects HMD as the sight.
+    - The CPG selects HMD as the sight.
                                                                                                          TADS LOS
-     •    The CPG selects a different acquisition source.
+    - The CPG selects a different acquisition source.
 Alternatively, either crewmember may press the Sight Select switch to the FCR position to disable LINK and take
 control of the FCR as the selected sight to independently perform scans or engage targets as necessary.
 Performing FCR scans while Linked to the TADS
