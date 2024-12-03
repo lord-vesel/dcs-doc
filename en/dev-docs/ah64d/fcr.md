@@ -713,83 +713,105 @@ the mast-mounted radome and/or FCR antenna elevation, or change the parameters f
 
 The following status messages pertain to the use of the FCR as the selected sight within the crewstation.
 
- SIGHT STATUS         CONDITION                          CORRECTIVE ACTION
-      FCR NOT
-                       The FCR is not installed.         None required.
-     INSTALLED
-        FCR            The FCR has been powered and
-                                                         None required.
-     NOT READY         is performing a Built-In-Test.
-      FCR XMIT         The FCR is transmitting.          None required.
-                       The FCR centerline is slaved to   Use an FCR arrow button or (CPG only) press the
-          FIXED
-                       the Fixed forward position.       SLAVE button to de-slave the FCR turret, if required.
-                       The Mast Mounted Assembly is      Either crewmember should toggle the MMA to NORM
-     MMA PINNED        set to a PINNED state; the FCR    on the FCR Utility or WPN Utility sub-pages, if required
-                       cannot be powered.                to use the FCR for reconnaissance or targeting.
-FCR Weapon Status Messages
+
+- **FCR NOT INSTALLED.**
+
+    The FCR is not installed.
+
+
+- **FCR NOT READY.**
+
+    The FCR has been powered and is performing a Built-In-Test.
+
+
+- **FCR XMIT.**
+
+    The FCR is transmitting.
+
+- **FIXED.**
+
+    The FCR centerline is slaved to the Fixed forward position.
+
+    *Use an FCR arrow button or (CPG only) press the SLAVE button to de-slave the FCR turret, if required.*
+
+- **MMA PINNED.**
+    
+    The Mast Mounted Assembly is set to a PINNED state; the FCR cannot be powered.
+
+    *Either crewmember should toggle the MMA to NORM on the FCR Utility or WPN Utility sub-pages, if required to use the FCR for reconnaissance or targeting.*
+
+
+
+#### FCR Weapon Status Messages
+
 The following status messages pertain to the use of the FCR as the selected sight within the crewstation.
 
- SIGHT STATUS        CONDITION                          CORRECTIVE ACTION
-                     Default Priority Scheme A has
-                                                        None required. Stationary ground targets and airborne
- DEF SCHEME A        been selected and no weapon is
-                                                        targets will be prioritized over moving ground targets.
-                     actioned in the crewstation.
-                     Default Priority Scheme B has      None required. Stationary ground targets will be
- DEF SCHEME B        been selected and no weapon is     prioritized over moving ground targets or airborne
-                     actioned in the crewstation.       targets.
-                     Default Priority Scheme C has      None required. Moving ground targets and airborne
- DEF SCHEME C        been selected and no weapon is     targets will be prioritized over stationary ground
-                     actioned in the crewstation.       targets.
+- **DEF SCHEME A.**
+
+    Default Priority Scheme A has been selected and no weapon is actioned in the crewstation.
+
+    *None action required. Stationary ground targets and airborne targets will be prioritized over moving ground targets.*
+
+- **DEF SCHEME B.**
+
+    Default Priority Scheme B has been selected and no weapon is actioned in the crewstation.
+
+    *None required. Stationary ground targets will be prioritized over moving ground targets or airborne targets.*
+
+- **DEF SCHEME C.**
+
+    Default Priority Scheme C has been selected and no weapon is actioned in the crewstation.
+
+    *None required. Moving ground targets and airborne targets will be prioritized over stationary ground targets.*
 
 
+#### FCR Target Symbols
 
-FCR Target Symbols
 The following FCR target symbols will be displayed on the FCR page, or within the HMD and TADS symbology
 when C-Scope is enabled within the crewstation. Each symbol represents an object that the FCR has detected
 and determined to be of military interest, with the symbol corresponding to the target classification.
 
 
-       TARGET TYPE                   MOVING                    STATIONARY                   STATIONARY
-                                 (500-8000 METERS)            (500-1500 METERS)           (1500-8000 METERS)
-
-
-   TRACKED VEHICLE
-
-
-   WHEELED VEHICLE
-
-
- AIR DEFENSE VEHICLE
-
-
-        UNKNOWN
-
-
-       HELICOPTER
-
-
-       FIXED-WING
+TARGET TYPE      |     MOVING (500-8000 METERS)   |  STATIONARY (500-1500 METERS)  | STATIONARY (1500-8000 METERS)
+------------------------|--------------------------------|--------------------------------|-------------------------------
+TRACKED VEHICLE      | ![](img/img-357-1-screen.jpg)  | ![](img/img-357-2-screen.jpg)  | ![](img/img-357-3-screen.jpg)
+WHEELED VEHICLE      | ![](img/img-357-4-screen.jpg)  | ![](img/img-357-5-screen.jpg)  | ![](img/img-357-6-screen.jpg)
+AIR DEFENSE VEHICLE    | ![](img/img-357-7-screen.jpg)  | ![](img/img-357-8-screen.jpg)  | ![](img/img-357-9-screen.jpg)
+UNKNOWN         | ![](img/img-357-10-screen.jpg) | ![](img/img-357-11-screen.jpg) | ![](img/img-357-12-screen.jpg)
+HELICOPTER       | ![](img/img-357-13-screen.jpg) | ![](img/img-357-14-screen.jpg) | ![](img/img-357-15-screen.jpg)
+FIXED-WING       | ![](img/img-357-16-screen.jpg) |                                |   
 
 
 FCR target symbols may be displayed in partial-intensity yellow to represent stale FCR targeting data. Stale FCR
 symbols represent tactical information that has likely changed since the completion of the most recent scan.
-   •    Moving target symbols will become stale 5 seconds after the completion of the most recent scan in which
+
+![](img/img-357-17-screen.jpg)
+
+Moving target symbols will become stale 5 seconds after the completion of the most recent scan in which
         the target was detected.
-   •    Stationary target symbols will become stale 30 seconds after the completion of the most recent scan in
+![](img/img-357-18-screen.jpg)
+
+Stationary target symbols will become stale 30 seconds after the completion of the most recent scan in
         which the target was detected.
-NOTE: The FCR is not capable of target identification, and therefore cannot determine if a target is friendly or
-enemy. As such, all targets detected by the FCR are displayed as an unknown affiliation. Battlefield intelligence,
-fire support coordination measures (FSCM), and target identification through other means (such as the TADS)
-should be utilized before employing munitions against unknown targets on the battlefield.
-C-Scope
+
+!!! note
+    The FCR is not capable of target identification, and therefore cannot determine if a target is friendly or
+    enemy. As such, all targets detected by the FCR are displayed as an unknown affiliation. Battlefield intelligence,
+    fire support coordination measures (FSCM), and target identification through other means (such as the TADS)
+    should be utilized before employing munitions against unknown targets on the battlefield.
+
+#### C-Scope
+
 Selecting the C SCP button (VAB T1) on the FCR page or the C-Scope button on the TEDAC Right Handgrip
 displays FCR target symbols, NTS and ANTS symbols, and SHOT symbols as virtual symbology elements within
 the crewmember’s symbology overlays. C-Scope symbols will be overlaid within the crewmember’s HMD Flight
 symbology, or within the CPG’s Weapon symbology, at their true positions relative to the crewmember’s HMD or
 TADS line-of-sight, as virtual representations of locations “out-the-window”.
 
+
+![](img/img-358-1-screen.jpg)
+
+![](img/img-358-2-screen.jpg)
 
 
 
@@ -798,6 +820,7 @@ allowing either crewmember to see a virtual representation of battlefield target
 This capability is particularly useful when receiving FCR target data through the datalink from an FCR-equipped
 AH-64D, in which target locations may be viewed while still masked behind terrain, allowing the receiving aircrew
 to easily gain situational awareness of the battlefield before unmasking their own aircraft from behind cover.
+
 In addition, C-Scope symbols are also overlaid on either crewmember’s video sources when viewed on the VID
 page with VSEL (VAB T6) selected. As an example, if the CPG has enabled C SCP and is viewing a target through
 the TADS that has also been detected and classified by the FCR, the Pilot will see the corresponding FCR target
@@ -805,258 +828,219 @@ symbol overlaid within the TADS video while viewing the TADS video source, even 
 Pilot crewstation. Since the TADS is being employed from a crewstation in which C SCP is enabled, the other
 crewstation will see the video source as represented from the crewstation in which it is being sourced, regardless
 of whether C SCP is enabled or disabled in the crewstation viewing the video source.
-FCR MODES
+
+## FCR MODES
+
 The four FCR modes leverage the capabilities of the APG-78 radar as a sight for targeting and weapons
 employment against ground and air targets, reconnaissance of enemy positions, or avoidance of terrain and
 obstacles during low-visibility conditions. There is no direct indication as to which FCR mode has been selected;
 however, the FCR page will change format based on the currently selected FCR mode.
 
 
-Ground Targeting Mode (GTM)
+
+### Ground Targeting Mode (GTM)
+
 GTM is used to detect and classify ground vehicles and low-flying aircraft, which are displayed in a Plan Position
 Indicator (PPI) format. When the FCR is scanning in GTM, the FCR centerline will be stabilized in azimuth,
 independently of the aircraft heading, as indicated by the FCR Centerline Symbol along the bottom of the Heading
 Tape.
+
 GTM is interchangeable with RMAP mode, in that a scanburst performed in one mode may be viewed in the
 format of the other after the scanburst is complete. GTM is the default FCR mode upon power-up.
-                            3. Narrow Scan Size Marks   4. Zoom Scan Size Marks   5. FCR Centerline
 
+![](img/img-359-1-screen.jpg)
 
-
-         2. Medium Scan
-            Size Marks
-
-
-
-
-                                                                                                      6. Scan Wiper
-
-         1. FCR Footprint
-
-
-         7. Activated PFZ                                                                             9. Range Marks
-
-
-         8. Activated NFZ                                                                             10. Range Arcs
-
-
-
-
-1.   FCR Footprint. The entire FCR Footprint represents the size of the FCR scan sector if the FCR Scan Size
+1. **FCR Footprint.** The entire FCR Footprint represents the size of the FCR scan sector if the FCR Scan Size
      switch were pressed right to the “W” position. A Wide scan size will encompass a 90° sector of the battlefield,
      45° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-2.   Medium Scan Size Tick Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
+2. **Medium Scan Size Tick Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
      Size switch were pressed down to the “M” position. A Medium scan size will encompass a 45° sector of the
      battlefield, 22.5° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-3.   Narrow Scan Size Tick Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
+3. **Narrow Scan Size Tick Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
      Size switch were pressed left to the “N” position. A Narrow scan size will encompass a 30° sector of the
      battlefield, 15° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-4.   Zoom Scan Size Tick Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
+4. **Zoom Scan Size Tick Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan
      Size switch were pressed up to the “Z” position. A Zoom scan size will encompass a 15° sector of the
      battlefield, 7.5° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-5.   FCR Centerline. Indicates the center of the FCR scan sector within the FCR Footprint.
-6.   Scan Wiper. Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
+5. **FCR Centerline.** Indicates the center of the FCR scan sector within the FCR Footprint.
+6. **Scan Wiper.** Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
      The FCR Scan Wiper will be displayed in White when performing a single scanburst or displayed in Green
      when performing a continuous scanburst.
-7.   Activated PFZ. Displays the boundaries of an activated Priority Fire Zone (PFZ) in relation to the FCR
+7. **Activated PFZ.** Displays the boundaries of an activated Priority Fire Zone (PFZ) in relation to the FCR
      footprint. All FCR targets detected within an activated PFZ will out-prioritize any targets detected outside
      the activated PFZ, regardless of the target classification or the selected Priority Scheme on the FCR Utility
      sub-page. (See Battle Area Management in the Datalink chapter for more information.)
-8.   Activated NFZ. Displays the boundaries of an activated No Fire Zone (NFZ) in relation to the FCR footprint.
+8. **Activated NFZ.** Displays the boundaries of an activated No Fire Zone (NFZ) in relation to the FCR footprint.
      All FCR targets detected within an activated NFZ will not be prioritized nor shown on the FCR page. However,
      targets within activated NFZ’s will still be displayed on the TSD page when set to ATK phase, if enabled on
      the SHOW sub-page. (See Battle Area Management in the Datalink chapter for more information.)
      NOTE: No Fire Zones take precedence over overlapping Priority Fire Zones, in that any FCR targets that are
      detected within an activated PFZ and an activated NFZ will not be prioritized or shown on the FCR page.
-9.   Range Marks. Indicates the distance from the ownship on either side of the FCR scan sector in 2-kilometer
+9. **Range Marks.** Indicates the distance from the ownship on either side of the FCR scan sector in 2-kilometer
      increments, at 1 km, 3 km, 5 km, and 7 km.
-10. Range Arcs. Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
+10. **Range Arcs.** Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
     at 2 km, 4 km, and 6 km.
 
 
-Tactical Employment of GTM
+
+#### Tactical Employment of GTM
+
 When the FCR is employed using Ground Targeting Mode, targeting information is presented in a decluttered 90°
 sector PPI format from the perspective of the FCR centerline. This provides an easy to interpret “photograph” of
 the battlespace within the FCR scan volume, to include a combined prioritization of ground and low-flying air
 targets, along with any activated Priority Fire Zone (PFZ) and No Fire Zones (NFZ).
 
-                                         GTM scanburst detects
-                                         ground and air targets
-
-
-
-
-                         Ground/Air Target Detection and Classification by FCR
+![](img/img-360-1-screen.jpg)
 
 However, unlike RMAP, GTM does not provide any indication of radar “dead space” due to terrain obstructions,
 nor does it provide any direct feedback that the FCR antenna elevation is too high or too low for the intended
 area to be scanned.
-FCR Target Handovers (GTM/RMAP)
+
+##### FCR Target Handovers (GTM/RMAP)
+
 When engaging targets with AGM-114L radar-guided missiles, the FCR does not provide direct guidance to the
 missiles themselves prior to, or after, the missiles are launched. Rather, the FCR provides the missile with a target
 handover sent to the missile via the launcher umbilical, which includes the target’s position and whether it is
 moving or stationary. The missile’s onboard active radar seeker acquires the target using this information, either
 before launch while still on the launcher rail (LOBL mode), or after launch while already in flight (LOAL mode).
 (See RF LOBL/LOAL Selection Logic for more information.)
+
 When committing to an engagement of ground or air targets using the FCR as the selected sight, it is ideal to
 perform a single scanburst to gather an updated “photograph” of the battlefield just prior to actioning a weapon
 system, especially if presented with stale targeting data on the FCR page, which represents tactical information
 that has likely changed since the completion of the most recent scan. (See FCR Target Symbols for more
 information.)
 
-                                          AGM-114L RF seekers lock on to
-                                           moving ground and air targets
 
-
-
-
-                                 Ground/Air Target Handovers to RF Missiles
+![](img/img-361-1-screen.jpg)
 
 When a Next-To-Shoot (NTS) target has been designated by the FCR and missiles are actioned in the same
 crewstation that is employing the FCR as the selected sight, the next-to-launch AGM-114L missile receives a
 target handover of the NTS target. Any time the FCR designates a new NTS target, a different NTS target is
 selected by the crewmember, or the missiles are de-actioned and subsequently actioned again, a new target
 handover is sent to the next-to-launch AGM-114L missile with the most recent target information.
-FCR Priority Schemes (GTM/RMAP)
+
+##### FCR Priority Schemes (GTM/RMAP)
+
 Three Priority Schemes may be selected on the FCR Utility sub-page which affects how targets are prioritized by
 the FCR in GTM, RMAP, or ATM. These Priority Schemes reflect different tactical situations that may be
 encountered by the AH-64D team and allow FCR-equipped aircraft within the team to react to changes on the
 battlefield in real-time.
-- Default Scheme A. Stationary ground targets and airborne targets will be prioritized over moving ground
+
+- **Default Scheme A.** Stationary ground targets and airborne targets will be prioritized over moving ground
      targets.
-- Default Scheme B. Stationary ground targets will be prioritized over moving ground targets or airborne
+
+- **Default Scheme B.** Stationary ground targets will be prioritized over moving ground targets or airborne
      targets.
-- Default Scheme C. Moving ground targets and airborne targets will be prioritized over stationary ground
+
+- **Default Scheme C.** Moving ground targets and airborne targets will be prioritized over stationary ground
      targets.
+
 Three tactical scenarios are described on the following page to illustrate the potential applicability of each Priority
 Scheme when employing the FCR in GTM or RMAP mode. However, these scenarios are generalized and do not
 encompass the entirety of how the Priority Schemes may be applied to a given tactical situation.
 For information regarding Priority Schemes when employing the FCR in ATM, see the Air Targeting Mode section
 within this chapter.
-Scenario 1. Performing an attack against a stationary armor force that is supported by armed helicopters, in
+
+**Scenario 1.** Performing an attack against a stationary armor force that is supported by armed helicopters, in
 which the AH-64D team must provide its own protection against air defense threats and aircraft.
+
 In such a scenario, it is anticipated that any air defense units accompanying the enemy armor force will be
 deployed in a defensive posture and must be destroyed at the outset of an engagement to ensure the survival of
 the AH-64D team. If enemy helicopters are detected, these aircraft must be subsequently targeted by the AH-
 64D team prior to engaging the enemy armor.
-                                                                                                     2
-                                                                                                          3
-                                                                                               1
-                                                                     4    5     6   7   8
+
+![Priority Scheme A](img/img-362-1-screen.jpg)
 
 
-                    500 meters                            FCR Footprint                            8000 meters
 
-                                             Priority Scheme A
-
-Scenario 2. Performing an attack against a stationary armor force in which the AH-64D team must provide its
+**Scenario 2.** Performing an attack against a stationary armor force in which the AH-64D team must provide its
 own protection against air defense threats, while supported by friendly counter-air assets or a second AH-64D
 team that is assigned to provide protection against enemy aircraft.
+
 In such a scenario, it is anticipated that any air defense units accompanying the enemy armor force will be
 deployed in a defensive posture and must be destroyed at the outset of an engagement to ensure the survival of
 the AH-64D team. If enemy helicopters are present, these units shall be engaged by other friendly aircraft or a
 second AH-64D team assigned to provide support against such threats, which allows the primary AH-64D team
 to focus their firepower against the enemy armor.
-                                                                                                      7
-                                                                                                          8
-                                                                     2                         1
-                                                                          3     4   5   6
+
+![Priority Scheme B](img/img-362-2-screen.jpg)
 
 
-                    500 meters                            FCR Footprint                            8000 meters
 
-                                             Priority Scheme B
-
-Scenario 3. Performing an attack against a moving armor force that is supported by air defenses and/or armed
+**Scenario 3.** Performing an attack against a moving armor force that is supported by air defenses and/or armed
 helicopters, in which the AH-64D team must provide its own protection against enemy aircraft, while supported
 by friendly SEAD assets or a second AH-64D team that is assigned to engage stationary air defense threats.
+
 In such a scenario, it is anticipated that air defense units and helicopters will be accompanying the enemy armor
 force and must be destroyed at the outset of an engagement to ensure the survival of the AH-64D team. If any
 of the enemy air defenses are deployed in a stationary defensive posture to cover the movement of the enemy
 armor force, these air defenses shall be engaged by other friendly aircraft or a second AH-64D team assigned to
 provide support against such threats, which allows the primary AH-64D team to focus their firepower against the
 enemy armor and/or helicopters.
-                                                                                                      1
-                                                                                                          2
 
-                                                                     3          5       7      8
-                                                                          4         6
+![Priority Scheme C](img/img-362-3-screen.jpg)
 
-
-                    500 meters                            FCR Footprint                            8000 meters
-
-                                             Priority Scheme C
 
 These scenarios are just a few among many potential tactical situations the AH-64D team may face. Depending
 on the composition of the AH-64D team(s), the engagement plan for the mission, friendly support assets such as
 artillery or fixed-wing aircraft, and the disposition and actions of the enemy forces, each FCR-equipped AH-64D
 may need to adjust Priority Schemes during the mission to adapt to the evolving battlefield conditions.
-Radar Map Mode (RMAP)
+
+### Radar Map Mode (RMAP)
+
 RMAP is used to detect and classify ground vehicles and low-flying aircraft, which are displayed in a B-Scope
 format along with a radar-generated terrain map underlaid below the FCR target symbols. When the FCR is
 scanning in RMAP, the FCR centerline will be stabilized in azimuth, independently of the aircraft heading, as
 indicated by the FCR Centerline Symbol along the bottom of the Heading Tape.
+
 The brightness of the terrain video underlay may be adjusted independently of the primary symbology displayed
 on the MPD using the VID knob. Re-selecting RMAP using the FCR mode switch on the Collective Mission Grip or
 the TEDAC Left Handgrip when the FCR mode is already set to RMAP will toggle the terrain video underlay on
 the FCR page. The RMAP terrain video will take priority over any video underlay that has been selected on the
 VID page. If the RMAP terrain video is disabled, the video underlay selected on the VID page will be displayed.
+
 RMAP mode is interchangeable with GTM, in that a scanburst performed in one mode may be viewed in the
 format of the other after the scanburst is complete. When the FCR mode is set to RMAP, activated Fire Zones
 (PFZ’s and NFZ’s) are not displayed on the FCR page.
-                            3. Narrow Scan Size Marks   4. Zoom Scan Size Marks   5. FCR Centerline
+
+![](img/img-363-1-screen.jpg)
 
 
-
-         2. Medium Scan
-            Size Marks
-
-
-
-
-                                                                                                      6. Scan Wiper
-
-         1. FCR Footprint
-
-
-          7. Range Marks
-
-
-          8. Range Lines
-
-
-
-
-1.   FCR Footprint. The entire FCR Footprint represents the size of the FCR scan sector if the FCR Scan Size
+1. **FCR Footprint.** The entire FCR Footprint represents the size of the FCR scan sector if the FCR Scan Size
      switch were pressed right to the “W” position. A Wide scan size will encompass a 90° sector of the battlefield,
      45° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-2.   Medium Scan Size Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
+2. **Medium Scan Size Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
      switch were pressed down to the “M” position. A Medium scan size will encompass a 45° sector of the
      battlefield, 22.5° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-3.   Narrow Scan Size Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
+3. **Narrow Scan Size Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
      switch were pressed left to the “N” position. A Narrow scan size will encompass a 30° sector of the battlefield,
      15° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-4.   Zoom Scan Size Marks. Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
+4. **Zoom Scan Size Marks.** Indicates the relative azimuth size of the FCR scan sector if the FCR Scan Size
      switch were pressed up to the “Z” position. A Zoom scan size will encompass a 15° sector of the battlefield,
      7.5° to either side of the FCR Centerline, to a maximum range of 8 kilometers.
-5.   FCR Centerline. Indicates the center of the FCR scan sector within the FCR Footprint.
-6.   Scan Wiper. Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
+5. **FCR Centerline.** Indicates the center of the FCR scan sector within the FCR Footprint.
+6. **Scan Wiper.** Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
      The FCR Scan Wiper will be displayed in White when performing a single scanburst or displayed in Green
      when performing a continuous scanburst.
-7.   Range Marks. Indicates the distance from the ownship on the left side of the FCR scan sector in 2-kilometer
+7. **Range Marks.** Indicates the distance from the ownship on the left side of the FCR scan sector in 2-kilometer
      increments, at 1 km, 3 km, 5 km, and 7 km.
-8.   Range Lines. Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
+8. **Range Lines.** Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
      at 2 km, 4 km, and 6 km.
 
 
-Tactical Employment of RMAP
+
+#### Tactical Employment of RMAP
+
 The FCR-generated terrain map displayed in RMAP mode allows the crew to identify significant terrain features
 or radar-reflective man-made infrastructure that may not be readily visible to the naked eye or optical sensors.
 In addition, radar “dead space” may be identified, allowing the crew to determine which areas of the battlefield
 cannot be seen by the aircraft sensors due to high terrain or defilade. This may indicate areas of potential enemy
 positions that remain unseen, whether it be due to terrain obstructions or because the FCR scan volume is outside
 the displayed FCR footprint, requiring a manual adjustment of the FCR antenna elevation.
-FCR Antenna Elevation
+
+##### FCR Antenna Elevation
+
 When operating over mountains or rolling hills in which the automatic elevation mode may not result in the
 intended area of the battlefield being scanned by the FCR, the RMAP terrain video provides the crew with a visual
 indication as to which areas of the battlefield are actually within the FCR scan volume.
@@ -1064,14 +1048,21 @@ indication as to which areas of the battlefield are actually within the FCR scan
 
 
 
-                     FCR Antenna Elevation is set too high (Left) or too low (Right)
+
+![FCR Antenna Elevation is set too high](img/img-364-1-screen.jpg)
+
+
+![FCR Antenna Elevation is set too low](img/img-364-2-screen.jpg)
+
 
 When an FCR scanburst is performed which results in a horizontal band of no terrain video that runs along the
 bottom of the FCR footprint, the FCR antenna elevation is set too high. If a horizontal band of no terrain video
 runs along the top of the FCR footprint, the FCR antenna elevation is set too low. In either case, the FCR elevation
 control should be set to manual mode and manually adjusted before attempting another scanburst. (See FCR
 Elevation Controls for more information.)
-Battlefield Analysis
+
+##### Battlefield Analysis
+
 Radar Map mode allows the crew to view FCR-detected targets within the overall context of the battlefield and
 perform terrain analysis. When the FCR radome is unmasked and a scanburst is performed, the process of
 detection, classification, and prioritization of targets is performed in the same manner as with Ground Targeting
@@ -1079,47 +1070,15 @@ Mode (GTM), which will present the 16 highest priority targets on the FCR page. 
 the terrain video underlay in RMAP mode, the crew can gain better understanding as to how the targets are
 arrayed across the battlefield amongst significant terrain features such as roads, rivers, hills, or urban areas.
 
-
-
-
-   “Dead space”                                                                                     “Dead space”
-
-
-
-
-High terrain with                                                                                   High terrain with
-  steep slopes                                                                                       shallow slopes
-
-
-
-
-          Airfield                                                                                  “Dead space”
-
-
-
-
-   Small stream                                                                                      Power line
-                                                                                                     stanchions
-
-
-
-
-                                                                                                    Telephone poles
-                                                                                                    alongside a road
-
-
+![](img/img-365-1-screen.jpg)
 
 
 Areas of terrain that are not visible to the radar, known as “dead space”, will be shaded black like a shadow cast
 across the terrain. Depending on the amount of intelligence the crew has received prior to the mission regarding
 the location of enemy positions, these areas should be regarded as potentially unknown enemy positions.
 
+![RMAP Battlefield Analysis](img/img-365-2-screen.jpg)
 
-                        Wire Obstacles                    Hill                        Airfield
-
-                     500 meters                             FCR Footprint                          8000 meters
-
-                                          RMAP Battlefield Analysis
 
 In the example on this page, if the crew intended to advance toward the small hill 3.5 kilometers away, identified
 by the radar shadow cast beyond the hill itself, the crew could anticipate crossing several sets of wire obstacles
@@ -1127,121 +1086,103 @@ while enroute to their next battle position. This real-time terrain analysis, in
 imagery, topographic color banding, and pre-plotted hazards, control measures, and threats on the Tactical
 Situation Display (TSD) page, provides the crew with a wealth of information within the cockpit for building
 situational awareness of the battlefield before unmasking to re-position the helicopter or engage enemy targets.
-Air Targeting Mode (ATM)
+
+### Air Targeting Mode (ATM)
+
 ATM is used to detect and classify helicopters and fixed-wing aircraft, which are displayed in a Plan Position
 Indicator (PPI) format. When the FCR is scanning in ATM, the FCR centerline will be stabilized to the aircraft
 heading, as indicated by the FCR Centerline Symbol along the bottom of the Heading Tape.
+
 When the FCR mode is set to ATM mode from GTM or RMAP, any existing FCR targets and/or terrain map data
 that was generated from GTM or RMAP modes are deleted. Accordingly, when the FCR mode is set to GTM or
 RMAP mode from ATM, any existing FCR targets generated while in ATM are deleted.
+
 The image below illustrates the FCR page when set to ATM mode and the scan size is set to Wide. When the
 ATM scan size is set to Medium, Narrow, or Zoom, a solid line will be displayed in the center of the FCR footprint
 itself to represent the current FCR centerline.
-                                    1. FCR Footprint   2. Centerline Reference Indicators
 
+![](img/img-366-1-screen.jpg)
 
-
-
-                                                                                            3. Scan Wiper
-
-
-
-          4. Activated PFZ
-
-
-         5. Activated NFZ
-                                                                                            6. Range Lines
-
-
-                                                                                            7. Tail Blanking
-                                                                                               Indicator
-
-
-             8. Altitude
-           Status Window
-
-
-
-
-1.   FCR Footprint. The entire FCR Footprint represents the relative size of the FCR scan sector if the FCR Scan
+1. **FCR Footprint.** The entire FCR Footprint represents the relative size of the FCR scan sector if the FCR Scan
      Size switch were pressed right to the “W” position. A Wide scan size will encompass the entire 360° of
      airspace around the ownship, to a maximum range of 8 kilometers.
-2.   Centerline Reference Indicators. Displays reference positions relative to the aircraft centerline at the 12
+2. **Centerline Reference Indicators.** Displays reference positions relative to the aircraft centerline at the 12
      o’clock, 3 o’clock, 6 o’clock, and 9 o’clock positions.
-3.   Scan Wiper. Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
+3. **Scan Wiper.** Displays the position of the FCR antenna within the FCR scan sector when performing a scan.
      The FCR Scan Wiper will be displayed in White when performing a single scanburst or displayed in Green
      when performing a continuous scanburst.
-4.   Activated PFZ. Displays the boundaries of an activated Priority Fire Zone (PFZ) in relation to the FCR
+4. **Activated PFZ.** Displays the boundaries of an activated Priority Fire Zone (PFZ) in relation to the FCR
      footprint. All FCR targets detected within an activated PFZ will out-prioritize any targets detected outside
      the activated PFZ, regardless of the target classification. (See Battle Area Management in the Datalink
      chapter for more information.)
-5.   Activated NFZ. Displays the boundaries of an activated No Fire Zone (NFZ) in relation to the FCR footprint.
+5. **Activated NFZ.** Displays the boundaries of an activated No Fire Zone (NFZ) in relation to the FCR footprint.
      All FCR targets detected within an activated NFZ will not be prioritized nor shown on the FCR page. However,
      targets within activated NFZ’s will still be displayed on the TSD page when set to ATK phase, if enabled on
      the SHOW sub-page. (See Battle Area Management in the Datalink chapter for more information.)
      NOTE: No Fire Zones take precedence over overlapping Priority Fire Zones, in that any FCR targets that are
      detected within an activated PFZ and an activated NFZ will not be prioritized or shown on the FCR page.
-6.   Range Lines. Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
+6. **Range Lines.** Indicates the distance from the ownship within the FCR scan sector in 2-kilometer increments,
      at 2 km, 4 km, and 6 km.
-7.   Tail Blanking Indicator. Indicates the sector of the FCR scan that has been obstructed by the vertical tail.
-8.   Altitude Status Window. Indicates the upper and lower altitudes above ground level (AGL) that the FCR
+7. **Tail Blanking Indicator.** Indicates the sector of the FCR scan that has been obstructed by the vertical tail.
+8. **Altitude Status Window.** Indicates the upper and lower altitudes above ground level (AGL) that the FCR
      scan volume encompasses at the maximum FCR range of 8 kilometers.
 
 
-Tactical Employment of ATM
+
+#### Tactical Employment of ATM
+
 When the FCR is employed using Air Targeting Mode, targeting information is presented in a 360° PPI format
 centered on the ownship and oriented relative to the aircraft heading. This provides a top-down overlay of the
 surrounding airspace and any rotary- and fixed-wing aircraft detected within 8 kilometers of the ownship.
+
 When scanning in Air Targeting Mode, the FCR utilizes a 1-bar scan pattern at a constant elevation setting that
 is stabilized to the horizontal plane. Unlike GTM or RMAP, ATM does not utilize an automatic elevation mode. As
 such, when ATM mode is selected, the FCR elevation mode will be set to manual (MAN) on the FCR Utility sub-
 page and cannot be changed. Additionally, the FCR centerline remains stabilized relative to the aircraft heading
 while scanning, allowing the crew to scan a specific airspace sector relative to the AH-64D’s flight path or position.
-Target Update Rate
+
+##### Target Update Rate
+
 Although a Wide scan size allows an FCR-equipped AH-64D to monitor the local airspace in a 360° search pattern
 (excluding the tail blanking area under certain conditions), it is not ideal for target engagements. When engaging
 an air target while using the FCR as the selected sight, a smaller scan size is more ideal due to the increased rate
 at which the target’s position and velocity is updated within the FCR scan volume.
+
 The target update rate for each FCR scan size is listed below, which may vary for scan sizes other than Wide,
 depending on whether the target is in the center of the scan volume or near the edge.
-    - Wide scan size (360°) – 6 seconds.                       •    Narrow scan size (90°) – 1.5 to 3 seconds.
-    - Medium scan size (180°) – 3 to 6 seconds.                •    Zoom scan size (45°) – 0.75 to 1.5 seconds.
 
-Vertical Dimensions of Scan Volume
+- Wide scan size (360°) – 6 seconds.                       
+- Narrow scan size (90°) – 1.5 to 3 seconds.
+- Medium scan size (180°) – 3 to 6 seconds.
+- Zoom scan size (45°) – 0.75 to 1.5 seconds.
+
+
+##### Vertical Dimensions of Scan Volume
+
 The default elevation setting when the FCR is set to ATM is +3°, which will align the lower limit of the FCR vertical
 scan volume with the altitude of the aircraft; or more precisely, the altitude of the FCR radome itself.
 
+![ATM Vertical Scan Volume](img/img-367-1-screen.jpg)
 
-                                                           Helicopter exits scan volume
-
-
-
-
-                     500 meters                              FCR Footprint                            8000 meters
-
-                                           ATM Vertical Scan Volume
 
 If an aircraft is detected by the FCR that is approaching at a constant altitude, the aircrew can expect the aircraft
 to exit the FCR scan volume as the range decreases. At closer ranges to an air target, the elevation of the FCR
 will likely need to be adjusted more frequently to account for the differences in altitude and relative position.
-FCR Target Handovers (ATM)
+
+##### FCR Target Handovers (ATM)
+
 When engaging air targets with AGM-114L radar-guided missiles, the FCR does not provide direct guidance to
 the missiles themselves prior to, or after, the missiles are launched. Rather, the FCR provides the missile with a
 target handover sent to the missile via the launcher umbilical, which includes the target’s position and whether
 it is moving or stationary (in the case of a hovering helicopter). The missile’s onboard active radar seeker acquires
 the target using this information, either before launch while still on the launcher rail (LOBL mode), or after launch
 while already in flight (LOAL mode). (See RF LOBL/LOAL Selection Logic for more information.)
+
 When committing to an engagement of an air target using the FCR as the selected sight, it is ideal to perform a
 single scanburst along the azimuth of intended target of engagement with the scan size set to Narrow or Zoom.
 This will gather an updated position of the air target just prior to actioning a weapon system.
 
-                                                                    ATM scanburst
-                                                                   detects air targets
-
-
-
-
-                               Air Target Detection and Classification by FCR
+![](img/img-368-1-screen.jpg)
 
 When a Next-To-Shoot (NTS) target has been designated by the FCR and missiles are actioned in the same
 crewstation that is employing the FCR as the selected sight, the next-to-launch AGM-114L missile receives a
@@ -1249,85 +1190,74 @@ target handover of the NTS target. Any time the FCR designates a new NTS target,
 selected by the crewmember, or the missiles are de-actioned and subsequently actioned again, a new target
 handover is sent to the next-to-launch AGM-114L missile with the most recent target information.
 
-
-
-                                                 AGM-114L RF seeker
-                                                 locks on to air target
-
-
-
-
-                                      Air Target Handover to RF Missile
+![](img/img-368-2-screen.jpg)
 
 Unless engaging a stationary, hovering helicopter that is beyond a range 2.5 kilometers, the AGM-114L will enter
 LOBL mode after receiving the target handover from the FCR and attempt to acquire the air target. Due to the
 greater velocity and maneuverability of aircraft compared to ground vehicles, the likelihood of a successful
 engagement is much greater if the AGM-114L is launched after the missile seeker has acquired the air target.
-FCR Priority Schemes (ATM)
+
+##### FCR Priority Schemes (ATM)
+
 Three Priority Schemes may be selected on the FCR Utility sub-page which affects how targets are prioritized by
 the FCR in GTM, RMAP, or ATM. These Priority Schemes reflect different tactical situations that may be
 encountered by the AH-64D team and allow FCR-equipped aircraft within the team to react to changes on the
 battlefield in real-time.
-- Default Scheme A. Stationary helicopters will be prioritized over moving helicopters or fixed-wing aircraft.
-- Default Scheme B. Stationary helicopters will be prioritized over moving helicopters or fixed-wing aircraft.
-- Default Scheme C. Moving helicopters and fixed-wing aircraft will be prioritized over stationary helicopters.
-NOTE: Although fixed-wing aircraft are included in the target prioritization logic, the AH-64D is not equipped
-with munitions that are ideal for engaging high-speed aircraft.
+
+- **Default Scheme A.** Stationary helicopters will be prioritized over moving helicopters or fixed-wing aircraft.
+
+- **Default Scheme B.** Stationary helicopters will be prioritized over moving helicopters or fixed-wing aircraft.
+
+- **Default Scheme C.** Moving helicopters and fixed-wing aircraft will be prioritized over stationary helicopters.
+
+!!! note
+    Although fixed-wing aircraft are included in the target prioritization logic, the AH-64D is not equipped
+    with munitions that are ideal for engaging high-speed aircraft.
+
 Two tactical scenarios are described below to illustrate the potential applicability of each Priority Scheme when
 employing the FCR in Air Targeting Mode. However, these scenarios are generalized and do not encompass the
 entirety of how the Priority Schemes may be applied to a given tactical situation.
+
 For information regarding Priority Schemes when employing the FCR in GTM or RMAP, see the Ground Targeting
 Mode section within this chapter.
-Scenario 1. Performing an attack against an enemy armor force that is supported by armed helicopters, in which
+
+**Scenario 1.** Performing an attack against an enemy armor force that is supported by armed helicopters, in which
 an FCR-equipped AH-64D is tasked to provide protection for the AH-64D team against enemy helicopters that
 favor hovering attack techniques.
+
 In a scenario in which enemy helicopters are expected to employ hovering attacks from stationary battle positions
 and bounding when repositioning between battle positions, target priorities will be focused on helicopters that
 are stationary over the battlefield. If enemy helicopters are detected to be stationary in a hover, these aircraft
 are prioritized for targeting over aircraft that are moving across the battlefield.
 
-                                                                                               3
-                                                                                4                       1
-                                                                                                             2
+![Priority Scheme A or B](img/img-369-1-screen.jpg)
 
 
 
-
-                     500 meters                             FCR Footprint                            8000 meters
-
-                                            Priority Scheme A or B
-
-Scenario 2. Performing an attack against an enemy armor force that is supported by armed helicopters, in which
+**Scenario 2.** Performing an attack against an enemy armor force that is supported by armed helicopters, in which
 an FCR-equipped AH-64D is tasked to provide protection for the AH-64D team against enemy helicopters that
 favor high-speed attack techniques.
+
 In a scenario in which enemy helicopters are expected to employ high-speed moving, pop-up, or diving attacks,
 target priorities will be focused on helicopters that are moving over the battlefield. If enemy aircraft are detected
 inbound with a positive closure rate toward the ownship, these aircraft are prioritized for targeting over aircraft
 that are flying away from the ownship or are in a stationary hover.
 
-                                                                                                1
-
-                                                                                2
-                                                                                                         3
-                                                                                                             4
+![Priority Scheme C](img/img-369-2-screen.jpg)
 
 
+## FCR ACQUISITION AND RANGING
 
-
-                     500 meters                             FCR Footprint                            8000 meters
-
-                                               Priority Scheme C
-FCR ACQUISITION AND RANGING
 The FCR cannot recognize specific vehicle types or equipment on the battlefield, nor identify whether targets are
 friend or foe; however, the wide area search capability of the FCR allows the crew to efficiently direct the optical
 sensors of the TADS for such purposes. Alternatively, during periods of limited visibility, the FCR C-Scope function
 can directly aid the CPG in acquiring targets within the TADS field-of-view by performing a narrow scanburst
 along the same line-of-sight and overlaying virtual target symbols within the TADS sensor video.
-The key advantage in using the                                                                   TADS
-FCR for initial detection and                                                                     FOV
+
+The key advantage in using the
+FCR for initial detection and
 classification of targets is its
-ability to scan 50 square                                                        FCR
-                                                                             Scan Volume
+ability to scan 50 square
 kilometers of the battlefield
 within          seconds,        while
 simultaneously performing an
@@ -1342,23 +1272,28 @@ be further constrained by the
 narrow aperture of the optical
 sensors themselves, the relative
 size and aspect angle of each
-target, the time of day, and                                                           8 km FCR Moving Targets
-visibility conditions. Enemy forces        FCR Detection & Classification              6 km FCR Moving/Stationary Targets
-that pose a direct threat to the                                                       6-10 km* TADS Moving/Stationary Targets
-                                           TADS Detection, Classification,
-aircraft, but are unknowingly                    & Identification                      *Dependent on target size, target aspect,
-outside the optical sensor’s field-                                                    time of day, and visibility conditions.
+target, the time of day, and
+visibility conditions. Enemy forces
+that pose a direct threat to the
+aircraft, but are unknowingly
+outside the optical sensor’s field-
 of-view, may go unnoticed until
-                                            Detection, Classification, & Identification of Targets
 the aircraft is under attack.
+
+![Detection, Classification, & Identification of Targets](img/img-370-1-screen.jpg)
+
 Generally speaking, FCR scan sizes are best utilized in the following manner.
+
 - Initial detection and classification of targets within the battlespace: Wide/Medium scan size.
 - Target acquisition and weapons engagement: Narrow/Zoom scan size.
+
 As with most tactical situations, many variables may determine the ideal FCR mode and scan patterns. Factors
 such as terrain, anticipated enemy positions or movement on the battlefield, proximity of friendly forces, and the
 maneuvering of the AH-64D team itself will play significant roles in determining the ideal FCR scan size, whether
 Priority Fire Zones or No Fire Zones should be activated, and which FCR Priority Scheme should be employed.
+
 Additional details regarding the employment of the FCR for target acquisition are listed below.
+
 - Although the maximum detection range of the FCR is 8 kilometers, the FCR alone will only process and
      display stationary ground target symbols within a range of 6 kilometers.
 - The FCR page is used for controlling and employing the Fire Control Radar as a sight. As such, it is limited
@@ -1367,92 +1302,109 @@ Additional details regarding the employment of the FCR for target acquisition ar
 - Target point T50 may be placed at the location of an FCR target and simultaneously set as the crewmember’s
      acquisition source by selecting CAQ (VAB R5) on the TSD page and cursor-selecting an FCR target symbol
      on the TSD itself. This may be used to acquire a low priority target that is not displayed on the FCR page.
-Acquisition Sources
+
+#### Acquisition Sources
+
 The use of acquisition sources can reduce the time necessary to bring the FCR towards the intended FCR scan
 area. This is particularly useful when leveraging the FCR’s area detection and classification capabilities to rapidly
 highlight potential target positions or increase situational awareness. When target locations are already detected
 using another sensor onboard the aircraft (to include visual detection by either crewmember), setting that sensor
 as the acquisition source and enabling the SLAVE function increases the efficiency of target acquisition using an
 FCR scanburst; especially when using narrow scan sizes.
+
 Acquisition sources also reduce the amount of verbal communications and coordination of sensors that must
 occur between the crewmembers, which increases combat efficiency. In contrast to target handovers to either
 crewmembers’ HMD or the CPG’s TADS, which require less specificity due to their line-of-sight in the vertical
 plane, target handovers to the FCR are more reliant on correct target descriptions and range estimations since a
 single FCR scan may generate multiple targets along a given azimuth.
+
 Examples of efficient target handovers to the FCR utilizing acquisition sources are listed below.
-“Gunner, target, Pilot helmet sight. Tracked armor moving at 4 kilometers.”
-“Pilot, target, TADS. Enemy helicopter inbound, on the horizon.”
+
+*“Gunner, target, Pilot helmet sight. Tracked armor moving at 4 kilometers.”*
+
+*“Pilot, target, TADS. Enemy helicopter inbound, on the horizon.”*
+
 In either case, the crewmember using the FCR as their sight simply selects the announced source of target
 information as the acquisition source (and in the case of the CPG, enables SLAVE), slewing the FCR centerline
 directly to the location of the intended target(s).
+
 Acquisition sources listed below will command the FCR centerline to a specific azimuth relative to the aircraft
 nose, but will not restrict the FCR scan size nor will it prevent any other targets from being prioritized within the
 selected FCR scan volume.
-- PHS. Pilot Helmet Sight; commands the FCR centerline to the azimuth of the Pilot’s helmet. May be used to
+
+- **PHS.** Pilot Helmet Sight; commands the FCR centerline to the azimuth of the Pilot’s helmet. May be used to
      direct the FCR to the location designated by the Pilot’s HMD LOS Reticle.
-- GHS. Gunner Helmet Sight; commands the FCR centerline to the azimuth of the Copilot/Gunner’s helmet.
+
+- **GHS.** Gunner Helmet Sight; commands the FCR centerline to the azimuth of the Copilot/Gunner’s helmet.
      May be used to direct the FCR to the location designated by the CPG’s HMD LOS Reticle.
-- SKR. Seeker; commands the FCR centerline to the azimuth of the next-to-shoot AGM-114 missile seeker.
+
+- **SKR.** Seeker; commands the FCR centerline to the azimuth of the next-to-shoot AGM-114 missile seeker.
      May be used to direct the FCR to the target location that is currently being tracked by the next-to-shoot
      AGM-114 missile.
-- FXD. Fixed forward; commands the FCR centerline to align with the Armament Datum Line (ADL) at 0° in
+
+- **FXD.** Fixed forward; commands the FCR centerline to align with the Armament Datum Line (ADL) at 0° in
      azimuth.
-- TADS. Target Acquisition Designation Sight; commands the FCR centerline to the azimuth of the TADS
+
+- **TADS.** Target Acquisition Designation Sight; commands the FCR centerline to the azimuth of the TADS
      turret. May be used to direct the FCR to the location designated by the TADS sensor.
-- W##, H##, C##, T##. Waypoint, Hazard, Control Measure, or Target/Threat point; commands the FCR
+
+- **W##, H##, C##, T##.** Waypoint, Hazard, Control Measure, or Target/Threat point; commands the FCR
      centerline to the coordinates of the selected point within the navigation database. May be used to direct the
      FCR to a pre-planned, stored, or transmitted location for reconnaissance, target acquisition, or weapons
      engagement; or re-acquisition if line-of-sight was lost.
-- TRN. Terrain point; commands the FCR centerline to the coordinates of the selected terrain point within the
+
+- **TRN.** Terrain point; commands the FCR centerline to the coordinates of the selected terrain point within the
      navigation database. May be used to direct the FCR to a cursor-selected location on the TSD that is not
      associated with an existing Waypoint, Hazard, Control Measure, or Target/Threat point for reconnaissance,
      target acquisition, or weapons engagement.
-Range Sources
+
+#### Range Sources
+
 Among the three sights (HMD, TADS, and FCR) that may be employed by the AH-64D aircrew for targeting, the
 FCR is the most limited with regards to ranging options. When the FCR is being utilized as the selected sight, only
 one range source is available, which is a Radar range. However, it is one of the most accurate ranging sources
 available to the crew.
-- Radar range. Radar range is automatically entered as the range source any time the crewmember selects
+
+Radar range is automatically entered as the range source any time the crewmember selects
      FCR as the selected sight. When transmitting, the FCR precisely measures the slant range between the
      ownship and targets detected on (or above) the battlefield using reflected radar energy.
      If no NTS target has been designated, “R?.?” will be displayed within the Range Source field of the High
      Action Display (HAD). In addition, “LOS INVALID” will be displayed within the Weapon Inhibit field of the
      High Action Display any time a weapon is actioned and an NTS target has not been designated or has not
      been re-detected during a subsequent scan cycle.
-Radar Range
+
 Once a target location has been processed by the FCR, its position relative to the ownship is retained within the
 aircraft memory as a 3-dimensional geographic location. The Radar range displayed within the crewmember’s
 High Action Display will always reflect the slant range to the current Next-To-Shoot (NTS) target as selected on
 the FCR page. As the aircraft moves or re-positions to a different location, the radar range is updated accordingly
 in real-time, in a similar manner to using a Navigation range to a point within the navigational database.
 
+![Radar Range](img/img-372-1-screen.jpg)
 
-
-
-                                                 Slant range of 5.1 km to    NTS (Next-To-Shoot)
-                                                NTS (Next-To-Shoot) target     target position
-
-
-
-
-                                                  Radar Range
 
 As this range source is dynamic, a Radar range may be used when calculating a targeting solution for any weapon
 system onboard the aircraft. However, targets that are displayed in partial-intensity on the FCR page represent
 stale FCR targeting data, and may not represent accurate battlefield target locations.
-Sight LINK
+
+### Sight LINK
+
 The FCR may be linked with the TADS to leverage the capabilities of both sights simultaneously against target
 locations acquired by one or the other. If either crewmember’s selected sight is FCR, the TADS may be linked to
 the FCR; or if the CPG’s selected sight is TADS, the FCR may be linked to the TADS.
-NOTE: Although the TADS may be manually controlled by the CPG while it is linked to the FCR, the TADS is not
-the CPG’s selected sight under these conditions. As such, the LRFD cannot be fired and the CPG will be unable
-to engage targets using the TADS unless it is subsequently selected as the CPG’s sight.
+
+!!! note
+    Although the TADS may be manually controlled by the CPG while it is linked to the FCR, the TADS is not
+    the CPG’s selected sight under these conditions. As such, the LRFD cannot be fired and the CPG will be unable
+    to engage targets using the TADS unless it is subsequently selected as the CPG’s sight.
+
 Likewise, although some functions of the FCR may be employed by the CPG while it is linked to the TADS, the
 FCR is not the CPG’s selected sight under these conditions. As such, the CPG will be unable to engage targets
 using the FCR unless it is subsequently selected as the CPG’s sight.
 
 
-Linking TADS to FCR
+
+#### Linking TADS to FCR
+
 If either crewmember’s selected sight is FCR and an FCR target has
 been designated as Next-To-Shoot (NTS), pressing the Sight Select                       TADS
                                                                                          LOS
