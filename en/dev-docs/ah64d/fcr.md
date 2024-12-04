@@ -1406,175 +1406,198 @@ using the FCR unless it is subsequently selected as the CPG’s sight.
 #### Linking TADS to FCR
 
 If either crewmember’s selected sight is FCR and an FCR target has
-been designated as Next-To-Shoot (NTS), pressing the Sight Select                       TADS
-                                                                                         LOS
+been designated as Next-To-Shoot (NTS), pressing the Sight Select
 switch on the Collective Mission Grip or TEDAC Right Handgrip to the
-                                                                                              FCR
 LINK position within the same crewstation will link the TADS line-of-
-                                                                                          Scan Volume
 sight (LOS) to the geographical location of the FCR NTS target.
-“P-FCRL” or “C-FCRL” will be displayed in the Sight Select Status field         NTS
-                                                                               Target
+“P-FCRL” or “C-FCRL” will be displayed in the Sight Select Status field
 of the High Action Display of the crewmember that has enabled LINK.
+
 If the Pilot’s selected sight is FCR, the CPG’s selected sight is TADS,
 and the Pilot links the TADS to the FCR, the CPG’s sight will
 automatically be set to HMD and any actioned weapon in the CPG
 crewstation will be de-actioned.
+
 If any of the following criteria are met, the TADS cannot be linked to
 the FCR and the LINK switch position will be ignored.
-    - An NTS target has not been designated by the FCR.
-    - The crewmember’s selected sight is HMD.
-    - The crewmember’s acquisition source is set to TADS.
-    - Either crewmember’s NVS Mode switch is set to NORM or
-          FIXED with TADS as the selected NVS sensor.
+
+- An NTS target has not been designated by the FCR.
+
+- The crewmember’s selected sight is HMD.
+
+- The crewmember’s acquisition source is set to TADS.
+
+- Either crewmember’s NVS Mode switch is set to NORM or
+FIXED with TADS as the selected NVS sensor.
+
 If the TADS is already linked to the FCR and a new scanburst is
 commanded, the TADS will remain linked but will return to the fixed
 forward position until a new NTS target is designated.
-The following TADS controls on the TEDAC handgrips will remain                       TADS Linked to
-operational in the CPG crewstation while the TADS is linked to the FCR.              FCR NTS Target
-    - Sensor Select switch.             •    IAT/OFS switch.          •   FLIR Polarity button.
-    - Field-Of-View Select switch.      •    LMC button.              •   SLAVE button.
+
+![TADS Linked to FCR NTS Target](img/img-373-1-screen.jpg)
+
+The following TADS controls on the TEDAC handgrips will remain
+operational in the CPG crewstation while the TADS is linked to the FCR.
+
+- Sensor Select switch.
+- IAT/OFS switch.
+- FLIR Polarity button.
+- Field-Of-View Select switch.
+- LMC button.
+- SLAVE button.
+
 If any of the following criteria are met within the crewstation that selected LINK, LINK will be disabled and the
 TADS will return to the fixed forward position.
-    - The crewmember re-selects LINK while the TADS is already linked to the FCR NTS target.
-    - The crewmember selects HMD as the sight.
-    - The crewmember selects a different acquisition source.
+
+- The crewmember re-selects LINK while the TADS is already linked to the FCR NTS target.
+
+- The crewmember selects HMD as the sight.
+
+- The crewmember selects a different acquisition source.
+
 Alternatively, the CPG may press the Sight Select switch to the TADS position to disable LINK and take control of
 the TADS as the selected sight to independently track, lase, and engage targets as necessary.
-Linking TADS for Combat Identification (CID)/Battle Damage Assessment (BDA) of an FCR Target
+
+**Linking TADS for Combat Identification (CID)/Battle Damage Assessment (BDA) of an FCR Target**
+
 When potential targets are detected on the battlefield, only the aircrew is capable of identifying the detected
 military units and equipment and whether they are friend or foe, a process known as Combat Identification, or
 CID. In addition, only the aircrew can determine whether an enemy vehicle is operational or destroyed, a process
 known as Battle Damage Assessment, or BDA. Since the FCR is not capable of recognizing a target (T-72 or
 M1A2), determining its coalition affiliation (friend or foe), or whether a target is destroyed, linking the TADS to
 the FCR allows the Copilot/Gunner (CPG) to perform CID and BDA with regard to FCR-detected targets.
+
 When the TADS is linked to the FCR, the TADS will default to a Medium FOV (field-of-view) if the selected sensor
 is FLIR, or Wide FOV if the selected sensor is DTV. If the aircraft and/or target are moving, this helps ensure the
 CPG is able to visually acquire the target within the TADS video, and subsequently stabilize the TADS on target,
 before the target exits the selected sensor’s FOV. The CPG may then select Narrow or Zoom FOV as necessary
 for the purposes of performing CID or BDA of the FCR NTS target.
+
 When employing an RF missile against an FCR target while the TADS is linked to the FCR, if the next-to-launch
 RF missile has entered LOBL mode and has successfully locked on to a target (“RF MSL TRACK” displayed in the
 High Action Display), the TADS will slave to the line-of-sight of the corresponding missile’s seeker rather than the
 FCR NTS target. This allows the CPG to confirm the missile has locked on to the intended target prior to launch.
-Slewing TADS while Linked to the FCR
+
+**Slewing TADS while Linked to the FCR**
+
 If necessary, the CPG may manually slew the TADS while it is still linked to the FCR, allowing the crew to acquire
 and identify additional targets in vicinity of the FCR NTS target, or to hand off an FCR target to the TADS for
 engagement. This also allows the crew to perform immediate Battle Damage Assessment (BDA) on a target after
 firing an RF missile against the FCR NTS target, which would otherwise shift the TADS LOS to the next FCR target
 at the moment the missile was commanded to launch, which would automatically sequence the NTS designation.
+
 When linked to the FCR NTS target, the TADS laser rangefinder/designator (LRFD) will be inhibited from firing
 and the Laser Spot Track (LST) and Image Auto-Track (IAT) functions will be overridden and disabled. However,
 the TADS will still attempt to maintain any tracks that remain within its optical field-of-view while linked to the
 FCR.
+
 After the TADS LOS has been linked to the FCR NTS target, the CPG may press the SLAVE button on the TEDAC
 Right Handgrip, which will de-slave the TADS and enable the Sight Manual Tracker, allowing the CPG to manually
 slew the TADS as normal.
-To manually slew the TADS while linked to the FCR         Field-Of-View
-                                                              Select      Sensor Select          Sight Select   FLIR Polarity
+
+![](img/img-374-1-screen.jpg)
+
+To manually slew the TADS while linked to the FCR
 NTS target, perform the following:
+
 1.   Sight Slave (SLAVE) button – Press.
 2.   Sight Manual Tracker (MAN TRK) – Slew and
      employ TADS as desired.
+
     - Sensor Select switch – Select FLIR or
           DTV as desired.
-                                                       Image Auto                    Sight Manual                    Sight Slave
-    - Field-Of-View Select switch – Select as      Track/Offset                     Tracker
+    - Field-Of-View Select switch – Select as
           desired.
     - FLIR Polarity button – Press as desired.
     - Manual tracking - Engage Linear Motion
-          Compensation (LMC) as necessary.                                      Linear Motion
-    - Automatic tracking - Engage Image Auto                               Compensation
-                                                                               (opposite side)
+          Compensation (LMC) as necessary.       
+    - Automatic tracking - Engage Image Auto     
           Track (IAT).
+
 3.   Sight Slave (SLAVE) button – Press to slave the TADS back to FCR NTS target.
+
      or
+
 3.   Sight Select switch – Select LINK to slave the TADS back to the FCR NTS target.
-Linking FCR to TADS
+
+#### Linking FCR to TADS
+
 If the CPG’s selected sight is TADS, pressing the Sight Select switch on Collective
-                                                                                                     TADS
-Mission Grip or TEDAC Right Handgrip to the LINK position will link the FCR centerline                LOS
+Mission Grip or TEDAC Right Handgrip to the LINK position will link the FCR centerline
 to the azimuth of the TADS line-of-sight (LOS). “TADSL” will be displayed in the Sight
-                                                                                                     FCR
-Select Status field of the High Action Display in the CPG crewstation.                           Scan Volume
+Select Status field of the High Action Display in the CPG crewstation.
+
+![FCR Linked to TADS LOS](img/img-375-1-screen.jpg)
 
 If the CPG’s selected sight is TADS, the Pilot’s selected sight is FCR, and the CPG links
 the FCR to the TADS, the Pilot’s sight will automatically be set to HMD, and any
 actioned weapon in the Pilot crewstation will be de-actioned.
+
 If any of the following criteria are met, the FCR cannot be linked to the TADS and the
 LINK switch position will be ignored.
-    - The CPG’s selected sight is HMD.
-    - The CPG’s acquisition source is set to FCR.
-    - Either crewmember’s NVS Mode switch is set to NORM or FIXED with TADS
+
+- The CPG’s selected sight is HMD.
+
+- The CPG’s acquisition source is set to FCR.
+
+- Either crewmember’s NVS Mode switch is set to NORM or FIXED with TADS
           as the selected NVS sensor.
+
 The following FCR controls will become operational on the CPG’s Collective Mission
 Grip and TEDAC handgrips while the FCR is linked to the TADS.
-    - Mode Select switch.                 •    Scan Size Select switch.
-    - Scan Select switch.                 •    ZOOM button.
+
+- Mode Select switch.
+- Scan Size Select switch.
+- Scan Select switch.
+- ZOOM button.
+
 If any of the following criteria are met within the CPG crewstation after selecting
 LINK, LINK will be disabled and the FCR will return to the fixed forward position.
-    - The CPG re-selects LINK while the FCR is already linked to the TADS LOS.
-                                                                                                       FCR Linked to
-    - The CPG selects HMD as the sight.
-                                                                                                         TADS LOS
-    - The CPG selects a different acquisition source.
+
+- The CPG re-selects LINK while the FCR is already linked to the TADS LOS.
+- The CPG selects HMD as the sight.
+- The CPG selects a different acquisition source.
+
 Alternatively, either crewmember may press the Sight Select switch to the FCR position to disable LINK and take
 control of the FCR as the selected sight to independently perform scans or engage targets as necessary.
-Performing FCR scans while Linked to the TADS
+
+**Performing FCR scans while Linked to the TADS**
+
 If necessary, the CPG may perform FCR scans while it is still linked to the TADS, allowing the crew to detect and
 acquire additional targets along the azimuth of the TADS line-of-sight, or to hand off a target acquired within the
 TADS field-of-view to the FCR for engagement. However, such procedures are most effective when C-Scope has
 been enabled to allow the CPG to correlate the FCR target symbols with those seen within the TADS sensor video.
-To perform an FCR scanburst while linked to the                                                             Scan Size
-TADS LOS, perform the following:                                                            Sight Select     Select
 
+![](img/img-375-2-screen.jpg)
+
+To perform an FCR scanburst while linked to the
+TADS LOS, perform the following:
 
 1.   Mode Select switch – Select GTM, RMAP, or
      ATM as appropriate.
-2.   Scan Size Select switch – Select Narrow (N)                                                                        C-Scope
+2.   Scan Size Select switch – Select Narrow (N)
      or Zoom (Z) as appropriate.
 3.   Scan Select switch – Select S-SCAN.
-                                                      Mode Select                Scan Select
-FCR HAND CONTROLS
+
+## FCR HAND CONTROLS
+
 Either crewmember may employ the Fire Control Radar for targeting and engagement of enemy targets.
 
 
-Cyclic & Collective Controls
+
+### Cyclic & Collective Controls
+
 The Pilot and Copilot/Gunner Collective Mission Grips include
-identical controls for FCR employment.                              Mode Select                  Scan Size Select
+identical controls for FCR employment.
+
+![](img/img-376-1-screen.jpg)
 
 
+### TEDAC Controls
 
-                                                                                                                Sight Select
-
-
-
-
-                                                                                                       Scan Select
-
-                                                                                                      Cued Search
-
-
-
-
-TEDAC Controls
 FCR controls are replicated on the Collective Mission Grip and TEDAC handgrips in the CPG crewstation. This
 allows the CPG to employ the FCR for targeting and engagement without interfering with the flight controls, and
 seamlessly transitioning between using the FCR and TADS.
 
-       Mode Select   Store Target Point                                       Sight Select   Scan Size Select
+![](img/img-376-2-screen.jpg)
 
-                                                                                                       C-Scope Toggle
-
-
-
-                                                                                                           Sight Slave
-                                                                                                             Toggle
-
-
-                                                                                                         Sight Manual
-                                                                                                            Tracker
-  Scan Select
-
- Cued Search
-                                                                                                         Zoom Toggle

@@ -182,7 +182,7 @@ into either engine nacelle or the APU compartment.
 
         - The MSTR WARN lighted pushbutton will be illuminated in both crewstations.
 
-        - The AFT DECK FIRE warning message will be displayed on the EUFD.
+        - The 'AFT DECK FIRE' warning message will be displayed on the EUFD.
 
         - “AFT DECK FIRE”, “ENGINE 1 FIRE”, “ENG 2 FIRE”, “APU FIRE” voice warning messages will be
                heard in sequence.
@@ -238,8 +238,8 @@ other crewstation accordingly.
         - Weapon systems may be actioned. Disabling the Ground Override will automatically de-action any
                actioned weapon systems.
 
-        - FCR emissions are permitted. Disabling the Ground Override will automatically cease any FCR
-               emissions.
+        - FCR transmissions are permitted. Disabling the Ground Override will automatically cease any FCR
+               transmissions.
 
         - The Chaff dispenser may be armed. Disabling the Ground Override will automatically set the Chaff
                state to SAFE.
@@ -614,7 +614,7 @@ to access the associated functions. (N/I)
 1. **GUARD Button**. Tunes the UHF radio to the
      GUARD frequency of 243.000 MHz. The frequency
      in the Primary slot of the UHF radio will be moved
-     to the Standby slot, and GUARD will be displayed
+     to the Standby slot, and 'GUARD' will be displayed
      as the frequency callsign.
      Pressing this button when it is already set to ON will
      return the previous UHF frequency to the Primary

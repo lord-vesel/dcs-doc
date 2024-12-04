@@ -12,7 +12,7 @@ this is the BUCS trigger on the Pilot’s Collective Flight Grip is non-function
 ### Cyclic Grip
 
 The Cyclic Grip is used to control weapons, communications, and countermeasure functions. It also includes
-functions for controlling the IHADSS flight symbology.
+controls for selecting IHADSS Flight symbology modes or FMC functions.
 
 ![](img/img-85-1-screen.jpg)
 
@@ -84,9 +84,9 @@ functions for controlling the IHADSS flight symbology.
           If the RTS indicator is set to the HF radio at the bottom of the list, RTS indicator will cycle to the VHF
           radio at the top of the list.
 
-1. **Chaff Dispense Button**. Dispenses the chaff program.
+1. **Chaff Dispense (C) Button**. Dispenses the chaff program.
 
-1. **Flare Dispense Button**. Dispenses the flare program.
+1. **Flare Dispense (FLARE) Button**. Dispenses the flare program.
 
 1. **Weapon Trigger (Guarded)**. Fires the weapon system that has been actioned within the crewstation.
 
@@ -100,12 +100,12 @@ functions for controlling the IHADSS flight symbology.
 
 ### Collective Flight Grip
 
-The Collective Flight Grip is used to control flight and navigation functions.
+The Collective Flight Grip is used to control critical aircraft functions and Night Vision System (NVS) settings.
 
 ![](img/img-88-1-screen.jpg)
 
 
-1. **Emergency Jettison Button (Guarded)**. Jettisons all weapon stations from the underwing pylons.
+1. **Emergency Jettison (JETT) Button (Guarded)**. Jettisons all weapon stations from the wing pylons.
 
 1. **Boresight/Polarity Switch**. Controls the FLIR polarity for the NVS sensor assigned to the crewstation.
 

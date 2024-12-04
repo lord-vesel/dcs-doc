@@ -302,9 +302,9 @@ and G/S buttons along the top of the TDU will be inhibited.
 1. **TADS Sensor Select Switch**. Selects the TADS sensor to be used for targeting. This switch position is
      overridden and commanded to FLIR when the CPG NVS Mode switch is set to NORM or FIXED.
 
-    - FLIR (Forward). Sets the TADS sensor video to the Forward-Looking Infrared thermographic camera.
+    - FLIR (Forward). Sets the TADS sensor video to the FLIR thermographic camera.
 
-    - DTV (Center). Sets the TADS sensor video to the Day Television camera.
+    - DTV (Center). Sets the TADS sensor video to the DTV camera.
 
     - DVO (Aft). No function.
 
@@ -315,64 +315,90 @@ and G/S buttons along the top of the TDU will be inhibited.
      Neither crewstation has priority over the other, allowing either cyclic Weapon Action Switch to action the
      weapon, taking control away from the other crewstation in a “last actioned” logic.
 
-    - G (Gun, Forward). Actions/de-actions the Area Weapon System (AWS) for employment and slaves
+    - GUN (Forward). Actions/de-actions the Area Weapon System (AWS) for employment and slaves
           the gun to the weapon solution of the selected sight within the crewstation.
 
-    - R (Rocket, Left). Actions/de-actions the Aerial Rocket Sub-system (ARS) for employment, activates
+    - Rocket (Left). Actions/de-actions the Aerial Rocket Sub-system (ARS) for employment, activates
           pylon articulation, and displays the Rocket Steering Cursor symbology within the crewstation.
           If the CPG actions rockets using the Weapon Action Switch on the LHG and the Pilot actions rockets,
           the crew will enter COOP (Cooperative) rocket mode.
           If the CPG actions rockets using the Weapon Action Switch on the CPG cyclic and the Pilot actions
           rockets, the rockets will be assigned to either crewstation using the “last actioned” logic.
 
-    - M (Missile, Right). Actions/de-actions the Hellfire Modular Missile System (HMMS) for employment,
+    - MSL (Right). Actions/de-actions the Hellfire Modular Missile System (HMMS) for employment,
           activates pylon articulation, and displays the Missile Launch symbology within the crewstation.
 
     - A (Air-To-Air, Aft). No function.
 
+    !!! note
+        Weapons cannot be actioned if the aircraft is weight-on-wheels unless GND ORIDE has been enabled
+        on the Armament Panel to override this inhibit.
+
 1. **Store/Update Switch**. Stores new target or waypoint locations using the CPG’s selected sight or perform
      position updates to the aircraft navigation system.
 
-    - STORE (Forward). When the CPG’s selected sight is set to TADS, moving the switch momentarily to
+    - Store Point (STORE, Forward). When the CPG’s selected sight is set to TADS, moving the switch momentarily to
           this position stores a Target (TG) point along the TADS line-of-sight at the current range. When the
           CPG’s selected sight is set to FCR, moving the switch momentarily to this position stores a Target (TG)
-          point at the location of the Next-To-Shoot (NTS Target).
+          point at the location of the Next-To-Shoot (NTS) Target.
+
           When used in conjunction with the TSD Point sub-page, may be used to store a Waypoint (WP) or
           Target Point (TG), and may be used in conjunction with either the HMD or the TADS.
 
-    - UPDT (Aft). Not implemented.
+    - Update Position (UPDT, Aft). Not implemented.
 
-1. **FCR Mode Switch**. Not implemented.
+1. **FCR Mode Switch**. Selects the FCR mode of operation when the CPG’s selected sight is FCR and the FCR
+is not scanning.
 
-1. **Cursor Controller/Enter**. Controls the MPD cursor movement on the MPD, allowing bezel options to be
+    -    **GTM (Forward).** Selects Ground Targeting Mode to detect and classify ground vehicles and low-flying
+        aircraft.
+    
+    -    **RMAP (Right).** Selects Radar Map mode to detect and classify ground vehicles and low-flying aircraft;
+        or to analyze the battlefield using a radar-generated surface map of the terrain. Re-selecting RMAP
+        when the FCR mode is already set to RMAP will toggle the terrain video underlay on the FCR page.
+    
+    -    **ATM (Aft).** Selects Air Targeting Mode to detect and classify rotary- and fixed-wing aircraft within the
+        immediate airspace.
+    
+    -    **TPM (Left).** Selects Terrain Profile Mode to aid in terrain and obstacle avoidance while operating at
+        low altitudes during low-visibility conditions. (N/I)
+
+1. **Cursor Controller/Enter (CURSOR)**. Controls the MPD cursor movement on the MPD, allowing bezel options to be
      selected by the cursor in lieu of the bezel buttons; or cursor-selection of points on the MPD itself. Depressing
      the Cursor Controller commands the highlighted item underneath the cursor to be selected.
 
-1. **Cursor Display Select Button**. Sets the MPD cursor to the center of the opposite MPD.
+1. **Cursor Display Select (L/R) Button**. Sets the MPD cursor to the center of the opposite MPD.
 
-1. **Weapon Trigger**. Fires the weapon system that has been actioned within the crewstation.
+1. **Weapon Trigger**. Fires the weapon system that has been actioned within the crewstation if the A/S button
+on the Armament panel is set to ARM.
 
     - First Detent. Fires the weapon system if no Performance or Safety Inhibits are present.
 
     - Second Detent. Fires the weapon system if no Safety Inhibits are present.
 
-1. **FCR Scan Switch**. When the CPG’s selected sight is set to FCR, momentarily setting the switch to either
-    position will initiate an FCR scanburst. If the FCR is already performing a single or continuous scanburst,
-    momentarily setting the switch to either position will terminate the ongoing scanburst.
 
-    - S-SCAN (Forward). Initiates a single scanburst. The FCR will perform several scans of the FCR scan
-         volume and then terminate scanning. The number of scans that are performed within a single scanburst
-         are dependent on the selected scan size.
+11. **FCR Scan Switch.** When the CPG’s selected sight is FCR, momentarily setting the switch to either position
+    will initiate an FCR scanburst. If the FCR is already performing a single or continuous scanburst, momentarily
+    setting the switch to either position will terminate the ongoing scanburst.
 
-    - C-SCAN (Aft). Initiates a continuous scanburst. The FCR will perform scans of the FCR scan volume
-         continuously until manually terminated by the crewmember or until a different sight is selected.
 
-1. **Cued Search Button**. Not implemented.
+    - **S-SCAN (Forward).** Initiates a single scanburst. The FCR will perform several scans of the FCR scan
+          volume and then terminate scanning. The number of scans that are performed within a single scanburst
+          are dependent on the selected scan size.
 
-1. **Cage Button**. No function.
+    - **C-SCAN (Aft).** Initiates a continuous scanburst. The FCR will perform scans of the FCR scan volume
+          continuously until manually terminated by the crewmember or until a different sight is selected.
 
-1. **Linear Motion Compensation Button**. Toggles the Linear Motion Compensation function of the TADS
-    system. (See Target Acquisition Designation Sight (TADS) for more information.)
+    !!! note
+        The FCR cannot transmit if the aircraft is weight-on-wheels unless GND ORIDE has been enabled on
+        the Armament Panel to override this inhibit.
+
+12. **Cued Search (CUED) Button.** Not implemented.
+
+13. **Linear Motion Compensation (LMC) Button.** Toggles the Linear Motion Compensation function of the
+    TADS system. (See Target Acquisition Designation Sight (TADS) for more information.)
+
+14. **Cage Button**. No function.
 
 
 
@@ -381,55 +407,68 @@ and G/S buttons along the top of the TDU will be inhibited.
 ![](img/img-83-1-screen.jpg)
 
 
-1. **FCR Scan Size Switch**. Selects the FCR scan size when the CPG’s selected sight is set to FCR.
 
-    - Wide (W). Sets the FCR scan volume to 90° in azimuth.
+1. **FCR Scan Size Switch.** Selects the FCR scan size when the CPG’s selected sight is FCR and the FCR is not
+scanning.
 
-    - Medium (M). Sets the FCR scan volume to 45° in azimuth.
+    - **W (Wide, Right).** Sets the FCR scan volume to 90° in azimuth if the FCR mode is GTM or RMAP. Sets
+         the FCR scan volume to 360° in azimuth if the FCR mode is ATM.
 
-    - Narrow (N). Sets the FCR scan volume to 30° in azimuth.
+    - **M (Medium, Aft).** Sets the FCR scan volume to 45° in azimuth if the FCR mode is GTM or RMAP. Sets
+         the FCR scan volume to 180° in azimuth if the FCR mode is ATM.
 
-    - Zoom (Z). Sets the FCR scan volume to 15° in azimuth.
+    - **N (Narrow, Left).** Sets the FCR scan volume to 30° in azimuth if the FCR mode is GTM or RMAP. Sets
+         the FCR scan volume to 90° in azimuth if the FCR mode is ATM.
 
-1. **C-Scope Button**. Not implemented.
+    - **Z (Zoom, Forward).** Sets the FCR scan volume to 15° in azimuth if the FCR mode is GTM or RMAP.
+         Sets the FCR scan volume to 45° in azimuth if the FCR mode is ATM.
 
-1. **FLIR Polarity Button**. Toggles the FLIR image polarity between white-hot and black-hot.
+2. **C-SCOPE Button.** Enables/disables the FCR C-Scope symbol overlays in the CPG crewstation.
 
-1. **Laser Tracker Mode Switch**. Enables/disables the Laser Spot Track (LST) mode of the TADS system.
+3. **FLIR Polarity Button**. Toggles the FLIR image polarity between white-hot and black-hot.
 
-    - A (Automatic). Enables the LST in Automatic mode and inhibits the LRFD from firing.
+4. **Laser Tracker (LT) Switch.** Enables/disables the Laser Spot Track (LST) mode of the TADS system.
 
-    - O (Off). Disables the LST and permits the LRFD to fire.
+    - **A (Automatic, Forward).** Enables the LST in Automatic mode and inhibits the LRFD from firing.
 
-    - M (Manual). Enables the LST in Manual mode and inhibits the LRFD from firing.
+    - **O (Off, Center).** Disables the LST and permits the LRFD to fire.
 
-1. **Sight Select Switch**. Selects the sight to be used for targeting and weapon employment within the
+    - **M (Manual, Aft).** Enables the LST in Manual mode and inhibits the LRFD from firing.
+
+5. **Sight Select Switch**. Selects the sight to be used for targeting and weapon employment within the
      Copilot/Gunner (CPG) crewstation.
 
-    - HMD (Forward). Sets the CPG sight to the CPG’s Helmet-Mounted Display. The CPG’s HDU will display
+
+    - **HMD (Forward).** Sets the CPG sight to the CPG’s Helmet-Mounted Display. The CPG’s HDU will display
           HMD Flight symbology.
 
-    - FCR (Left). Sets the CPG crewstation sight to the Fire Control Radar and displays the FCR page on
+
+    - **FCR (Left).** Sets the CPG crewstation sight to the Fire Control Radar and displays the FCR page on
           the left MPD if not already displayed. When selected while the CPG’s NVS Mode switch is set to OFF,
           the CPG’s HDU will display TADS Weapon symbology and TADS sensor video. If the Pilot is using the
           TADS as his/her NVS sensor, the CPG’s HDU will display HMD Flight symbology.
           Neither crewstation has priority over the other, allowing either Sight Select Switch to select the FCR as
           the sight, taking control away from the other crewstation in a “last selected” logic.
 
-    - TADS (Right). Sets the CPG sight to the Target Acquisition Designation Sight. The CPG’s HDU will
+
+    - **TADS (Right).** Sets the CPG sight to the Target Acquisition Designation Sight. The CPG’s HDU will
           display TADS Weapon symbology and TADS sensor video. If either crewmember is using the TADS as
           their NVS sensor, this switch position will be inhibited.
 
-    - LINK (Aft). Not implemented.
+
+    - **LINK (Aft).** If the CPG’s selected sight is FCR, this position will slave the TADS to the FCR Next-To-
+Shoot (NTS) target. If the CPG’s selected sight is TADS, this position will slave the FCR centerline to
+the azimuth of the TADS line-of-sight. (See the Fire Control Radar chapter for more information.)
 
 1. **Image Auto Track Polarity Switch**. Not implemented.
 
 1. **Sight Slave Button**. Slaves/de-slaves the CPG’s selected sight to the selected acquisition source.
 
-1. **Sight Manual Tracker**. Manually controls the CPG’s selected sight when de-slaved from the selected
+1. **Sight Manual Tracker**. Manually controls the CPG’s selected sight (TADS or FCR) when de-slaved from the selected
      acquisition source. Also called the “thumb force controller”.
 
-1. **Display Zoom Button**. Not implemented.
+1. **Display Zoom Button**. Enables/disables the FCR ZOOM format on the FCR page when the CPG’s selected
+sight is FCR.
 
 1. **LRFD Trigger**. Fires the laser rangefinder/designator if the A/S button on the Armament panel is set to
     ARM and the LRFD is powered (VAB L6 on the WPN Utility sub-page).
@@ -452,7 +491,7 @@ and G/S buttons along the top of the TDU will be inhibited.
 1. **Cursor Enter Button**. Commands the highlighted item underneath the cursor to be selected. Used as an
     alternate method of cursor-selection in lieu of depressing the Cursor Controller itself.
 
-1. **HDD Button**. No function.
+1. **Heads-Down Display (HDD) Button**. No function.
 
 1. **Missile Advance Button**. Steps to the next Hellfire missile in sequence. This button is only functional when
     the missile mode is set to MAN.
