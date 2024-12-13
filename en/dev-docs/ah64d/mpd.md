@@ -1,14 +1,25 @@
 # Multi-Purpose Displays (MPD)
 
-The Multi-Purpose Displays (MPDs) are color liquid crystal displays that allow the Pilot and CPG to access different
-pages and/or formats of information. Each page allows the crewmember to view different information or access
-different functions. There are two MPDs in each crewstation. The MPDs are identical; either can display any page,
-sub-page, or format. Many functions that would be controlled by switches or physical controls in other aircraft
-are included as MPD functions in the AH-64D.
+The revised cockpit and avionics of the AH-64D were designed to provide an efficient pilot interface, through
+which the human factors were heavily considered to optimize cockpit workflow, known as MANPRINT. The
+predominant means of facilitating this interface is through two Multi-Purpose Displays (MPD) within each
+crewstation, and incorporating a “management by exception” principle within the avionics:
 
-If on the ground while on external power and the engine Power Levers set to OFF, the MPDs will enter a
-screensaver mode if no buttons are pressed within 5 minutes. Pressing any button on either MPD will re-initialize
-turn them back on.
+- Most aircraft systems are managed automatically without aircrew interaction by default; but may be
+        monitored or managed directly by the aircrew if necessary.
+- Information that is not relevant to the current task, conditions, or mode is not presented to the aircrew.
+- Information that is of critical importance to the aircrew is displayed automatically without crewmember
+        action, also known as auto-paging.
+- Functions or commands that would create a conflict between crewstations or would otherwise interfere
+        with the current task are disabled or inhibited, also known as “barriered”.
+
+The MPDs themselves are 6 × 6 inch color liquid crystal displays that allow the Pilot and CPG to independently
+access different functions or view different elements of information. There are two identical MPDs in each
+crewstation. Functions that would otherwise be controlled by switches or physical controls in other aircraft are
+accessed through the MPDs in the AH-64D.
+
+If on external power, weight-on-wheels, and the Power Levers are set to OFF, the MPDs will enter a screensaver
+mode if no buttons are pressed within 5 minutes. Pressing a button on either MPD will re-initialize the MPDs.
 
 ![](img/img-108-1-screen.jpg)
 
@@ -67,25 +78,59 @@ turn them back on.
     - DMS page: If the Menu page is displayed on the MPD, this button will access the DMS page.
 
 
+#### MPD Paging
+
+The MPD Fixed Action Buttons and the Menu page provide immediate access to most aircraft systems
+or information. Upon pressing any Fixed Action Button or selection of any page option from the Menu
+page, the MPD will display the requested page, which will be denoted by the text displayed above the
+M button (VAB B1). If this text is boxed, the MPD is displaying the corresponding parent, or “top-
+level”, page. If the text is un-boxed, a sub-page has been accessed from the parent page.
+
+![](img/img-116-5-screen.jpg)
+
+Sub-page options are denoted by a right-facing arrow placed above the text of the sub-page option.
+When the first sub-page level is accessed, the corresponding sub-page text becomes boxed, removing
+the box from the parent page text above the M button (VAB B1). If a second sub-page level is accessed
+from the first sub-page, the second sub-page text becomes boxed, with the first sub-page text boxed
+in a “partial-intensity” green.
+
+![](img/img-116-6-screen.jpg)
+
+Some MPD pages include options to display the existing page in a different format, which presents
+different elements of information on the current page. Format options differ in appearance from sub-
+page options in that a right-facing arrow is not displayed above the corresponding text.
+
+![](img/img-117-3-screen.jpg)
+
+An example of this distinction can be seen on the Weapon (WPN) page below. Five sub-page options
+are displayed along the top row of Variable Action Buttons, whereas three additional WPN page
+formats may be selected along the bottom row.
+
+![](img/img-117-4-screen.jpg)
+
 
 #### Auto-paging
 
 Some MPD pages will be displayed automatically when certain events occur; this is called “auto-paging”.
 Autopaging by the DMS system is automatic and contextual based on specific aircraft conditions.
-DMS autopaging can be suppressed in the CPG crewstation from the DMS Utility page.
 
-- The ENG page will display in Emergency format when a new Warning message is displayed.
+DMS autopaging occurs when a critical aircraft emergency or malfunction occurs that could result in death to the
+aircrew and/or catastrophic loss of the aircraft, or when an engine start sequence is initiated by the Pilot. DMS
+autopaging can be suppressed in the CPG crewstation from the DMS Utility page.
 
-- The ENG page will display in Emergency format when the EMERG HYD button on the Emergency panel
-      in either crewstation is pressed.
-
-- The ENG page will display when an ENG START switch is engaged on the Pilot’s Power Quadrant panel.
+- The ENG page will be displayed in Emergency format when a new Warning message is displayed.
+- The ENG page will be displayed in Emergency format when the EMERG HYD button on the Emergency
+      panel in either crewstation is pressed.
+- The ENG page will be displayed in Ground format when an ENG START switch is engaged on the Pilot’s
+      Power Quadrant panel.
 
 ASE autopaging occurs when a threat is detected that exceeds the ASE Autopage threshold set within the
 crewstation on the TSD Utility or ASE pages. (See Aircraft Survivability Equipment for more information.)
 
 - The TSD page will display when the RLWR or RFI detects radar or laser energy exceeding the ASE
-          Autopage threshold. If the ASE page is displayed, ASE autopaging is suppressed.
+         ASE Autopage threshold. If the ASE page is displayed, ASE autopaging is suppressed.
+- The FCR page will be displayed when the selected sight is changed from HMD or TADS to FCR. If the
+ FCR page is displayed on the CPG’s TDU, FCR autopaging is suppressed in the CPG crewstation.
 
 FCR autopaging occurs when the FCR is selected as that crewstation’s sight.
 

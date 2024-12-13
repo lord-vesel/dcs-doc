@@ -154,8 +154,9 @@ The Collective Flight Grip is used to control critical aircraft functions and Ni
 
     - RESET (Depress). Resets the stabiliator mode to Automatic.
 
-1. **Chop Button (Guarded)**. Pressing this button activates the Engine Chop circuit, which reduces engine
-     power to idle. Pressing it again resets the Engine Chop circuit and restores normal engine power. (N/I)
+7.   Engine Chop (CHOP) Button (Guarded). Pressing this button activates the Engine Chop circuit, which
+     reduces engine power to idle. Pressing it again resets the Engine Chop circuit and restores normal engine
+     power. (N/I)
 
 1. **Tail Wheel Lock/Unlock Button**. Toggles the commanded state of the tail wheel locking mechanism
      between locked and unlocked.
@@ -166,61 +167,85 @@ The Collective Flight Grip is used to control critical aircraft functions and Ni
 
 ### Collective Mission Grip
 
-The Collective Mission Grip is used to control aircraft sensors and the MPD cursor.
+The Collective Mission Grip is used to control the Fire Control Radar (FCR), the MPD cursor, and sight selection.
 
 ![](img/img-90-1-screen.jpg)
 
 
-1. **FCR Mode Switch**. Not implemented.
 
-1. **FCR Scan Size Switch**. Selects the FCR scan size when the crewmember’s selected sight is set to FCR.
-  
-    -  Wide (W). Sets the FCR scan volume to 90° in azimuth.
-  
-    -  Medium (M). Sets the FCR scan volume to 45° in azimuth.
-  
-    -  Narrow (N). Sets the FCR scan volume to 30° in azimuth.
-  
-    -  Zoom (Z). Sets the FCR scan volume to 15° in azimuth.
+1.  **FCR Mode Switch.** Selects the FCR mode of operation when the crewmember’s selected sight is FCR and
+       the FCR is not scanning.
 
-1. **Cursor Controller/Enter**. Controls the MPD cursor movement on the MPD, allowing bezel options to be
-       selected by the cursor in lieu of the bezel buttons; or cursor-selection of points on the MPD itself. Depressing
-       the Cursor Controller commands the highlighted item underneath the cursor to be selected.
+    - **GTM (Forward).** Selects Ground Targeting Mode to detect and classify ground vehicles and low-flying
+             aircraft.
+    - **RMAP (Right).** Selects Radar Map mode to detect and classify ground vehicles and low-flying aircraft;
+             or to analyze the battlefield using a radar-generated surface map of the terrain. Re-selecting RMAP
+             when the FCR mode is already set to RMAP will toggle the terrain video underlay on the FCR page.
+    - **ATM (Aft).** Selects Air Targeting Mode to detect and classify rotary- and fixed-wing aircraft within the
+             local airspace.
+    - **TPM (Left).** Selects Terrain Profile Mode to aid in terrain and obstacle avoidance while operating at
+             low altitudes during low-visibility conditions. (N/I)
+
+2.  **FCR Scan Size Switch.** Selects the FCR scan size when the crewmember’s selected sight is FCR and the
+       FCR is not scanning.
+
+    - **W (Wide, Right).** Sets the FCR scan volume to 90° in azimuth if the FCR mode is GTM or RMAP. Sets
+             the FCR scan volume to 360° in azimuth if the FCR mode is ATM.
+    - **M (Medium, Aft).** Sets the FCR scan volume to 45° in azimuth if the FCR mode is GTM or RMAP. Sets
+             the FCR scan volume to 180° in azimuth if the FCR mode is ATM.
+    - **N (Narrow, Left).** Sets the FCR scan volume to 30° in azimuth if the FCR mode is GTM or RMAP. Sets
+             the FCR scan volume to 90° in azimuth if the FCR mode is ATM.
+    - **Z (Zoom, Forward).** Sets the FCR scan volume to 15° in azimuth if the FCR mode is GTM or RMAP.
+             Sets the FCR scan volume to 45° in azimuth if the FCR mode is ATM.
+
+3.  **Cursor Controller/Enter (CURSOR).** Controls the MPD cursor movement on the MPD, allowing bezel
+     options to be selected by the cursor in lieu of the bezel buttons; or cursor-selection of points on the MPD
+     itself. Depressing the Cursor Controller commands the highlighted item underneath the cursor to be selected.
 
 1. **Sight Select Switch**. Selects the sight to be used for targeting and weapon employment within the
        crewstation.
   
-    -  HMD (HMD). Sets the crewstation sight to the Helmet-Mounted Display. The crewmember’s HDU will
+    - **HMD (Forward).** Sets the crewstation sight to the Helmet-Mounted Display. The crewmember’s HDU will
              display HMD Flight symbology.
   
-    -  FCR (Left). Sets the crewstation sight to the Fire Control Radar and displays the FCR page on the left
+    - **FCR (Left).** Sets the crewstation sight to the Fire Control Radar and displays the FCR page on the left
              MPD if not already displayed. When selected in the Copilot/Gunner (CPG) crewstation while the CPG’s
              NVS Mode switch is set to OFF, the CPG’s HDU will display TADS Weapon symbology and TADS sensor
              video. If the Pilot is using the TADS as his/her NVS sensor, the CPG’s HDU will display HMD Flight
              symbology.
-             Neither crewstation has priority over the other, allowing either Sight Select Switch to select the FCR as
+
+        Neither crewstation has priority over the other, allowing either Sight Select Switch to select the FCR as
              the sight, taking control away from the other crewstation in a “last selected” logic.
   
-    -  TADS (Right). Sets the Copilot/Gunner (CPG) sight to the Target Acquisition Designation Sight. If the
+    - **TADS (Right).** Sets the Copilot/Gunner (CPG) sight to the Target Acquisition Designation Sight. If the
              CPG’s NVS Mode switch is set to OFF, the CPG’s HDU will display TADS Weapon symbology and TADS
           sensor video. If either crewmember is using the TADS as their NVS sensor, this switch position will be
           inhibited.
+
           This switch position is non-functional in the Pilot crewstation.
 
-    - LINK (Aft). Not implemented.
+    - **LINK (Aft).** If the crewmember’s selected sight is FCR, this position will slave the TADS to the FCR
+          Next-To-Shoot (NTS) target. If the CPG’s selected sight is TADS, this position in the CPG crewstation
+          will slave the FCR centerline to the azimuth of the TADS line-of-sight. (See the Fire Control Radar
+          chapter for more information.)
+
 
 1. **Cursor Display Select Button**. Sets the MPD cursor to the center of the opposite MPD.
 
-1. **FCR Scan Switch**. When the crewmember’s selected sight is set to FCR, momentarily setting the switch to
-     either position will initiate an FCR scanburst. If the FCR is already performing a single or continuous
-     scanburst, momentarily setting the switch to either position will terminate the ongoing scanburst.
+1. **FCR Scan Switch**. When the crewmember’s selected sight is FCR, momentarily setting the switch to either
+     position will initiate an FCR scanburst. If the FCR is already performing a single or continuous scanburst,
+     momentarily setting the switch to either position will terminate the ongoing scanburst.
 
-    - S-SCAN (Forward). Initiates a single scanburst. The FCR will perform several scans of the FCR scan
+    - **S-SCAN (Forward).** Initiates a single scanburst. The FCR will perform several scans of the FCR scan
           volume and then terminate scanning. The number of scans that are performed within a single scanburst
           are dependent on the selected scan size.
 
-    - C-SCAN (Aft). Initiates a continuous scanburst. The FCR will perform scans of the FCR scan volume
+    - **C-SCAN (Aft).** Initiates a continuous scanburst. The FCR will perform scans of the FCR scan volume
           continuously until manually terminated by the crewmember or until a different sight is selected.
+
+    !!! note
+        The FCR cannot transmit if the aircraft is weight-on-wheels unless GND ORIDE has been enabled on
+        the Armament Panel to override this inhibit.
 
 1. **Cued Search Button**. Not implemented.
 

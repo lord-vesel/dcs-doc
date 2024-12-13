@@ -41,7 +41,7 @@ the LED display.
 
 1. **Enter Button**. Tunes the currently selected radio frequency from the displayed Preset frequency list.
 
-1. **Datalink Transmit Select Rocker**. Selects a radio for datalink transmission.
+1. **Datalink (DL) Transmit Select Rocker**. Selects a radio for datalink transmission.
 
 1. **Radio Transmit Select (RTS) Rocker**. Cycles the Radio Transmit Select indicator on the EUFD to the
      next or previous radio in sequence. If the RTS indicator is set to the HF radio at the bottom of the list,

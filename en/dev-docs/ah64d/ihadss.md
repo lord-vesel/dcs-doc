@@ -262,6 +262,8 @@ positions of their respective sources.
 
 ![VirtualSymbologyElements](img/img-101-1-screen.jpg)
 
+When C-Scope is enabled within the crewstation, FCR target data will also be displayed as virtual symbology
+elements.
 
 ### Night Vision System (NVS)
 
