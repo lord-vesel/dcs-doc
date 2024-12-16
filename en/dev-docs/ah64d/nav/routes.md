@@ -27,9 +27,10 @@ Checkpoint, a standard Waypoint, a Release Point, and a solid green line linking
 ![Route Structure and Format](../img/img-239-2-screen.jpg)
 
 
-If a TSD is not displayed on either MPD within the crewstation, the EUFD will display “WAYPOINT APPROACH” in
+If a non-frozen TSD is not displayed on either MPD within the crewstation, the EUFDs will display “WAYPOINT APPROACH” in
 the advisory column to alert the crewmember of an impending turn to the next route point. This advisory will
 display when the estimated time enroute (ETE) to that route point is 60 seconds at the current ground speed.
+
 When passing the route point, even if the aircraft does not directly overfly it, the next route point is automatically
 set as the new destination and “WAYPOINT PASSAGE” is displayed on the EUFD for 90 seconds.
 

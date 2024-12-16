@@ -197,7 +197,8 @@ accordance with crewmember preferences, but it is important to be consistent and
 crewmember to ensure any settings that are common between crewstations are agreed upon and the start-up
 process is conducted in an efficient manner. (© Denotes “common” options or settings)
 
-![](img/img-195-1-screen.jpg)
+![](img/img-202-2-screen.jpg)
+
 
 An example DMS sweep is shown as follows (settings that are common between crewstations will be annotated
 by a **©** symbol):
@@ -304,7 +305,14 @@ by a **©** symbol):
 
     -  MANRNG> (VAB B6) – Set as desired or enter ‘A’ for Auto-Range.
 
-5.   [[**PLT & CPG**]]   A/C Button – Press.
+5.   [[**PLT & CPG**]]   FCR Button – Press.
+
+    - C SCP (VAB T1) – Select as desired.
+    - UTIL (VAB T6) – Select.
+        - **©** MMA (VAB R6) – Set to NORM to initialize FCR.
+        - **©** PRIORITY – SCHEME (VAB R4) – Select.
+
+6. [[**PLT & CPG**]] A/C Button – Press.
 
     -  FLT (VAB   T2) – Select.
         - SET VAB (B6) – Select.
@@ -337,21 +345,27 @@ by a **©** symbol):
         - **©** ANTI-ICE – SYSTEM (VAB R1) – Set as desired.
         - **©** ANTI-ICE (VAB R3-R6) – Set as desired (only if SYSTEM is set to MANUAL).
 
-6.   [[**PLT / CPG**]]   COM Button – Press.
+7.   [[**PLT / CPG**]]   COM Button – Press.
 
     -  Presets (VAB L1-L5, R1-R5) – Select and tune as desired.
         - RADIO (VAB T1-T5) – Select.
         - TUNE (VAB B2) – Select as desired.
         - TUNE Radio – SC (VAB B6) – Select.
-           or
 
-    -  MAN (VAB B2) – Select and tune as desired.
-        - **©** VHF FREQ> (VAB L1) – Set as desired.
-        - **©** UHF FREQ> (VAB L2) – Set as desired.
-        - **©** FM1 FREQ> (VAB L3) – Set as desired.
-        - **©** FM2 FREQ> VAB (L4) – Set as desired.
+    - XPNDR (VAB T3) – Select.
+        - **©** MODE (VAB L1-L6) – Select as appropriate.
+        - **©** MODE 1> (VAB R1) – Set as appropriate.
+        - **©** MODE 2> (VAB R2) – Set as appropriate.
+        - **©** MODE 3> (VAB R3) – Set as appropriate.
+        - **©** MODE 4 (VAB R4) – Set as appropriate.
+        - **©** REPLY (VAB B4) – Select as appropriate.
+    - UHF (VAB T4) – Select.
+        - **©** GUARD RECEIVER (VAB L6) – Set as desired.
+    - FM (VAB T5) – Select.
+    - SET (VAB B5) – Select.
+        - **©** POWER (VAB L5) – Select as appropriate.
 
-7.   [[**PLT**]]   CMWS Power/Set knob – ON.
+8.   [[**PLT**]]   CMWS Power/Set knob – ON.
 
      [[**CPG**]]   TDU Display knob – DAY or NT, as appropriate.
 
@@ -369,7 +383,8 @@ by a **©** symbol):
 
 ## Engine Start
 
-![](img/img-199-1-screen.jpg)
+
+![](img/img-207-4-screen.jpg)
 
 Prior to starting the engines, perform the following:
 
@@ -411,7 +426,7 @@ lose primary electrical power.
         - Engine OIL PSI
         - EUFD Advisory column
 
-7.    [[**PLT**]]   Second Engine – Repeat the steps above after first engine start sequence is complete.
+7.    [[**PLT**]]   Second engine – Repeat the steps above after first engine start sequence is complete.
 8.    [[**PLT**]]   RTR BRK switch – OFF.
 
     !!! note

@@ -66,11 +66,11 @@ to evaluate their aircraft’s measured hover performance compared to the calcul
 
 A hover power check is performed under the following conditions:
   
-    -   Aircraft is in a stationary hover in the vicinity of the takeoff area.
-  
-    -   Aircraft heading is aligned with the intended direction of takeoff.
-  
-    -   Aircraft altitude is 5 feet AGL.
+-   Aircraft is in a stationary hover in the vicinity of the takeoff area.
+
+-   Aircraft heading is aligned with the intended direction of takeoff.
+
+-   Aircraft altitude is 5 feet AGL.
 
 The aircrew evaluates the following factors during the
 hover power check to validate the aircraft performance
@@ -79,24 +79,24 @@ impacted:
 
 ![](img/img-205-1-screen.jpg)
 
-    -   Flight control responsiveness and positions
-              required to maintain the hover. Abnormal
-              control positions may indicate an aircraft
-              center-of-gravity (CG) that is out-of-limits.
-  
-    -   A comparison of HOVER Q values on the PERF
-              page between the REQUIRED IGE and the
-              INDICATED torque values, and whether the
-              data matches the pre-mission performance
-              planning. This is used to validate whether the
-              PERF page is supplying accurate performance
-              calculations for use during the mission.
-  
-    -   HOVER Q values are used to determine
-              whether the assessed aircraft performance will
-              negatively impact any aspect of the mission.
-  
-    -   Sufficient fuel is onboard the aircraft for the mission.
+-   Flight control responsiveness and positions
+          required to maintain the hover. Abnormal
+          control positions may indicate an aircraft
+          center-of-gravity (CG) that is out-of-limits.
+
+-   A comparison of HOVER Q values on the PERF
+          page between the REQUIRED IGE and the
+          INDICATED torque values, and whether the
+          data matches the pre-mission performance
+          planning. This is used to validate whether the
+          PERF page is supplying accurate performance
+          calculations for use during the mission.
+
+-   HOVER Q values are used to determine
+          whether the assessed aircraft performance will
+          negatively impact any aspect of the mission.
+
+-   Sufficient fuel is onboard the aircraft for the mission.
 
 ![HOVER Q Performance Calculations](img/img-205-2-screen.jpg)
 

@@ -178,7 +178,7 @@ or other improved surface is available. The maneuver is typically performed in t
 3.       Press and hold the force trim (Force Trim/Hold Mode switch – Forward).
 4.       With the cyclic in the neutral position, increase the collective to 30-35%.
 5.       Apply forward cyclic to begin the takeoff roll while progressively increasing
-         collective to approximately 3-5% below the maximum dual maximum dual-
+         collective to approximately 3-5% below the maximum dual-
          engine torque available (MAX Q – DE). As the tail comes off the surface, use
          forward/aft cyclic inputs to achieve and maintain a level, 90-knot attitude.
          

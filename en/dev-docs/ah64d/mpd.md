@@ -171,8 +171,7 @@ performed.
 
 ![](img/img-110-3-screen.jpg)
 
-Changes the page to a
-different format or toggles
+Changes the page format or toggles
 an option or mode. The
 state of the button is
 maintained if the MPD is
@@ -295,12 +294,12 @@ button options.
 
 #### MPD Cursor
 
-Each crewstation has an independent MPD cursor for accessing MPD commands or interacting with
-MPD displayed data and symbols. The Cursor Controller on the Collective Mission Grips and TEDAC
-Left Handgrip is used to slew the cursor on the active MPD. The cursor provides the crewmembers
-a means to select VAB commands on the MPD without removing their hands from the flight controls
-or the TEDAC handgrips. When placed over a VAB label, the label text will be bolded to indicate
-Cursor-Enter can be pressed.
+Each crewstation may utilize an MPD cursor for accessing MPD commands or interacting with MPD
+displayed data and symbols. The Cursor Controller on the Collective Mission Grips and TEDAC Left
+Handgrip is used to slew the cursor on the active MPD. The cursor provides the crewmembers a
+means to select VAB commands on the MPD without removing their hands from the flight controls
+or the TEDAC handgrips and pressing the physical button itself. When placed over a VAB label, the
+label text will be bolded to indicate Cursor-Enter can be pressed.
 
 ![](img/img-111-3-screen.jpg)
 
@@ -346,6 +345,12 @@ The cursor is being used to place a
 TRP-shaped Priority Fire Zone on the
 TSD Battle Area Management page.
 
+**Zoom format**
+
+![](img/img-119-3-screen.jpg)
+
+The cursor is being used to select an area to enlarge when ZOOM has been enabled on the FCR page.
+
 **Opposite Crewmember format**
 
 ![](img/img-111-8-screen.jpg)
@@ -371,7 +376,7 @@ increase the efficiency of a crewmember’s interpretation and prioritization of
 
 - White. Items requiring a crewmember’s attention, or invalid selection/data.
 
-- Cyan. Ownship, friendly units, pitch attitudes above the horizon (sky).
+- Blue. Ownship, friendly units, pitch attitudes above the horizon (sky).
 
 - Brown. Pitch attitudes below the horizon (ground).
 
@@ -454,7 +459,7 @@ when the MPD is set to MONO (monochromatic) mode.
 
 
 
-#### Engine Page, Ground format
+#### ENG Ground format
 
 During initial start-up of the APU, the ENG page will be displayed in Ground format, with engine oil and hydraulic
 pressure windows displayed in the lower half of the page. The ENG page will return to Ground format any time
@@ -1342,7 +1347,7 @@ conditions for calculating aircraft performance based on predicted changes in ai
     - MAX Q – DE. Displays the maximum torque (Q) available under dual-engine (DE)
           power.
 
-    - MAX Q – SE. Displays the maximum torque (Q) available under single-engine (DE)
+    - MAX Q – SE. Displays the maximum torque (Q) available under single-engine (SE)
           power.
 
      NOTE: These values do not take into account the limitations of the engine nose gearboxes or the main
@@ -1434,7 +1439,7 @@ Computer (FMC) functions.
 1. **Free Air Temperature**. Displays free air temperature in °C as sensed by the external HADS temperature
      probe.
 
-1. **Cockpit Temperature**. Displays the current temperature within the crewstation. (N/I)
+1. **Cockpit Temperature**. Displays the current temperature within the crewstation.
 
 1. **FMC Controls**. Toggles individual Flight Management Computer functions.
 
@@ -1481,7 +1486,7 @@ Computer (FMC) functions.
 1. **Bleed Air Controls**. Enables/Disables the bleed air supply from engines 1 and 2.
 
 1. **Cockpit Temperature Setting**. Activates the KU for inputting the desired crewstation temperature. Each
-     crewstation can be set independently. (N/I)
+     crewstation can be set independently.
 
 1. **ECS Power**. Enables/Disables the Environmental Control System (ECS).
 
@@ -1561,7 +1566,7 @@ pages are described in the Datalink chapter.
 
     When enabled, sets the TSD to Freeze mode. All TSD symbology and
     navigation data will continue to update as normal, but the focal point of the TSD “footprint”
-    will be the white Ghostship symbol. The cyan Ownship symbol will continue to move across
+    will be the white Ghostship symbol. The blue Ownship symbol will continue to move across
     the map independently of the TSD footprint to display the actual aircraft position. (See TSD
     Pan sub-page for more information.)
 
@@ -1615,7 +1620,7 @@ pages are described in the Datalink chapter.
 
         -   Low-priority FCR target symbols cannot be seen.
 
-        -   Shot-At symbols cannot be seen.
+        -   SHOT symbols cannot be seen.
 
     - ATK. The Attack phase is used for operations within the combat area or in the vicinity of the objective.
           As such, its default Show settings are configured with a focus on pre-planned targets and threats, FCR
@@ -1629,7 +1634,7 @@ pages are described in the Datalink chapter.
 
         -   Low-priority FCR target symbols can be seen, if enabled.
 
-        -   Shot-At symbols can be seen.
+        -   SHOT symbols can be seen.
 
 1. **TADS Footprint**. Displays a top-down representation of the TADS line-of-
     sight and range when the CPG’s selected sight is set to TADS. The distance
@@ -1965,9 +1970,13 @@ planned targets and threats, battle damage assessment, and control of the flight
 ![](img/img-153-1-screen.jpg)
 
 
-1. **SHOT Locations**. Enables/disables the display of missile engagement locations as green X symbols.
+7\. **SHOT Locations**. Enables/disables the display of missile engagement locations as green X symbols.
      Ownship missile engagement locations are displayed in full-intensity green. Missile engagement locations
      received via the datalink are displayed in partial-intensity green.
+
+SHOT symbols represent locations to which an AGM-114 missile has been fired for the purposes of post- attack battle damage assessment (BDA). These symbols do not indicate whether the AGM-114 successfully hit a target nor what target was actually struck by the missile.
+
+See TSD SHOT sub-page in the Datalink chapter for more information. /link
 
 #### TSD Coordinate (COORD) Sub-page
 

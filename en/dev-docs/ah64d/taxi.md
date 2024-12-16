@@ -95,6 +95,8 @@ During ground taxi, perform the following:
 
 Perform the following prior to lifting up to a hover or initiating takeoff from the ground:
 
+![](img/img-210-3-screen.jpg)
+
 1.   [[**PLT & CPG**]]   Weapons systems – Check the following:
 
     -   A/S button – “SAFE” light is illuminated. (see [Armament Panel for more information](04.plt-cockpit.md/#armament-panel).)
@@ -102,6 +104,7 @@ Perform the following prior to lifting up to a hover or initiating takeoff from 
     -   GND ORIDE button – Off; “ON” light is not illuminated. (see Armament Panel for more information.)
 
     -   Weapons not actioned – Verify. (see HMD High Action Display for more information.)
+
 2.   [[**PLT / CPG**]]   TAIL WHEEL button – Verify locked; “UNLOCK” light is not illuminated.
 3.    [[**PLT**]]   PARK BRAKE – As desired (Ensure released unless operating on uneven or sloped terrain).
 4.   [[**PLT & CPG**]]   POWER levers – Ensure both POWER levers are set to FLY.
@@ -116,7 +119,7 @@ Perform the following prior to lifting up to a hover or initiating takeoff from 
     -   EUFD – Check; clear of Warnings and
             Cautions.                                 
     -   Engine and flight instruments – Check.
-        - NP/NR 101%, all indications
+        - N~P~/N~R~ 101%, all indications
                       green.
         - Update altimeter as required on
                       [FLT SET page](09.mpd.md/#flt-settings-set-format) and Pilot’s [Standby Altimeter](04.plt-cockpit.md/#standby-altimeter).

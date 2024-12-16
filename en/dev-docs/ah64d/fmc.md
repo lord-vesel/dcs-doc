@@ -106,6 +106,9 @@ or “squat” switch). This prevents over-steering during ground taxi.
 
 ![Command Augmentation at different airspeeds](img/img-175-1-screen.jpg)
 
+CAS is disabled in the FMC Yaw channel when the aircraft is on the ground (determined by the weight-on-wheels
+or “squat” switch). This prevents over-steering during ground taxi.
+
 
 ### Force Trim & “Breakout” Values
 
@@ -132,7 +135,7 @@ purposes in flight:
 
 When the Force Trim/Hold Mode switch is pressed to the left AT position, Attitude Hold is enabled, and will enter
 one of three sub-modes based on current ground speed (see Attitude Hold for more information). A subsequent
-press to the left AT position will disable the Attitude Hold.
+press to the right AL position will disable the Attitude Hold.
 
 When the Force Trim/Hold Mode switch is pressed to the right AL position, Altitude Hold is enabled (if within
 vertical speed parameters), and will enter one of two sub-modes based on current ground speed and altitude
@@ -273,7 +276,7 @@ If Attitude Hold is disabled, Heading Hold will engage when all of the following
 
 - Pedal displacement ≤3% in yaw axis from the force trim reference position
 
-- Force trim release is not pressed
+- Force trim is not pressed
 
 - Yaw rate <3° per second
 
@@ -287,7 +290,7 @@ following conditions are true:
 - Pedal displacement ≤3% in yaw axis from the force trim reference position in Position Hold sub-mode
       or ≤6% in yaw axis from the force trim reference position in Velocity Hold sub-mode
 
-- Force trim release is not pressed
+- Force trim is not pressed
 
 - Yaw rate <3° per second
 

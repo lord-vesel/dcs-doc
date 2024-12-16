@@ -717,7 +717,7 @@ format. A new point may be stored using either a “flyover” store or a “CPG
 
 When the POINT sub-page is displayed in STO format, the Review Status window will display the information
 that will be entered into the next point file if the NOW button (VAB L1) is pressed or, in the case of the CPG, if
-the STORE/UPDT button on the TEDAC Left Handgrip is momentarily set to the STO position. This includes the
+the STORE/UPDT button on the TEDAC Left Handgrip is momentarily set to the STORE position. This includes the
 next empty point file index of the selected type, and the aircraft’s current position and altitude.
 
 
@@ -794,7 +794,7 @@ following:
      desired.
 8.   Position the HMD LOS Reticle over the
      desired location.
-9.   STORE/UPDT switch – STO.
+9.   STORE/UPDT switch – STORE.
 
     ![](../img/img-237-2-screen.jpg)
 
@@ -808,7 +808,7 @@ be used if necessary, a laser range will provide the best precision when storing
 !!! note
     The CPG may store a Target Point (TG) at the TADS line-of-sight and current range source any time the
     TADS is the selected sight and the STORE/UPDT switch on the TEDAC Left Handgrip is momentarily set to the
-    STO position. The TSD is not required to be displayed and set to the STO sub-page to perform this action.
+    STORE position. The TSD is not required to be displayed and set to the STO sub-page to perform this action.
 
 Although this method allows targets to be
 stored more quickly by excluding steps 3
@@ -836,7 +836,7 @@ using a laser range, perform the following:
 
 9.   LRFD trigger – 1st detent for ranging.
 
-10. STORE/UPDT switch – STO.
+10. STORE/UPDT switch – STORE.
 
     ![](../img/img-238-2-screen.jpg)
 
