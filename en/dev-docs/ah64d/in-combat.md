@@ -70,7 +70,7 @@ manner that cannot be matched by fixed-wing aircraft.
 
 
 
-![YAH-64A (US Army)](img/img-276-2-screen.jpg)
+![Pre-production AH-64A (US Army)](img/img-276-2-screen.jpg)
 
 
 ## Mobility, Standoff, and Planning

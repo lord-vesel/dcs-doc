@@ -64,7 +64,7 @@ the CPG has selected TADS as a sight).
 - If the TADS is being used as an NVS sensor, TADS will be removed from the ACQ selection menu within the
      same crewstation in which it is being used. (See Night Vision System for more information.)
 
-Acquisition sources may be selected from the WPN or TSD pages by opening the ACQ selection menu (VAB R6).
+Acquisition sources may be selected from the WPN, TSD, or FCR pages by opening the ACQ selection menu (VAB R6).
 Acquisition sources that are available for selection will be displayed, with the current ACQ selection boxed.
 
 ![ ](img/img-287-1-screen.jpg)
@@ -79,7 +79,7 @@ Acquisition sources that are available for selection will be displayed, with the
 In many instances, an acquisition source may be available for selection, but the acquisition may be invalid and
 cannot provide cueing to a crewmember’s sight. When this occurs, the acquisition source will be displayed in
 white and annotated with a “?”. As an example, if a crewmember has not created a Terrain point on their TSD,
-TRN will be displayed within the ACQ selection menu but will be invalid until the crewmember creates a Terrain
+`?TRN` will be displayed within the ACQ selection menu but will be invalid until the crewmember creates a Terrain
 point.
 
 #### ACQ Slave Logic

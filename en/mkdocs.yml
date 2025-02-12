@@ -176,6 +176,7 @@ theme:
     - navigation.tabs
     - navigation.tracking
     - navigation.indexes
+    - navigation.prune
     - toc.integrate
     - announce.dismiss
 
@@ -205,6 +206,7 @@ markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
+      toc_depth: 4
   - markdown_captions
   - markdown_include.include
   - admonition

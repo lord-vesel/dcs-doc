@@ -47,7 +47,7 @@ NVS mode may be used in conjunction with the HMD to augment the crew’s ability
 
 #### Target Acquisition Designation Sight (TADS)
 
-The TADS uses a combination of electro-optical sensors in both the visible and infrared spectrums to detect and
+The TADS uses a combination of electro-optical sensors in the visible and infrared spectrums to detect and
 target enemy forces at long range or perform reconnaissance during day or night. When selected as the
 Copilot/Gunner’s sight, weapon solutions are generated for the CPG’s actioned weapon based on the TADS turret
 position and the CPG’s current range source.
@@ -59,8 +59,10 @@ position and the CPG’s current range source.
 #### Fire Control Radar (FCR)
 
 The FCR mast-mounted assembly consists of an active radar antenna to rapidly scan large areas of the battlefield
-(or the airspace above it). When selected as the crewmember’s sight, weapon solutions are generated for the
-crewmember’s actioned weapon based on the location of the Next-To-Shoot (NTS) target on the FCR page.
+(or the airspace above it) and a passive radar detection antenna array to target radar-emitting air defense
+systems. When selected as the crewmember’s sight, weapon solutions are generated for the crewmember’s
+actioned weapon based on the location of the Next-To-Shoot (NTS) target on the FCR page.
+(See the Fire Control Radar chapter for more information)
 
 
 
@@ -77,6 +79,15 @@ Sight selection logic is outlined below.
 
 - Either crewmember may select FCR as their sight, however only one crewmember may do so at any given
      time. If the CPG’s selected sight is FCR and the Pilot selects FCR, the CPG’s sight will automatically be set
-     to HMD. If the Pilot’s selected sight is FCR and the CPG selects FCR, the Pilot’s sight will automatically be
-     set to HMD.
+ to HMD and any actioned weapon in the CPG crewstation will be de-actioned. If the Pilot’s selected sight is
+ FCR and the CPG selects FCR, the Pilot’s sight will automatically be set to HMD and any actioned weapon in
+ the Pilot crewstation will be de-actioned.
+
+- The TADS may be linked to the FCR Next-To-Shoot (NTS) target. If the Pilot’s selected sight is FCR and the
+ CPG’s selected sight is TADS, when the Pilot links the TADS to the FCR the CPG’s sight will automatically be
+ set to HMD and any actioned weapon in the CPG crewstation will be de-actioned.
+
+- The FCR may be linked to the TADS line-of-sight. If the CPG’s selected sight is TADS and the Pilot’s selected
+ sight is FCR, when the CPG links the FCR to the TADS the Pilot’s sight will automatically be set to HMD, and
+ any actioned weapon in the Pilot crewstation will be de-actioned.
 

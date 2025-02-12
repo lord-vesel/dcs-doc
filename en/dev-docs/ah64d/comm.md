@@ -238,7 +238,7 @@ When a preset is selected from the COM page, tuning options will be sequentially
 to choose which radio to assign the preset, whether the preset is assigned to the primary or standby slots on the
 EUFD, and which type of radio net is assigned to the radio.
 
-To assign a preset to a radio using an MPD,
+To assign a preset frequency/network to a radio using an MPD,
 perform the following:
 
 ![](img/img-265-1-screen.jpg)
@@ -263,9 +263,9 @@ from the same preset.
 Pressing the EUFD Preset button displays the Preset list for the selected radio along the right side of the EUFD.
 While this menu is displayed, the WCA rocker is used to scroll up and down within the preset list. Once a preset
 has been selected with the arrow, pressing the Enter button will assign the selected preset to the primary slot of
-the corresponding radio, which will then be tun ed to the preset frequency.
+the corresponding radio, which will then be tuned to the preset frequency.
 
-To assign a preset to a radio using the EUFD, perform the following:
+To assign a preset frequency/network to a radio using the EUFD, perform the following:
 
 ![](img/img-265-2-screen.jpg)
 
@@ -286,7 +286,7 @@ hopping nets.
 ### Editing a Preset
 
 Any preset may be edited from within the cockpit by either crewmember. The preset may be modified in how it
-is presented on the MPD’s and EUFD, which frequencies are tuned when the preset is assigned to a radio, or the
+is presented on the MPDs and EUFD, which frequencies are tuned when the preset is assigned to a radio, or the
 composition of the network and modem settings when the preset is utilized for datalink functions.
 
 
@@ -299,7 +299,7 @@ sub-pages respectively. (See the Datalink chapter for more information.)
 
 ##### UNIT Edit Options
 
-The UNIT options allow the crewmember to edit how the preset itself is presented on the MPD’s and EUFD.
+The UNIT options allow the crewmember to edit how the preset itself is presented on the MPDs and EUFD.
 
 ![](img/img-266-1-screen.jpg)
 
@@ -330,7 +330,8 @@ assigned to the ARC-186(V) or ARC-164(V) radios, respectively.
 
 
 6.   **VHF Frequency.** Activates the KU for inputting a VHF-AM frequency for the preset. Valid frequency entries
-     are between 116.000 and 151.975 MHz in 0.025 MHz increments.
+     are between 108.000 and 151.975 MHz in 0.025 MHz increments. Frequencies between 108.000 and
+    115.975 MHz are limited to receive-only
 
 7.   **UHF Settings.** Displays settings for configuring UHF radio nets for the preset.
 
