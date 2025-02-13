@@ -80,24 +80,25 @@ nav:
               - ah64d/dl-points.md
               - ah64d/dl-reports.md
               - ah64d/battle-area.md
-                #          - Weapons Employment:
-                #              - ah64d/weapons-empl.md
-                #              - ah64d/aws.md
-                #              - ah64d/ars.md
-                #              - ah64d/hmms.md
-                #              - ah64d/weapon-controls.md
-                #          - Aircraft Survivability Equipment (ASE):
-                #              - ah64d/ase.md
-                #              - ah64d/detecting.md
-                #              - ah64d/cmws.md
-                #              - ah64d/couter-measures.md
-                #              - ah64d/ase-controls.md
-                #          - George AI:
-                #              - ah64d/ai.md
-                #              - ah64d/ai-cpg.md
-                #              - ah64d/ai-plt.md
-                #              - ah64d/ai-features.md
-                #              - ah64d/ai-controls.md
+              - ah64d/radar-handovers.md
+          - Weapons Employment:
+              - ah64d/weapons-empl.md
+              - ah64d/aws.md
+              - ah64d/ars.md
+              - ah64d/hmms.md
+              - ah64d/weapon-controls.md
+          - Aircraft Survivability Equipment (ASE):
+              - ah64d/ase.md
+              - ah64d/detecting.md
+              - ah64d/cmws.md
+              - ah64d/couter-measures.md
+              - ah64d/ase-controls.md
+          - George AI:
+              - ah64d/ai.md
+              - ah64d/ai-cpg.md
+              - ah64d/ai-plt.md
+              - ah64d/ai-features.md
+              - ah64d/ai-controls.md
 
       - F-16C Viper:
           - f16/index.md
