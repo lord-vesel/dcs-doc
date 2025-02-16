@@ -122,42 +122,79 @@ be overridden.
 
 ##### Performance Inhibits
 
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       The required weapon aiming
-                                                           If tactically feasible, engage the target at a closer
-    BAL LIMIT          solution exceeds the ballistics
-                                                           range.
-                       processing capability.
+- **BAL LIMIT:**
+
+    The required weapon aiming
+solution exceeds the ballistics
+processing capability.
+
+    - If tactically feasible, engage the target at a closer
+range.
+
+##### Safety Inhibits
+
+- **ALT LAUNCH:**
+
+    A missile launch or a rocket
+salvo is already in progress.
+
+    - The gun may be fired 2 seconds after the missile
+launch or rocket salvo is complete.
+
+- **AZ LIMIT:**
+
+    The gun turret is at an azimuth
+limit and cannot reach the
+weapon aiming solution.
+
+    - Adjust the aircraft heading as necessary to bring the
+weapon aiming solution within the azimuth limits of
+the gun turret.
+
+- **COINCIDENCE:**
+
+    The gun is out of coincidence
+from the weapon aiming
+solution.
+
+    - Wait for the gun to reach the weapon aiming solution.
+If inhibit message remains, the gun may have
+experienced a failure and should be de-actioned.
+
+- **EL LIMIT:**
+
+    The gun turret is at an elevation
+limit and cannot reach the
+weapon aiming solution.
+
+    - Adjust the aircraft pitch attitude as necessary to bring
+the weapon aiming solution within the elevation limits
+of the gun turret (e.g., pitch the nose up when
+engaging a target at long range).
+
+- **LOS INVALID:**
+
+    The line-of-sight of the selected
+sight is invalid or has failed;
+and cannot provide a weapon
+aiming solution to the gun.
+
+    - Select a different sight for engagement.
+If using HMD as the sight and the LOS Reticle is
+flashing, adjust the helmet position to within the slew
+limits of the assigned NVS sensor (PNVS or TADS).
+
+- **SAFE:**
+
+    The master armament state is
+currently set to SAFE; weapons
+cannot be fired.
+
+    - Set the A/S button on the Armament Panel to ARM.
 
 
-Safety Inhibits
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       A missile launch or a rocket        The gun may be fired 2 seconds after the missile
-   ALT LAUNCH
-                       salvo is already in progress.       launch or rocket salvo is complete.
-                       The gun turret is at an azimuth     Adjust the aircraft heading as necessary to bring the
-     AZ LIMIT          limit and cannot reach the          weapon aiming solution within the azimuth limits of
-                       weapon aiming solution.             the gun turret.
-                       The gun is out of coincidence       Wait for the gun to reach the weapon aiming solution.
-  COINCIDENCE          from the weapon aiming              If inhibit message remains, the gun may have
-                       solution.                           experienced a failure and should be de-actioned.
-                                                         Adjust the aircraft pitch attitude as necessary to bring
-                       The gun turret is at an elevation
-                                                         the weapon aiming solution within the elevation limits
-     EL LIMIT          limit and cannot reach the
-                                                         of the gun turret (e.g., pitch the nose up when
-                       weapon aiming solution.
-                                                         engaging a target at long range).
+### WPN Gun (GUN) Format
 
-                       The line-of-sight of the selected   Select a different sight for engagement.
-                       sight is invalid or has failed;     If using HMD as the sight and the LOS Reticle is
-  LOS INVALID
-                       and cannot provide a weapon         flashing, adjust the helmet position to within the slew
-                       aiming solution to the gun.         limits of the assigned NVS sensor (PNVS or TADS).
-                       The master armament state is
-       SAFE            currently set to SAFE; weapons      Set the A/S button on the Armament Panel to ARM.
-                       cannot be fired.
-WPN Gun (GUN) Format
 When the gun is selected for employment within the crewstation, the WPN page will be set to GUN format.
 
 
@@ -195,16 +232,18 @@ When the gun is selected for employment within the crewstation, the WPN page wil
            range of 1,575 meters, regardless of the selected sight or range source.
 3.   Gun Status. Displays the status of the gun and the remaining quantity of ammunition on board the aircraft.
 4.   Harmonize Mode (CPG Only). Not implemented.
-Gun Weapon Status Messages
+
+### Gun Weapon Status Messages
+
 The following messages will be displayed in the High Action Display based on current gun status or weapon page
 settings when the gun is actioned.
 
-    WEAPON
-                    CONDITION
-    STATUS
- ROUNDS #### The gun is actioned and the number of remaining rounds onboard is displayed.
-    WEAPON?          The weapon trigger has been pulled but no weapon has been actioned.
-Gun Engagement using TADS (NORM Mode)
+- **ROUNDS ####:** The gun is actioned and the number of remaining rounds onboard is displayed.
+- **WEAPON?:** The weapon trigger has been pulled but no weapon has been actioned.
+
+
+## Gun Engagement using TADS (NORM Mode)
+
 When employing the AWS with the TADS, ballistic compensation for aircraft linear velocities and environmental
 factors is automatically calculated. If the target is moving, continuous laser designation via the 2 nd detent of the
 laser trigger should be used to incorporate the Target State Estimator (TSE) for lead-angle compensation. TADS
