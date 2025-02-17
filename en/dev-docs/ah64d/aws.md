@@ -767,57 +767,112 @@ Rocket Weapon Inhibits
 The following conditions will inhibit the rockets from being fired or interrupt the firing of the rockets if already in
 in progress. Performance inhibits may be overridden by pulling the trigger to the 2nd detent. Safety inhibits cannot
 be overridden.
-Performance Inhibits
-     INHIBIT           CONDITION                          CORRECTIVE ACTION
-                       The required weapon aiming
-                                                           If tactically feasible, engage the target at a closer
-    BAL LIMIT          solution exceeds the ballistics
-                                                           range.
-                       processing capability.
-                       The commanded position of the       Adjust the aircraft pitch attitude as necessary to bring
-  PYLON LIMIT          rocket launcher(s) exceeds the      the weapon aiming solution within the articulation
-   (IN FLIGHT)         pylon articulation limits.          range of the wing pylons (e.g., pitch the nose toward
-                       (+4° to -15°).                      the Rocket Steering Cursor).
+
+##### Performance Inhibits
+
+- **BAL LIMIT:**
+
+    The required weapon aiming
+solution exceeds the ballistics
+processing capability.
+
+    - If tactically feasible, engage the target at a closer
+range.
+
+- **PYLON LIMIT
+ (IN FLIGHT):**
+
+    The commanded position of the
+rocket launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -15°).
+
+    - Adjust the aircraft pitch attitude as necessary to bring
+the weapon aiming solution within the articulation
+range of the wing pylons (e.g., pitch the nose toward
+the Rocket Steering Cursor).
+
+##### Safety Inhibits
+
+- **ACCEL LIMIT:**
+
+    Vertical acceleration is <0.5 G;
+the main rotor blades may
+obstruct the trajectory of the
+rockets when fired.
+
+    - Reduce the severity of the current maneuver to
+increase the positive G load on the aircraft.
+
+- **ALT LAUNCH:**
+
+    A missile launch is already in
+progress.
+
+    - The rockets may be fired 2 seconds after the missile
+launch is complete.
+
+- **GUN OBSTRUCT:**
+
+    The gun is out of coincidence
+from the weapon aiming
+solution and may obstruct the
+trajectory of rockets fired from
+the inboard wing pylons.
+
+    - If tactically feasible, instruct the crewmember that has
+actioned the gun to de-action in order to permit the
+firing of rockets.
+
+- **LOS INVALID:**
+
+    The line-of-sight of the selected
+sight is invalid or has failed;
+and cannot provide a weapon
+aiming solution to the gun.
+
+    - Select a different sight for engagement.
+If using HMD as the sight and the LOS Reticle is
+flashing, adjust the helmet position to within the slew
+limits of the assigned NVS sensor (PNVS or TADS).
+
+- **PYLON ERROR:**
+
+    Indicates that the pylon position
+is not equal to the commanded
+pylon position or the rocket
+launcher positions are
+unknown.
+
+    - If inhibit message remains, the corresponding wing
+pylons may have experienced a failure.
+A different rocket warhead selection may be made (if
+available) on a different set of wing pylons; otherwise
+the rockets should be de-actioned.
+
+- **PYLON LIMIT
+(ON GROUND):**
+
+    The commanded position of the
+rocket launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -5°).
+
+    - Adjust the weapon aiming solution as necessary to
+that which may be utilized within the articulation range
+of the wing pylons.
+
+- **SAFE:**
+
+    The master armament state is
+currently set to SAFE; weapons
+cannot be fired.
+
+    - Set the A/S button on the Armament Panel to ARM.
 
 
-Safety Inhibits
-     INHIBIT           CONDITION                          CORRECTIVE ACTION
-                       Vertical acceleration is <0.5 G;
-                       the main rotor blades may           Reduce the severity of the current maneuver to
-  ACCEL LIMIT
-                       obstruct the trajectory of the      increase the positive G load on the aircraft.
-                       rockets when fired.
-                       A missile launch is already in      The rockets may be fired 2 seconds after the missile
-   ALT LAUNCH
-                       progress.                           launch is complete.
-             The gun is out of coincidence
-             from the weapon aiming                  If tactically feasible, instruct the crewmember that has
-GUN OBSTRUCT solution and may obstruct the           actioned the gun to de-action in order to permit the
-             trajectory of rockets fired from        firing of rockets.
-             the inboard wing pylons.
+### WPN Rocket (RKT) Format
 
-                 The line-of-sight of the selected   Select a different sight for engagement.
-                 sight is invalid or has failed;     If using HMD as the sight and the LOS Reticle is
- LOS INVALID
-                 and cannot provide a weapon         flashing, adjust the helmet position to within the slew
-                 aiming solution to the gun.         limits of the assigned NVS sensor (PNVS or TADS).
-
-                 Indicates that the pylon position   If inhibit message remains, the corresponding wing
-                 is not equal to the commanded       pylons may have experienced a failure.
-PYLON ERROR      pylon position or the rocket        A different rocket warhead selection may be made (if
-                 launcher positions are              available) on a different set of wing pylons; otherwise
-                 unknown.                            the rockets should be de-actioned.
-                 The commanded position of the
-                                                     Adjust the weapon aiming solution as necessary to
- PYLON LIMIT     rocket launcher(s) exceeds the
-                                                     that which may be utilized within the articulation range
- (ON GROUND)     pylon articulation limits.
-                                                     of the wing pylons.
-                 (+4° to -5°).
-                 The master armament state is
-     SAFE        currently set to SAFE; weapons      Set the A/S button on the Armament Panel to ARM.
-                 cannot be fired.
-WPN Rocket (RKT) Format
 When rockets are selected for employment within the crewstation, the WPN page will be set to RKT format.
 
 
@@ -1591,92 +1646,186 @@ trajectory (if applicable).
 SAL Missile Weapon Inhibits
 The following conditions will inhibit the SAL missiles from being fired. Performance inhibits may be overridden by
 pulling the trigger to the 2nd detent. Safety inhibits cannot be overridden.
-Performance Inhibits
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       The required weapon aiming
-                                                           If tactically feasible, engage the target at a closer
-    BAL LIMIT          solution exceeds the ballistics
-                                                           range.
-                       processing capability.
-                                                           Wait for the missile launchers to reach the optimum
-                       The position of the missile         launch position.
-                       launcher(s) is ≥10° from the        If inhibit message remains, missiles may still be fired
-  PYLON ANGLE
-                       optimum launch position or the      but the missile launcher positions should be visually
-                       pylon position is unknown.          confirmed to ensure the appropriate considerations
-                                                           may be made for a successful engagement.
-                       The commanded position of the
-                                                           Adjust the aircraft pitch attitude as necessary to bring
-  PYLON LIMIT          missile launcher(s) exceeds the
-                                                           the articulation range of the wing pylons to +4° above
-   (IN FLIGHT)         pylon articulation limits.
-                                                           the inertial horizon.
-                       (+4° to -15°).
-                       The pitch, roll, and/or yaw rates
-   RATE LIMIT                                            Stabilize the aircraft attitude prior to launch.
-                       are excessive.
-                       The roll angle of the aircraft is
-   ROLL LIMIT                                              Reduce the roll attitude of the aircraft prior to launch.
-                       excessive.
 
-                       When the missile is in LOBL         Adjust the heading or pitch attitude of the aircraft to
-    SKR LIMIT          mode, the missile seeker has        bring the target within the missile seeker field-of-view.
-                       reached a gimbal limit.             (e.g., turn toward the Missile Constraints box).
-                       When the missile is in LOAL         Adjust the heading of the aircraft to bring the target
-                       mode, the target position           position closer to the aircraft centerline.
-   YAW LIMIT
-                       relative to the aircraft heading
-                       is excessive.                       (e.g., turn toward the Missile Constraints box).
+##### Performance Inhibits
+
+- **BAL LIMIT:**
+
+    The required weapon aiming
+solution exceeds the ballistics
+processing capability.
+
+    - If tactically feasible, engage the target at a closer
+range.
+
+- **PYLON ANGLE:**
+
+    The position of the missile
+launcher(s) is ≥10° from the
+optimum launch position or the
+pylon position is unknown.
+
+    - Wait for the missile launchers to reach the optimum
+launch position.
+
+    - If inhibit message remains, missiles may still be fired
+but the missile launcher positions should be visually
+confirmed to ensure the appropriate considerations
+may be made for a successful engagement.
+
+- **PYLON LIMIT
+ (IN FLIGHT):**
+
+    The commanded position of the
+rocket launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -15°).
+
+    - Adjust the aircraft pitch attitude as necessary to bring
+the weapon aiming solution within the articulation
+range of the wing pylons (e.g., pitch the nose toward
+the Rocket Steering Cursor).
+
+- **RATE LIMIT:**
+
+    The pitch, roll, and/or yaw rates
+are excessive.
+
+    - Stabilize the aircraft attitude prior to launch.
+
+- **ROLL LIMIT:**
+
+    The roll angle of the aircraft is
+excessive.
+
+    - Reduce the roll attitude of the aircraft prior to launch.
+
+- **SKR LIMIT:**
+
+    When the missile is in LOBL
+mode, the missile seeker has
+reached a gimbal limit.
+
+    - Adjust the heading or pitch attitude of the aircraft to
+bring the target within the missile seeker field-of-view.
+(e.g., turn toward the Missile Constraints box).
+
+- **YAW LIMIT:**
+
+    When the missile is in LOAL
+mode, the target position
+relative to the aircraft heading
+is excessive.
+
+    - Adjust the heading of the aircraft to bring the target
+position closer to the aircraft centerline. (e.g., turn toward the Missile Constraints box).
+
+##### Safety Inhibits
+
+- **ACCEL LIMIT:**
+
+    Vertical acceleration is <0.5 G;
+the main rotor blades may
+obstruct the trajectory of the
+missile when fired.
+
+    - Reduce the severity of the current maneuver to
+increase the positive G load on the aircraft.
+
+- **ALT LAUNCH:**
+
+    The firing of a rocket salvo is already in
+progress.
+
+    - The missile may be fired 2 seconds after the rocket
+salvo is complete.
+
+- **BACK SCATTER:**
+
+    The TADS LRFD is firing and the
+difference between the SAL
+missile seeker line-of-sight and
+the TADS line-of-sight is >2°.
+
+    - The missile is not tracking the TADS laser designation,
+possibly due to atmospheric obscurance between the
+aircraft and the target such as dust or smoke.
+
+    - Release the laser trigger to slave the missile seeker
+back to the TADS line-of-sight and attempt to
+designate again.
+
+- **GUN OBSTRUCT:**
+
+    The gun is out of coincidence
+from the weapon aiming
+solution and may obstruct the
+trajectory of missiles fired from
+the inboard wing pylons.
+
+    - If tactically feasible, instruct the crewmember that has
+actioned the gun to de-action in order to permit the
+firing of missiles.
+
+    - A different missile may be manually selected by setting
+the Mode to MAN and pressing the Missile Advance
+button.
+
+- **LOS INVALID:**
+
+    The line-of-sight of the selected
+sight is invalid or has failed.
+
+    - Select a different sight for engagement.
+If using HMD as the sight and the LOS Reticle is
+flashing, adjust the helmet position to within the slew
+limits of the assigned NVS sensor (PNVS or TADS).
+
+- **MSL NOT RDY:**
+
+    The SAL priority missile channel
+is set to NONE in NORM or RIPL
+mode.
+
+    A missile has not been selected
+in MAN mode.
+
+    - Select a priority missile channel for SAL engagement.
+Press the Missile Advance button to select the next
+missile in MAN mode.
+
+- **PYLON ERROR:**
+
+    The aircraft is on the ground
+(weight-on-wheels) and the
+missile launcher positions are
+unknown.
+
+    - If inhibit message remains, the corresponding wing
+pylons may have experienced a failure and the missiles
+should be de-actioned.
+
+- **PYLON LIMIT
+(ON GROUND):**
+
+    The commanded position of the
+missile launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -5°).
+
+    - The missiles should be de-actioned.
+
+- **SAFE:**
+
+    The master armament state is
+currently set to SAFE; weapons
+cannot be fired.
+
+    - Set the A/S button on the Armament Panel to ARM.
 
 
-Safety Inhibits
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       Vertical acceleration is <0.5 G;
-                       the main rotor blades may           Reduce the severity of the current maneuver to
-  ACCEL LIMIT
-                       obstruct the trajectory of the      increase the positive G load on the aircraft.
-                       missile when fired.
-                       The firing of a rocket salvo is     The missile may be fired 2 seconds after the rocket
-   ALT LAUNCH
-                       already in progress.                salvo is complete.
-                                                           The missile is not tracking the TADS laser designation,
-                       The TADS LRFD is firing and the     possibly due to atmospheric obscurance between the
-                       difference between the SAL          aircraft and the target such as dust or smoke.
- BACK SCATTER
-                       missile seeker line-of-sight and    Release the laser trigger to slave the missile seeker
-                       the TADS line-of-sight is >2°.      back to the TADS line-of-sight and attempt to
-                                                           designate again.
-                                                      If tactically feasible, instruct the crewmember that has
-             The gun is out of coincidence            actioned the gun to de-action in order to permit the
-             from the weapon aiming                   firing of missiles.
-GUN OBSTRUCT solution and may obstruct the
-             trajectory of missiles fired from        A different missile may be manually selected by setting
-             the inboard wing pylons.                 the Mode to MAN and pressing the Missile Advance
-                                                      button.
-                  The line-of-sight of the selected
- LOS INVALID                                          Select a different sight for engagement.
-                  sight is invalid or has failed.
-                  The SAL priority missile channel
-                  is set to NONE in NORM or RIPL      Select a priority missile channel for SAL engagement.
- MSL NOT RDY      mode.                               Press the Missile Advance button to select the next
-                  A missile has not been selected     missile in MAN mode.
-                  in MAN mode.
-                  The aircraft is on the ground
-                                                      If inhibit message remains, the corresponding wing
-                  (weight-on-wheels) and the
-PYLON ERROR                                           pylons may have experienced a failure and the missiles
-                  missile launcher positions are
-                                                      should be de-actioned.
-                  unknown.
-                  The commanded position of the
- PYLON LIMIT      missile launcher(s) exceeds the
-                                                      The missiles should be de-actioned.
- (ON GROUND)      pylon articulation limits.
-                  (+4° to -5°).
-                  The master armament state is
-     SAFE         currently set to SAFE; weapons      Set the A/S button on the Armament Panel to ARM.
-                  cannot be fired.
-WPN Missile (MSL) Format – SAL Missile Settings
+### WPN Missile (MSL) Format – SAL Missile Settings
+
 When SAL missiles are selected for employment within the crewstation, the WPN page will display SAL missile
 settings when set to MSL format.
 NOTE: The only SAL missile variant of the AGM-114 missile family that is simulated in DCS: AH-64D is the AGM-
@@ -2667,90 +2816,176 @@ whether the missile is within acceptable launch constraints (Valid or Invalid).
 RF Missile Weapon Inhibits
 The following conditions will inhibit the RF missiles from being fired. Performance inhibits may be overridden by
 pulling the trigger to the 2nd detent. Safety inhibits cannot be overridden.
-Performance Inhibits
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       The required weapon aiming
-                                                           If tactically feasible, engage the target at a closer
-    BAL LIMIT          solution exceeds the ballistics
-                                                           range.
-                       processing capability.
-                                                           Wait for the missile launchers to reach the optimum
-                       The position of the missile         launch position.
-                       launcher(s) is ≥10° from the        If inhibit message remains, missiles may still be fired
-  PYLON ANGLE
-                       optimum launch position or the      but the missile launcher positions should be visually
-                       pylon position is unknown.          confirmed to ensure the appropriate considerations
-                                                           may be made for a successful engagement.
-                       The commanded position of the
-                                                           Adjust the aircraft pitch attitude as necessary to bring
-  PYLON LIMIT          missile launcher(s) exceeds the
-                                                           the articulation range of the wing pylons to +4° above
-   (IN FLIGHT)         pylon articulation limits.
-                                                           the inertial horizon.
-                       (+4° to -15°).
-                       The pitch, roll, and/or yaw rates
-   RATE LIMIT                                            Stabilize the aircraft attitude prior to launch.
-                       are excessive.
-                       The roll angle of the aircraft is
-   ROLL LIMIT                                              Reduce the roll attitude of the aircraft prior to launch.
-                       excessive.
-                                                           Adjust the heading or pitch attitude of the aircraft to
-                       The missile seeker has reached      bring the target within the missile seeker field-of-view.
-    SKR LIMIT
-                       a gimbal limit.
-                                                           (e.g., turn toward the Missile Constraints box).
-                       When the missile is in LOAL         Adjust the heading of the aircraft to bring the target
-                       mode, the target position           position closer to the aircraft centerline.
-   YAW LIMIT
-                       relative to the aircraft heading
-                       is excessive.                       (e.g., turn toward the Missile Constraints box).
+
+##### Performance Inhibits
+
+- **BAL LIMIT:**
+
+    The required weapon aiming
+solution exceeds the ballistics
+processing capability.
+
+    - If tactically feasible, engage the target at a closer
+range.
+
+- **PYLON ANGLE:**
+
+    The position of the missile
+launcher(s) is ≥10° from the
+optimum launch position or the
+pylon position is unknown.
+
+    - Wait for the missile launchers to reach the optimum
+launch position.
+
+    - If inhibit message remains, missiles may still be fired
+but the missile launcher positions should be visually
+confirmed to ensure the appropriate considerations
+may be made for a successful engagement.
+
+- **PYLON LIMIT
+ (IN FLIGHT):**
+
+    The commanded position of the
+rocket launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -15°).
+
+    - Adjust the aircraft pitch attitude as necessary to bring
+the weapon aiming solution within the articulation
+range of the wing pylons (e.g., pitch the nose toward
+the Rocket Steering Cursor).
+
+- **RATE LIMIT:**
+
+    The pitch, roll, and/or yaw rates
+are excessive.
+
+    - Stabilize the aircraft attitude prior to launch.
+
+- **ROLL LIMIT:**
+
+    The roll angle of the aircraft is
+excessive.
+
+    - Reduce the roll attitude of the aircraft prior to launch.
+
+- **SKR LIMIT:**
+
+    When the missile is in LOBL
+mode, the missile seeker has
+reached a gimbal limit.
+
+    - Adjust the heading or pitch attitude of the aircraft to
+bring the target within the missile seeker field-of-view.
+
+        (e.g., turn toward the Missile Constraints box).
+
+- **YAW LIMIT:**
+
+    When the missile is in LOAL
+mode, the target position
+relative to the aircraft heading
+is excessive.
+
+    - Adjust the heading of the aircraft to bring the target
+position closer to the aircraft centerline.
+
+        (e.g., turn toward the Missile Constraints box).
+
+##### Safety Inhibits
+
+- **ACCEL LIMIT:**
+
+    Vertical acceleration is <0.5 G;
+the main rotor blades may
+obstruct the trajectory of the
+missile when fired.
+
+    - Reduce the severity of the current maneuver to
+increase the positive G load on the aircraft.
+
+- **ALT LAUNCH:**
+
+    The firing of a rocket salvo is already in
+progress.
+
+    - The missile may be fired 2 seconds after the rocket
+salvo is complete.
+
+- **GUN OBSTRUCT:**
+
+    The gun is out of coincidence
+from the weapon aiming
+solution and may obstruct the
+trajectory of missiles fired from
+the inboard wing pylons.
+
+    - If tactically feasible, instruct the crewmember that has
+actioned the gun to de-action in order to permit the
+firing of missiles.
+
+    - A different missile may be manually selected by setting
+the Mode to MAN and pressing the Missile Advance
+button.
+
+- **LOS INVALID:**
+
+    The line-of-sight of the selected
+sight is invalid or has failed.
+
+    - Select a different sight for engagement.
+If using HMD as the sight and the LOS Reticle is
+flashing, adjust the helmet position to within the slew
+limits of the assigned NVS sensor (PNVS or TADS).
+
+- **MSL NOT RDY:**
+
+    No RF missiles have received an
+inertial alignment from the
+aircraft.
+
+    A missile has not been selected
+in MAN mode.
+
+    - Ensure MSL PWR is set to ALL or AUTO to permit RF
+missiles to receive inertial alignment.
+
+    - Press the Missile Advance button to select the next
+missile in MAN mode.
+
+- **PYLON ERROR:**
+
+    The aircraft is on the ground
+(weight-on-wheels) and the
+missile launcher positions are
+unknown.
+
+    - If inhibit message remains, the corresponding wing
+pylons may have experienced a failure and the missiles
+should be de-actioned.
+
+- **PYLON LIMIT
+(ON GROUND):**
+
+    The commanded position of the
+missile launcher(s) exceeds the
+pylon articulation limits.
+(+4° to -5°).
+
+    - The missiles should be de-actioned.
+
+- **SAFE:**
+
+    The master armament state is
+currently set to SAFE; weapons
+cannot be fired.
+
+    - Set the A/S button on the Armament Panel to ARM.
 
 
-Safety Inhibits
-     INHIBIT           CONDITION                           CORRECTIVE ACTION
-                       Vertical acceleration is <0.5 G;
-                       the main rotor blades may           Reduce the severity of the current maneuver to
-  ACCEL LIMIT
-                       obstruct the trajectory of the      increase the positive G load on the aircraft.
-                       missile when fired.
-                       The firing of a rocket salvo is     The missile may be fired 2 seconds after the rocket
-   ALT LAUNCH
-                       already in progress.                salvo is complete.
-                                                           If tactically feasible, instruct the crewmember that has
-              The gun is out of coincidence                actioned the gun to de-action in order to permit the
-              from the weapon aiming                       firing of missiles.
- GUN OBSTRUCT solution and may obstruct the
-              trajectory of missiles fired from            A different missile may be manually selected by setting
-              the inboard wing pylons.                     the Mode to MAN and pressing the Missile Advance
-                                                           button.
-              The line-of-sight of the selected
-LOS INVALID                                       Select a different sight for engagement.
-              sight is invalid or has failed.
-              No RF missiles have received an
-                                                  Ensure MSL PWR is set to ALL or AUTO to permit RF
-              inertial alignment from the
-                                                  missiles to receive inertial alignment.
-MSL NOT RDY   aircraft.
-                                                  Press the Missile Advance button to select the next
-              A missile has not been selected
-                                                  missile in MAN mode.
-              in MAN mode.
-              The aircraft is on the ground
-                                                  If inhibit message remains, the corresponding wing
-              (weight-on-wheels) and the
-PYLON ERROR                                       pylons may have experienced a failure and the missiles
-              missile launcher positions are
-                                                  should be de-actioned.
-              unknown.
-              The commanded position of the
-PYLON LIMIT   missile launcher(s) exceeds the
-                                                  The missiles should be de-actioned.
-(ON GROUND)   pylon articulation limits.
-              (+4° to -5°).
-              The master armament state is
-   SAFE       currently set to SAFE; weapons      Set the A/S button on the Armament Panel to ARM.
-              cannot be fired.
-WPN Missile (MSL) Format – RF Missile Settings
+### WPN Missile (MSL) Format – RF Missile Settings
+
 When RF missiles are selected for employment within the crewstation, the WPN page will display RF missile
 settings when set to MSL format.
 
