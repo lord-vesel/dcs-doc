@@ -63,3 +63,7 @@ a.anonce {
     color: var(--md-footer-fg-color);
     text-decoration: underline;
 }
+
+[data-md-color-scheme=slate] img {
+  filter: invert(1);
+}

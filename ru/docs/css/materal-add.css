@@ -148,3 +148,6 @@ details) {
  font-size:1em;
 }
 
+[data-md-color-scheme=slate] img {
+  filter: invert(1);
+}
