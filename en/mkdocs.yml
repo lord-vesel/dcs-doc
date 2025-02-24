@@ -99,6 +99,7 @@ nav:
               - ah64d/ai-plt.md
               - ah64d/ai-features.md
               - ah64d/ai-controls.md
+          - ah64d/append.md
 
       - F-16C Viper:
           - f16/index.md
