@@ -1601,3 +1601,6 @@ seamlessly transitioning between using the FCR and TADS.
 
 ![](img/img-376-2-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

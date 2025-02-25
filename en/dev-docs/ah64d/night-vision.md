@@ -19,3 +19,6 @@ line-of-sight, but NVG’s should not be used as a means of targeting due to the
 
 ![](img/img-289-2-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

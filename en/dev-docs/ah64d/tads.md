@@ -123,3 +123,6 @@ range source is utilized, TSE calculations will not be performed and lead angle 
 However, regardless of whether the TSE is providing lead angle compensation or not, ballistic compensation will
 always be provided for factors such as range to target and aircraft movement when the TADS is being used as
 the selected sight.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

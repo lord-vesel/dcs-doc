@@ -2280,3 +2280,6 @@ To engage a target with an RF missile while using an RF Handover (RFHO) to gener
         missile using an RF Handover, the Pilot should align the aircraft within launch constraints and the missile
         should be fired as soon as possible after the RFHO has been received and the missiles have been actioned.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

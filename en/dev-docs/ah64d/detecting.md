@@ -33,3 +33,6 @@ ICON|DESC
 ![](img/img-528-11-screen.jpg)|**Laser Beam-Rider.** A laser source emitting in a beam-riding guidance mode.
 ![](img/img-528-8-screen.jpg)|**Threat signal lost.** A threat that is no longer detected will be displayed in partial intensity for 10 seconds before being removed from the RLWR “footprint”.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

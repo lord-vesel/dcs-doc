@@ -554,3 +554,6 @@ To manually tune an HF frequency, perform the following:
 2.   MAN (VAB B2) – Select.
 3.   HF RECV – FREQ> (VAB R1) – Select and input the receive frequency.
 4.   HF XMIT – FREQ> (VAB R3) – Select and input the transmit frequency.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

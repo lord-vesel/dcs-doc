@@ -13,3 +13,6 @@ and flares.
 
 ![](img/img-533-1-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

@@ -516,3 +516,6 @@ on the COM page.
     When the ADD button is pressed, the AH-64D will be added to the member list of the displayed network.
 
 (See [NET](#com-network-net-sub-page) and [MODEM](#com-modem-modem-sub-page) sub-pages for more information.)
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

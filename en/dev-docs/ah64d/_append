@@ -1,0 +1,635 @@
+APPENDIX B – ASE THREAT SYMBOLS
+The Tactical Situation Display (TSD) and Aircraft Survivability Equipment (ASE) pages provide the crew with
+warning indications of radar and laser threats in azimuth, accompanied by audio alerts.
+The threat symbols under the “ASE” column correspond with how the radar or laser threat will appear on the
+Tactical Situation Display (TSD) and Aircraft Survivability Equipment (ASE) pages.
+The quoted words or phrases under the “AUDIO” column correspond with the associated audio alert that will be
+heard over the ICS when the radar or laser threat is detected.
+Air defense radar systems are further identified by their type in small font under the “RADAR SYSTEMS” column.
+The table below lists the definition of each type abbreviation following the radar system’s designation/name to
+identify the radar’s function within their respective air defense units.
+
+ TYPE      DESCRIPTION                                    TYPE    DESCRIPTION
+ CWAR      Continuous-Wave Acquisition Radar              STR     Search and Tracking Radar
+ EWR       Early Warning Radar                            TAR     Target Acquisition Radar
+ FCR       Fire Control Radar                             TI      Target Illumination
+ RR        Ranging Radar                                  TTR     Target Tracking Radar
+ SR        Surveillance Radar
+
+
+
+Air Defense Radar Systems
+ ASE AUDIO THREAT TYPE                            AIR DEFENSE SYSTEM          RADAR SYSTEMS
+
+                                                                              1L13 “BOX SPRING” SR/EWR
+        “Radar”   Surveillance radar                                          5G66 “TALL RACK” SR/EWR
+                                                                              AN/FPS-117 “SEEK IGLOO” SR/EWR
+                                                  S-75, S-125, S-200          P-19 “FLAT FACE B” SR/TAR
+        “Radar”   Target acquisition radar        S-200, S-300                ST-68U “TIN SHIELD” TAR
+                                                  PPRU-M1                     9S80M1 “DOG EAR” TAR
+                                                                              SNR-75 “FAN SONG” TTR
+        “SA-2”    SA-2 air defense battery        S-75
+                                                                              RD-75 Amazonka RR
+        “SA-3”    SA-3 air defense battery        S-125                       SNR-125 “LOW BLOW” TTR
+        “SA-5”    SA-5 air defense battery        S-200                       5N62 “SQUARE PAIR” TTR/TI
+        “SA-6”    SA-6 air defense battery        2K12 Kub                    1S91 “STRAIGHT FLUSH” TAR/TI
+                                                                              HQ-7 ACU TAR
+        “HQ-7”    CSA-7/HQ-7B air defense unit    Hóng Qí-7
+                                                                              Type 345 TTR
+        “SA-8”    SA-8 air defense unit           9K33 Osa                    “LAND ROLL” TAR/TTR
+                                                                              64N6E “BIG BIRD” TAR
+        “SA-10”   SA-10 air defense battery       S-300PS                     5N66M “CLAM SHELL” TAR
+                                                                              30N6E “FLAP LID” TTR
+                                                                              9S18M1 “SNOW DRIFT” TAR
+        “SA-11”   SA-11 air defense battery       9K37M Buk-M1
+                                                                              9S35 “FIRE DOME” TTR
+        “SA-13”   SA-13 air defense unit          9K35 Strela-10M3            9S86 “SNAP SHOT” RR
+      “SA-15”     SA-15 air defense unit                 9K331 Tor-M1              “SCRUM HALF” TAR/TTR
+       “2S6”      SA-19 air defense unit                 2S6M Tunguska             1RL144 “HOT SHOT” TAR/TTR
+       “ZSU”      ZSU-23-4 air defense gun unit          ZSU-23-4 Shilka           RPK-2 “GUN DISH” FCR
+       “Gun”      Air defense gun battery                S-60, KS-19               SON-9 “FIRE CAN” FCR
+                                                         Flakpanzer Gepard         MPDR-12 TAR / Albis FCR
+       “Gun”      Self-propelled air defense gun unit
+                                                         M163 Vulcan ADS           AN/VPS-2 RR
+                                                                                   Rapier PU SR
+      “Rapier”    Rapier air defense unit                Rapier FSA
+                                                                                   DN 181 Blindfire TTR
+                                                         Roland TÜR                MPDR-3002S SR
+      “Roland”    Roland air defense unit
+                                                         Marder Roland             MPDR-16 TAR / DOMINO-30 TTR
+                                                                                   AN/MPQ-50 TAR
+      “Hawk”      Hawk air defense battery               MIM-23B I-Hawk            AN/MPQ-46 TTR
+                                                                                   AN/MPQ-55 CWAR
+      “Patriot”   Patriot air defense battery            MIM-104C Patriot PAC-2    AN/MPQ-53 STR
+       “SAM”      NASAMS air defense battery             NASAMS 2                  AN/MPQ-64F1 Sentinel STR
+      “Radar”     Naval air defense system
+
+
+
+
+Airborne Radar Systems
+ASE    AUDIO          AIRCRAFT              ASE    AUDIO         AIRCRAFT         ASE    AUDIO         AIRCRAFT
+      “Fixed Wing”    MiG-19                      “Fixed Wing”   JF-17                  “Fixed Wing”   F-4
+      “Fixed Wing”    MiG-21                      “Fixed Wing”   J-11                   “Fixed Wing”   F-5
+      “Fixed Wing”    MiG-23                      “Fixed Wing”   KJ-2000                “Fixed Wing”   F-14
+      “Fixed Wing”    Su-24                                                             “Fixed Wing”   F-15
+      “Fixed Wing”    MiG-25                      “Fixed Wing”   Mirage F1              “Fixed Wing”   F-16
+      “Fixed Wing”    MiG-29                      “Fixed Wing”   Mirage 2000            “Fixed Wing”   F/A-18
+      “Fixed Wing”    Su-27                       “Fixed Wing”   Tornado GR4            “Fixed Wing”   E-2
+      “Fixed Wing”    Su-33                       “Fixed Wing”   Tornado IDS            “Fixed Wing”   E-3
+      “Fixed Wing”    Su-30                       “Fixed Wing”   AJS37
+      “Fixed Wing”    MiG-31
+      “Fixed Wing”    Su-34
+      “Fixed Wing”    A-50
+Other Threat Symbols
+ASE         AUDIO            TYPE                                 THREATS
+      “Fixed Wing, Launch”   Air-to-air missile radar detected    Active radar-homing (ARH) air-to-air missiles
+        “Laser Ranging”      Laser rangefinder detected           Tank/IFV guns, electro-optical fire control sensors
+      “Laser Designating”    Laser designator detected            ATGMs, electro-optical fire control sensors
+        “Laser Beaming”      Laser beam-rider guidance detected   ATGMs, electro-optical missile guidance sensors
+APPENDIX C – ABR PAGE POINT TABLES
+The Abbreviation (ABR) sub-page provides the crew a library of aircraft point symbols that can be added to the
+TSD for the purposes of navigation, increasing situational awareness, or as a method of cueing sensors. This
+page can be accessed via the TSD Point or TSD Utility sub-pages and can provide a quick look-up of required
+IDENT codes for inputting new points.
+In the tables below, icons with “AAA” associated with the point symbol will display the three-character free text
+of that point directly on the TSD itself; whereas other points will only display the point’s index within the database.
+
+
+Waypoints (WPTHZ)
+ SYMBOL IDENT NAME                                           DESCRIPTION
+                CC     Communications Check Point            A radio message should be sent upon arrival/crossing
+
+                LZ     Landing Zone                          Helicopter landing or pickup location of ground troops
+
+                PP     Passage Point                         Passage across friendly front line positions
+
+                RP     Release Point                         Final point of navigation route
+
+                SP     Start Point                           First point of navigation route
+
+                WP     Waypoint                              Point used for navigation or routing
+
+
+
+Hazards (WPTHZ)
+ SYMBOL IDENT NAME                                           DESCRIPTION
+                TO     Tower, Over 1000’                     Vertical tower hazard >1000 feet AGL
+
+                TU     Tower, Under 1000’                    Vertical tower hazard <1000 feet AGL
+
+                WL     Wires, Power                          Tall linear wire hazard
+
+                WS     Wires, Telephone/Electric             Short linear wire hazard
+
+
+
+General Control Measures (CTRLM)
+ SYMBOL IDENT NAME                                           DESCRIPTION
+                AP     Air Control Point                     Point used for control or timing of aircraft movement
+
+                AG     Airfield, General                     Large airfield without navigational aids
+
+                AI     Airfield, Instrumented                Large airfield with navigational aids
+
+                AL     Lighted Airport                       Small lighted airfield
+
+                F1     Artillery Firing Point 1              1st portion of Artillery Firing Point (i.e., AB1___)
+
+                F2     Artillery Firing Point 2              2nd portion of Artillery Firing Point (i.e., ___234)
+         AA   Assembly Area              Rear area for assembly of friendly forces
+
+         BN   Battalion                  Battalion echelon, below Brigade but above Company
+
+         BP   Battle Position            Position used for engaging enemy forces
+
+         BR   Bridge/Gap                 Bridge across an obstacle or a passable gap in terrain
+
+         BD   Brigade                    Brigade echelon, below Division but above Battalion
+
+         CP   Checkpoint                 Reference point used for maneuver and orientation
+
+         CO   Company                    Company echelon, below Battalion but above Platoon
+
+         CR   Corps                      Corps echelon, above Division but below U.S. Army
+
+         DI   Division                   Division echelon, above Brigade but below Corps
+
+         FF   FARP, Fuel only            Forward Arming & Refueling Point with fuel
+
+         FM   FARP, Ammo only            Forward Arming & Refueling Point with munitions
+
+         FC   FARP, Fuel and Ammo        Forward Arming & Refueling Point with fuel/munitions
+
+         FA   Forward Assembly Area      Forward area for assembly of friendly forces
+
+         GL   Ground Light/Small Town    Visual reference point used for navigation/orientation
+
+         HA   Holding Area               Brief holding area while enroute to/from mission area
+
+         NB   NBC Area                   Nuclear, Biological, or Chemical contaminated area
+
+         ID   Datalink Subscriber        ID and position of datalink network subscriber
+
+         BE   NDB Symbol                 Non-Directional Beacon navigational aid
+
+         RH   Railhead Point             Location for loading/unloading cargo from trains
+
+         GP   Regiment/Group             Regiment echelon, above Battalion but below Division
+
+         US   U.S. Army                  U.S. Army echelon, above Corps
+
+
+
+Friendly Control Measures (CTRLM)
+SYMBOL IDENT NAME                        DESCRIPTION
+         AD   Friendly Air Defense       Friendly air defense unit/command position
+
+         AS   Friendly Air Assault       Friendly helicopter-borne infantry unit position
+
+         AV   Friendly Air Cavalry       Friendly scout/cavalry helicopter position
+
+         AB   Friendly Airborne          Friendly paratrooper unit position
+
+         AM   Friendly Armor             Friendly armor unit position
+
+         CA   Friendly Armored Cavalry   Friendly recon/cavalry ground unit position
+        MA    Friendly Aviation Maintenance     Friendly helicopter maintenance unit position
+
+         CF   Friendly Chemical                 Friendly chemical unit position
+
+         DF   Friendly Decontamination          Friendly decontamination site
+
+         EN   Friendly Engineers                Friendly engineer unit position
+
+        FW    Friendly Electronic Warfare       Friendly electronic warfare unit position
+
+        WF    Friendly Fixed Wing               Friendly fixed-wing airbase/staging area
+
+         FL   Friendly Field Artillery          Friendly artillery/MLRS firing position
+
+        AH    Friendly Attack Helicopter        Friendly attack helicopter position
+
+         FG   Friendly Helicopter, General      Friendly cargo/utility helicopter position
+
+        HO    Friendly Hospital                 Friendly medical facility/trauma care station
+
+         FI   Friendly Infantry                 Friendly infantry unit position
+
+         MI   Friendly Mechanized Infantry      Friendly mechanized infantry/motor rifle unit position
+
+        MD    Friendly Medical                  Friendly medical unit position/aid station
+
+         TF   Friendly Tactical Operations Center Friendly headquarters/command unit position
+
+         FU   Friendly Unit                     Generic friendly unit position/marker
+
+
+
+Enemy Control Measures (CTRLM)
+SYMBOL IDENT NAME                               DESCRIPTION
+         ES   Enemy Air Assault                 Enemy helicopter-borne infantry unit position
+
+         EV   Enemy Air Cavalry                 Enemy scout/cavalry helicopter position
+
+         ED   Enemy Air Defense                 Enemy air defense unit/command position
+
+         EB   Enemy Airborne                    Enemy paratrooper unit position
+
+         EC   Enemy Armored Cavalry             Enemy recon/cavalry ground unit position
+
+         AE   Enemy Armor                       Enemy armor unit position
+
+        ME    Enemy Aviation Maintenance        Enemy helicopter maintenance unit position
+
+         CE   Enemy Chemical                    Enemy chemical unit position
+
+         DE   Enemy Decontamination             Enemy decontamination site
+
+         EE   Enemy Engineers                   Enemy engineer unit position
+
+        WR    Enemy Electronic Warfare          Enemy electronic warfare unit position
+
+         EF   Enemy Field Artillery             Enemy artillery/MLRS firing position
+        WE    Enemy Fixed Wing                Enemy fixed-wing airbase/staging area
+
+         EK   Enemy Attack Helicopter         Enemy attack helicopter position
+
+        HG    Enemy Helicopter, General       Enemy cargo/utility helicopter position
+
+         EH   Enemy Hospital                  Enemy medical facility/trauma care station
+
+         EI   Enemy Infantry                  Enemy infantry unit position
+
+        EM    Enemy Mechanized Infantry       Enemy mechanized infantry/motor rifle unit position
+
+         EX   Enemy Medical                   Enemy medical unit position/aid station
+
+         ET   Enemy Tactical Operations Center Enemy headquarters/command unit position
+
+         EU   Enemy Unit                      Generic enemy unit position/marker
+
+
+
+Target (TGT/THRT)
+SYMBOL IDENT NAME                             DESCRIPTION
+         TG   Target Point                    Target reference point
+
+
+
+Threats (TGT/THRT)
+SYMBOL IDENT NAME                             DESCRIPTION
+         AX   AMX-13 Air Defense Gun
+
+         AS   Aspide SAM System
+
+        AD    Friendly Air Defense Unit       Generic 8 km threat ring
+
+        GP    Gepard Air Defense Gun          Flakpanzer Gepard 30mm SPAAA vehicle
+
+         G1   Growth 1                        Generic 1 km threat ring
+
+         G2   Growth 2                        Generic 2 km threat ring
+
+         G3   Growth 3                        Generic 3 km threat ring
+
+         G4   Growth 4                        Generic 4 km threat ring
+
+        SD    Spada SAM System
+
+         83   M1983 Air Defense Gun
+
+         U    Unknown Air Defense Unit        Insurgent technical vehicle w/ 23mm AA gun
+
+         S6   2S6/SA-19 Air Defense Unit      2S6M Tunguska SAM/SPAAA vehicle
+
+         AA   Air Defense Gun                 S-60 57mm AA battery w/ SON-9 fire control radar
+
+        GU    Generic Air Defense Unit        Generic 5 km threat ring
+MK   Marksman Air Defense Gun
+
+SB   Sabre Air Defense Gun
+
+GS   Self-Propelled Air Defense Gun   ZSU-57-2 57mm SPAAA vehicle
+
+GT   Towed Air Defense Gun            ZU-23-2 23mm AA emplacement
+
+ZU   ZSU-23-4 Air Defense Gun         ZSU-23-4 23mm SPAAA vehicle
+
+NV   Naval Air Defense System
+
+SR   Battlefield Surveillance Radar   Early warning/search radar, 100km threat ring
+
+TR   Target Acquisition Radar         PPRU-M1 Sborka air defense coordination radar
+
+70   RBS-70 SAM System
+
+BP   Blowpipe SAM System
+
+BH   Bloodhound SAM System
+
+CH   Chapparal SAM System             M48 SAM vehicle
+
+CT   Crotale SAM System               HQ-7 SAM battery
+
+C2   CSA-2/1/X SAM System
+
+HK   Hawk SAM System                  MIM-23B SAM battery
+
+JA   Javelin SAM System
+
+PT   Patriot SAM System               MIM-104C SAM battery
+
+RE   Redeye SAM System
+
+RA   Rapier SAM System                Rapier FSA SAM battery
+
+RO   Roland SAM System                Marder Roland SAM vehicle
+
+1    SA-1 SAM System
+
+2    SA-2 SAM System                  S-75 SAM battery
+
+3    SA-3 SAM System                  S-125 SAM battery
+
+4    SA-4 SAM System
+
+5    SA-5 SAM System                  S-200 SAM battery
+
+6    SA-6 SAM System                  2K12 Kub SAM battery
+
+7    SA-7 SAM System
+
+8    SA-8 SAM System                  9K33 Osa SAM vehicle
+
+9    SA-9 SAM System                  9K31 Strela-1 SAM vehicle
+10   SA-10 SAM System            S-300PS SAM battery
+
+11   SA-11 SAM System            9K37M Buk-M1 battery
+
+12   SA-12 SAM System
+
+13   SA-13 SAM System            9K13 Strela-10M3 SAM vehicle
+
+14   SA-14 SAM System
+
+15   SA-15 SAM System            9K331 Tor-M1 SAM vehicle
+
+16   SA-16 SAM System            Igla/Igla-S MANPADS position [used for SA-18 threat]
+
+17   SA-17 SAM System
+
+SM   SAMP SAM System
+
+SC   SATCP SAM System
+
+SP   Self-Propelled SAM System
+
+SH   Shahine/R440 SAM System
+
+SS   Starstreak SAM System
+
+TC   Tigercat SAM System
+
+ST   Stinger SAM System          Avenger SAM vehicle/Stinger MANPADS position
+
+SA   Towed SAM System            NASAMS 2 SAM battery
+
+VU   Vulcan Air Defense Gun      M163 Vulcan SPAAA vehicle
+APPENDIX D – FREQUENTLY ASKED
+QUESTIONS (FAQ)
+What version of the AH-64D does the DCS: AH-64D simulate?
+DCS: AH-64D simulates an AH-64D Block 2 in service with the United States Army between the years of 2005-
+2010, with a specific equipment configuration that was common (but not exclusive) within that time period. The
+specific avionics version that is being modeled is Lot 9.1, which was fielded to U.S. Army AH-64D Block 2 aircraft
+in 2005, along with additional equipment that was fielded to the U.S Army fleet between 2005 and 2007.
+
+
+What is the difference between an AH-64D equipped with a mast-mounted Fire Control
+Radar and an AH-64D without the FCR?
+There is very little difference between these aircraft configurations. The presence (or absence) of the FCR mast-
+mounted assembly does not denote a different model of AH-64 but is simply a removeable sensor system (much
+like a targeting pod on a strike fighter). When the FCR system is removed, the aircraft will still perform and
+operate the same, albeit with less overall gross weight and more limited sensor/targeting options to the crew.
+Further, while the U.S. Army has operated AH-64D's with a mixed fleet of FCR and non-FCR aircraft, some
+countries have operated exclusively FCR-equipped AH-64D variants (such as the United Kingdom's Army Air
+Corps), or exclusively non-FCR-equipped variants (such as the Royal Netherlands Air Force).
+
+
+What is the difference between the Pilot Night Vision System (PNVS) and the Target
+Acquisition Designation Sight (TADS)?
+The PNVS is a FLIR-only steerable turret that is designed to aid the Pilot in the back seat while flying in total
+darkness. The TADS is a multi-sensor steerable turret that allows the Copilot/Gunner in the front seat to target
+and designate enemy locations and vehicles for the aircraft’s weapon systems. The TADS can also be used to fly
+in total darkness and serves as a backup to the PNVS in this regard. Either crewmember can select either the
+PNVS or the TADS FLIR sensors for flying, but neither sensor can be used by both crewmembers at the same
+time.
+(See Night Vision Systems for more information.)
+
+
+Can the PNVS be used to aim weapons?
+The PNVS is simply a Forward-Looking Infrared (FLIR) sensor that provides a video underlay to the crewmember
+using it for flying at night; it is not a sight and it does not perform targeting nor aim any weapon systems. In
+such an instance where the Pilot is using the PNVS, the Pilot can be sight-selected to HMD while using the PNVS,
+and the HMD does aim weapon systems while the PNVS provides video imagery of the surroundings.
+
+
+Can the TADS be used by the Pilot in the backseat?
+The TADS can be used in one of two ways: as a sight for targeting or as a sensor for flying. In the case of the
+former, only the Copilot/Gunner in the front seat can directly control the TADS for the purposes of targeting and
+aiming of weapon systems. In the case of the latter, the TADS FLIR can also be used as a night-flying sensor
+using the NVS Sensor Select switch on the Collective Flight Grip. Because of this, either crewmember can select
+the TADS as their NVS sensor, but only the Copilot/Gunner can select the TADS as their sight for targeting.
+(See Night Vision Systems for more information.)
+What is the difference between the Pilot Night Vision System (PNVS) and night vision
+goggles?
+The PNVS is a steerable Forward-Looking Infrared (FLIR) turret that follows the helmet movements of the Pilot
+and transmits a thermal-based video of the environment to the Pilot's Helmet Display Unit (HDU). This system
+displays the thermal environment through various shades of brightness to distinguish varying levels of heat
+emissions from objects within the FLIR's field of view. Night vision goggles on the other hand amplify light sources
+and reflected light from the environment to allow a human eye to distinguish detail and contrast.
+
+
+Why can I see IR pointers when using night vision goggles, but I cannot see them when
+using the TADS or PNVS?
+Typical night vision goggles (such as the AN/AVS-6 goggles simulated in the DCS: AH-64D) amplify visible and
+near-infrared light to a level that can be used by the human eye to distinguish detail and contrast. Because of
+this, devices that transmit light in the near-infrared spectrum (such as IR beacons or IR pointers) can be seen by
+individuals wearing NVG's; whereas some FLIR systems that operate on different portions of the IR spectrum,
+such as the AH-64D PNVS and TADS turrets, cannot.
+
+
+Why can’t night vision goggles be used at the same time as the Helmet Display Unit
+(HDU)?
+The HDU itself physically interferes with the proper wear of the AN/AVS-6 night-vision goggles. However, more
+importantly, the use of NVG’s and the HDU simultaneously can often present circumstances where the two devices
+are not properly aligned and can incur aiming errors when employing the helicopter sensors or weapon systems.
+For this reason, use of the two devices in such a manner is a prohibited practice for U.S. Army crewmembers.
+
+
+Is an IR pointer and a laser designator the same?
+No, an IR pointer is a tightly focused beam of light that continuously emits in the near-infrared spectrum, whereas
+a laser designator employs a coded pulse of laser energy that can be detected by compatible sensors or weapon
+systems that are scanning for that precise laser pulse sequence.
+
+
+Why does the horizon line in the IHADSS symbology not coincide with the real horizon?
+The IHADSS allows the crewmembers to maintain situational awareness of the majority of the AH-64D's flight
+state, sensors, and weapon systems, regardless of where the crewmember is looking at any given time. Either
+crewmember can look independently of the helicopter's flight path or nose direction without losing key pieces of
+data necessary to fly and fight. This allows the Pilot on the controls to be looking back over his/her shoulder
+while in a steep pitch-back turn and still have full awareness of the aircraft's attitude and flight state; or be
+scanning out to either side for threats or obstacles while flying slowly at nap-of-the-earth altitudes just feet over
+the treetops.
+When viewing the horizon line (and/or pitch ladder in Cruise mode), the Line-Of-Sight (LOS) Reticle – or central
+crosshairs – within the symbology represents the nose of the aircraft, much like the watermark on a cockpit
+attitude indicator. If the artificial horizon line bisects the LOS reticle, the helicopter's pitch attitude is level with
+the horizon.
+(See Symbology Elements for more information.)
+Why is the AH-64D’s gun called the Area Weapon System?
+The AWS was designed primarily as a close-in defensive weapon system when directed by a crewmember’s
+helmet sight to provide suppression against immediate threats to the aircraft or the team. However, the AWS can
+also be effectively used as an offensive weapon against light armor, soft-skinned vehicles, or personnel; especially
+when directed by the TADS as the sight.
+
+
+Why does my range source keep switching to a Manual range when I action the gun?
+As described above, the gun is designed to be used as a close-in defensive weapon system when employed by
+the aircrew’s helmet sights. As such, when a crewmember’s selected sight is HMD (Helmet Mounted Display), the
+range source will automatically revert to the Manual range (as set on the WPN page) whenever that crewmember
+actions the gun. This prevents an un-intended ranging value from being used when hasty, close-in fires are
+needed. As an example, if the crewmember had a Nav range to a target 4 kilometers away, the gun would
+attempt to elevate for a ballistic solution of 4,000 meters, and the rounds would impact a location much further
+than anticipated. For this reason, it is wise to set a Manual range value on the WPN page that you are proficient
+with in engaging targets at close range.
+However, this does not prevent the crewmember from setting a different range source such as an Automatic or
+Navigation range after the gun is actioned.
+
+
+Why does the Rocket Steering Cursor not behave as a conventional Continuously
+Computed Impact Point (CCIP) reticle?
+The Aerial Rocket Sub-system on the AH-64D was designed to be employed as "aerial rocket artillery", making a
+team of AH-64D's akin to a hovering MLRS battery. Because unguided rockets can only be employed using ballistic
+trajectories (like bullets), the accuracy of the weapon is heavily determined by what sighting method is used to
+generate a targeting solution. With CCIP targeting methods, the target must not only be visible to the naked eye,
+but any adjustments made to the aimpoint must also be precise enough and distinguishable to the crew in order
+for such corrections to unguided munition trajectories to be effective. At longer ranges, the very thickness of any
+symbology elements of a CCIP reticle itself on a HUD or helmet display may be the difference of several hundred
+meters. For this reason, CCIP reticles are only effective at relatively close ranges, and within visual range of the
+naked eye.
+In order to engage ground targets with unguided rockets beyond normal visual ranges on the battlefield, and
+with such aimpoint accuracy that can be distinguishable at such ranges, the Rocket Steering Cursor is employed
+to enable the crew in aligning the helicopter with the required targeting solution for rocket delivery. While used
+in Cooperative mode, a secondary advantage to the Rocket Steering Cursor is that the Pilot can use the symbology
+to align the helicopter with the required targeting solution provided by the Copilot/Gunner while the Pilot
+continues to scan the surrounding terrain for immediate threats, without ever looking in the direction the aircraft
+nose is pointed for rocket delivery. Further, since the TADS itself can be slaved to a set of three-dimensional
+coordinates, the Rocket Steering Cursor allows the crew to deliver rockets to an area target from behind cover
+without having a direct line-of-sight (LOS) to the target.
+
+
+Why doesn’t the DCS: AH-64D have Stinger or Sidewinder air-to-air missiles?
+The DCS: AH-64D is simulating a U.S. Army AH-64D. U.S. Army AH-64’s have never been equipped or capable of
+firing Stinger or Sidewinder missiles, despite a small number of weapons tests conducted with such missiles.
+There are several “growth” provisions within the AH-64D cockpit controls (such as an Air-To-Air weapon select
+position and a missile Cage button) to support future additions of such capability to the AH-64D, however the
+avionics of AH-64D’s in U.S. Army service have never supported such weapon systems.
+What is a “sight” and how do I determine which one I should use in a tactical situation?
+There are three possible “sights” that can be selected to directly aim a weapon or generate a targeting solution
+in the AH-64D. These selections are the Helmet-Mounted Display (HMD), the Target Acquisition Designation Sight
+(TADS), or the optionally-mounted Fire Control Radar (FCR). Any of these three sight selections can be used by
+the Copilot/Gunner, but only HMD and FCR are available to the Pilot. The sight currently selected by the
+crewmember will be displayed in the bottom-left corner of the IHADSS symbology.
+Each sight used by the AH-64D has both advantages and disadvantages that must be known and evaluated for
+any given tactical situation. For example, the TADS is very useful for long-range target identification and
+designation for Hellfire missiles, however it may not be the quickest method for engaging a target that is at close-
+range. On the other hand, the HMD is very useful for rapidly engaging targets at close-range simply by using the
+crewmember’s helmet-tracking capabilities, but the HMD is less accurate than the TADS and cannot designate
+targets for missile engagement.
+(See Sights and Sensors for more information.)
+
+
+What is an “acquisition source” or “ACQ” and how do I determine which one I should use
+in a tactical situation?
+An acquisition source can quickly orient a crewmember’s selected sight to either a point in space relative to the
+aircraft nose or a set of three-dimensional coordinates on the battlefield. The purpose of the acquisition source
+is to reduce the time needed to manually search and acquire a target with any given sight. In the case of the
+TADS or FCR, these sights will physically slew to the location of the selected acquisition source. In the case of
+the HMD, the crewmember will receive cueing indications in their helmet symbology of where they should look
+to point their head toward the selected acquisition source (in lieu of a robotic arm physically grabbing their head
+and forcibly turning it in the correct direction).
+As is the case with sight selections, choosing the best acquisition source in any given situation is key to reducing
+the time it takes to search, acquire, and engage enemy targets.
+(See Acquisition Sources for more information.)
+
+
+How do I enter a set of MGRS coordinates if a JTAC or other ground unit gives me MGRS
+in 4-, 6- or 10-digit formats?
+The AH-64D will only accept MGRS coordinates in an 8-digit format. If coordinates are entered using a 4-, 6- or
+10-digit MGRS format, the Keyboard Unit (KU) will not accept this entry and the KU display will simply flash to
+indicate an invalid data entry. If given a 4-digit or 6-digit MGRS location, simply append zeros to the easting and
+northing to achieve the number of required digits, such as 12001200 when given “1212” or 12301230 when given
+“123123”. Conversely, when given a 10-digit MGRS coordinate, simply remove the 5th digit from both the easting
+and northing to achieve the required 8-digit format, such as 12341234 when given “1234512345”
+APPENDIX E – GLOSSARY OF TERMS
+APPENDIX F – FORMULAS
+Use these calculation and conversion formulas for pre-mission planning or while in flight. Desired resultants are
+bolded.
+
+
+Speed/Time/Distance Calculations
+Ground Speed Required (knots) = (Distance ÷ Minutes) × 60
+Time of Flight (mins) = (Distance ÷ Ground Speed) × 60
+
+
+Fuel/Endurance Calculations
+Bingo Fuel (lbs) = (Time of Flight ÷ 60) × Fuel LB/HR
+Objective Time (mins) = ([Total Fuel − Bingo Fuel] ÷ Fuel LB/HR) × 60
+
+
+Fuel/Range Calculations
+Specific Fuel Range (SFR) Factor = Ground Speed ÷ Fuel LB/HR
+Flight Range (NM) = SFR × Total Fuel
+
+
+Distance Conversion
+km to NM = [km] ÷ 1.85
+NM to km = [NM] × 1.85
+
+
+Altitude/Elevation Conversion
+Feet to Meters = [ft] ÷ 3.281
+Meters to Feet = [m] × 3.281
+
+
+Latitude/Longitude Conversion
+DDD-MM-SS.SS to DDD-MM.MMM
+
+          SS.SS ÷ 60 =          .MMM
+DDD-MM.MMM to DDD-MM-SS.SS
+
+        .MMM      × 60 =        SS.SS
+Good hunting!
+The Eagle Dynamics SA team
+EAGLE DYNAMICS SA © 2022
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

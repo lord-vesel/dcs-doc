@@ -54,3 +54,6 @@ George AI Interface functions.
 If the player is flying the DCS AH-64D by himself or herself
 in single-player, they will need to perform all duties as
 necessary, which will usually require switching between seats.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

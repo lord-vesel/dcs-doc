@@ -815,3 +815,6 @@ To engage a target with Direct Fire rockets, using the HMD as the selected sight
 
     ![](img/img-474-1-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

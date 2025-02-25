@@ -120,3 +120,6 @@ acquisition source to maintain situational awareness of where the TADS is orient
 the Pilot since it provides the Cued LOS Dot within the HMD Field-Of-Regard (FOR), which assists the Pilot in
 monitoring the position of the TADS turret so that he or she may maneuver the aircraft to avoid the turret slew
 limits.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

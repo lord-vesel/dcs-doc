@@ -120,3 +120,6 @@ The three techniques for weapons delivery from an attack helicopter are defined 
 
 ![](img/img-283-1-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

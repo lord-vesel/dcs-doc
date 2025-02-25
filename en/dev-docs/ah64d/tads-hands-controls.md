@@ -22,3 +22,6 @@ backup NVS sensor.
 
 ![](img/img-339-2-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

@@ -154,3 +154,6 @@ dispenser settings.
 
         - Updated audio report of an SA-8 radar: “Radar tracking.”
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

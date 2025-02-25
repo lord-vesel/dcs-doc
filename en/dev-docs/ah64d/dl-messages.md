@@ -210,3 +210,6 @@ The MSG REC sub-page allows aircrews to view a list containing all datalink mess
 
     ![](img/img-397-2-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

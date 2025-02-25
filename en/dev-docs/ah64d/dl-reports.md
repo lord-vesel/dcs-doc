@@ -408,3 +408,6 @@ other AH-64D’s received through the datalink.
 
         ![](img/img-413-1-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

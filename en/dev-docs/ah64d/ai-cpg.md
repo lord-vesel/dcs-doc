@@ -229,3 +229,6 @@ below correspond with the commands issued by the player when occupying the Copil
 - **Down    Short.** Toggles flare dispense mode between AUTO and BYPASS.
 
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

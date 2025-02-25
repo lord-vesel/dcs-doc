@@ -658,3 +658,6 @@ interfering with the Pilot’s operation of the cyclic and collective.
 
 ![](img/img-306-4-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

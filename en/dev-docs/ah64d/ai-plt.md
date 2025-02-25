@@ -389,3 +389,6 @@ that is chosen on the Special tab within the DCS Options.
     - [[<font color=green> Unit belongs to Neutral Coalition</font>]]
     - [[<font color=yellow>Coalition affiliation is unknown.</font>]]
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

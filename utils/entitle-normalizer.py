@@ -19,13 +19,13 @@ def converter(args):
     norm_titles = []
 
     for t in titles:
-        m = re.split('(^#+\ +)',t)
+        m = re.split(r'(^#+\ +)',t)
         hlevel = m[1]
         modlist = []
 
-        for word in re.split('\ ',m[2]):
+        for word in re.split(r'\ ',m[2]):
             modword = ''
-            clean_word = re.sub('(\(|\))','',word)
+            clean_word = re.sub(r'(\(|\))','',word)
 
             if bool(re.search(r'(\d|\.)', clean_word)):
                 modword = word

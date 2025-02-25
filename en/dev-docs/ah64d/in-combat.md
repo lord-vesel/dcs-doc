@@ -172,3 +172,6 @@ small arms fire such as rifles or machine guns, it may be advantageous to mainta
 engagement ranges of such weapons. This will improve the range at which aircrews can detect the enemy, as
 well as placing less demand on an aircrew when compared to flying at low altitude, allowing them to focus on
 engaging the enemy.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

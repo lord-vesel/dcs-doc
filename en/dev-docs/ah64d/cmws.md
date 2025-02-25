@@ -82,3 +82,6 @@ expected.
 13. **Ready Indicator.** When illuminated, indicates system is in a “ready” state for flare dispensing (CMWS
     ARM/SAFE switch is in the ARM position and the aircraft is not weight-on-wheels).
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

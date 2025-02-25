@@ -31,3 +31,6 @@ transmits over the ICS between the two crewstations (and ground crews).
 
 ![](img/img-273-3-screen.jpg)
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

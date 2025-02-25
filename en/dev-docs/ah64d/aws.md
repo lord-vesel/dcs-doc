@@ -483,3 +483,6 @@ To engage a target from either crewstation while using the gun in Fixed mode and
     target as necessary until weapon effects 
     are achieved.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

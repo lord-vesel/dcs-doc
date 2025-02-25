@@ -263,3 +263,6 @@ until a laser designation matching the PRF code assigned to the LST is detected.
 designation is detected, the TADS will slew to and track the laser designation. If the laser designation is lost,
 manual slew control of the TADS turret is restored.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

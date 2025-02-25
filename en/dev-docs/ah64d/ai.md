@@ -132,3 +132,6 @@ Interface mode.
 
 See the command list of AI Helper Controls in the Player-as-CPG or Player-as-PLT sections of this chapter for
 more information.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

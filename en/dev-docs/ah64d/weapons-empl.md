@@ -589,3 +589,6 @@ The format of the UTIL sub-page when displayed within the Pilot crewstation is s
 ### WPN Utility, Load (LOAD) Sub-page
 
 The LOAD sub-page is not implemented.
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

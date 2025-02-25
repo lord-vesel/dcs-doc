@@ -91,3 +91,6 @@ Sight selection logic is outlined below.
  sight is FCR, when the CPG links the FCR to the TADS the Pilot’s sight will automatically be set to HMD, and
  any actioned weapon in the Pilot crewstation will be de-actioned.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

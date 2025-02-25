@@ -239,3 +239,6 @@ The following conditions will result in momentary TADS-related messages being di
 
     A Waypoint (WP) has been stored in the numbered index within the WPTHZ partition.
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}

@@ -308,3 +308,6 @@ the range to which the rifle was zeroed.
 
 
 
+{!abbr.md!}
+{!dev-docs/ah64d/abbr.md!}
+{!docs/ah64d/abbr.md!}
