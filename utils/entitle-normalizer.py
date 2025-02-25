@@ -6,8 +6,8 @@ import logging
 
 def converter(args):
     with open(args.file[0], 'r') as content:
-        #titles = re.findall(r"^##?\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
-        titles = re.findall(r"^#\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
+        titles = re.findall(r"^##?\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
+        #titles = re.findall(r"^#\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
 
     with open('abbr.md', 'r') as abbr:
         abbrs = re.findall(r"^\*\[(.*)\]:",abbr.read(),re.M)
