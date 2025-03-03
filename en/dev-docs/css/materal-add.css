@@ -47,7 +47,8 @@ kbd.keyboard-css {
 .md-typeset figcaption {
     max-width: 100%;
     margin: .5em auto;
-    font-style: italic;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .md-typeset figure img {
@@ -59,3 +60,6 @@ details) {
  font-size:1em;
 }
 
+[data-md-color-scheme=slate] img {
+  filter: invert(1);
+}

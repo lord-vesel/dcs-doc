@@ -59,7 +59,31 @@ details) {
  font-size:1em;
 }
 
+.md-footer-sponsors {
+    color: var(--md-footer-fg-color--lighter);
+}
+
+.md-footer-sponsors img{
+    display: block;
+    height: 3em;
+    margin: auto;
+}
+.md-footer-sponsors p,
+.md-footer-sponsors span {
+    display: block;
+    margin: auto;
+}
+
+.md-footer-sponsors  a {
+    margin: auto;
+    display: flex;
+}
+
 a.anonce {
     color: var(--md-footer-fg-color);
     text-decoration: underline;
+}
+
+[data-md-color-scheme=slate] img {
+  filter: invert(1);
 }

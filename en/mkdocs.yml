@@ -13,6 +13,11 @@ extra:
       name: Contact via Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
+  sponsors:
+    - label: BOOSTY
+      link: https://boosty.to/lord-vesel
+      logo:
+        icon: simple/boosty
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 
@@ -33,74 +38,73 @@ nav:
           - sc/07.glossary.md
       - AH-64D Apache:
           - ah64d/index.md
-          - ah64d/01.history.md
+          - ah64d/history.md
           - Overview:
-              - ah64d/02.overview.md
-              - ah64d/03.weapons.md
-              - ah64d/04.plt-cockpit.md
-              - ah64d/05.cpg-cockpit.md
-              - ah64d/06.controls.md
-              - ah64d/07.ihadss.md
-              - ah64d/08.eufd.md
-              - ah64d/09.mpd.md
-              - ah64d/10.fmc.md
+              - ah64d/overview.md
+              - ah64d/weapons.md
+              - ah64d/plt-cockpit.md
+              - ah64d/cpg-cockpit.md
+              - ah64d/controls.md
+              - ah64d/ihadss.md
+              - ah64d/eufd.md
+              - ah64d/mpd.md
+              - ah64d/fmc.md
           - Procedures:
-              - ah64d/11.procedures.md
-              - ah64d/11.startup.md
-              - ah64d/12.taxi.md
-              - ah64d/13.hovering.md
-              - ah64d/14.takeoff.md
-              - ah64d/15.landing.md
-              - ah64d/16.shutdown.md
-                #          - Navigation:
-                #              - ah64d/17.nav.md
-                #              - ah64d/18.points.md
-                #              - ah64d/19.routes.md
-                #              - ah64d/20.radio-nav.md
-                #          - Radio Communications:
-                #              - ah64d/21.comm.md
-                #              - ah64d/22.comm-control.md
-                #          - Tactical Employment:
-                #              - ah64d/23.in-combat.md
-                #              - ah64d/24.tactical.md
-                #              - ah64d/25.sensors.md
-                #              - ah64d/26.acq-sources.md
-                #              - ah64d/27.night-vision.md
-                #          - Helmet-Mounted Display (HMD):
-                #              - ah64d/28.hmd.md
-                #              - ah64d/29.hmd-had.md
-                #              - ah64d/30.hmd-acq.md
-                #              - ah64d/31.hmd-controls.md
-                #          - Target Acquisition Designation Sight (TADS):
-                #              - ah64d/32.tads.md
-                #              - ah64d/33.tads-sym.md
-                #              - ah64d/34.tads-targeting.md
-                #              - ah64d/35.tads-acq.md
-                #              - ah64d/36.tads-controls.md
-                #          - Datalink:
-                #              - ah64d/36.dl-comms.md
-                #              - ah64d/37.dl-messages.md
-                #              - ah64d/38.dl-points.md
-                #              - ah64d/39.dl-reports.md
-                #              - ah64d/40.battle-area.md
-                #          - Weapons Employment:
-                #              - ah64d/41.weapons-empl.md
-                #              - ah64d/42.aws.md
-                #              - ah64d/43.ars.md
-                #              - ah64d/44.hmms.md
-                #              - ah64d/45.weapon-controls.md
-                #          - Aircraft Survivability Equipment (ASE):
-                #              - ah64d/46.ase.md
-                #              - ah64d/47.detecting.md
-                #              - ah64d/48.cmws.md
-                #              - ah64d/49.couter-measures.md
-                #              - ah64d/50.ase-controls.md
-                #          - George AI:
-                #              - ah64d/51.ai.md
-                #              - ah64d/52.ai-cpg.md
-                #              - ah64d/53.ai-plt.md
-                #              - ah64d/54.ai-features.md
-                #              - ah64d/55.ai-controls.md
+              - ah64d/procedures.md
+              - ah64d/startup.md
+              - ah64d/taxi.md
+              - ah64d/hovering.md
+              - ah64d/takeoff.md
+              - ah64d/landing.md
+              - ah64d/shutdown.md
+          - Navigation:
+              - ah64d/nav/index.md
+              - ah64d/nav/points.md
+              - ah64d/nav/routes.md
+              - ah64d/nav/radio-nav.md
+          - Radio Communications:
+              - ah64d/comm.md
+              - ah64d/comm-control.md
+          - Tactical Employment:
+              - ah64d/in-combat.md
+              - ah64d/tactical.md
+              - ah64d/sensors.md
+              - ah64d/acq-sources.md
+              - ah64d/night-vision.md
+          - ah64d/hmd.md
+          - Target Acquisition Designation Sight (TADS):
+              - ah64d/tads.md
+              - ah64d/tads-sym.md
+              - ah64d/tads-targeting-modes.md
+              - ah64d/tads-acq-ranging.md
+              - ah64d/tads-hands-controls.md
+          - ah64d/fcr.md
+          - Datalink:
+              - ah64d/dl-comms.md
+              - ah64d/dl-messages.md
+              - ah64d/dl-points.md
+              - ah64d/dl-reports.md
+              - ah64d/battle-area.md
+              - ah64d/radar-handovers.md
+          - Weapons Employment:
+              - ah64d/weapons-empl.md
+              - ah64d/aws.md
+              - ah64d/ars.md
+              - ah64d/hmms.md
+              - ah64d/weapon-controls.md
+          - Aircraft Survivability Equipment (ASE):
+              - ah64d/ase.md
+              - ah64d/detecting.md
+              - ah64d/cmws.md
+              - ah64d/couter-measures.md
+              - ah64d/ase-controls.md
+          - George AI:
+              - ah64d/ai.md
+              - ah64d/ai-cpg.md
+              - ah64d/ai-plt.md
+              - ah64d/ai-features.md
+              - ah64d/ai-controls.md
+          - ah64d/append.md
 
       - F-16C Viper:
           - f16/index.md
@@ -179,6 +183,7 @@ theme:
     - navigation.tabs
     - navigation.tracking
     - navigation.indexes
+    - navigation.prune
     - toc.integrate
     - announce.dismiss
 
@@ -189,7 +194,7 @@ plugins:
       lang:
         - en
         - ru
-          #      full_path_in_title: yes
+        #      full_path_in_title: yes
   - git-revision-date-localized:
       enable_creation_date: true
       exclude:
@@ -208,6 +213,7 @@ markdown_extensions:
   - toc:
       baselevel: 1
       permalink: true
+      toc_depth: 4
   - markdown_captions
   - markdown_include.include
   - admonition

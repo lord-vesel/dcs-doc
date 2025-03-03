@@ -6,8 +6,8 @@ import logging
 
 def converter(args):
     with open(args.file[0], 'r') as content:
-        #titles = re.findall(r"^##?\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
-        titles = re.findall(r"^#\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
+        titles = re.findall(r"^##?\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
+        #titles = re.findall(r"^#\ +[А-ЯA-Z].*[А-ЯA-Z]+.*$",content.read(),re.M)
 
     with open('abbr.md', 'r') as abbr:
         abbrs = re.findall(r"^\*\[(.*)\]:",abbr.read(),re.M)
@@ -19,13 +19,13 @@ def converter(args):
     norm_titles = []
 
     for t in titles:
-        m = re.split('(^#+\ +)',t)
+        m = re.split(r'(^#+\ +)',t)
         hlevel = m[1]
         modlist = []
 
-        for word in re.split('\ ',m[2]):
+        for word in re.split(r'\ ',m[2]):
             modword = ''
-            clean_word = re.sub('(\(|\))','',word)
+            clean_word = re.sub(r'(\(|\))','',word)
 
             if bool(re.search(r'(\d|\.)', clean_word)):
                 modword = word

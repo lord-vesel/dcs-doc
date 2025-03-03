@@ -1,0 +1,28 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  {% endif %}
+</div>
+{% if config.extra.sponsors %}
+<div class="md-footer-sponsors">
+<span style="md-footer-heading">Support this project:</span>
+{% for s in config.extra.sponsors %}
+   <a href="{{ s.link }}" target="_blank">
+       <p>{% if s.logo.icon %}<span class="twemoji">{% include '.icons/' + s.logo.icon + '.svg' %}</span> {% endif %}{{ s.label }}</p>
+   </a>
+{% if s.logo.img %}
+   <a href="{{ s.link }}" target="_blank">
+   <img src="{{ s.logo.img }}">
+   </a>
+{% endif %}
+{% endfor %}
+</div>
+{% endif %}
