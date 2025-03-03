@@ -13,6 +13,11 @@ extra:
       name: Contact via Telegram
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
+  sponsors:
+    - label: BOOSTY
+      link: https://boosty.to/lord-vesel
+      logo:
+        icon: simple/boosty
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 

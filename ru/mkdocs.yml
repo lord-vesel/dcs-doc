@@ -149,10 +149,10 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:rost.lunegoff@gmail.com
   sponsors:
-    - label: PRO Авиасимуляторы
-      link: https://vk.com/flightsimgeeks
+    - label: BOOSTY
+      link: https://boosty.to/dcs-docs
       logo:
-        icon: fontawesome/brands/vk
+        icon: simple/boosty
 
 docs_dir: !ENV [DOCSPATH, 'docs']
 

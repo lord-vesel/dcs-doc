@@ -13,7 +13,7 @@
 </div>
 {% if config.extra.sponsors %}
 <div class="md-footer-sponsors">
-<span style="md-footer-heading">Поддержать проект:</span>
+<span style="md-footer-heading">Support this project:</span>
 {% for s in config.extra.sponsors %}
    <a href="{{ s.link }}" target="_blank">
        <p>{% if s.logo.icon %}<span class="twemoji">{% include '.icons/' + s.logo.icon + '.svg' %}</span> {% endif %}{{ s.label }}</p>
