@@ -108,29 +108,55 @@ nav:
 
       - F-16C Viper:
           - f16/index.md
-          - f16/01.history.md
-          - f16/02.stores.md
-          - Cockpit:
-              - f16/03.cockpit.md
-              - f16/04.hotas.md
-              - f16/05.ufc.md
-              - f16/06.mfd.md
-              - f16/07.hud.md
-          - Navigation:
-              - f16/08.insnav.md
-              - f16/09.tacannav.md
-              - f16/10.ilsnav.md
-              - f16/11.autopilot.md
-          - f16/12.radio.md
-          - f16/13.procedures.md
-          - f16/14.radar.md
-          - f16/15.datalink.md
-          - f16/16.ltpod.md
-          - f16/17.hmcs.md
-          - f16/18.ata.md
-          - f16/19.atg.md
-          - f16/20.defence.md
-          - f16/21.append.md
+          - "The F-16C Viper":
+              - f16/overview/history.md
+              - f16/overview/weapons.md
+              - f16/overview/cockpit.md
+              - f16/overview/hotas.md
+              - f16/overview/hud.md
+              - f16/overview/ufc.md
+              - f16/overview/mfd.md
+              - f16/overview/autopilot.md
+          - f16/procedures.md
+          - "Navigation":
+              - f16/nav/index.md
+              - f16/nav/ins.md
+              - f16/nav/db.md
+              - f16/nav/routes.md
+              - f16/nav/tacan.md
+              - f16/nav/ils.md
+          - f16/radios.md
+          - "Tactical Emplyment":
+              - f16/tactical/overview.md
+              - f16/tactical/cockpit.md
+              - f16/tactical/modes.md
+              - f16/tactical/soi.md
+              - f16/tactical/spi.md
+              - f16/tactical/submodes.md
+              - f16/tactical/vrp-vip.md
+              - f16/tactical/bullseye.md
+              - f16/tactical/hsd.md
+              - f16/tactical/sms.md
+              - f16/tactical/controls.md
+          - f16/radar.md
+          - f16/datalink.md
+          - f16/litening-ii.md
+          - f16/harm.md
+          - f16/hmcs.md
+          - f16/air-to-air.md
+          - "Air-To-Ground Emplyment":
+              - f16/air-to-ground/index.md
+              - f16/air-to-ground/m61a1.md
+              - f16/air-to-ground/rockets.md
+              - f16/air-to-ground/unguided-bombs.md
+              - f16/air-to-ground/laser-guided.md
+              - f16/air-to-ground/jdam.md
+              - f16/air-to-ground/agm-145.md
+              - f16/air-to-ground/wcmd.md
+              - f16/air-to-ground/agm-88.md
+              - f16/air-to-ground/agm-65.md
+          - f16/defence.md
+          - f16/append.md
       - F/A-18C:
           - fa18c/index.md
           - fa18c/01.history.md

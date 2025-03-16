@@ -1,0 +1,1083 @@
+APPENDIX B – ALIC CODES & RWR SYMBOLS
+The Aircraft Launcher Interface Computer (ALIC) codes listed under the “ID” column in the Air Defense and Naval
+Radar Systems tables can be used on the HARM DED page or HTS DED page to program custom threat tables
+for the AGM-88 HARM or HARM Targeting System radar signal scans.
+The threat radar codes under the “RWR” column correspond with how the threat radar will appear on the ALR-
+56M Threat Warning Azimuth Indicator, the MFD HARM Attack Display (HAD) format, or the MFD Weapon (WPN)
+format when the AGM-88 weapon profile is selected.
+Air defense radar systems are further identified by their type. The table below lists the definition of each “Type”
+abbreviation to identify the radar’s function within their respective air defense units.
+
+ TYPE      DESCRIPTION                                      TYPE     DESCRIPTION
+ CWAR      Continuous-Wave Acquisition Radar                STR      Search and Tracking Radar
+ EWR       Early Warning Radar                              TAR      Target Acquisition Radar
+ FCR       Fire Control Radar                               TI       Target Illumination
+ RR        Ranging Radar                                    TTR      Target Tracking Radar
+ SR        Surveillance Radar
+
+
+
+
+Air Defense Radar Systems
+  ID    RWR     NATO SYSTEM                 SYSTEM                 RADAR DESIGNATION                 TYPE
+   -                                                               1L13 “BOX SPRING”                 SR / EWR
+   -                                                               5G66 “TALL RACK”                  SR / EWR
+ 122            SA-2 / SA-3 / SA-5          S-75 / S-125 / S-200   P-19 “FLAT FACE B”                SR / TAR
+ 126            SA-2 “GUIDLELINE”           S-75                   SNR-75 “FAN SONG”                 TTR
+                SA-2 “GUIDLELINE”           S-75                   RD-75 Amazonka                    RR
+ 123            SA-3 “GOA”                  S-125                  SNR-125 “LOW BLOW”                TTR
+ 129            SA-5 “GAMMON”               S-200                  5N62 “SQUARE PAIR”                TTR / TI
+ 108            SA-6 “GAINFUL”              2K12 Kub               1S91 “STRAIGHT FLUSH”             TAR / TI
+ 117            SA-8 “GECKO”                9K33 Osa               “LAND ROLL”                       TAR / TTR
+ 130            SA-5 / SA-10                S-200 / S-300          ST-68U “TIN SHIELD”               TAR
+ 104            SA-10 “GRUMBLE”             S-300PS                64N6E “BIG BIRD”                  TAR
+ 103            SA-10 “GRUMBLE”             S-300PS                5N66M “CLAM SHELL”                TAR
+ 110            SA-10 “GRUMBLE”             S-300PS                30N6E “FLAP LID”                  TTR
+ 107            SA-11 “GADFLY”              9K37M Buk-M1           9S18M1 “SNOW DRIFT”               TAR
+ 115            SA-11 “GADFLY”              9K37M Buk-M1           9S35 “FIRE DOME”                  TTR
+ 109                                        PPRU-M1                9S80M1 “DOG EAR”                  TAR
+ 118            SA-13 “GOPHER”              9K35 Strela-10M3       9S86 “SNAP SHOT”                  RR
+ 119            SA-15 “GAUNTLET”            9K331 Tor-M1           “SCRUM HALF”                      TAR / TTR
+ 120         SA-19 “GRISON”           2S6M Tunguska              1RL144 “HOT SHOT”                     TAR / TTR
+ 131                                  S-60 / KS-19               SON-9 “FIRE CAN”                      FCR
+ 121                                  ZSU-23-4 Shilka            RPK-2 “GUN DISH”                      FCR
+ 128         CSA-7 / HQ-7B            Hóng Qí-7                  HQ-7 ACU                              TAR
+ 127         CSA-7 / HQ-7B            Hóng Qí-7                  Type 345                              TTR
+  -                                                              AN/FPS-117 “SEEK IGLOO”               SR / EWR
+ 203         MIM-23B I-Hawk                                      AN/MPQ-50                             TAR
+ 204         MIM-23B I-Hawk                                      AN/MPQ-46                             TTR
+ 206         MIM-23B I-Hawk                                      AN/MPQ-55                             CWAR
+ 202         MIM-104C Patriot PAC-2                              AN/MPQ-53                             STR
+ 209         NASAMS 2                                            AN/MPQ-64F1 Sentinel                  STR
+ 208         M163 Vulcan ADS                                     AN/VPS-2                              RR
+             LPWS C-RAM                                          AN/TPQ-36                             FCR
+ 124         Rapier FSA                                          DN 181 Blindfire                      TTR
+ 125         Rapier FSA                                          Rapier PU                             SR
+ 205         Roland TÜR                                          MPDR-3002S                            SR
+ 201         Marder Roland                                       MPDR-16 / DOMINO-30                   TAR / TTR
+ 207         Flakpanzer Gepard                                   MPDR-12 / Albis                       TAR / FCR
+
+
+
+Naval Radar Systems
+ ID    RWR   SHIP CLASS                 TYPE                                 DESIGNATION
+ 301         Kuznetsov class            Heavy Aircraft Cruiser               Project 1143.5 (Admiral Kuznetsov)
+ 320         Kuznetsov class            Heavy Aircraft Cruiser               Project 1143.5 [2017 SC revision]
+ 313         Kirov class                Guided Missile Cruiser               Project 1144.2 (Piotr Velikiy)
+ 303         Slava class                Guided Missile Cruiser               Project 1164 (Moskva)
+ 319         Neutrashimy class          Guided Missile Frigate               Project 11540 (Neutrashimy)
+ 309         Krivak II class            Frigate / Guard Ship                 Project 1135M (Rezky)
+ 306         Grisha class               Anti-Submarine Corvette              Project 1124.4 (Grisha)
+ 312         Tarantul III class         Missile Corvette                     Project 1241.1 (Molniya)
+ 321         Ropucha I class            Large Landing Ship                   Project 775
+ 410         Luyang II class            Guided Missile Destroyer             Type 052C (PLAN)
+ 409         Luyang I class             Guided Missile Destroyer             Type 052B (PLAN)
+ 411         Jiangkai II class          Guided Missile Frigate               Type 054A (PLAN)
+ 408         Yuzhao class               Amphibious Transport Dock            Type 071 (PLAN)
+ 403         Nimitz class               Aircraft Carrier                     CVN-71 (USS Theodore Roosevelt)
+ 404         Nimitz class               Aircraft Carrier                     CVN-72 (USS Abraham Lincoln)
+ 405           Nimitz class                  Aircraft Carrier               CVN-73 (USS George Washington)
+ 406           Nimitz class                  Aircraft Carrier               CVN-74 (USS John C. Stennis)
+ 413           Nimitz class                  Aircraft Carrier               CVN-75 (USS Harry S. Truman)
+               Forrestal class               Aircraft Carrier               CV-59 (USS Forrestal)
+ 407           Tarawa class                  Amphibious Assault Ship        LHA-1 (USS Tarawa)
+ 315           Ticonderoga class             Guided Missile Cruiser         CG (USS)
+ 412           Arleigh Burke class           Guided Missile Destroyer       DDG (USS)
+ 401           Oliver Hazard Perry class     Guided Missile Frigate         FFG (USS)
+               Invincible class              Light Aircraft Carrier         R05 (HMS)
+               Leander class                 Frigate                        F12, F57, F72 (HMS)
+               Condell class                 Frigate                        PFG-06, PFG-07 (CNS)
+
+
+
+Airborne Radar Systems
+RWR    AIRCRAFT                        RWR     AIRCRAFT                         RWR   AIRCRAFT
+       MiG-19                                  JF-17                                  F-4
+       MiG-21                                  J-11                                   F-5
+       MiG-23                                  KJ-2000                                F-14
+       Su-24                                                                          F-15
+       MiG-25                                  Mirage F1                              F-16
+       MiG-29                                  Mirage 2000                            F/A-18
+       Su-27                                   Tornado GR4                            E-2
+       Su-33                                   Tornado IDS                            E-3
+       Su-30                                   AJS37
+       MiG-31
+       Su-34
+       A-50
+
+
+
+Other Threat Symbols
+ RWR   TYPE                                THREATS
+       Missile radar seeker detected       Active radar-homing missiles (ARH)
+APPENDIX C – HAD / WPN THREAT TABLES
+The threat radar codes under the “HAD” column correspond with how the threat radar will appear on the MFD
+HARM Attack Display (HAD) format if the corresponding threat class is enabled within the HTS scan cycles.
+The HAD Manual threat Class is programmable via the HTS DED page and can include up to eight threat radar
+types. This can be used to better tailor the HTS scan cycles to the radar signals that are anticipated to be
+encountered during the mission.
+
+
+HARM Attack Display (HAD) Threat Classes
+ HAD     HAD CLASS 1                 HAD     HAD CLASS 2                 HAD     HAD CLASS 3
+   TS    SA-5 “TIN SHIELD”             S     P-19 “FLAT FACE B”           DE     PPRU-M1 “DOG EAR”
+   BB    SA-10 “BIG BIRD”              2     SA-2 “FAN SONG”               19    SA-19 “HOT SHOT”
+   CS    SA-10 “CLAM SHELL”            3     SA-3 “LOW BLOW”               FC    SON-9 “FIRE CAN”
+   10    SA-10 “FLAP LID”              5     SA-5 “SQUARE PAIR”            A     ZSU-23-4 “GUN DISH”
+   SD    SA-11 “SNOW DRIFT”            6     SA-6 “STRAIGHT FLUSH”
+   11    SA-11 “FIRE DOME”             8     SA-8 “LAND ROLL”
+   15    SA-15 “SCRUM HALF”            13    SA-13 “SNAP SHOT”
+  HQ     HQ-7 ACU
+   7     HQ-7 Type 345
+
+
+ HAD     HAD CLASS 4                 HAD     HAD CLASS 5                 HAD     HAD CLASS 6
+                                      SW     Kuznetsov-class               P     MIM-104C Patriot PAC-2
+                                      HN     Kirov/Luyang II-class        NS     NASAMS 2 “Sentinel”
+                                       T2    Slava-class
+                                      HP     Neutrashimy/Grisha-class
+                                       TP    Krivak II-class
+                                      MR     Luyang I/Jiangkai-class
+                                       PS    Tarantul III/Yuzhao-class
+                                       SC    Ropucha I-class
+
+
+ HAD     HAD CLASS 7                 HAD     HAD CLASS 8                 HAD     HAD CLASS 9
+  HK     MIM-23B I-Hawk                A     M163 Vulcan ADS
+  RO     Roland TÜR                    A     Flakpanzer Gepard
+  RO     Marder Roland
+   RP    Rapier FSA “Blindfire”
+   RT    Rapier FSA
+ HAD     HAD CLASS 10                HAD    HAD CLASS 11                 HAD    HAD MANUAL CLASS
+   SS    Nimitz-class
+   AE    AN/SPY-1 “Aegis”
+   49    Oliver Hazard Perry-class
+   40    Tarawa-class
+
+
+The emitter codes under the “WPN” column correspond with how the threat radar will appear on the MFD Weapon
+(WPN) format when the corresponding threat table is selected.
+Each HARM threat table can be modified using the HARM DED page. This can be used to better tailor the AGM-
+88 scans to the radar signals that are anticipated to be encountered during the mission.
+
+
+AGM-88 Weapon (WPN) Threat Tables
+         TBL1                               TBL2                                TBL3
+ WPN                                 WPN                                WPN
+         (MODERN SAM SYSTEMS)               (AAA & SHORAD)                      (OLDER SAM SYSTEMS )
+   10    SA-10 “FLAP LID”             19    SA-19 “HOT SHOT”              3     SA-3 “LOW BLOW”
+   BB    SA-10 “BIG BIRD”             15    SA-15 “SCRUM HALF”            S     P-19 “FLAT FACE”
+   CS    SA-10 “CLAM SHELL”            8    SA-8 “LAND ROLL”              6     SA-6 “STRAIGHT FLUSH”
+   11    SA-11 “FIRE DOME”             A    ZSU-23-4 “GUN DISH”           2     SA-2 “FAN SONG”
+   SD    SA-11 “SNOW DRIFT”           DE    PPRU-M1 “DOG EAR”             13    SA-13 “SNAP SHOT”
+APPENDIX D – HOTAS QUICK REFERENCES
+             AAM, MSL ORIDE, DGFT Master Modes / SOI set to FCR
+
+
+                           RWS/TWS Designate Target
+                           ACM Boresight Mode
+                           RWS Spotlight Mode                                                                 Missile Step
+                                                                                                              Cycle A-A Missile Type
+    IFF Interrogate All                                    RWS/TWS Target Step
+                                                           ACM HUD Mode
+    IFF Interrogate FCR LOS
+                                                           (>1 sec) Toggle between
+    STT NCTR Scan
+                                                           RWS/TWS Modes                              Set SOI to HUD
+
+
+                            RWS/TWS Target Reject
+                            ACM Vertical Mode                                                                                Cycle Right
+                                                                                     Cycle Left
+                                                                                     MFD Format                              MFD Format
+
+
+
+
+                                                                                                  Set SOI to MFD from HUD
+                   Dispense 1x Manual Program 1-4                                                 Swap SOI between MFDs
+                                                                                                  Toggle HDU On/Off
+                                               MAN Deactivate ECM Mode 3
+    Dispense 1x                                SEMI Disable ECM Mode 1/2
+    Manual Program 6
+                                               AUTO Disable Dispensing of Automatic Programs
+
+
+     MAN Activate ECM Mode 3                                                                                Cycle FCR EXP Modes
+     SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                            Display HSD ZOOM Mode
+     AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                                 Select Dogfight Mode
+                Transmit over VHF Radio
+
+                                          Cycle Datalink                                                         Return to previous Mode
+ Toggle Datalink                          Filters on FCR
+                                                                                                                 Select Missile Override Mode
+ Info on FCR                              Transmit STPT, SPI, or
+                                          SEAD Target over Datalink     TGP Manual Zoom            Uncage AIM-9 Seeker
+
+                Transmit over UHF Radio
+
+
+
+
+ Short press (<0.5 sec)                                                                                       FCR Antenna Elevation
+
+ Long press (>0.5 sec)
+                                                                            Slew FCR Cursor             Swap AIM-9 BORE/SLAVE Modes
+ Continuous press
+                                 A-G Master Mode / SOI set to FCR
+
+
+
+                               Designate Target                                                             Cycle CCIP-DTOS-CCRP
+                                                                                                            Missile Step
+
+                                                                                                            Missile Step
+                                                         Cycle Sighting
+                                                         Point Rotary
+                                                                                                    Set SOI to HUD
+
+
+                                 Target Reject
+
+                                                                                   Cycle Left                              Cycle Right
+                                                                                   MFD Format                              MFD Format
+
+
+
+
+                                                                                                Set SOI to MFD from HUD
+                  Dispense 1x Manual Program 1-4                                                Swap SOI between MFDs
+                                                                                                Toggle HDU On/Off
+                                             MAN Deactivate ECM Mode 3
+   Dispense 1x
+                                             SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                             AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3                                                                               Cycle FCR EXP/DBS Modes
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                          Display HSD ZOOM Mode
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                               Select Dogfight Mode
+              Transmit over VHF Radio
+                                                                                                               Return to previous Mode
+                                        Cycle Datalink
+Toggle Datalink                         Filters on FCR
+                                                                                                               Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink         TGP Manual Zoom
+
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)       Short press, AGM-65 selected                                                   FCR Antenna Elevation
+
+Long press (>0.5 sec)        Short press, AGM-88 selected
+                                                                             Slew FCR Cursor          Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press
+                                 A-G Master Mode / SOI set to HUD
+
+                         VRP/VIP Designate RP/IP
+
+                         DTOS/VIS Designate Target
+                         Set SOI to HMCS from HUD                                                           Cycle CCIP-DTOS-CCRP
+                                                                                                            Missile Step
+                                                                                                            Missile Step
+                                                         Cycle Sighting
+                                                         Point Rotary
+                                                                                                    Set SOI to HUD
+
+
+                         DTOS/VIS Target Reject
+                         Set SOI to HUD from HMCS
+                                                                                   Cycle Left                              Cycle Right
+                                                                                   MFD Format                              MFD Format
+
+
+
+
+                                                                                                Set SOI to MFD from HUD
+                                                                                                Swap SOI between MFDs
+                  Dispense 1x Manual Program 1-4
+                                                                                                Toggle HDU On/Off
+                                             MAN Deactivate ECM Mode 3
+   Dispense 1x
+                                             SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                             AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3                                                                               Display HSD ZOOM Mode
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                               Select Dogfight Mode
+              Transmit over VHF Radio
+
+                                        Cycle Datalink                                                         Return to previous Mode
+Toggle Datalink                         Filters on FCR
+                                                                                                               Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink         TGP Manual Zoom
+
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)        Short press, AGM-65 selected                                                  FCR Antenna Elevation
+
+Long press (>0.5 sec)         Short press, AGM-88 selected
+                                                                             DTOS/VIS                 Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press              Short press, VRP/VIP mode                      Slew HUD TD Box
+                                 A-G Master Mode / SOI set to HSD
+
+
+
+                               Designate Symbol                                                       Cycle CCIP-DTOS-CCRP
+                                                                                                      Missile Step
+
+                                                                                                      Missile Step
+
+
+                                                                                              Set SOI to HUD
+
+
+                               Drop Designation
+
+                                                                             Cycle Left                              Cycle Right
+                                                                             MFD Format                              MFD Format
+
+
+
+
+                                                                                          Set SOI to MFD from HUD
+                  Dispense 1x Manual Program 1-4                                          Swap SOI between MFDs
+                                                                                          Toggle HDU On/Off
+                                             MAN Deactivate ECM Mode 3
+   Dispense 1x
+                                             SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                             AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3                                                                         Cycle HSD EXP Modes
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                    Display HSD ZOOM Mode
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                         Select Dogfight Mode
+              Transmit over VHF Radio
+                                                                                                         Return to previous Mode
+                                        Cycle Datalink
+Toggle Datalink                         Filters on FCR
+                                                                                                         Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink   TGP Manual Zoom
+
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)       Short press, AGM-65 selected                                             FCR Antenna Elevation
+
+Long press (>0.5 sec)        Short press, AGM-88 selected
+                                                                       Slew HSD Cursor          Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press
+                                 A-G Master Mode / SOI set to HAD
+
+
+
+                               Designate Target                                                          Cycle CCIP-DTOS-CCRP
+                                                                                                         Missile Step
+            Display SEAD
+            DED page                                                                                     Missile Step
+                                                         Target Step
+             Initiate TDOA
+             Sequence                                                                            Set SOI to HUD
+
+
+                               Target Reject
+                               Display DED CNI page                             Cycle Left                              Cycle Right
+                                                                                MFD Format                              MFD Format
+
+
+
+
+                                                                                             Set SOI to MFD from HUD
+                                                                                             Swap SOI between MFDs
+                  Dispense 1x Manual Program 1-4
+                                                                                             Toggle HDU On/Off
+                                               MAN Deactivate ECM Mode 3
+   Dispense 1x                                 SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                               AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3
+                                                                                                       Cycle HAD EXP Modes
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                       Display HSD ZOOM Mode
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                            Select Dogfight Mode
+              Transmit over VHF Radio
+
+                                        Cycle Datalink                                                      Return to previous Mode
+Toggle Datalink                         Filters on FCR
+                                                                                                            Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink      TGP Manual Zoom
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)        Short press, AGM-65 selected                                               FCR Antenna Elevation
+
+Long press (>0.5 sec)         Short press, AGM-88 selected
+                                                                          Slew HAD Cursor          Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press              Short press, DED SEAD displayed
+                                 A-G Master Mode / SOI set to TGP
+
+
+                         Point Track
+                         Point Track/Automatic Handoff
+                         to AGM-65D/G in EO-PRE Mode                                                       Cycle CCIP-DTOS-CCRP
+                                                                                                           Missile Step
+                                                         Area Track                                        Missile Step
+        Cycle TV-FLIR
+        WHOT-FLIR BHOT                                   Area Track/Manual Handoff to
+                                                         AGM-65D/G in EO-PRE Mode
+                                                                                                   Set SOI to HUD
+
+
+                                Slave TGP to SPI
+                                Cursor Zero                                                                               Cycle Right
+                                                                                  Cycle Left
+                                                                                  MFD Format                              MFD Format
+
+
+
+
+                                                                                               Set SOI to MFD from HUD
+                  Dispense 1x Manual Program 1-4                                               Swap SOI between MFDs
+                                                                                               Toggle HDU On/Off
+                                              MAN Deactivate ECM Mode 3
+   Dispense 1x                                SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                              AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3                                                                              Toggle TGP Field-Of-View
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                         Display HSD ZOOM Mode
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                              Select Dogfight Mode
+              Transmit over VHF Radio
+
+                                        Cycle Datalink                                                        Return to previous Mode
+Toggle Datalink                         Filters on FCR
+                                                                                                              Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink      TGP Manual Zoom          Toggle TGP Laser Spot Search
+
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)        Short press, AGM-65 selected                                                 FCR Antenna Elevation
+
+Long press (>0.5 sec)         Short press, AGM-88 selected
+                                                                           Slew TGP Sen              Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press
+                                A-G Master Mode / SOI set to WPN
+
+
+                               Track Target
+                               Track Target                                                              Cycle CCIP-DTOS-CCRP
+                                                                                                         Missile Step
+
+ Cycle HARM Threat Table                                                                                 Missile Step
+                                                         Target Step
+ Toggle HOC/COH
+                                                                                                 Set SOI to HUD
+
+
+                               Target Reject
+                               Target Reject                                    Cycle Left                              Cycle Right
+                               Slave AGM-65 to SPI or boresight                 MFD Format                              MFD Format
+
+
+
+
+                                                                                             Set SOI to MFD from HUD
+                  Dispense 1x Manual Program 1-4                                             Swap SOI between MFDs
+                                                                                             Toggle HDU On/Off
+                                               MAN Deactivate ECM Mode 3
+   Dispense 1x                                 SEMI Disable ECM Mode 1/2
+   Manual Program 6
+                                               AUTO Disable Dispensing of Automatic Programs
+
+
+    MAN Activate ECM Mode 3
+                                                                                                       Toggle Missile Field-Of-View
+    SEMI Dispense 1x Auto Program/Enable ECM Mode 1/2
+                                                                                                       Display HSD ZOOM Mode
+    AUTO Enable Continuous Dispensing of Auto Programs
+
+
+
+
+                                                                                                            Select Dogfight Mode
+              Transmit over VHF Radio
+
+                                        Cycle Datalink                                                      Return to previous Mode
+
+Toggle Datalink                         Filters on FCR
+                                                                                                            Select Missile Override Mode
+Info on FCR                             Transmit STPT, SPI, or
+                                        SEAD Target over Datalink
+                                                                       TGP Manual Zoom
+
+              Transmit over UHF Radio
+
+
+
+
+Short press (<0.5 sec)       Short press, AGM-65 selected                                                FCR Antenna Elevation
+
+Long press (>0.5 sec)        Short press, AGM-88 selected
+                                                                          Slew AGM-65 Seeker       Cycle AGM-65 PRE/VIS/BORE Modes
+Continuous press                                                          Slew AGM-88 Cursor
+APPENDIX E – GLOSSARY OF TERMS
+Definitions of acronyms, abbreviations, labels, and terms.
+
+A-A, A/A            Air-to-Air
+
+AAA                 Anti-Aircraft Artillery
+
+A-CAL               Altitude Calibration
+
+ACM                 1. Air Combat Mode; 2. Air Combat Maneuvers
+
+ADI                 Attitude Director Indicator
+
+A-G                 Air-to-Ground
+
+AGL                 Above Ground Level
+
+AGM                 Air-to-Ground Missile
+
+AGR                 Air-to-Ground Ranging
+
+AIM                 Air Intercept Missile
+
+ALIC                Aircraft Launcher Interface Computer
+
+ALOW                Altitude Low
+
+ALT                 1. Altitude; 2. Alternate
+
+AMRAAM              Advanced Medium Range Air-to-Air Missile
+
+AOA                 1. Angle-Of-Attack; 2. Angle-Of-Arrival
+
+AR                  Aerial Refuel
+
+ATC                 Air Traffic Control
+
+ATT                 Attitude
+
+AUTO                Automatic
+
+AZ                  Azimuth
+
+BFM                 Basic Fighter Maneuvers
+
+BHOT                Black Hot
+
+BI                  Burst Interval
+
+BIT                 Built-In Test
+
+BNGO                Bingo
+
+BORE                Boresight
+
+BQ                  Burst Quantity
+BULL       Bullseye
+
+BUP        Backup
+
+BVR        Beyond Visual Range
+
+BYP        Bypass
+
+CBU        Cluster Bomb Unit
+
+CCIP       Continuously Computed Impact Point
+
+CCRP       Continuously Computed Release Point
+
+CH         Chaff
+
+CMDS       Countermeasures Dispenser Set
+
+CMS        Countermeasures Management Switch
+
+CNI        Communications/Navigation/IFF
+
+CNTL       Control
+
+COM1       Communications radio 1; the ARC-164 UHF-AM radio
+
+COM2       Communications radio 2; the ARC-222 VHF-AM/FM radio
+
+CORR       Correction
+
+CRM        Combined Radar Modes
+
+CRUS       Cruise
+
+CTR        Center
+
+CZ         Cursor Zero
+
+DBS        Doppler Beam Sharpening
+
+DEC        Decrement
+
+DED        Data Entry Display
+
+DEFOG      De-Fog
+
+DEPR       Depression
+
+DEST       Destination
+
+DLNK, DL   Datalink
+
+DMS        Display Management Switch
+
+DRNG       Delta Range
+
+DTC        Data Transfer Cartridge
+DTE        Data Transfer Equipment
+
+DTOS       1. Dive/Toss; 2. Delta Time-Over-Steerpoint
+
+DTT        Dual Target Track
+
+DTU        Data Transfer Unit
+
+ECM        Electronic Countermeasures
+
+ECS        Environmental Control System
+
+EDR        Endurance
+
+EEGS       Enhanced Envelope Gun Sight
+
+EHSI       Electronic Horizontal Situation Indicator
+
+E-J        Emergency Jettison
+
+ELEV, EL   Elevation
+
+ENG        Engine
+
+ENTR       Enter
+
+EO         Electro-Optical
+
+ETA        Estimated Time of Arrival
+
+ETE        Estimated Time Enroute
+
+EOM        Equations Of Motion
+
+EPU        Emergency Power Unit
+
+EXP        Expand
+
+FCR        Fire Control Radar
+
+FDBK       Feedback
+
+FL         Flight Lead
+
+FLCC       Flight Control Computer
+
+FLCS       Flight Control System
+
+FLIR       Forward Looking Infrared
+
+FLT        Flight
+
+FOV        Field-Of-View
+
+FPM        Flight Path Marker
+
+FTT        Fixed Target Track
+FT        Feet (unit of measurement)
+
+FZ        Freeze
+
+G         G-force (unit of measurement)
+
+GBU       Glide Bomb Unit
+
+GM        Ground Mapping
+
+GMT       Ground Moving Target
+
+GPS       Global Positioning System
+
+GRD       GUARD
+
+GS, G/S   1. Ground Speed; 2. Glideslope
+
+HAD       HARM Attack Display
+
+HARM      High-speed Anti-Radiation Missile
+
+HAS       HARM As Sensor
+
+HDG       Heading
+
+HMCS      Helmet-Mounted Cueing System
+
+HOTAS     Hands-On Throttle and Stick System
+
+HOB       High-angle Off-Boresight
+
+HSD       Horizontal Situation Display
+
+HSI       Horizontal Situation Indicator
+
+HTS       HARM Targeting System
+
+HUD       Heads-Up Display
+
+HYD       Hydraulic
+
+IAS       Indicated Airspeed
+
+ICP       Integrated Control Panel
+
+ICS       Inter-Communication System
+
+IDENT     Identification
+
+IFF       Identification Friend or Foe
+
+ILS       Instrument Landing System
+
+IMC       Instrument Meteorological Conditions
+
+IN        Inches (unit of measurement)
+INC        Increment
+
+INFLT      In-Flight
+
+INS        Inertial Navigation System
+
+INSM       Inertial Navigation System Memory
+
+INTG       Interrogate
+
+INV        Inventory
+
+JDAM       Joint Direct Attack Munition
+
+JETT       Jettison
+
+JFS        Jet Fuel Starter
+
+JHMCS      Joint Helmet-Mounted Cueing System
+
+JSOW       Joint Stand-Off Weapon
+
+KM         Kilometer (unit of measurement)
+
+LADD       Low Altitude Drogue Delivery
+
+LASR       Laser
+
+LAT        Latitude
+
+Lat/Long   Latitude/Longitude
+
+LB         Pound (unit of measurement)
+
+LGB        Laser-Guided Bomb
+
+LO         Low
+
+LONG       Longitude
+
+LRFD       Laser Rangefinder/Designator
+
+LSS        Laser Spot Search
+
+LST        Laser Spot Tracker
+
+MAGV       Magnetic Variation
+
+MAN        Manual
+
+MFD        Multi-Function Display
+
+MGRS       Military Grid Reference System
+
+MIDS       Multifunction Information Distribution System
+
+MISC       Miscellaneous
+M-SEL           Mode Select
+
+MSL             1. Missile; 2. Mean Sea Level
+
+NAV             Navigation
+
+N/I             Not Implemented
+
+NM              Nautical Mile (unit of measurement)
+
+NORM            Normal
+
+NWS             Nose Wheel Steering
+
+NVG             Night Vision Goggles
+
+OAP, OA1, OA2   Offset Aimpoint, Offset Aimpoint 1, Offset Aimpoint 2
+
+OFP             Operational Flight Program
+
+OPR             Operation
+
+PB              Pre-Briefed
+
+PFLD            Pilot Fault List Display
+
+POS             Position
+
+PRE             Pre-planned
+
+PRF             Pulse Repetition Frequency
+
+PRGM, PROG      Program
+
+PSI             Pounds per Square Inch (unit of measurement)
+
+PTT             Push-To-Talk
+
+PUP             Pull-Up Point
+
+PWR             Power
+
+QTY             Quantity
+
+RCL             Recall
+
+RCS             Radar Cross Section
+
+RDY             Ready
+
+REC             Receive
+
+REQCTR          Request Countermeasures
+
+RNG             Range
+
+RTN             Return
+RUK          Range Unknown
+
+RWR          Radar Warning Receiver
+
+RWS          Range While Scan
+
+SAI          1. Standby Attitude Indicator; 2. Situational Awareness Indicator
+
+SAM          1. Surface-to-Air Missile, 2. Situation Awareness Mode
+
+SEAD         Suppression of Enemy Air Defenses
+
+SEMI         Semi-automatic
+
+SEQ          Sequence
+
+SI           Salvo Interval
+
+S-J          Selective Jettison
+
+SMDL         Secure Modem Datalink
+
+SMS          Stores Management Set
+
+SNSR         Sensor
+
+SOI          Sensor-Of-Interest
+
+SP           Snowplow
+
+SPI          System-Point-of-Interest
+
+SQ           Salvo Quantity
+
+SQL          Squelch
+
+SSC          Side Stick Controller
+
+STBY         Standby
+
+STN          Source Track Number
+
+STOR         Store
+
+STP, STPT    Steerpoint
+
+STR          Steer
+
+STT          Single Target Track
+
+SYM          Symbology
+
+TACAN, TCN   Tactical Air Navigation
+
+TAS          True Airspeed
+
+TBL          Table
+TDOA        Time Difference Of Arrival
+
+TGP         Targeting Pod
+
+TGT         Target
+
+THRT        Threat
+
+T-ILS       TACAN/Instrument Landing System
+
+TMS         Target Management Switch
+
+TNDL        Tactical Net Datalink
+
+TOF         1. Time Of Flight; 2. Time Of Fall
+
+TOT         Time Over Target
+
+T/R         Transmit/Receive
+
+TWS         Track While Scan
+
+UFC         Upfront Controls
+
+UHF         Ultra High Frequency
+
+UTM         Universal Transverse Mercator
+
+VAH         Velocity/Altitude/Heading
+
+VHF         Very High Frequency
+
+VIP         Visual Initial Point
+
+VIS         Visual
+
+VMC         Visual Meteorological Conditions
+
+VRP         Visual Reference Point
+
+VV          Vertical Velocity
+
+VVI         Vertical Velocity Indicator
+
+WCMD        Wind-Corrected Munition Dispenser
+
+WEZ         Weapon Engagement Zone
+
+WHOT        White Hot
+
+WPN         Weapon
+
+WVR         Within Visual Range
+
+XMIT, XMT   Transmit
+APPENDIX F – FORMULAS
+Use these calculation and conversion formulas for pre-mission planning or while in flight. Desired resultants are
+bolded.
+
+
+Fuel/Endurance Calculations
+Bingo Fuel (lbs) = (Time of Flight ÷ 60) × Fuel LB/HR
+Objective Time (mins) = ([Total Fuel − Bingo Fuel] ÷ Fuel LB/HR) × 60
+
+
+Speed/Time/Distance Calculations
+Ground Speed Required (knots) = (Distance ÷ Minutes) × 60
+Time of Flight (mins) = (Distance ÷ Ground Speed) × 60
+
+
+Fuel/Range Calculations
+Specific Range Factor = Ground Speed ÷ Fuel LB/HR
+Flight Range (NM) = Specific Range Factor × Total Fuel
+
+
+Distance Conversion
+Nautical Miles (NM) to feet (ft) = [NM] x 6,076
+Feet (ft) to Nautical Miles (NM) = [ft] ÷ 6,076
+Nautical Miles (NM) to Kilometers (Km) = [NM] × 1.85
+Kilometers (Km) to Nautical Miles (NM) = [Km] ÷ 1.85
+
+
+Altitude/Elevation Conversion
+Feet (ft) to Meters (m) = [ft] ÷ 3.281
+Meters (m) to Feet (ft) = [m] × 3.281
+
+
+Latitude/Longitude Conversion
+DDD-MM-SS.SS to DDD-MM.MMM
+
+          SS.SS ÷ 60 =         .MMM
+DDD-MM.MMM to DDD-MM-SS.SS
+
+        .MMM      × 60 =       SS.SS
+Good hunting!
+
+The Eagle Dynamics SA team
+
+EAGLE DYNAMICS SA © 2020
+
+
+
+
+
+
