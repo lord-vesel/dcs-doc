@@ -54,15 +54,3 @@ jobs:
           do rm -rf ${{env.RELEASES_DIR}}/${{ github.ref }}/$R
           done
 
-      - name: Status Success Notification
-        if: ${{ success() }}
-        run: |
-          ntfy -b telegram send "⚡ GITHUB: Successfuly deployed PROD. Check out
-
-          https://dcs.man-sim.org/ru/
-          https://dcs.man-sim.org/en/"
-
-      - name: Status Fail Notification
-        if: ${{ failure() }}
-        run: |
-          ntfy -b telegram send "💩 GITHUB: Deploy PROD failed."

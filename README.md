@@ -1,3 +1,5 @@
+# THE PROJECT IS ARCHIVED
+
 # DCS Documentation Project
 
 Websites for RU and EN versions available at:
