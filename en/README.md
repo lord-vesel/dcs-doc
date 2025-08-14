@@ -1,3 +1,5 @@
+# THE PROJECT IS ARCHIVED
+
 # DCS Web-based Documentation
 
 ![](https://github.com/lord-vesel/dcs-doc/workflows/Build%20DCS%20docs/badge.svg?branch=develop)
